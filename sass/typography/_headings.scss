@@ -1,0 +1,14 @@
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__heading;
+	word-wrap: break-word;
+}
+
+h1 {
+	@include font-size(4.8);
+	font-family: $font__main;
+}

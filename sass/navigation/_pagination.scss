@@ -1,0 +1,32 @@
+.pagination {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 85px;
+	.nav-links {
+		span,
+		a {
+			padding: 13px 19px;
+			border: 1px solid #e4e4e4;
+			border-radius: 999px;
+			font-weight: 600;
+			line-height: 2.6;
+			color: $color__black;
+			margin-right: 2px;
+		}
+		span {
+			color: $color__white;
+			background-color: $color__main;
+			border: none;
+		}
+		.next,
+		.prev {
+			padding: 13px 16px;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $color__main;
+			}
+		}
+	}
+}

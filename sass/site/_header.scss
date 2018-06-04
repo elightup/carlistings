@@ -1,0 +1,120 @@
+.site-header {
+	.container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	>.container {
+		padding: 25px 0px;
+	}
+}
+.header-top {
+	border-bottom: 1px solid #e4e4e4;
+}
+.topbar-left {
+	display: flex;
+	flex-flow: row wrap;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+	.time-work {
+		@include font-size(1.4);
+		font-weight: 400;
+		margin: 0;
+		padding: 18px;
+		border-right: 1px solid #e4e4e4;
+		&:before {
+			content: '\efb0';
+			@include ico-font();
+			color: $color__main;
+			margin-right: 7px;
+			@include font-size(2);
+		}
+	}
+	.mail-to {
+		@include font-size(1.4);
+		font-weight: 400;
+		padding: 18px;
+		color: $color__text-main;
+		text-decoration: none;
+		&:before {
+			content: '\efe6';
+			@include ico-font();
+			color: $color__main;
+			margin-right: 7px;
+			@include font-size(2);
+		}
+	}
+}
+.topbar-right {
+	display: flex;
+	flex-flow: row wrap;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+	.social-media {
+		border-right: 1px solid #e4e4e4;
+		.jetpack-social-navigation {
+			padding: 20px 20px;
+			.menu {
+				margin: 0;
+				li {
+					margin-right: 20px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		a {
+			color: $color__text-main;
+			&:hover {
+				color: $color__main;
+			}
+		}
+		a[href*='facebook.com']:before {
+			content: '\ee08';
+			@include ico-font();
+			@include font-size(1.4);
+		}
+		a[href*='twitter.com']:before {
+			content: '\ee34';
+			@include ico-font();
+			@include font-size(1.4);
+		}
+		a[href*='vimeo.com']:before {
+			content: '\ee39';
+			@include ico-font();
+			@include font-size(1.4);
+		}
+		a[href*='youtube.com']:before {
+			content: '\f137';
+			@include ico-font();
+			@include font-size(1.4);
+		}
+		a[href*='feed']:before {
+			content: '\ee28';
+			@include ico-font();
+			@include font-size(1.4);
+		}
+	}
+	.topbar-languages {
+		.icofont-globe {
+			@include font-size(2);
+			color: $color__main;
+		}
+		.icofont-caret-down {
+			color: $color__main;
+		}
+		select {
+			appearance: none;
+			-webkit-appearance: none;
+			border: none;
+			background: transparent;
+			color: $color__text-main;
+			cursor: pointer;
+		}
+		section {
+			margin: 0;
+			padding: 18px;
+		}
+	}
+}

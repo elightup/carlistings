@@ -1,0 +1,29 @@
+.site-content {
+	.widget-area {
+		width: (370/1170) * 100%;
+		margin-left: 30px;
+		float: right;
+	}
+
+	.content-area {
+		float: left;
+		width: (770/1170) * 100%;
+		word-wrap: break-word;
+	}
+
+	@media (max-width: 991px){
+		.content-area,
+		.widget-area{
+			width: 100%;
+		}
+		.content-area {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}
+
