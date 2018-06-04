@@ -10,50 +10,35 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
-		if ( 'post' === get_post_type() ) :
-			?>
+	<div class="entry-media">
+		<?php the_post_thumbnail( 'autodealer-blog-thumbnail' ); ?>
+	</div>
+
+	<div class="article__content">
+		<header class="entry-header">
+			<span class="entry-header__category">
+				<?php echo get_the_category_list( esc_html__( ', ', 'autodealer' ) ); ?>
+			</span>
 			<div class="entry-meta">
-				<?php
-				autodealer_posted_on();
-				autodealer_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+				<?php autodealer_posted_on(); ?>
+			</div>
+		</header><!-- .entry-header -->
 
-	<?php autodealer_post_thumbnail(); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'autodealer' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
+		<div class="entry-content">
+			<?php
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+			the_content();
 
-	<footer class="entry-footer">
-		<?php autodealer_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
+				'after'  => '</div>',
+			) );
+			?>
+		</div><!-- .entry-content -->
+		<?php autodealer_author_box(); ?>
+	</div>
+
 </article><!-- #post-<?php the_ID(); ?> -->

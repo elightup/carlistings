@@ -49,3 +49,41 @@ function autodealer_widget_archive_count( $output ) {
 	return $output;
 }
 add_filter( 'wp_list_categories', 'autodealer_widget_archive_count' );
+
+/**
+ * Add tag to the content
+ */
+function add_tag_the_content( $content ) {
+	// Hide category and tag text for pages.
+	if ( 'post' === get_post_type() ) {
+
+		/* translators: used between list items, there is a space after the comma */
+		$tags_list = get_the_tag_list( 'Tags: ', esc_html_x( ' ', 'list item separator', 'autodealer' ) );
+		if ( $tags_list ) {
+			/* translators: 1: list of tags. */
+				return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
+		}
+	}
+}
+add_filter( 'the_content', 'add_tag_the_content' );
+
+/**
+ * Add social networks to user profile
+ *
+ * @param array $methods Currently set contact methods.
+ *
+ * @return array
+ */
+function user_social_networks_add( $methods ) {
+	$methods['googleplus'] = esc_html__( 'Google+', 'autodealer' );
+	$methods['twitter']    = esc_html__( 'Twitter username (without @)', 'autodealer' );
+	$methods['facebook']   = esc_html__( 'Facebook profile URL', 'autodealer' );
+	$methods['linkedin']   = esc_html__( 'Linkedin', 'autodealer' );
+	$methods['instagram']  = esc_html__( 'Instagram', 'autodealer' );
+	$methods['dribbble']   = esc_html__( 'Dribbble', 'autodealer' );
+	$methods['youtube']   = esc_html__( 'Youtube', 'autodealer' );
+	$methods['pinterest']   = esc_html__( 'Pinterest', 'autodealer' );
+
+	return $methods;
+}
+add_filter( 'user_contactmethods', 'user_social_networks_add' );

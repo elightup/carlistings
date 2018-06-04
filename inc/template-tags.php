@@ -13,9 +13,9 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 	 */
 	function autodealer_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">Date: %2$s</time>';
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+		/*if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">Date: %2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-		}
+		}*/
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
@@ -66,18 +66,12 @@ if ( ! function_exists( 'autodealer_entry_footer' ) ) :
 	function autodealer_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'autodealer' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'autodealer' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'autodealer' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'autodealer' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'autodealer' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -154,3 +148,82 @@ if ( ! function_exists( 'autodealer_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+/**
+ * Socials author bio.
+ *
+ * @param string $id user id.
+ */
+function autodealer_user_social_links( $id ) {
+	$socials        = array( 'facebook', 'twitter', 'google-plus', 'dribbble', 'instagram', 'youtube-play', 'pinterest' );
+	$author_website = get_the_author_meta( 'user_url', $id );
+	$output         = '';
+
+	if ( ! empty( $author_website ) ) {
+		$output = sprintf( '<li class="author-website"><a href="%s" class="tag-alike-style ">%s</a>',
+			esc_url( $author_website ),
+			esc_html__( "visit author's website", 'autodealer' )
+		);
+	}
+
+	foreach ( $socials as $social ) {
+		$social_value = get_the_author_meta( $social, $id );
+
+		if ( 'twitter' == $social ) {
+			$social_value = 'https://twitter.com/' . get_the_author_meta( 'twitter', $id );
+		}
+
+		if ( empty( $social_value ) ) {
+			continue;
+		}
+
+		$output .= sprintf(
+			'<li><a class="social-links" href="%s"><i class="icofont icofont-social-%s"></i></a></li>',
+			esc_url( $social_value ),
+			esc_html( $social )
+		);
+	}
+
+	if ( empty( $output ) ) {
+		return '';
+	}
+
+	echo '<ul class="author-social">' . wp_kses_post( $output ) . '</ul>';
+}
+
+/**
+ * Author Box.
+ */
+function autodealer_author_box() {
+	?>
+	<div class="entry-author">
+		<div class="author-avatar">
+			<?php echo get_avatar( get_the_author_meta( 'user_email' ), 85 ); ?>
+		</div><!-- .author-avatar -->
+		<div class="author-info">
+			<div class="author-heading">
+				<h3 class="author-title">
+					<?php
+					echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
+					?>
+				</h3>
+				<div class="author-twitter">
+					<?php
+					$twitter = get_the_author_meta( 'twitter' );
+					if ( $twitter ) {
+						/* translators: author twitter name. */
+						printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
+					}
+					?>
+				</div>
+			</div>
+
+			<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
+			<div class="author-bio">
+
+				<?php the_author_meta( 'description' ); ?>
+			</div><!-- .author-bio -->
+		</div><!-- .author-info -->
+	</div><!-- .entry-author -->
+	<?php
+}

@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="comments-title">
+		<h2 class="comments-title underline-heading">
 			<?php
 			$autodealer_comment_count = get_comments_number();
 			if ( '1' === $autodealer_comment_count ) {
@@ -53,6 +53,7 @@ if ( post_password_required() ) {
 			wp_list_comments( array(
 				'style'      => 'ol',
 				'short_ping' => true,
+				'avatar_size' => 60,
 			) );
 			?>
 		</ol><!-- .comment-list -->
