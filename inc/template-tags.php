@@ -33,17 +33,17 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 
 			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
-		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
-			/* translators: %s: post title */
-			comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-			echo '</span>';
+			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
+				/* translators: %s: post title */
+				comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+				echo '</span>';
+			}
+			echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
 		}
-		echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
-	}
-endif;
+	endif;
 
-if ( ! function_exists( 'autodealer_posted_by' ) ) :
+	if ( ! function_exists( 'autodealer_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
@@ -134,17 +134,17 @@ if ( ! function_exists( 'autodealer_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-			?>
-		</a>
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				<?php
+				the_post_thumbnail( 'post-thumbnail', array(
+					'alt' => the_title_attribute( array(
+						'echo' => false,
+					) ),
+				) );
+				?>
+			</a>
 
-		<?php
+			<?php
 		endif; // End is_singular().
 	}
 endif;
@@ -201,24 +201,26 @@ function autodealer_author_box() {
 			<?php echo get_avatar( get_the_author_meta( 'user_email' ), 85 ); ?>
 		</div><!-- .author-avatar -->
 		<div class="author-info">
-			<div class="author-heading">
-				<h3 class="author-title">
-					<?php
-					echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
-					?>
-				</h3>
-				<div class="author-twitter">
-					<?php
-					$twitter = get_the_author_meta( 'twitter' );
-					if ( $twitter ) {
-						/* translators: author twitter name. */
-						printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
-					}
-					?>
+			<div class="author-header">
+				<div class="author-heading">
+					<h3 class="author-title">
+						<?php
+						echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
+						?>
+					</h3>
+					<div class="author-twitter">
+						<?php
+						$twitter = get_the_author_meta( 'twitter' );
+						if ( $twitter ) {
+							/* translators: author twitter name. */
+							printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
+						}
+						?>
+					</div>
 				</div>
+				<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
 			</div>
 
-			<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
 			<div class="author-bio">
 
 				<?php the_author_meta( 'description' ); ?>

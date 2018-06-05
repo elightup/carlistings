@@ -1045,6 +1045,7 @@ a:hover, a:active {
 
 .widget-area .jetpack_widget_social_icons a {
 	margin-right: 11px;
+	margin-bottom: 14px;
 }
 
 .widget-area .jetpack_widget_social_icons a:hover:before {
@@ -1066,7 +1067,6 @@ a:hover, a:active {
 
 .site-content .widget-area {
 	width: 31.62393%;
-	margin-left: 30px;
 	float: right;
 }
 
@@ -1089,6 +1089,12 @@ a:hover, a:active {
 .site-footer {
 	clear: both;
 	width: 100%;
+}
+
+@media (max-width: 1279px) {
+	.container {
+		padding: 0 25px;
+	}
 }
 
 .site-header .container {
@@ -1777,6 +1783,10 @@ Genericons
 	margin-bottom: 20px;
 }
 
+.single .entry-media img {
+	width: 100%;
+}
+
 .single .entry-header {
 	display: flex;
 	flex-flow: row wrap;
@@ -1841,7 +1851,7 @@ Genericons
 	color: #2c2e3b;
 }
 
-.single .entry-content:last-child p {
+.single .entry-content p:last-child {
 	margin-bottom: 55px;
 }
 
@@ -1880,6 +1890,7 @@ Genericons
 
 .sharedaddy.sharedaddy {
 	margin-top: 55px;
+	margin-bottom: 20px;
 }
 
 .sharedaddy.sharedaddy .sd-title {
@@ -1912,7 +1923,7 @@ Genericons
 }
 
 .entry-author {
-	padding: 60px 0 50px;
+	padding: 50px 0 50px;
 	display: flex;
 }
 
@@ -1921,11 +1932,19 @@ Genericons
 	margin-left: 60px;
 }
 
+.author-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
 .author-title {
-	font-size: 19px;
-	font-size: 1.1875rem;
-	margin: 5px 0 3px;
+	font-size: 20px;
+	font-size: 1.25rem;
+	margin: 0;
 	text-transform: capitalize;
+	color: #000;
+	font-weight: 700;
 }
 
 .author-twitter {
@@ -1935,6 +1954,8 @@ Genericons
 
 .author-twitter a {
 	color: #666666;
+	font-weight: 600;
+	text-decoration: none;
 }
 
 .author-twitter a:hover {
@@ -1948,7 +1969,7 @@ Genericons
 .author-social {
 	list-style-type: none;
 	padding: 0;
-	margin: 34px 0 0 0;
+	margin-top: 7px;
 }
 
 .author-social li {
@@ -1963,12 +1984,16 @@ Genericons
 .author-social a {
 	background: #f3f5f8;
 	color: #3d414e;
+	text-decoration: none;
 }
 
 .author-social a.social-links {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .author-social a:hover {
@@ -1980,6 +2005,9 @@ Genericons
 	word-break: break-all;
 	font-size: 14px;
 	font-size: 0.875rem;
+	line-height: 1.7;
+	color: #777777;
+	margin-top: 10px;
 }
 
 .author-avatar {

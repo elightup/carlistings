@@ -1,7 +1,6 @@
 .site-content {
 	.widget-area {
 		width: (370/1170) * 100%;
-		margin-left: 30px;
 		float: right;
 	}
 
@@ -27,3 +26,8 @@
 	width: $size__site-main;
 }
 
+@media (max-width: 1279px) {
+	.container {
+		padding: 0 25px;
+	}
+}

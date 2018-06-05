@@ -1,6 +1,9 @@
 .single {
 	.entry-media {
 		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
 	}
 	.entry-header {
 		display: flex;
@@ -53,7 +56,7 @@
 		color: #2c2e3b;
 	}
 	.entry-content {
-		&:last-child p {
+		p:last-child {
 			margin-bottom: 55px;
 		}
 		.tags-links {
@@ -86,6 +89,7 @@
 
 .sharedaddy.sharedaddy {
 	margin-top: 55px;
+	margin-bottom: 20px;
 	.sd-title {
 		font-size: 20px;
 		color: $color__black;
@@ -116,7 +120,7 @@
 }
 
 .entry-author {
-	padding: 60px 0 50px;
+	padding: 50px 0 50px;
 	display: flex; // Use flex here, not float, to make the children width flexible.
 }
 
@@ -125,15 +129,24 @@
 	margin-left: 60px;
 }
 
+.author-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
 .author-title {
-	@include font-size(1.9);
-	margin: 5px 0 3px;
+	@include font-size(2);
+	margin: 0;
 	text-transform: capitalize;
+	color: $color__black;
+	font-weight: 700;
 }
 .author-twitter {
 	@include font-size(1.4);
 	a {
 		color: $color__twitter-name;
+		font-weight: 600;
+		text-decoration: none;
 		&:hover {
 			color: $color__main;
 		}
@@ -147,7 +160,7 @@
 .author-social {
 	list-style-type: none;
 	padding: 0;
-	margin: 34px 0 0 0;
+	margin-top: 7px;
 	li {
 		display: inline-block;
 		margin: 0 8px 10px 0;
@@ -158,10 +171,14 @@
 	a {
 		background: $color__sidebar;
 		color: $color__text-main;
+		text-decoration: none;
 		&.social-links {
 			width: 40px;
 			height: 40px;
 			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		&:hover {
 			background: $color__twitter-bg-hover;
@@ -173,6 +190,9 @@
 .author-bio {
 	word-break: break-all;
 	@include font-size(1.4);
+	line-height: 1.7;
+	color: #777777;
+	margin-top: 10px;
 }
 
 .author-avatar {
