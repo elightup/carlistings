@@ -22,6 +22,36 @@ function autodealer_customize_register( $wp_customize ) {
 	) );
 
 	/**
+	 * Header.
+	 */
+	$wp_customize->add_section( 'header', array(
+		'title' => esc_html__( 'Header', 'autodealer' ),
+		'panel' => 'autodealer',
+	) );
+
+	$wp_customize->add_setting( 'header_time', array(
+		'default'           => wp_kses_post( __( '10:00 AM To 5:00 PM', 'autodealer' ) ),
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport'         => 'postMessage',
+	) );
+	$wp_customize->add_control( 'header_time', array(
+		'label'           => esc_html__( 'Header Time', 'autodealer' ),
+		'section'         => 'header',
+		'type'            => 'text',
+	) );
+
+	$wp_customize->add_setting( 'header_mail', array(
+		'default'           => wp_kses_post( __( 'autodealer@no-reply.com', 'autodealer' ) ),
+		'sanitize_callback' => 'sanitize_text_field',
+		'transport'         => 'postMessage',
+	) );
+	$wp_customize->add_control( 'header_mail', array(
+		'label'           => esc_html__( 'Header Time', 'autodealer' ),
+		'section'         => 'header',
+		'type'            => 'text',
+	) );
+
+	/**
 	 * Footer.
 	 */
 	$wp_customize->add_section( 'footer', array(
