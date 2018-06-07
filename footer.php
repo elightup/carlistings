@@ -65,7 +65,17 @@ if ( $logo ) {
 
 </div><!-- #page -->
 
+<nav class="mobile-navigation" role="navigation">
+	<?php
+	wp_nav_menu( array(
+		'container_class' => 'mobile-menu',
+		'menu_class'      => 'mobile-menu clearfix',
+		'theme_location'  => 'menu-1',
+		'items_wrap'      => '<ul>%3$s</ul>',
+	) );
+	?>
+</nav>
 <?php wp_footer(); ?>
-
+<!-- <a href="#" class="scroll-to-top hidden"><i class="icofont icofont-rounded-up"></i></a> -->
 </body>
 </html>

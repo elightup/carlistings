@@ -30,16 +30,16 @@
 					<div class="topbar-left">
 						<?php
 						if ( '' != get_theme_mod( 'header_time' ) ) :
-						?>
-						<p class="time-work"><?php echo esc_html( get_theme_mod( 'header_time', __( '10:00 AM To 5:00 PM', 'autodealer' ) ) ); ?>
-						</p>
+							?>
+							<p class="time-work"><?php echo esc_html( get_theme_mod( 'header_time', __( '10:00 AM To 5:00 PM', 'autodealer' ) ) ); ?>
+							</p>
 						<?php endif; ?>
 
 						<?php
 						if ( '' != get_theme_mod( 'header_mail' ) ) :
-						?>
-						<a class="mail-to" href="mailto:<?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>"><?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>
-						</a>
+							?>
+							<a class="mail-to" href="mailto:<?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>"><?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>
+							</a>
 						<?php endif; ?>
 					</div>
 					<div class="topbar-right">
@@ -80,25 +80,26 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'autodealer' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="bar"></span><?php esc_html_e( 'Menu', 'autodealer' ); ?></button>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
+						'menu_class'      => 'primary-menu',
 					) );
 					?>
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
 
-	<?php if ( ! is_front_page() ) : ?>
-		<div class="page-header">
-			<?php autodealer_breadcrumbs(); ?>
-		</div>
-	<?php endif; ?>
+		<?php if ( ! is_front_page() ) : ?>
+			<div class="page-header">
+				<?php autodealer_breadcrumbs(); ?>
+			</div>
+		<?php endif; ?>
 
-	<?php if ( ! is_home() && is_front_page() ) : ?>
-		<div id="content" class="site-content">
-	<?php else : ?>
-		<div id="content" class="site-content container">
-	<?php endif; ?>
+		<?php if ( ! is_home() && is_front_page() ) : ?>
+			<div id="content" class="site-content">
+			<?php else : ?>
+				<div id="content" class="site-content container">
+				<?php endif; ?>
