@@ -87,3 +87,21 @@ function user_social_networks_add( $methods ) {
 	return $methods;
 }
 add_filter( 'user_contactmethods', 'user_social_networks_add' );
+
+/**
+ * Add at a glance to left section
+ */
+add_action( 'auto_listings_before_listings_loop_item_summary', 'auto_listings_template_loop_at_a_glance', 20 );
+
+/**
+ * Add description
+ */
+add_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 20 );
+
+/**
+ * Remove description
+ */
+add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49);
+function remove_active_hooks_description(){
+    remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
+}
