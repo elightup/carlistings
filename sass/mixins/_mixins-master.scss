@@ -29,7 +29,7 @@
 }
 
 @mixin ico-font() {
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 }

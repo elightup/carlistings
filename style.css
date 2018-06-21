@@ -712,7 +712,7 @@ a:hover, a:active {
 
 .main-navigation .menu-item-has-children > a:after {
 	content: '\eb25';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	margin-left: 5px;
@@ -1113,7 +1113,7 @@ a:hover, a:active {
 
 .widget-area .widget_categories li:before {
 	content: '\eb59';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1201,7 +1201,7 @@ a:hover, a:active {
 
 .widget-area .jr-insta-slider .jr-insta-thumb a:before {
 	content: '\ecfd';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	display: inline-block;
@@ -1365,7 +1365,7 @@ a:hover, a:active {
 
 .topbar-left .time-work:before {
 	content: '\efb0';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -1385,7 +1385,7 @@ a:hover, a:active {
 
 .topbar-left .mail-to:before {
 	content: '\efe6';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -1431,7 +1431,7 @@ a:hover, a:active {
 
 .topbar-right .social-media a[href*='facebook.com']:before {
 	content: '\ee08';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1440,7 +1440,7 @@ a:hover, a:active {
 
 .topbar-right .social-media a[href*='twitter.com']:before {
 	content: '\ee34';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1449,7 +1449,7 @@ a:hover, a:active {
 
 .topbar-right .social-media a[href*='vimeo.com']:before {
 	content: '\ee39';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1458,7 +1458,7 @@ a:hover, a:active {
 
 .topbar-right .social-media a[href*='youtube.com']:before {
 	content: '\f137';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1467,7 +1467,7 @@ a:hover, a:active {
 
 .topbar-right .social-media a[href*='feed']:before {
 	content: '\ee28';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1646,7 +1646,7 @@ a:hover, a:active {
 .blog .entry-header .entry-header__category:before,
 .archive .entry-header .entry-header__category:before {
 	content: '\f007';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -1866,7 +1866,7 @@ Genericons
 }
 
 .widget-area .jetpack_widget_social_icons a:before {
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	padding: 10px;
@@ -1926,7 +1926,7 @@ Genericons
 .jetpack-social-navigation-genericons a[href*="facebook"]:before,
 .widget-area .jetpack_widget_social_icons a[href*="facebook"]:before {
 	content: "\ee08";
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 }
@@ -2094,7 +2094,7 @@ Genericons
 
 .single .entry-header .entry-header__category:before {
 	content: '\f007';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -2149,7 +2149,7 @@ Genericons
 
 .single .entry-content .tags-links:before {
 	content: '\f0ec';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	margin-right: 5px;
@@ -2187,7 +2187,7 @@ Genericons
 
 .sharedaddy.sharedaddy .sd-title:before {
 	content: '\f0ca';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	display: inline-block;
@@ -2322,7 +2322,7 @@ Genericons
 
 .bypostauthor .reply:before {
 	content: '\edda';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	background: #e11e30;
@@ -2413,7 +2413,7 @@ Genericons
 
 .comment-list .reply a:after {
 	content: '\f0b9';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 12px;
@@ -2723,7 +2723,7 @@ ol.children {
 
 .breadcrumbs .home:before {
 	content: '\f01f';
-	font-family: "IcoFont";
+	font-family: "IcoFont" !important;
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -3140,14 +3140,14 @@ ol.children {
 	font-size: 0.8125rem;
 }
 
-.SumoSelect.SumoSelect .optWrapper li {
+.SumoSelect.open.SumoSelect.open .optWrapper {
+	top: 47px;
+}
+
+.has-sidebar .options li {
 	padding-left: 19px !important;
 	font-size: 13px;
 	font-size: 0.8125rem;
-}
-
-.SumoSelect.open.SumoSelect.open .optWrapper {
-	top: 47px;
 }
 
 /* view switcher  */
@@ -3386,6 +3386,10 @@ ol.children {
 	margin-bottom: 50px;
 }
 
+.has-sidebar .auto-listings-items.auto-listings-items.grid-view > li:nth-child(even) {
+	margin-right: 0 !important;
+}
+
 .has-sidebar .auto-listings-items.auto-listings-items.grid-view .items-left .image {
 	margin-bottom: 0;
 }
@@ -3423,175 +3427,161 @@ ol.children {
 	bottom: -28px;
 }
 
+@media (max-width: 991px) {
+	.auto-listings.auto-listings .has-sidebar {
+		width: 100%;
+	}
+	.auto-listings.auto-listings .sidebar {
+		width: 100%;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Archive listing
 --------------------------------------------------------------*/
-.auto-listings-search {
-	margin: 0 0 30px;
-	width: 100%;
-	padding: 0;
-	background: transparent;
-	display: inline-block;
-	text-align: center;
+.sidebar {
+	border: 10px solid #f8f8f8;
 }
 
-.auto-listings-search .row {
-	display: inline-block;
-	width: 100%;
-	margin: 0 0 15px;
-	color: #444;
+.sidebar li {
+	list-style: none;
 }
 
-.auto-listings-search .row .field {
-	line-height: unset;
-	position: relative;
-	vertical-align: middle;
-	display: inline;
-	font-size: 15px;
-	font-weight: 300;
+.sidebar .widget {
+	padding: 30px;
+	border-bottom: 1px solid #e4e4e4;
 }
 
-.auto-listings-search .condition .prefix {
-	font-size: 36px;
+.sidebar .widget:last-child {
+	border-bottom: none;
+}
+
+.sidebar .widget select {
+	max-width: 100%;
+}
+
+.sidebar .widget .widgettitle {
+	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 700;
-}
-
-.auto-listings-search .price-wrap > div {
-	display: inline-block;
-}
-
-.auto-listings-search .price-wrap .prefix {
-	font-size: 20px;
-	font-weight: 200;
-}
-
-.auto-listings-search .area-wrap .field, .auto-listings-search .area-wrap button {
-	display: inline-block;
-}
-
-.auto-listings-search .area-wrap .prefix {
-	font-size: 20px;
-	font-weight: 200;
-}
-
-.auto-listings-search .area {
-	border: 1px solid #aaa;
-	border-radius: 4px 0 0 4px;
-	height: 40px;
-	line-height: 30px;
-	padding: 5px 15px;
-	width: 300px;
-	margin: -3px -4px 0 0;
-	background: #fff;
-	outline: none;
-	text-transform: none;
-	font-size: 15px;
-	font-weight: 300;
-	color: #444;
-}
-
-.auto-listings-search .area-wrap .area::placeholder {
-	text-transform: none;
-	font-size: 15px;
-	font-weight: 300;
-	color: #666;
-}
-
-.auto-listings-search .area-wrap .area:focus, .auto-listings-search .area-wrap .area:active {
-	border: none;
-	border-bottom: 2px solid #337ab7;
-	border-radius: 0;
-}
-
-.auto-listings-search .area-wrap button {
-	border-radius: 0 4px 4px 0;
-	z-index: 9;
+	color: #000;
+	margin-top: 0;
+	margin-bottom: 25px;
 	position: relative;
 }
 
-.auto-listings-search .area-wrap button:hover, .auto-listings-search .area-wrap button:focus {
-	border: 2px solid transparent;
+.sidebar .widget .widgettitle:before {
+	content: '';
+	border-left: 10px solid #e11e30;
+	width: 10px;
+	height: 30px;
+	left: -40px;
+	position: absolute;
 }
 
-.auto-listings-search .extras-wrap {
-	display: none;
-	margin-top: 15px;
-}
-
-.auto-listings-search a.refine {
-	cursor: pointer;
-	text-decoration: none;
-}
-
-.auto-listings-search a.refine.shown i {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-/* sumoselect fixups */
-.auto-listings-search .SumoSelect > .CaptionCont {
-	background-color: transparent;
-	border: 2px solid #a4a4a4;
-	border-radius: 4px;
-	height: 40px;
-	max-height: 40px;
-	line-height: 24px;
-	margin: 0;
-}
-
-.auto-listings-search .SumoSelect > .CaptionCont > span {
-	padding-right: 10px;
-}
-
-.auto-listings-search .SumoSelect > .CaptionCont > span.placeholder {
-	color: inherit;
-	font-style: normal;
-}
-
-.auto-listings-search .price-wrap .SumoSelect > .optWrapper {
-	width: 115%;
-}
-
-.auto-listings-search label {
+.sidebar .auto-listings-search.auto-listings-search {
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 0;
 	text-align: left;
-	font-weight: 300;
 }
 
-.auto-listings-search .SumoSelect > .CaptionCont > label > i {
-	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	height: auto;
-	top: 20%;
+.sidebar .auto-listings-search.auto-listings-search label i:before {
+	content: '\eb25' !important;
+	font-family: "IcoFont" !important;
+	display: inline-block;
+	line-height: 1;
+	color: #000 !important;
 }
 
-.auto-listings-search .SumoSelect > .CaptionCont > label > i::before {
-	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-	color: #444;
-	content: "\f107";
-	font-family: "FontAwesome";
-	font-style: normal;
+.sidebar .auto-listings-search.auto-listings-search .prefix {
+	display: none;
 }
 
-.auto-listings-search .SumoSelect {
-	margin: 0;
-	padding: 0;
+.sidebar .auto-listings-search.auto-listings-search .refine {
+	display: none;
 }
 
-.auto-listings-search .condition-wrap .SumoSelect {
-	margin-left: 15px;
+.sidebar .auto-listings-search.auto-listings-search .SelectBox.SelectBox span {
+	color: #000;
+	font-weight: 500;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .SumoSelect {
+	width: 100%;
+	margin-left: 0;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .SelectBox {
+	padding: 7px 20px;
+}
+
+.sidebar .auto-listings-search.auto-listings-search input::placeholder {
+	opacity: 1;
+	color: black;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .price-wrap {
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .price-wrap .sumo_min_price {
 	width: 140px;
+	margin-right: 0;
 }
 
-.auto-listings-search .price-wrap .SumoSelect {
-	width: 100px;
-	margin: 0 10px;
-}
-
-.auto-listings-search .area-wrap .SumoSelect {
-	margin-right: 15px;
+.sidebar .auto-listings-search.auto-listings-search .price-wrap .sumo_max_price {
 	width: 140px;
+	margin-right: 0;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap {
+	order: 1;
+	text-align: left;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .within {
+	width: 100%;
+	margin-bottom: 18px;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .area {
+	margin-bottom: 18px;
+	width: 100%;
+	border: 1px solid #e4e4e4;
+	border-radius: 4px;
+	color: #000;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap button {
+	background-color: #e11e30;
+	border-radius: 5px;
+	border-color: #e11e30;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	padding: 13px 30px;
+	transition: 0.3s;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap button:hover {
+	background-color: #fff;
+	color: #e11e30;
+	transition: 0.3s;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .extras-wrap {
+	display: block;
+	margin-bottom: 0;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .extras-wrap .SumoSelect {
+	margin-bottom: 18px;
 }
 
 /*--------------------------------------------------------------
