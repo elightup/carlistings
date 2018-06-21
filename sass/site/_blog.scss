@@ -81,10 +81,11 @@
 			background-color: $color__main;
 			border-radius: 5px;
 			font-weight: 700;
+			border: 2px solid $color__main;
 			&:hover {
 				color: $color__main;
 				background-color: $color__white;
-				border: 1px solid $color__main;
+				border: 2px solid $color__main;
 			}
 		}
 	}

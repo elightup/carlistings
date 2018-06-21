@@ -1,5 +1,7 @@
 /* select box*/
-
+.auto-listings-ordering.auto-listings-ordering {
+	margin-bottom: 30px;
+}
 .SumoSelect.SumoSelect {
 	&:hover > .CaptionCont,
 	&:focus > .CaptionCont {
@@ -35,6 +37,7 @@
 
 .auto-listings-view-switcher.auto-listings-view-switcher {
 	margin-left: 7px;
+	margin-bottom: 30px;
 	div {
 		border: 1px solid $color__border-abbr;
 		border-radius: 100%;
@@ -52,6 +55,8 @@
 /* pagination */
 
 .auto-listings-pagination.auto-listings-pagination {
+	position: relative;
+	top: 10px;
 	span,
 	a {
 		border: 1px solid $color__border-abbr;
@@ -191,6 +196,7 @@
 			box-shadow: none;
 			border: 1px solid $color__border-abbr;
 			position: relative;
+			margin-bottom: 50px;
 		}
 		.items-left {
 			width: 39%;
@@ -235,6 +241,8 @@
 			position: relative;
 			box-shadow: none;
 			border: 1px solid $color__border-abbr;
+			overflow: inherit;
+			margin-bottom: 50px;
 		}
 		.items-left {
 			.image {
@@ -263,6 +271,9 @@
 				margin-top: 15px;
 				padding: 0;
 			}
+		}
+		.bottom-wrap {
+			bottom: -28px;
 		}
 	}
 }
