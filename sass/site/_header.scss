@@ -124,3 +124,24 @@
 		}
 	}
 }
+
+@media (max-width: 991px) {
+	.header-top {
+		display: none;
+	}
+}
+@media (max-width: 574px) {
+	.site-header {
+		>.container {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+		.main-navigation {
+			width: 50%;
+		}
+		.menu-toggle {
+			width: 100%;
+		}
+	}
+}

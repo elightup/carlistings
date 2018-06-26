@@ -28,10 +28,12 @@
 
 			the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
-				'after'  => '</div>',
-			) );
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
+					'after'  => '</div>',
+				)
+			);
 			?>
 		</div><!-- .entry-content -->
 	</div>

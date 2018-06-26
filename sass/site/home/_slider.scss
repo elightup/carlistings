@@ -1,0 +1,34 @@
+.featured-posts {
+	.featured-content.featured-content {
+		position: absolute;
+		left: 0;
+		top: 110px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		text-align: center;
+		color: $color__white;
+		.entry-title {
+			color: $color__white;
+			@include font-size(4.8);
+			font-weight: 300;
+			font-family: $font__main;
+		}
+		ul {
+			margin-top: -6px;
+		}
+		li {
+			list-style: none;
+			display: inline-block;
+			@include font-size(1.4);
+			margin-right: 34px;
+			&:before {
+				content: '\efae';
+				@include ico-font();
+				color: $color__main;
+				@include font-size(2);
+				margin-right: 10px;
+			}
+		}
+	}
+}

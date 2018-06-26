@@ -17,21 +17,27 @@
  * @uses autodealer_header_style()
  */
 function autodealer_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'autodealer_custom_header_args', array(
-		'default-image'      => get_template_directory_uri() . '/images/page-header.png',
-		'default-text-color'     => 'fff',
-		'width'                  => 1920,
-		'height'                 => 260,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'autodealer_header_style',
-	) ) );
-	register_default_headers( array(
-		'work-space' => array(
-			'url'           => '%s/images/page-header.png',
-			'thumbnail_url' => '%s/images/page-header.png',
-			'description'   => esc_html__( 'Work Space', 'autodealer' ),
-		),
-	) );
+	add_theme_support(
+		'custom-header', apply_filters(
+			'autodealer_custom_header_args', array(
+				'default-image'      => get_template_directory_uri() . '/images/page-header.png',
+				'default-text-color' => 'fff',
+				'width'              => 1920,
+				'height'             => 260,
+				'flex-height'        => true,
+				'wp-head-callback'   => 'autodealer_header_style',
+			)
+		)
+	);
+	register_default_headers(
+		array(
+			'work-space' => array(
+				'url'           => '%s/images/page-header.png',
+				'thumbnail_url' => '%s/images/page-header.png',
+				'description'   => esc_html__( 'Work Space', 'autodealer' ),
+			),
+		)
+	);
 }
 add_action( 'after_setup_theme', 'autodealer_custom_header_setup' );
 

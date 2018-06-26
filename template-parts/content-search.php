@@ -2,34 +2,39 @@
 /**
  * Template part for displaying results in search pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package autodealer
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+	<?php get_template_part( 'template-parts/content', 'media' ); ?>
+
+	<div class="article__content">
+		<header class="entry-header">
+			<span class="entry-header__category">
+				<?php echo get_the_category_list( esc_html__( ', ', 'autodealer' ) ); ?>
+			</span>
+			<div class="entry-meta">
+				<?php autodealer_posted_on(); ?>
+			</div>
+		</header><!-- .entry-header -->
+
+		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+
+		<div class="entry-content">
 			<?php
-			autodealer_posted_on();
-			autodealer_posted_by();
+
+			the_excerpt();
+
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
+					'after'  => '</div>',
+				)
+			);
 			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php autodealer_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php autodealer_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		</div><!-- .entry-content -->
+	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

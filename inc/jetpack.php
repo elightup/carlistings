@@ -16,11 +16,13 @@
  */
 function autodealer_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'render'    => 'autodealer_infinite_scroll_render',
-		'footer'    => 'page',
-	) );
+	add_theme_support(
+		'infinite-scroll', array(
+			'container' => 'main',
+			'render'    => 'autodealer_infinite_scroll_render',
+			'footer'    => 'page',
+		)
+	);
 
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
@@ -28,24 +30,35 @@ function autodealer_jetpack_setup() {
 	// Add theme support social menu.
 	add_theme_support( 'jetpack-social-menu' );
 
+	// Featured content.
+	add_theme_support(
+		'featured-content', array(
+			'filter'     => 'autodealer_get_featured_posts',
+			'max_posts'  => 3,
+			'post_types' => array( 'post', 'page' ),
+		)
+	);
+
 	// Add theme support for Content Options.
-	add_theme_support( 'jetpack-content-options', array(
-		'blog-display'    => 'content',
+	add_theme_support(
+		'jetpack-content-options', array(
+			'blog-display'    => 'content',
 			// the default setting of the theme: 'content', 'excerpt' or array( 'content', 'excerpt' ) for themes mixing both display.
-		'post-details'    => array(
-			'stylesheet' => 'autodealer-style',
-			'date'       => '.posted-on',
-			'categories' => '.cat-links',
-			'tags'       => '.tags-links',
-			'author'     => '.byline',
-			'comment'    => '.comments-link',
-		),
-		'featured-images' => array(
-			'archive'    => true,
-			'post'       => true,
-			'page'       => true,
-		),
-	) );
+			'post-details'    => array(
+				'stylesheet' => 'autodealer-style',
+				'date'       => '.posted-on',
+				'categories' => '.cat-links',
+				'tags'       => '.tags-links',
+				'author'     => '.byline',
+				'comment'    => '.comments-link',
+			),
+			'featured-images' => array(
+				'archive' => true,
+				'post'    => true,
+				'page'    => true,
+			),
+		)
+	);
 }
 add_action( 'after_setup_theme', 'autodealer_jetpack_setup' );
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * autodealer functions and definitions
+ * Autodealer functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -44,28 +44,36 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 		add_image_size( 'autodealer-blog-thumbnail', 770, 450, true );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'autodealer' ),
-			'menu-2' => esc_html__( 'Footer', 'autodealer' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'autodealer' ),
+				'menu-2' => esc_html__( 'Footer', 'autodealer' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5', array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'autodealer_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background', apply_filters(
+				'autodealer_custom_background_args', array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -75,12 +83,14 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo', array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'autodealer_setup' );
@@ -106,24 +116,28 @@ add_action( 'after_setup_theme', 'autodealer_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function autodealer_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'autodealer' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'autodealer' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
-		'id'            => 'topbar-languages',
-		'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'autodealer' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'autodealer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
+			'id'            => 'topbar-languages',
+			'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'autodealer_widgets_init' );
 
@@ -136,6 +150,8 @@ function autodealer_scripts() {
 	 * Register ico font
 	 */
 	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
+	wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
+	wp_enqueue_style( 'sumoselect', get_template_directory_uri() . '/css/sumoselect.min.css', array() );
 
 	wp_enqueue_style( 'autodealer-fonts', autodealer_fonts_url() );
 	wp_enqueue_style( 'autodealer-style', get_stylesheet_uri() );
@@ -144,10 +160,13 @@ function autodealer_scripts() {
 
 	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
+	wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/sumoselect.min.js', array(), '20180619', true );
+
+	wp_enqueue_script( 'auto-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
+
+	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.6.0', true );
 
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '20180506', true );
-
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -172,10 +191,12 @@ function autodealer_fonts_url() {
 		$fonts[] = 'Source Sans Pro:100,300,400,500,700';
 	}
 
-	$fonts_url = add_query_arg( array(
-		'family' => rawurlencode( implode( '|', $fonts ) ),
-		'subset' => rawurlencode( $subsets ),
-	), 'https://fonts.googleapis.com/css' );
+	$fonts_url = add_query_arg(
+		array(
+			'family' => rawurlencode( implode( '|', $fonts ) ),
+			'subset' => rawurlencode( $subsets ),
+		), 'https://fonts.googleapis.com/css'
+	);
 
 	return $fonts_url;
 }

@@ -34,6 +34,12 @@
 		border-radius: 5px;
 		text-decoration: none;
 		text-transform: uppercase;
+		/* border: 2px solid $color__white;
+		&:hover {
+			background-color: $color__main;
+			border: 2px solid $color__white;
+			color: $color__white;
+		} */
 	}
 }
 .footer-bottom {
@@ -91,5 +97,25 @@
 	}
 	&.hidden {
 		display: none;
+	}
+}
+@media (max-width: 991px ) {
+	.footer-info__left {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.footer-info__right {
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 767px ) {
+	.footer-navigation {
+		display: none;
+	}
+	.footer-bottom {
+		.container {
+			justify-content: space-around;
+		}
 	}
 }

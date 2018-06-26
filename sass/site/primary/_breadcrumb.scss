@@ -1,4 +1,4 @@
-.page-header {
+.page-header.page-header {
 	min-height: 260px;
 	text-align: center;
 	display: flex;
@@ -10,6 +10,7 @@
 	overflow: hidden;
 	word-break: break-word;
 	margin-bottom: 80px;
+	background-size: cover;
 	.page-title {
 		color: $color__white;
 		font-weight: 800;

@@ -27,7 +27,8 @@ function autodealer_excerpt_more_link( $link ) {
 		return $link;
 	}
 
-	$link = sprintf( '<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
+	$link = sprintf(
+		'<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
 		esc_url( get_permalink( get_the_ID() ) ),
 		/* translators: %s: Name of current post */
 		sprintf( __( 'Read More<span class="screen-reader-text"> "%s"</span>', 'autodealer' ), get_the_title( get_the_ID() ) )
@@ -55,14 +56,16 @@ add_filter( 'wp_list_categories', 'autodealer_widget_archive_count' );
  */
 function add_tag_the_content( $content ) {
 	// Hide category and tag text for pages.
-	if ( 'post' === get_post_type() ) {
+	if ( is_single() ) {
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( 'Tags: ', esc_html_x( ' ', 'list item separator', 'autodealer' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
-				return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
+			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
 		}
+	} else {
+		return $content;
 	}
 }
 add_filter( 'the_content', 'add_tag_the_content' );
@@ -81,8 +84,8 @@ function user_social_networks_add( $methods ) {
 	$methods['linkedin']   = esc_html__( 'Linkedin', 'autodealer' );
 	$methods['instagram']  = esc_html__( 'Instagram', 'autodealer' );
 	$methods['dribbble']   = esc_html__( 'Dribbble', 'autodealer' );
-	$methods['youtube']   = esc_html__( 'Youtube', 'autodealer' );
-	$methods['pinterest']   = esc_html__( 'Pinterest', 'autodealer' );
+	$methods['youtube']    = esc_html__( 'Youtube', 'autodealer' );
+	$methods['pinterest']  = esc_html__( 'Pinterest', 'autodealer' );
 
 	return $methods;
 }
@@ -101,7 +104,7 @@ add_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_des
 /**
  * Remove description
  */
-add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49);
-function remove_active_hooks_description(){
-    remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
+add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49 );
+function remove_active_hooks_description() {
+	remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 }

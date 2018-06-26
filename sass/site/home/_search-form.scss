@@ -1,0 +1,49 @@
+.section--search {
+	border: 10px solid #f8f8f8;
+	background-color: $color__white;
+	position: relative;
+	top: -82px;
+	text-align: center;
+	.search-title {
+		margin-top: 0;
+		display: inline-block;
+		text-transform: uppercase;
+		@include font-size(1.8);
+		font-weight: 700;
+		padding: 10px 30px;
+		background-color: $color__main;
+		position: relative;
+		top: -10px;
+		color: $color__white;
+	}
+	.search-content {
+		.prefix {
+			display: none;
+		}
+		.refine {
+			display: none;
+		}
+		.extras-wrap {
+			display: block;
+		}
+		.auto-listings-search {
+			display: flex;
+			flex-flow: row wrap;
+			.row {
+				width: auto;
+			}
+			label {
+				i {
+					&:before {
+						content: '\eb25' !important;
+						@include ico-font();
+						color: #000 !important;
+					}
+				}
+			}
+			.area-wrap {
+				order: 1;
+			}
+		}
+	}
+}

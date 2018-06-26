@@ -15,17 +15,19 @@ function autodealer_breadcrumbs( $args = '' ) {
 		return;
 	}
 
-	$args = wp_parse_args( $args, array(
-		'separator'         => '<i class="icofont icofont-rounded-right"></i>',
-		'home_label'        => esc_html__( 'Home', 'autodealer' ),
-		'home_class'        => 'home',
-		'before'            => '<ul class="breadcrumbs">',
-		'after'             => '</ul>',
-		'before_item'       => '<li class="breadcrumbs-item">',
-		'after_item'        => '</li>',
-		'taxonomy'          => 'category',
-		'display_last_item' => true,
-	) );
+	$args = wp_parse_args(
+		$args, array(
+			'separator'         => '<i class="icofont icofont-rounded-right"></i>',
+			'home_label'        => esc_html__( 'Home', 'autodealer' ),
+			'home_class'        => 'home',
+			'before'            => '<ul class="breadcrumbs">',
+			'after'             => '</ul>',
+			'before_item'       => '<li class="breadcrumbs-item">',
+			'after_item'        => '</li>',
+			'taxonomy'          => 'category',
+			'display_last_item' => true,
+		)
+	);
 
 	$args = apply_filters( 'autodealer_breadcrumbs_args', $args );
 
@@ -34,7 +36,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 	$title = '';
 
 	// HTML template for each item.
-	$item_tpl_link      = $args['before_item'] . '
+	$item_tpl_link = $args['before_item'] . '
 		<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 			<a href="%s" itemprop="url"><span itemprop="title">%s</span></a>
 		</span>
@@ -71,7 +73,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );
-			$title = $post_type_object->labels->menu_name;
+			$title                  = $post_type_object->labels->menu_name;
 		}
 	} elseif ( is_single() ) {
 
@@ -83,7 +85,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 			$items[]                = sprintf( $item_tpl_link, $post_type_archive_link, $post_type_object->labels->menu_name );
 		}
 		// Terms.
-		$terms   = get_the_terms( get_the_ID(), $args['taxonomy'] );
+		$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
 		if ( $terms && ! is_wp_error( $terms ) ) {
 			$term    = current( $terms );
 			$terms   = autodealer_get_term_parents( $term->term_id, $args['taxonomy'] );
@@ -95,7 +97,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		}
 
 		if ( $args['display_last_item'] ) {
-			$title   = get_the_title();
+			$title = get_the_title();
 
 		}
 	} elseif ( is_page() ) {
@@ -104,7 +106,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 			$items[] = sprintf( $item_tpl_link, get_permalink( $page ), get_the_title( $page ) );
 		}
 		if ( $args['display_last_item'] ) {
-			$title   = get_the_title();
+			$title = get_the_title();
 
 		}
 	} elseif ( is_tax() || is_category() || is_tag() ) {
@@ -115,7 +117,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 			$items[] = sprintf( $item_tpl_link, get_category_link( $term_id ), $term->name );
 		}
 		if ( $args['display_last_item'] ) {
-			$title   = $current_term->name;
+			$title = $current_term->name;
 
 		}
 	} elseif ( is_search() ) {
@@ -144,7 +146,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 
 	$title = '<h1 class="page-title">' . esc_html( $title ) . '</h1>';
 
-	echo $title. $args['before'] . implode( $args['separator'], $items ) . $args['after']; // WPCS: XSS OK.
+	echo $title . $args['before'] . implode( $args['separator'], $items ) . $args['after']; // WPCS: XSS OK.
 }
 
 /**

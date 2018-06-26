@@ -10,43 +10,27 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<div class="entry-media">
+		<?php the_post_thumbnail( 'autodealer-blog-thumbnail' ); ?>
+	</div>
 
-	<?php autodealer_post_thumbnail(); ?>
+	<div class="article__content">
 
-	<div class="entry-content">
-		<?php
-		the_content();
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<div class="entry-content">
 			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'autodealer' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
+
+			the_content();
+
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
+					'after'  => '</div>',
+				)
 			);
 			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+		</div><!-- .entry-content -->
+
+	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

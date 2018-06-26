@@ -1,0 +1,41 @@
+.home {
+	.has-sidebar {
+		float: left;
+		.auto-listings-items.auto-listings-items.auto-listings-items {
+			.bottom-wrap {
+				bottom: -10px;
+				a {
+					color: $color__white;
+					text-decoration: none;
+					border: 2px solid $color__main;
+					&:hover {
+						border: 2px solid $color__main;
+						border-color: $color__main;
+					}
+				}
+			}
+		}
+		.auto-listings-items.auto-listings-items.auto-listings-items.grid-view {
+			.bottom-wrap {
+				bottom: -28px;
+			}
+		}
+	}
+	.sidebar {
+		float: right;
+		margin-top: 79px;
+		margin-bottom: 50px;
+		.SumoSelect.SumoSelect {
+			.SelectBox {
+				border-radius: 4px;
+			}
+		}
+		.area-wrap {
+			.al-button {
+				color: $color__white;
+				text-transform: uppercase;
+				border: 2px solid $color__main;
+			}
+		}
+	}
+}

@@ -20,7 +20,7 @@ $description = get_theme_mod( 'footer-description', __( 'We’ve a big list of m
 $button_url  = get_theme_mod( 'footer_button_url', 'https://gretathemes.com/' );
 $button_text = get_theme_mod( 'footer-button-text', __( 'go to car listings', 'business-lander' ) );
 
-$image_background = get_theme_mod( 'footer_background' );
+$image_background = get_theme_mod( 'footer_background', get_template_directory_uri() . '/images/footer.png' );
 if ( $image_background ) {
 	$image_background = ' style="background-image: url(' . esc_url( $image_background ) . ')"';
 }
@@ -48,14 +48,16 @@ if ( $logo ) {
 	<div class="footer-bottom">
 		<div class="container">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
-				<img src="<?php echo $logo; ?>">
+				<img src="<?php echo esc_url( $logo ); ?>">
 			</a>
 			<nav id="footer-site-navigation" class="footer-navigation">
 				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-2',
-					'menu_id'        => 'footer-menu',
-				) );
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'footer-menu',
+					)
+				);
 				?>
 			</nav><!-- #site-navigation -->
 		</div>
@@ -67,12 +69,14 @@ if ( $logo ) {
 
 <nav class="mobile-navigation" role="navigation">
 	<?php
-	wp_nav_menu( array(
-		'container_class' => 'mobile-menu',
-		'menu_class'      => 'mobile-menu clearfix',
-		'theme_location'  => 'menu-1',
-		'items_wrap'      => '<ul>%3$s</ul>',
-	) );
+	wp_nav_menu(
+		array(
+			'container_class' => 'mobile-menu',
+			'menu_class'      => 'mobile-menu clearfix',
+			'theme_location'  => 'menu-1',
+			'items_wrap'      => '<ul>%3$s</ul>',
+		)
+	);
 	?>
 </nav>
 <?php wp_footer(); ?>

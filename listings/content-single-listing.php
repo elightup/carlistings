@@ -3,21 +3,22 @@
  * The Template for displaying listing content in the single-listing.php template
  *
  * This template can be overridden by copying it to yourtheme/listings/content-single-listing.php.
- *
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 ?>
 
 <?php
 
-	 do_action( 'auto_listings_before_single_listing' );
+	do_action( 'auto_listings_before_single_listing' );
 
-	 if ( post_password_required() ) {
-	 	echo get_the_password_form();
-	 	return;
-	 }
+if ( post_password_required() ) {
+	echo get_the_password_form();
+	return;
+}
 ?>
 
 <div id="listing-<?php the_ID(); ?>" class="auto-listings-single listing">
@@ -29,9 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			<?php
 			/**
 			 * @hooked auto_listings_template_single_gallery
-			 *
 			 */
-			do_action( 'auto_listings_single_gallery' ); ?>
+			do_action( 'auto_listings_single_gallery' );
+			?>
 
 		</div>
 
@@ -40,9 +41,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			<?php
 			/**
 			 * @hooked auto_listings_template_single_title
-			 *
 			 */
-			do_action( 'auto_listings_single_upper_full_width' ); ?>
+			do_action( 'auto_listings_single_upper_full_width' );
+			?>
 
 			<h4><?php echo auto_listings_price( $price ); ?></h4>
 
@@ -55,9 +56,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			 * @hooked auto_listings_template_single_tagline
 			 * @hooked auto_listings_template_single_description
 			 * @hooked auto_listings_output_listing_tabs
-			 *
 			 */
-			do_action( 'auto_listings_single_content' ); ?>
+			do_action( 'auto_listings_single_content' );
+			?>
 
 		</div>
 
@@ -72,9 +73,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		 * @hooked auto_listings_template_single_address
 		 * @hooked auto_listings_template_single_map
 		 * @hooked auto_listings_template_single_contact_form
-		 *
 		 */
-		do_action( 'auto_listings_single_sidebar' ); ?>
+		do_action( 'auto_listings_single_sidebar' );
+		?>
 
 	</div>
 

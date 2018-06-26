@@ -5,10 +5,15 @@
  * @package autodealer
  */
 
-
+if ( 'posts' === get_option( 'show_on_front' ) ) {
+	get_template_part( 'index' );
+	return;
+}
 
 get_header();
-do_action( 'auto_listings_before_listings_loop' );
-echo do_shortcode( '[auto_listings_listings]' );
+
+	get_template_part( 'template-parts/home/search-form' );
+	get_template_part( 'template-parts/home/listings' );
+
 
 get_footer();

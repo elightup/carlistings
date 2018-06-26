@@ -181,3 +181,15 @@
 	}
 }
 
+@media (max-width: 574px) {
+	.widget-area {
+		.widget {
+			padding: 15px;
+			.widget-title {
+				&:before {
+					left: -25px;
+				}
+			}
+		}
+	}
+}

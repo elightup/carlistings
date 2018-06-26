@@ -31,10 +31,17 @@
 	.container {
 		padding: 0 25px;
 	}
+	.site-content {
+		.container {
+			padding: 0;
+		}
+	}
 }
-.auto-listings.auto-listings .has-sidebar {
+.auto-listings.auto-listings .has-sidebar,
+.home .has-sidebar {
 	width: (770/1170) * 100%;
 }
-.auto-listings.auto-listings .sidebar {
+.auto-listings.auto-listings .sidebar,
+.home .sidebar {
 	width: (370/1170) * 100%;
 }

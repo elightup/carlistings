@@ -34,10 +34,12 @@ get_header();
 
 			endwhile;
 
-			the_posts_pagination( array(
-				'prev_text' => __( '<i class="icofont icofont-rounded-left"></i>', 'autodealer' ),
-				'next_text' => __( '<i class="icofont icofont-rounded-right"></i>', 'autodealer' ),
-			) );
+			the_posts_pagination(
+				array(
+					'prev_text' => __( '<i class="icofont icofont-rounded-left"></i>', 'autodealer' ),
+					'next_text' => __( '<i class="icofont icofont-rounded-right"></i>', 'autodealer' ),
+				)
+			);
 
 		else :
 
