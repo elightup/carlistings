@@ -21,7 +21,3 @@ setup_postdata( $search );
 		<?php the_content(); ?>
 	</div>
 </section>
-<?php
-$data = auto_listings_search_get_vehicle_data();
-$make = $data['make'];
-var_dump( $make );

@@ -2428,6 +2428,84 @@ Genericons
 	border: 2px solid #e11e30;
 }
 
+.all--car {
+	margin-bottom: 50px;
+}
+
+.all--car .container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.all--car .all-car-left {
+	width: 50%;
+	margin-top: 30px;
+}
+
+.all--car .all-car-left .all-car__title {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #3d414e;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 0;
+}
+
+.all--car .all-car-left .all-car__description {
+	font-size: 18px;
+	font-size: 1.125rem;
+	color: #777777;
+	margin-top: 0;
+}
+
+.all--car .all-car-left ul {
+	column-count: 3;
+	list-style: none;
+	margin: 35px 0px 55px 10px;
+}
+
+.all--car .all-car-left ul li {
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #3d414e;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.all--car .all-car-left ul li:before {
+	content: '\eb27';
+	font-family: "IcoFont" !important;
+	display: inline-block;
+	line-height: 1;
+	color: #aaaaaa;
+	margin-right: 4px;
+}
+
+.all--car .all-car-left .all-car__button {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	color: #fff;
+	background-color: #e11e30;
+	border-radius: 4px;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	border: 2px solid #e11e30;
+}
+
+.all--car .all-car-left .all-car__button:hover {
+	border: 2px solid #e11e30;
+	color: #e11e30;
+	background-color: #fff;
+}
+
+.all--car .all-car-right {
+	width: 50%;
+	max-width: 600px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

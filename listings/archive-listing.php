@@ -3,19 +3,16 @@
  * The Template for displaying the listings archive
  *
  * This template can be overridden by copying it to yourtheme/listings/archive-listing.php.
+ *
  */
 
-/*if ( ! defined( 'ABSPATH' ) ) exit;*/
+if ( ! defined( 'ABSPATH' ) ) exit;
 
-$args      = array(
-	'post_type' => 'auto-listing',
-	'order'     => 'ASC',
-);
-$the_query = new WP_Query( $args );
 get_header( 'listings' );
 
 	/**
 	 * @hooked auto_listings_output_content_wrapper (outputs opening divs for the content)
+	 *
 	 */
 	do_action( 'auto_listings_before_main_content' ); ?>
 
@@ -24,8 +21,7 @@ get_header( 'listings' );
 			/**
 			 * @hooked auto_listings_listing_archive_description (displays any content, including shortcodes, within the main content editor of your chosen listing archive page)
 			 */
-			do_action( 'auto_listings_archive_page_upper_full_width' );
-			?>
+			do_action( 'auto_listings_archive_page_upper_full_width' ); ?>
 		</div>
 
 		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
@@ -34,8 +30,7 @@ get_header( 'listings' );
 
 			<?php endif; // endif is_active_sidebar ?>
 
-			<?php
-			if ( $the_query->have_posts() ) :
+			<?php if ( have_posts() ) :
 
 				/**
 				 * @hooked auto_listings_ordering (the ordering dropdown)
@@ -44,25 +39,25 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_before_listings_loop' );
 
-				$cols  = auto_listings_columns();
-				$count = 1;
+				$cols   = auto_listings_columns();
+
 				echo '<ul class="auto-listings-items">';
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post();
 
-						auto_listings_get_part( 'content-listing.php' );
+				while ( have_posts() ) : the_post();
 
-					endwhile;
+					auto_listings_get_part( 'content-listing.php' );
+
+				endwhile;
+
 				echo '</ul>';
-				wp_reset_postdata();
 
 				/**
 				 * @hooked auto_listings_pagination (the pagination)
+				 *
 				 */
 				do_action( 'auto_listings_after_listings_loop' );
 
-			else :
-				?>
+				else : ?>
 
 				<p class="alert auto-listings-no-results"><?php _e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
 
@@ -86,6 +81,7 @@ get_header( 'listings' );
 		<?php
 	/**
 	 * @hooked auto_listings_output_content_wrapper_end (outputs closing divs for the content)
+	 *
 	 */
 	do_action( 'auto_listings_after_main_content' );
 

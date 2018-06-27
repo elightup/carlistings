@@ -79,6 +79,7 @@ if ( $logo ) {
 	);
 	?>
 </nav>
+
 <?php wp_footer(); ?>
 <!-- <a href="#" class="scroll-to-top hidden"><i class="icofont icofont-rounded-up"></i></a> -->
 

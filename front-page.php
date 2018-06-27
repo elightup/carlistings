@@ -13,6 +13,7 @@ if ( 'posts' === get_option( 'show_on_front' ) ) {
 get_header();
 
 	get_template_part( 'template-parts/home/search-form' );
+	get_template_part( 'template-parts/home/cars-by-make' );
 	get_template_part( 'template-parts/home/listings' );
 
 

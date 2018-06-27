@@ -73,6 +73,10 @@ function autodealer_customize_register( $wp_customize ) {
 		)
 	);
 
+	/**
+	 * Seach form.
+	 */
+
 	$wp_customize->add_setting(
 		'search_section', array(
 			'sanitize_callback' => 'absint',
@@ -85,6 +89,87 @@ function autodealer_customize_register( $wp_customize ) {
 			'section'     => 'homepage',
 			'type'        => 'dropdown-pages',
 			'description' => wp_kses_post( __( 'The content of this page will be displayed below the search on your static front page.', 'autodealer' ) ),
+		)
+	);
+
+	/**
+	 * All car section.
+	 */
+
+	$wp_customize->add_setting(
+		'allcar_title', array(
+			'default'           => esc_html__( 'Browse Cars By Make', 'autodealer' ),
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		'allcar_title', array(
+			'label'       => esc_html__( 'All car title', 'autodealer' ),
+			'section'     => 'homepage',
+			'type'        => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'allcar_description', array(
+			'default'           => esc_html__( '5371 cars available in different categories', 'autodealer' ),
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		'allcar_description', array(
+			'label'       => esc_html__( 'All car description', 'autodealer' ),
+			'section'     => 'homepage',
+			'type'        => 'textarea',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'allcar_button_text', array(
+			'default'           => esc_html__( 'see all cars', 'autodealer' ),
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		'allcar_button_text', array(
+			'label'   => esc_html__( 'All Car Button Text', 'autodealer' ),
+			'section' => 'homepage',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'allcar_button_url', array(
+			'default'           => esc_url( 'https://gretathemes.com/' ),
+			'sanitize_callback' => 'esc_url_raw',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		'allcar_button_url', array(
+			'label'   => esc_html__( 'All Car Button URL', 'autodealer' ),
+			'section' => 'homepage',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'allcar_image', array(
+			'sanitize_callback' => 'autodealer_sanitize_image',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'homepage',
+			array(
+				'label'    => esc_html__( 'All Car Image Right', 'autodealer' ),
+				'section'  => 'homepage',
+				'settings' => 'allcar_image',
+			)
 		)
 	);
 
