@@ -37,17 +37,17 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 
 			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
-		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
-			/* translators: %s: post title */
-			comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-			echo '</span>';
-		}
+			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+				echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
+				/* translators: %s: post title */
+				comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+				echo '</span>';
+			}
 			echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
-	}
+		}
 	endif;
 
-if ( ! function_exists( 'autodealer_posted_by' ) ) :
+	if ( ! function_exists( 'autodealer_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
@@ -116,6 +116,22 @@ if ( ! function_exists( 'autodealer_entry_footer' ) ) :
 		);
 	}
 endif;
+
+/**
+ * Prints HTML with meta information for the categories, tags and comments.
+ */
+function autodealer_get_category() {
+	// Hide category and tag text for pages.
+	if ( 'post' === get_post_type() ) {
+
+		/* translators: used between list items, there is a space after the comma */
+		$cate_list = get_the_category_list( esc_html__( ', ', 'autodealer' ) );
+		if ( $cate_list ) {
+			/* translators: 1: list of tags. */
+			printf( '<span class="entry-header__category">' . esc_html__( '%1$s', 'autodealer' ) . '</span>', $cate_list ); // WPCS: XSS OK.
+		}
+	}
+}
 
 if ( ! function_exists( 'autodealer_post_thumbnail' ) ) :
 	/**
@@ -204,46 +220,54 @@ function autodealer_user_social_links( $id ) {
  * Author Box.
  */
 function autodealer_author_box() {
-	?>
-	<div class="entry-author">
-		<div class="author-avatar">
-			<?php echo get_avatar( get_the_author_meta( 'user_email' ), 85 ); ?>
-		</div><!-- .author-avatar -->
-		<div class="author-info">
-			<div class="author-header">
-				<div class="author-heading">
-					<h3 class="author-title">
-						<?php
-						echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
-						?>
-					</h3>
-					<div class="author-twitter">
-						<?php
-						$twitter = get_the_author_meta( 'twitter' );
-						if ( $twitter ) {
-							/* translators: author twitter name. */
-							printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
-						}
-						?>
+	if ( ! empty( get_the_author_meta( 'description' ) ) ) {
+		?>
+		<div class="entry-author">
+			<div class="author-avatar">
+				<?php echo get_avatar( get_the_author_meta( 'user_email' ), 85 ); ?>
+			</div><!-- .author-avatar -->
+			<div class="author-info">
+				<div class="author-header">
+					<div class="author-heading">
+						<h3 class="author-title">
+							<?php
+							echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
+							?>
+						</h3>
+						<div class="author-twitter">
+							<?php
+							$twitter = get_the_author_meta( 'twitter' );
+							if ( $twitter ) {
+								/* translators: author twitter name. */
+								printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
+							}
+							?>
+						</div>
 					</div>
+					<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
 				</div>
-				<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
-			</div>
 
-			<div class="author-bio">
+				<div class="author-bio">
 
-				<?php the_author_meta( 'description' ); ?>
-			</div><!-- .author-bio -->
-		</div><!-- .author-info -->
-	</div><!-- .entry-author -->
-	<?php
+					<?php the_author_meta( 'description' ); ?>
+				</div><!-- .author-bio -->
+			</div><!-- .author-info -->
+		</div><!-- .entry-author -->
+		<?php
+	}
 }
 
 /**
- * Getter function for Featured Content.
- *
- * @return array An array of WP_Post objects.
+ * Getter function for section car by make.
  */
-function autodealer_get_featured_posts() {
-	return apply_filters( 'autodealer_get_featured_posts', array() );
+function autodealer_get_list_cars() {
+	$data = auto_listings_search_get_vehicle_data();
+	$make = $data['make'];
+	echo '<ul>';
+	foreach ( $make as $car ) {
+	?>
+		<li><?php echo esc_html( $car ); ?></li>
+	<?php
+	}
+	echo '</ul>';
 }

@@ -25,7 +25,9 @@
 		a {
 			text-decoration: none;
 			&:hover {
-				color: $color__main;
+				color: $color__white;
+				background-color: $color__main;
+				border: 1px solid $color__main;
 			}
 		}
 	}

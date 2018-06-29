@@ -7,15 +7,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-aos="fade-up">
 
 	<?php get_template_part( 'template-parts/content', 'media' ); ?>
 
 	<div class="article__content">
 		<header class="entry-header">
-			<span class="entry-header__category">
-				<?php echo get_the_category_list( esc_html__( ', ', 'autodealer' ) ); ?>
-			</span>
+			<?php autodealer_get_category(); ?>
 			<div class="entry-meta">
 				<?php autodealer_posted_on(); ?>
 			</div>

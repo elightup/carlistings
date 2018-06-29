@@ -22,6 +22,7 @@
 			display: inline-block;
 			@include font-size(1.4);
 			margin-right: 34px;
+			margin-bottom: 15px;
 			&:before {
 				content: '\efae';
 				@include ico-font();

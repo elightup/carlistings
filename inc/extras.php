@@ -45,7 +45,7 @@ add_filter( 'excerpt_more', 'autodealer_excerpt_more_link' );
  * @return string
  */
 function autodealer_widget_archive_count( $output ) {
-	$output = preg_replace( '|\((\d+)\)|', '<span class="count">(1)</span>', $output );
+	$output = preg_replace( '|\((\d+)\)|', '<span class="count">(\\1)</span>', $output );
 
 	return $output;
 }
@@ -63,6 +63,9 @@ function add_tag_the_content( $content ) {
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
+		}
+		else {
+			return $content;
 		}
 	} else {
 		return $content;
@@ -104,7 +107,7 @@ add_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_des
 /**
  * Remove description
  */
-add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49 );
 function remove_active_hooks_description() {
 	remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 }
+add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49 );

@@ -257,7 +257,7 @@ ol.children {
 		width: 100%;
 		margin: 0;
 	}
-	@media (min-width: 576px) {
+	@media (min-width: 767px) {
 		p[class*="comment-form"] {
 			width: 33.333%;
 		}
@@ -283,7 +283,7 @@ ol.children {
 	}
 	textarea {
 		height: 170px;
-		padding-bottom: 100px;
+		resize: none;
 	}
 	.comment-form-comment {
 		width: 100%;
@@ -300,6 +300,13 @@ ol.children {
 			font-weight: bold;
 			color: $color__white;
 			background-color: $color__main;
+			border: 2px solid $color__main;
+			transition: all .3s ease;
+			&:hover {
+				border: 2px solid $color__main;
+				background-color: $color__white;
+				color: $color__main;
+			}
 		}
 		@media (min-width: 768px) {
 			margin: 0;
@@ -316,4 +323,13 @@ ol.children {
 }
 .comment-form.comment-form .comment-form-comment {
 	width: 100%;
+}
+@media (max-width: 767px) {
+	.comment-form {
+		padding-bottom: 80px;
+		.form-submit {
+			position: absolute;
+			bottom: 0;
+		}
+	}
 }

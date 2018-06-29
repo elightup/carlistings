@@ -1,18 +1,16 @@
-
-
+ol {
+	list-style: decimal;
+}
 ul {
 	list-style: disc;
 	padding: 0;
 }
 
-ol {
-	list-style: decimal;
-}
-
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 18px;
+	padding-left: 21px;
 }
 
 dt {

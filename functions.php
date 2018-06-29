@@ -129,6 +129,17 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Topbar Left', 'autodealer' ),
+			'id'            => 'topbar-left',
+			'description'   => esc_html__( 'Add your time and email widget here.', 'autodealer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
 			'id'            => 'topbar-languages',
 			'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
@@ -151,7 +162,12 @@ function autodealer_scripts() {
 	 */
 	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
 	wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
-	wp_enqueue_style( 'sumoselect', get_template_directory_uri() . '/css/sumoselect.min.css', array() );
+	wp_enqueue_style( 'sumoselect', get_template_directory_uri() . '/css/sumoselect.css', array() );
+
+	/**
+	 * Register Aos
+	 */
+	wp_enqueue_style( 'aos', get_template_directory_uri() . '/css/aos.css', array() );
 
 	wp_enqueue_style( 'autodealer-fonts', autodealer_fonts_url() );
 	wp_enqueue_style( 'autodealer-style', get_stylesheet_uri() );
@@ -160,11 +176,16 @@ function autodealer_scripts() {
 
 	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/sumoselect.min.js', array(), '20180619', true );
+	wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/sumoselect.js', array(), '20180619', true );
 
 	wp_enqueue_script( 'auto-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
 
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.6.0', true );
+
+	/**
+	 * Register and enqueue aos.js.
+	 */
+	wp_enqueue_script( 'eros-jquery-aos', get_template_directory_uri() . '/js/aos.js', array( 'jquery' ), '20180629' );
 
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '20180506', true );
 

@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $cols = auto_listings_columns();
 ?>
 
-<li <?php post_class( 'col-' . $cols ); ?>>
+<li <?php post_class( 'col-' . $cols ); ?> data-aos="fade-up">
 	<div class="items-left">
 		<?php
 		/**

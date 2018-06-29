@@ -53,9 +53,12 @@ function autodealer_jetpack_setup() {
 				'comment'    => '.comments-link',
 			),
 			'featured-images' => array(
-				'archive' => true,
-				'post'    => true,
-				'page'    => true,
+				'archive'         => true,
+				'archive-default' => false,
+				'post'            => true,
+				'post-default'    => false,
+				'page'            => true,
+				'page-default'    => false,
 			),
 		)
 	);
@@ -74,4 +77,13 @@ function autodealer_infinite_scroll_render() {
 			get_template_part( 'template-parts/content', get_post_type() );
 		endif;
 	}
+}
+
+/**
+ * Getter function for Featured Content.
+ *
+ * @return array An array of WP_Post objects.
+ */
+function autodealer_get_featured_posts() {
+	return apply_filters( 'autodealer_get_featured_posts', array() );
 }

@@ -7,7 +7,42 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0;
+	padding: 15px 68px 20px 60px;
+	font-weight: bold;
+	font-style: italic;
+	@include font-size(2.8);
+	color: $color__black;
+	position: relative;
+	cite {
+		font-weight: 600;
+		font-style: normal;
+		color: #bbbbbb;
+		@include font-size(1.6);
+		margin-top: 7px;
+		display: block;
+		&:before {
+			content: '\2013';
+			margin-right: 3px;
+		}
+	}
+	p {
+		margin: 0;
+		margin-top: 70px;
+	}
+	&::before {
+		content: '';
+		background-image: url(images/quote3.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		bottom: 0;
+		top: 15px;
+		width: 81px;
+		height: 57px;
+	}
+	@media (max-width: 575px) {
+		@include font-size(2);
+	}
 }
 
 address {
@@ -17,7 +52,7 @@ address {
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(0.9375);
+	@include font-size(1.5);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -27,7 +62,7 @@ pre {
 
 code, kbd, tt, var {
 	font-family: $font__code;
-	@include font-size(0.9375);
+	@include font-size(1.5);
 }
 
 abbr, acronym {

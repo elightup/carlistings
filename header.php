@@ -28,19 +28,7 @@
 			<div class="header-top">
 				<div class="container">
 					<div class="topbar-left">
-						<?php
-						if ( '' !== get_theme_mod( 'header_time' ) ) :
-							?>
-							<p class="time-work"><?php echo esc_html( get_theme_mod( 'header_time', __( '10:00 AM To 5:00 PM', 'autodealer' ) ) ); ?>
-							</p>
-						<?php endif; ?>
-
-						<?php
-						if ( '' !== get_theme_mod( 'header_mail' ) ) :
-							?>
-							<a class="mail-to" href="mailto:<?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>"><?php echo esc_html( get_theme_mod( 'header_mail', __( 'autodealer@no-reply.com', 'autodealer' ) ) ); ?>
-							</a>
-						<?php endif; ?>
+						<?php dynamic_sidebar( 'topbar-left' ); ?>
 					</div>
 					<div class="topbar-right">
 						<div class="social-media">

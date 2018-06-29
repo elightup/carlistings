@@ -1,6 +1,10 @@
 .site-footer {
 	.footer-info {
 		min-height: 280px;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.container {
 		display: flex;
@@ -34,12 +38,12 @@
 		border-radius: 5px;
 		text-decoration: none;
 		text-transform: uppercase;
-		/* border: 2px solid $color__white;
+		border: 2px solid $color__white;
 		&:hover {
-			background-color: $color__main;
+			background-color: transparent;
 			border: 2px solid $color__white;
 			color: $color__white;
-		} */
+		}
 	}
 }
 .footer-bottom {
@@ -93,7 +97,7 @@
 		color: $color__white;
 	}
 	&:hover {
-		background: $color__black;
+		background: #bf1a29;
 	}
 	&.hidden {
 		display: none;

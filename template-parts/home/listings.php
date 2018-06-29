@@ -45,7 +45,7 @@ get_header( 'listings' );
 				do_action( 'auto_listings_before_listings_loop' );
 
 				$cols  = auto_listings_columns();
-				$count = 1;
+
 				echo '<ul class="auto-listings-items">';
 					while ( $the_query->have_posts() ) :
 						$the_query->the_post();

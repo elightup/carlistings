@@ -17,6 +17,7 @@
 
 $title       = get_theme_mod( 'footer_title', __( 'You Want To Have Your Favorite Car?', 'business-lander' ) );
 $description = get_theme_mod( 'footer-description', __( 'We’ve a big list of modern & classic cars in both used and new categories.', 'business-lander' ) );
+$lorem = get_theme_mod( 'footer-lorem', __( '<h1>ahsdkjd</h1>', 'business-lander' ) );
 $button_url  = get_theme_mod( 'footer_button_url', 'https://gretathemes.com/' );
 $button_text = get_theme_mod( 'footer-button-text', __( 'go to car listings', 'business-lander' ) );
 
@@ -80,8 +81,14 @@ if ( $logo ) {
 	?>
 </nav>
 
+<script type="text/javascript">
+	AOS.init({
+		offset: 10,
+		duration: 1000,
+		once: true,
+	})
+</script>
 <?php wp_footer(); ?>
-<!-- <a href="#" class="scroll-to-top hidden"><i class="icofont icofont-rounded-up"></i></a> -->
-
+<a href="#" class="scroll-to-top hidden"><i class="icofont icofont-rounded-up"></i></a>
 </body>
 </html>

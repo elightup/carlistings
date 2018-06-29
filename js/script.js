@@ -89,6 +89,16 @@ jQuery( function ( $ ) {
 		$("#comment").attr("placeholder", "Write Your Comments Here...");
 	}
 
+	/**
+	 * Move tag html in search form.
+	 */
+	function moveTagSearchForm() {
+
+		$(".search-content .make ").prependTo("#auto-listings-search");
+		$(".search-content .condition-wrap ").prependTo("#auto-listings-search");
+	}
+
+
 	 /**
      * Buy/Sell option
      */
@@ -188,4 +198,5 @@ jQuery( function ( $ ) {
 	auto_listings_view_switcher();
 	auto_listings_ordering();
 	initFeaturedContentSlider();
+	moveTagSearchForm();
 } );

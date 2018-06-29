@@ -26,9 +26,11 @@
 				content: '\f007';
 				@include ico-font();
 				color: $color__main;
+				margin-right: 7px;
 			}
 		}
 		.entry-meta {
+			margin-bottom: 10px;
 			i {
 				@include font-size(1.6);
 				margin-right: 7px;
@@ -52,10 +54,10 @@
 	}
 	.entry-title {
 		@include font-size(3.2);
-		line-height: 2.2;
+		line-height: 1.3;
 		font-weight: 700;
 		margin-top: 0;
-		margin-bottom: 0;
+		margin-bottom: 15px;
 		a {
 			color: #2c2e3b;
 			text-decoration: none;

@@ -17,7 +17,7 @@ if ( empty( $address ) ) {
 ?>
 
 <div class="address">
-	<h3><?php _e( 'Listing Location:', 'auto-listings' ); ?></h3>
+	<h3><?php esc_html_e( 'Listing Location:', 'auto-listings' ); ?></h3>
 	<i class="icofont icofont-social-google-map"></i>
 	<p><?php echo esc_html( $address ); ?></p>
 </div>

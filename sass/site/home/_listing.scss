@@ -15,6 +15,20 @@
 				}
 			}
 		}
+		.auto-listings-items {
+			.image {
+				span {
+					@include font-size(1.2);
+					font-weight: 300;
+					line-height: 12px;
+					padding: 5px 10px;
+				}
+				span:before {
+					content: '\f0d9';
+					@include ico-font();
+				}
+			}
+		}
 		.auto-listings-items.auto-listings-items.auto-listings-items.grid-view {
 			.bottom-wrap {
 				bottom: -28px;

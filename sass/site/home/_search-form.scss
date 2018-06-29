@@ -4,6 +4,7 @@
 	position: relative;
 	top: -82px;
 	text-align: center;
+	padding: 0px 60px 50px 60px;
 	.search-title {
 		margin-top: 0;
 		display: inline-block;
@@ -24,7 +25,14 @@
 			display: none;
 		}
 		.extras-wrap {
-			display: block;
+			display: flex;
+			flex-flow: row wrap;
+			width: 100% !important;
+			justify-content: space-between;
+			.field {
+				width: 100%;
+				max-width: 227px;
+			}
 		}
 		.auto-listings-search {
 			display: flex;
@@ -43,6 +51,54 @@
 			}
 			.area-wrap {
 				order: 1;
+			}
+			.condition-wrap,
+			.make,
+			.min-price,
+			.max-price {
+				width: 100%;
+				max-width: 227px;
+				margin-right: 40px;
+			}
+			.max-price {
+				margin-right: 0;
+			}
+			.condition-wrap {
+				.SumoSelect {
+					margin: 0;
+				}
+			}
+			.price-wrap {
+				display: flex;
+				flex-flow: row wrap;
+				width: 48%;
+				.SumoSelect {
+					margin: 0;
+
+				}
+			}
+			.SumoSelect {
+				width: 100%;
+			}
+			.SelectBox {
+				border-radius: 5px;
+			}
+			.area-wrap {
+				width: 100%;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: center;
+				.within,
+				.al-button {
+					width: 100%;
+					max-width: 227px;
+				}
+				.area {
+					width: 100%;
+					max-width: 494px;
+				}
+
 			}
 		}
 	}

@@ -256,7 +256,7 @@ function autodealer_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'footer',
+			'footer-background',
 			array(
 				'label'    => esc_html__( 'Footer Image', 'autodealer' ),
 				'section'  => 'footer',
@@ -274,7 +274,7 @@ function autodealer_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'footer',
+			'footer-logo',
 			array(
 				'label'    => esc_html__( 'Footer Logo', 'autodealer' ),
 				'section'  => 'footer',

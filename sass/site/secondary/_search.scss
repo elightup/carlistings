@@ -1,6 +1,6 @@
 .search-form {
 	position: relative;
-	input[type="search"] {
+	input[type="text"] {
 		width: 100%;
 		padding: 12px 22px;
 		border-radius: 100px;
@@ -11,13 +11,23 @@
 	.search-submit {
 		position: absolute;
 		right: 10px;
-		bottom: 7px;
+		bottom: 9px;
 		background: none;
 		border: none;
 		@include font-size(1.4);
 		color: $color__black;
 		&:focus {
 			outline: none;
+		}
+		&:hover {
+			color: $color__main;
+		}
+	}
+}
+.search {
+	.content-area {
+		.search-form {
+			width: 50%;
 		}
 	}
 }
