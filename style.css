@@ -3495,6 +3495,72 @@ ol.children {
 }
 
 /*--------------------------------------------------------------
+## calendar
+--------------------------------------------------------------*/
+/* widget calendar */
+#wp-calendar {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #e4e4e4;
+}
+
+#wp-calendar tr, #wp-calendar td, #wp-calendar th {
+	text-align: center;
+	border: 1px solid #e4e4e4;
+}
+
+#wp-calendar th {
+	color: #000;
+	background: #e4e4e4;
+}
+
+#wp-calendar caption {
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+#wp-calendar td, #wp-calendar th {
+	padding: 5px;
+}
+
+#wp-calendar tbody {
+	line-height: 33px;
+}
+
+#wp-calendar tfoot td {
+	border: none;
+}
+
+#wp-calendar #prev,
+#wp-calendar #next {
+	padding: 0 10px;
+}
+
+#wp-calendar #prev a,
+#wp-calendar #next a {
+	display: inline-block;
+}
+
+#wp-calendar #today {
+	background: #e11e30;
+	color: #fff;
+}
+
+#wp-calendar #today a {
+	color: #fff;
+}
+
+#wp-calendar #prev {
+	text-align: left;
+}
+
+#wp-calendar #next {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
 ## Single listing
 --------------------------------------------------------------*/
 .auto-listings.auto-listings .container > .content {
