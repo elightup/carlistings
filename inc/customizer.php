@@ -184,18 +184,18 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 
 	/**
-	 * Footer section.
+	 * Cta section.
 	 */
 
 	$wp_customize->add_setting(
-		'footer_title', array(
+		'cta_title', array(
 			'default'           => wp_kses_post( __( 'You Want To Have Your Favorite Car?', 'autodealer' ) ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'footer_title', array(
+		'cta_title', array(
 			'label'   => esc_html__( 'Footer Title', 'autodealer' ),
 			'section' => 'footer',
 			'type'    => 'textarea',
@@ -203,14 +203,14 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'footer-description', array(
+		'cta_description', array(
 			'default'           => esc_html__( 'We’ve a big list of modern & classic cars in both used and new categories.', 'autodealer' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'footer-description', array(
+		'cta_description', array(
 			'label'   => esc_html__( 'Footer Description', 'autodealer' ),
 			'section' => 'footer',
 			'type'    => 'textarea',
@@ -218,14 +218,14 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'footer-button-text', array(
+		'cta_button_text', array(
 			'default'           => esc_html__( 'go to car listings', 'autodealer' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'footer-button-text', array(
+		'cta_button_text', array(
 			'label'   => esc_html__( 'Footer Button Text', 'autodealer' ),
 			'section' => 'footer',
 			'type'    => 'text',
@@ -233,14 +233,14 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'footer_button_url', array(
+		'cta_button_url', array(
 			'default'           => esc_url( 'https://gretathemes.com/' ),
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'footer_button_url', array(
+		'cta_button_url', array(
 			'label'   => esc_html__( 'Footer Button URL', 'autodealer' ),
 			'section' => 'footer',
 			'type'    => 'text',
@@ -249,23 +249,25 @@ function autodealer_customize_register( $wp_customize ) {
 
 	// Footer background.
 	$wp_customize->add_setting(
-		'footer_background', array(
+		'cta_background', array(
 			'sanitize_callback' => 'autodealer_sanitize_image',
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'footer-background',
+			'cta_background',
 			array(
 				'label'    => esc_html__( 'Footer Image', 'autodealer' ),
 				'section'  => 'footer',
-				'settings' => 'footer_background',
+				'settings' => 'cta_background',
 			)
 		)
 	);
 
-	// Footer logo.
+	/**
+	 * Footer section.
+	 */
 	$wp_customize->add_setting(
 		'footer_logo', array(
 			'sanitize_callback' => 'autodealer_sanitize_image',

@@ -15,36 +15,17 @@
 
 <?php
 
-$title       = get_theme_mod( 'footer_title', __( 'You Want To Have Your Favorite Car?', 'business-lander' ) );
-$description = get_theme_mod( 'footer-description', __( 'We’ve a big list of modern & classic cars in both used and new categories.', 'business-lander' ) );
-$lorem = get_theme_mod( 'footer-lorem', __( '<h1>ahsdkjd</h1>', 'business-lander' ) );
-$button_url  = get_theme_mod( 'footer_button_url', 'https://gretathemes.com/' );
-$button_text = get_theme_mod( 'footer-button-text', __( 'go to car listings', 'business-lander' ) );
-
-$image_background = get_theme_mod( 'footer_background', get_template_directory_uri() . '/images/footer.png' );
-if ( $image_background ) {
-	$image_background = ' style="background-image: url(' . esc_url( $image_background ) . ')"';
-}
-
 $logo = get_theme_mod( 'footer_logo' );
 if ( $logo ) {
 	$logo = esc_url( $logo );
 }
 ?>
 
-<footer id="colophon" class="site-footer">
+<?php
+	get_template_part( 'template-parts/cta' );
+?>
 
-	<div class="footer-info"<?php echo $image_background; // WPCS: XSS OK. ?>>
-		<div class="container">
-			<div class="footer-info__left">
-				<h2 class="footer-title"><?php echo esc_html( $title ); ?></h2>
-				<p class="footer-description"><?php echo esc_html( $description ); ?></p>
-			</div>
-			<div class="footer-info__right">
-				<a href="<?php echo esc_url( $button_url ); ?>"><?php echo esc_html( $button_text ); ?></a>
-			</div>
-		</div>
-	</div><!-- .footer-info -->
+<footer id="colophon" class="site-footer">
 
 	<div class="footer-bottom">
 		<div class="container">
