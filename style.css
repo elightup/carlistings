@@ -480,6 +480,22 @@ pre {
 	padding: 1.6em;
 }
 
+.first-letter:first-letter {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 48px;
+	font-size: 3rem;
+	background: #e11e30;
+	float: left;
+	line-height: 0.7;
+	padding: 12px 17px 14px;
+	border-radius: 3px;
+	margin-right: 17px;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
 code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
@@ -1288,24 +1304,52 @@ a:hover, a:active {
 	position: absolute;
 }
 
-.widget-area .widget_categories ul {
+.widget-area .widget_categories ul,
+.widget-area .widget_archive ul,
+.widget-area .widget_pages ul,
+.widget-area .widget_meta ul,
+.widget-area .widget_recent_comments ul,
+.widget-area .widget_nav_menu ul,
+.widget-area .widget_rss ul,
+.widget-area .widget_recent_entries ul {
 	padding: 0;
 	margin: 0;
 }
 
-.widget-area .widget_categories li {
+.widget-area .widget_categories li,
+.widget-area .widget_archive li,
+.widget-area .widget_pages li,
+.widget-area .widget_meta li,
+.widget-area .widget_recent_comments li,
+.widget-area .widget_nav_menu li,
+.widget-area .widget_rss li,
+.widget-area .widget_recent_entries li {
 	list-style: none;
 	padding-bottom: 15px;
 	padding-top: 15px;
 	border-bottom: 1px solid #e4e4e4;
 }
 
-.widget-area .widget_categories li:last-child {
+.widget-area .widget_categories li:last-child,
+.widget-area .widget_archive li:last-child,
+.widget-area .widget_pages li:last-child,
+.widget-area .widget_meta li:last-child,
+.widget-area .widget_recent_comments li:last-child,
+.widget-area .widget_nav_menu li:last-child,
+.widget-area .widget_rss li:last-child,
+.widget-area .widget_recent_entries li:last-child {
 	border-bottom: none;
 	padding-bottom: 0;
 }
 
-.widget-area .widget_categories li:before {
+.widget-area .widget_categories li:before,
+.widget-area .widget_archive li:before,
+.widget-area .widget_pages li:before,
+.widget-area .widget_meta li:before,
+.widget-area .widget_recent_comments li:before,
+.widget-area .widget_nav_menu li:before,
+.widget-area .widget_rss li:before,
+.widget-area .widget_recent_entries li:before {
 	content: '\eb59';
 	font-family: "IcoFont" !important;
 	display: inline-block;
@@ -1316,7 +1360,14 @@ a:hover, a:active {
 	margin-right: 13px;
 }
 
-.widget-area .widget_categories li a {
+.widget-area .widget_categories li a,
+.widget-area .widget_archive li a,
+.widget-area .widget_pages li a,
+.widget-area .widget_meta li a,
+.widget-area .widget_recent_comments li a,
+.widget-area .widget_nav_menu li a,
+.widget-area .widget_rss li a,
+.widget-area .widget_recent_entries li a {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	color: #000;
@@ -1324,11 +1375,25 @@ a:hover, a:active {
 	font-weight: 600;
 }
 
-.widget-area .widget_categories li a:hover {
+.widget-area .widget_categories li a:hover,
+.widget-area .widget_archive li a:hover,
+.widget-area .widget_pages li a:hover,
+.widget-area .widget_meta li a:hover,
+.widget-area .widget_recent_comments li a:hover,
+.widget-area .widget_nav_menu li a:hover,
+.widget-area .widget_rss li a:hover,
+.widget-area .widget_recent_entries li a:hover {
 	color: #e11e30;
 }
 
-.widget-area .widget_categories li span {
+.widget-area .widget_categories li span,
+.widget-area .widget_archive li span,
+.widget-area .widget_pages li span,
+.widget-area .widget_meta li span,
+.widget-area .widget_recent_comments li span,
+.widget-area .widget_nav_menu li span,
+.widget-area .widget_rss li span,
+.widget-area .widget_recent_entries li span {
 	font-size: 12px;
 	font-size: 0.75rem;
 	color: #777777;

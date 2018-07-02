@@ -60,6 +60,21 @@ pre {
 	padding: 1.6em;
 }
 
+.first-letter:first-letter {
+	font-family: $font__heading;
+	font-weight: bold;
+	color: $color__white;
+	@include font-size(4.8);
+	background: $color__main;
+	float: left;
+	line-height: 0.7;
+	padding: 12px 17px 14px;
+	border-radius: 3px;
+	margin-right: 17px;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
 code, kbd, tt, var {
 	font-family: $font__code;
 	@include font-size(1.5);
