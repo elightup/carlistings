@@ -22,6 +22,11 @@ function autodealer_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	// Adds a class of plugin to front page.
+	if ( is_front_page() ) {
+		$classes[] = 'auto-listings';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'autodealer_body_classes' );

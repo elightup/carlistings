@@ -28,16 +28,33 @@
 					margin-top: -43px;
 				}
 			}
-			.lSGallery.lSGallery {
+			.lSGallery.lSGallery.lSGallery {
 				li {
+					border: 0;
 					&:hover,
 					&:active,
 					&:focus {
-						border-bottom: 3px solid $color__main;
+						border: 0;
 					}
 				}
+				a {
+					position: relative;
+					max-width: 100%;
+					float: left;
+				}
+				li:hover,
 				li.active {
-					border-bottom: 3px solid $color__main;
+					a:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						box-shadow: 0 -8px 0px -5px $color__main inset;
+						-moz-box-shadow: 0 -8px 0px -5px $color__main inset;
+						-webkit-box-shadow: 0 -8px 0px -5px $color__main inset;
+					}
 				}
 			}
 			img {
@@ -148,6 +165,8 @@
 							@include font-size(1.3);
 							font-weight: 600;
 							color: $color__black;
+							border: none;
+							text-align: left;
 						}
 						a {
 							text-decoration: none;

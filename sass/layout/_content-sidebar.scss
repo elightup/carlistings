@@ -21,6 +21,12 @@
 		}
 	}
 }
+.no-sidebar {
+	.content-area {
+		float: none;
+		margin: 0 auto;
+	}
+}
 
 .site-footer {
 	clear: both;

@@ -16,8 +16,8 @@ get_header( 'listings' );
 	 */
 	do_action( 'auto_listings_before_main_content' ); ?>
 
-	<div class="full-width upper">
-		<?php
+		<div class="full-width upper">
+			<?php
 			/**
 			 * @hooked auto_listings_listing_archive_description (displays any content, including shortcodes, within the main content editor of your chosen listing archive page)
 			 */
@@ -25,10 +25,10 @@ get_header( 'listings' );
 		</div>
 
 		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
-
 			<div class="has-sidebar">
-
-			<?php endif; // endif is_active_sidebar ?>
+		<?php else : ?>
+			<div class="listing-no-sidebar">
+		<?php endif; ?>
 
 			<?php if ( have_posts() ) :
 
@@ -39,17 +39,24 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_before_listings_loop' );
 
-				$cols   = auto_listings_columns();
+					$cols   = auto_listings_columns();
+					$count  = 1;
+					while ( have_posts() ) : the_post();
 
-				echo '<ul class="auto-listings-items">';
+						// wrapper for our columns
+						if ( $count % $cols == 1 )
+							echo '<ul class="auto-listings-items">';
 
-				while ( have_posts() ) : the_post();
+							auto_listings_get_part( 'content-listing.php' );
 
-					auto_listings_get_part( 'content-listing.php' );
+						// wrapper for our columns
+						if ( $count % $cols == 0 )
+							echo '</ul>';
 
-				endwhile;
+					$count++;
+					endwhile;
 
-				echo '</ul>';
+					if ( $count % $cols != 1 ) echo '</ul>';
 
 				/**
 				 * @hooked auto_listings_pagination (the pagination)
@@ -57,14 +64,14 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_after_listings_loop' );
 
-				else : ?>
+			else : ?>
 
-				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
+				<p class="alert auto-listings-no-results"><?php _e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
 
 			<?php endif; // endif have_posts ?>
 
 
-			<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
+		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
 
 			</div><!-- has-sidebar -->
 
@@ -72,13 +79,15 @@ get_header( 'listings' );
 				<?php dynamic_sidebar( 'auto-listings' ); ?>
 			</div>
 
-		<?php endif; // endif is_active_sidebar ?>
+		<?php else : ?>
+			</div>
+		<?php endif; ?>
 
 		<div class="full-width lower">
 			<?php do_action( 'auto_listings_archive_page_lower_full_width' ); ?>
 		</div>
 
-		<?php
+	<?php
 	/**
 	 * @hooked auto_listings_output_content_wrapper_end (outputs closing divs for the content)
 	 *
@@ -86,4 +95,4 @@ get_header( 'listings' );
 	do_action( 'auto_listings_after_main_content' );
 
 
-	get_footer( 'listings' ); ?>
+get_footer( 'listings' ); ?>

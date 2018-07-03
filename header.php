@@ -30,20 +30,11 @@
 					<div class="topbar-left">
 						<?php dynamic_sidebar( 'topbar-left' ); ?>
 					</div>
-					<div class="topbar-right">
-						<div class="social-media">
-							<?php
-							if ( function_exists( 'jetpack_social_menu' ) ) {
-								jetpack_social_menu();
-							}
-							?>
+					<?php if ( is_active_sidebar( 'topbar-right' ) ) : ?>
+						<div class="topbar-right">
+							<?php dynamic_sidebar( 'topbar-right' ); ?>
 						</div>
-						<?php if ( is_active_sidebar( 'topbar-languages' ) ) : ?>
-							<div class="topbar-languages">
-								<?php dynamic_sidebar( 'topbar-languages' ); ?>
-							</div>
-						<?php endif; ?>
-					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 

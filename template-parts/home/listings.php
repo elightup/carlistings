@@ -29,10 +29,10 @@ get_header( 'listings' );
 		</div>
 
 		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
-
 			<div class="has-sidebar">
-
-			<?php endif; // endif is_active_sidebar ?>
+		<?php else : ?>
+			<div class="listing-no-sidebar">
+		<?php endif; ?>
 
 			<?php
 			if ( $the_query->have_posts() ) :
@@ -44,16 +44,28 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_before_listings_loop' );
 
-				$cols  = auto_listings_columns();
+				$cols   = auto_listings_columns();
+				$count  = 1;
 
-				echo '<ul class="auto-listings-items">';
+
 					while ( $the_query->have_posts() ) :
 						$the_query->the_post();
 
-						auto_listings_get_part( 'content-listing.php' );
+						// wrapper for our columns
+						if ( $count % $cols == 1 )
+							echo '<ul class="auto-listings-items">';
 
+							auto_listings_get_part( 'content-listing.php' );
+
+						// wrapper for our columns
+						if ( $count % $cols == 0 )
+							echo '</ul>';
+
+					$count++;
 					endwhile;
-				echo '</ul>';
+
+					if ( $count % $cols != 1 ) echo '</ul>';
+
 				wp_reset_postdata();
 
 				/**
@@ -77,7 +89,9 @@ get_header( 'listings' );
 				<?php dynamic_sidebar( 'auto-listings' ); ?>
 			</div>
 
-		<?php endif; // endif is_active_sidebar ?>
+			<?php else : ?>
+				</div>
+			<?php endif; ?>
 
 		<div class="full-width lower">
 			<?php do_action( 'auto_listings_archive_page_lower_full_width' ); ?>

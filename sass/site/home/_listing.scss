@@ -3,7 +3,6 @@
 		float: left;
 		.auto-listings-items.auto-listings-items.auto-listings-items {
 			.bottom-wrap {
-				bottom: -10px;
 				a {
 					color: $color__white;
 					text-decoration: none;
@@ -17,13 +16,13 @@
 		}
 		.auto-listings-items {
 			.image {
-				span {
+				.status {
 					@include font-size(1.2);
 					font-weight: 300;
 					line-height: 12px;
 					padding: 5px 10px;
 				}
-				span:before {
+				.status:before {
 					content: '\f0d9';
 					@include ico-font();
 				}

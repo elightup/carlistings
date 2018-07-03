@@ -99,6 +99,20 @@
 	.current-menu-ancestor > a {
 		color: $color__main;
 	}
+	.sub-menu {
+		li {
+			margin-right: 0;
+			border-bottom: 1px solid $color__border-abbr;
+		}
+		a {
+			padding: 15px 15px 11px 15px;
+			border-bottom: 0;
+		}
+		a:hover {
+			border-bottom: 0;
+			color: $color__main;
+		}
+	}
 }
 
 /* Small menu. */

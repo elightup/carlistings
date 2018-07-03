@@ -13,53 +13,11 @@
 function autodealer_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	// Add theme options panel.
 	$wp_customize->add_panel(
 		'autodealer', array(
 			'title' => esc_html__( 'Theme Options', 'autodealer' ),
-		// 'active_callback' => 'is_front_page',
-		)
-	);
-
-	/**
-	 * Header.
-	 */
-	$wp_customize->add_section(
-		'header', array(
-			'title' => esc_html__( 'Header', 'autodealer' ),
-			'panel' => 'autodealer',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'header_time', array(
-			'default'           => wp_kses_post( __( '10:00 AM To 5:00 PM', 'autodealer' ) ),
-			'sanitize_callback' => 'sanitize_text_field',
-			'transport'         => 'postMessage',
-		)
-	);
-	$wp_customize->add_control(
-		'header_time', array(
-			'label'   => esc_html__( 'Header Time', 'autodealer' ),
-			'section' => 'header',
-			'type'    => 'text',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'header_mail', array(
-			'default'           => wp_kses_post( __( 'autodealer@no-reply.com', 'autodealer' ) ),
-			'sanitize_callback' => 'sanitize_text_field',
-			'transport'         => 'postMessage',
-		)
-	);
-	$wp_customize->add_control(
-		'header_mail', array(
-			'label'   => esc_html__( 'Header Time', 'autodealer' ),
-			'section' => 'header',
-			'type'    => 'text',
 		)
 	);
 
@@ -76,7 +34,6 @@ function autodealer_customize_register( $wp_customize ) {
 	/**
 	 * Seach form.
 	 */
-
 	$wp_customize->add_setting(
 		'search_section', array(
 			'sanitize_callback' => 'absint',
@@ -89,6 +46,14 @@ function autodealer_customize_register( $wp_customize ) {
 			'section'     => 'homepage',
 			'type'        => 'dropdown-pages',
 			'description' => wp_kses_post( __( 'The content of this page will be displayed below the search on your static front page.', 'autodealer' ) ),
+		)
+	);
+	$wp_customize->selective_refresh->add_partial(
+		'search_section',
+		array(
+			'selector'            => '.section--search',
+			'container_inclusive' => true,
+			'render_callback'     => 'autodealer_refresh_search_section',
 		)
 	);
 
@@ -309,7 +274,7 @@ function autodealer_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function autodealer_customize_preview_js() {
-	wp_enqueue_script( 'autodealer-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+	wp_enqueue_script( 'autodealer-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20180702', true );
 }
 add_action( 'customize_preview_init', 'autodealer_customize_preview_js' );
 
@@ -327,4 +292,11 @@ function autodealer_sanitize_image( $input ) {
 	}
 
 	return '';
+}
+
+/**
+ * Live refresh search section.
+ */
+function autodealer_refresh_search_section() {
+	get_template_part( 'template-parts/home/search-form' );
 }

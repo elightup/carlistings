@@ -4,10 +4,10 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		align-items: center;
 	}
 	>.container {
 		padding: 25px 0px;
+		align-items: center;
 	}
 	@media (max-width: 1279px) {
 		>.container {
@@ -37,13 +37,19 @@
 .topbar-left {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 	border-left: 1px solid #e4e4e4;
 	border-right: 1px solid #e4e4e4;
+	.widget_text {
+		p {
+			margin: 0;
+		}
+	}
 	.time-work {
 		@include font-size(1.4);
 		font-weight: 400;
 		margin: 0;
-		padding: 18px;
+		padding: 22px 18px 22px 18px;
 		border-right: 1px solid #e4e4e4;
 		&:before {
 			content: '\efb0';
@@ -56,7 +62,7 @@
 	.mail-to {
 		@include font-size(1.4);
 		font-weight: 400;
-		padding: 18px;
+		padding: 22px 18px 22px 18px;
 		color: $color__text-main;
 		text-decoration: none;
 		&:before {
@@ -66,13 +72,43 @@
 			margin-right: 7px;
 			@include font-size(2);
 		}
+		&:hover {
+			color: $color__main;
+		}
 	}
 }
 .topbar-right {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 	border-left: 1px solid #e4e4e4;
 	border-right: 1px solid #e4e4e4;
+	.jetpack_widget_social_icons.jetpack_widget_social_icons {
+		border-right: 1px solid #e4e4e4;
+		.jetpack-social-widget-list {
+			margin-top: 20px;
+		}
+		svg {
+			display: none;
+		}
+		li {
+			margin-right: 15px;
+			&:first-child {
+				margin-left: 15px;
+			}
+			&:last-child {
+				margin-right: 19px;
+			}
+		}
+		a {
+			width: auto;
+			height: auto;
+			&:hover:before {
+				color: $color__main;
+				transition: all .3s ease;
+			}
+		}
+	}
 	.social-media {
 		border-right: 1px solid #e4e4e4;
 		.jetpack-social-navigation {
@@ -93,51 +129,37 @@
 				color: $color__main;
 			}
 		}
-		a[href*='facebook.com']:before {
-			content: '\ee08';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='twitter.com']:before {
-			content: '\ee34';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='vimeo.com']:before {
-			content: '\ee39';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='youtube.com']:before {
-			content: '\f137';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='feed']:before {
-			content: '\ee28';
-			@include ico-font();
-			@include font-size(1.4);
-		}
 	}
-	.topbar-languages {
+	.custom-html-widget {
+		padding: 18px 8px 18px 37px;
+		position: relative;
 		.icofont-globe {
 			@include font-size(2);
 			color: $color__main;
+			position: absolute;
+			left: 20px;
 		}
 		.icofont-caret-down {
 			color: $color__main;
+			position: relative;
+			right: 10px;
 		}
 		select {
-			appearance: none;
 			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			&::-ms-expand {
+				display: none;
+			}
 			border: none;
 			background: transparent;
 			color: $color__text-main;
 			cursor: pointer;
-		}
-		section {
-			margin: 0;
-			padding: 18px;
+			padding: 0 10px 0 10px;
+			&:active,
+			&:focus {
+				outline: none;
+			}
 		}
 	}
 }

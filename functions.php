@@ -140,9 +140,9 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
-			'id'            => 'topbar-languages',
-			'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
+			'name'          => esc_html__( 'Topbar Right', 'autodealer' ),
+			'id'            => 'topbar-right',
+			'description'   => esc_html__( 'Add your social icon and languages widget here.', 'autodealer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
