@@ -85,6 +85,6 @@
 
 		<?php if ( ! is_home() && is_front_page() ) : ?>
 			<div id="content" class="site-content">
-			<?php else : ?>
-				<div id="content" class="site-content container">
-				<?php endif; ?>
+		<?php else : ?>
+			<div id="content" class="site-content container">
+		<?php endif; ?>

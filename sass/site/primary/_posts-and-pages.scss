@@ -58,8 +58,14 @@
 		color: #2c2e3b;
 	}
 	.entry-content {
-		p:last-child {
-			margin-bottom: 55px;
+		p {
+			line-height: 1.7;
+		}
+		ul {
+			margin-left: 40px;
+			li {
+				margin-bottom: 20px;
+			}
 		}
 		.tags-links {
 			@include font-size(2);
@@ -67,6 +73,7 @@
 			font-weight: 600;
 			display: flex;
 			flex-flow: row wrap;
+			margin-top: 60px;
 			&:before {
 				content: '\f0ec';
 				@include ico-font();
@@ -94,10 +101,10 @@
 }
 
 .sharedaddy.sharedaddy {
-	margin-top: 55px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	.sd-title {
-		font-size: 20px;
+		@include font-size(2);
 		color: $color__black;
 		font-family: $font__main;
 		margin-right: 5px;

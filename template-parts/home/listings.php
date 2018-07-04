@@ -5,8 +5,6 @@
  * This template can be overridden by copying it to yourtheme/listings/archive-listing.php.
  */
 
-/*if ( ! defined( 'ABSPATH' ) ) exit;*/
-
 $args      = array(
 	'post_type' => 'auto-listing',
 	'order'     => 'ASC',
@@ -18,15 +16,6 @@ get_header( 'listings' );
 	 * @hooked auto_listings_output_content_wrapper (outputs opening divs for the content)
 	 */
 	do_action( 'auto_listings_before_main_content' ); ?>
-
-	<div class="full-width upper">
-		<?php
-			/**
-			 * @hooked auto_listings_listing_archive_description (displays any content, including shortcodes, within the main content editor of your chosen listing archive page)
-			 */
-			do_action( 'auto_listings_archive_page_upper_full_width' );
-			?>
-		</div>
 
 		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
 			<div class="has-sidebar">
@@ -46,7 +35,6 @@ get_header( 'listings' );
 
 				$cols   = auto_listings_columns();
 				$count  = 1;
-
 
 					while ( $the_query->have_posts() ) :
 						$the_query->the_post();

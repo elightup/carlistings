@@ -11,12 +11,12 @@
 			font-weight: 600;
 		}
 		.image-gallery {
-			.lSAction {
+			.lSAction.lSAction {
 				i {
 					padding: 36px 18px;
 					background-color: rgba(52,54,67,0.85);
 					font-weight: 600;
-					font-size: 24px !important;
+					@include font-size(2.4);
 				}
 				.lSPrev {
 					left: 0;
@@ -221,7 +221,7 @@
 				border: 1px solid #e4e4e4;
 			}
 			li {
-				font-size: 12px;
+				@include font-size(1.2);
 				padding: 15px 13px;
 				width: 143px;
 				display: flex;
