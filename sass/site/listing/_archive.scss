@@ -304,10 +304,28 @@
 	}
 }
 
+@media (max-width: 1279px) {
+	.has-sidebar {
+		.auto-listings-items.auto-listings-items.auto-listings-items {
+			.at-a-glance {
+				li {
+					width: 50%;
+					text-align: center;
+					&:nth-child(3) {
+						width: 100%;
+						border-top: 1px solid $color__border-abbr;
+					}
+				}
+			}
+		}
+	}
+
+}
 @media (max-width: 991px) {
 	.auto-listings.auto-listings {
 		.has-sidebar {
 			width: 100%;
+			@include clearfix();
 		}
 		.sidebar {
 			width: 100%;
@@ -329,8 +347,8 @@
 					border-right: 0 !important;
 					border-bottom: 1px solid #e4e4e4;
 				}
-				li {
-					border: 0 !important;
+				li:first-child {
+					border-bottom: 1px solid #e4e4e4;
 				}
 			}
 			.summary {

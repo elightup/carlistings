@@ -60,3 +60,43 @@
 		max-width: 600px;
 	}
 }
+@media (max-width: 991px) {
+	.all--car {
+		.all-car-left {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+		.all-car-right {
+			width: 100%;
+			max-width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 574px) {
+	.all--car {
+		.all-car-left {
+			ul {
+				column-count: 2;
+			}
+			.all-car__title {
+				@include font-size(2.1);
+			}
+			.all-car__description {
+				@include font-size(1.6);
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	.all--car {
+		.all-car-left {
+			ul {
+				column-count: 1;
+			}
+		}
+	}
+}

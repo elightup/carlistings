@@ -34,14 +34,14 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 
 			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
-			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-				echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
-				/* translators: %s: post title */
-				comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-				echo '</span>';
-			}
-			echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
+			/* translators: %s: post title */
+			comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+			echo '</span>';
 		}
+			echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
+	}
 	endif;
 
 	if ( ! function_exists( 'autodealer_posted_by' ) ) :

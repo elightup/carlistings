@@ -13,7 +13,7 @@ if ( empty( $featured_posts ) ) {
 $speed = 3000;
 ?>
 
-<div class="clearfix featured-posts">
+<div class="featured-posts">
 	<div class="featured-post__content" data-speed="<?php echo esc_html( $speed ); ?>">
 		<?php
 		foreach ( $featured_posts as $index => $post ) :

@@ -29,6 +29,7 @@
 			flex-flow: row wrap;
 			width: 100%;
 			justify-content: space-between;
+			margin-bottom: 30px;
 			.field {
 				width: 100%;
 				max-width: 227px;
@@ -37,6 +38,8 @@
 		.auto-listings-search {
 			display: flex;
 			flex-flow: row wrap;
+			margin-top: 44px;
+			margin-bottom: 0;
 			.row {
 				width: auto;
 			}
@@ -53,13 +56,21 @@
 				order: 1;
 			}
 			.condition-wrap,
-			.make,
 			.min-price,
-			.max-price {
+			.max-price,
+			.search-form__title,
+			.odometer {
 				width: 100%;
-				max-width: 227px;
-				margin-right: 40px;
+				max-width: 226px;
+				margin-right: 42px;
 			}
+			.search-form__title {
+				@include font-size(1.4);
+				font-weight: 700;
+				color: $color__text-main;
+				text-transform: uppercase;
+			}
+
 			.max-price {
 				margin-right: 0;
 			}
@@ -82,23 +93,133 @@
 			}
 			.SelectBox {
 				border-radius: 5px;
+				padding: 9px 20px;
+				text-align: left;
+				height: 45px;
+				max-height: 45px;
+				span {
+					color: #000;
+					font-weight: 500;
+					text-transform: capitalize;
+				}
 			}
 			.area-wrap {
 				width: 100%;
 				display: flex;
 				flex-flow: row wrap;
-				justify-content: space-between;
 				align-items: center;
-				.within,
+
 				.al-button {
 					width: 100%;
-					max-width: 227px;
+					max-width: 226px;
+					background-color: $color__main;
+					border: 2px solid $color__main;
+					border-radius: 4px;
+					@include font-size(1.3);
+					font-weight: 700;
+					transition: all .3s ease;
+					padding: 11px 26px;
+					&:hover {
+						background-color: $color__white;
+						color: $color__main;
+					}
+				}
+				.within {
+					width: 100%;
+					max-width: 125px;
+					margin-right: 12px;
 				}
 				.area {
 					width: 100%;
-					max-width: 494px;
+					max-width: 358px;
+					margin-right: 42px;
+					margin-top: 0;
+					border-radius: 4px;
+					border-color: $color__border-abbr;
+					height: 45px;
+					&:focus {
+						border: 1px solid $color__border-abbr;
+					}
 				}
 
+			}
+		}
+	}
+}
+@media (max-width: 1170px) {
+	.section--search.section--search.section--search {
+		position: unset;
+		.search-form__title,
+		.condition-wrap,
+		.min-price,
+		.max-price,
+		.the-year,
+		.make,
+		.model,
+		.body-type,
+		.odometer,
+		.within,
+		.area,
+		.al-button
+		 {
+			width: 48% !important;
+			max-width: 100% !important;
+			margin-right: 0 !important;
+		}
+		.price-wrap.price-wrap {
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			margin-bottom: 15px;
+			.min-price,
+			.max-price {
+				margin-bottom: 0;
+			}
+		}
+		.area-wrap {
+			justify-content: space-between;
+			margin: 0;
+		}
+		.extras-wrap.extras-wrap {
+			margin: 0;
+		}
+		.area-wrap > div,
+		.extras-wrap > div {
+			margin-bottom: 15px;
+		}
+		.search-form__title {
+			margin-right: 4% !important;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.section--search.section--search.section--search {
+		padding: 0 25px;
+		.search-form__title,
+		.condition-wrap,
+		.min-price,
+		.max-price,
+		.the-year,
+		.make,
+		.model,
+		.body-type,
+		.odometer,
+		.within,
+		.area,
+		.al-button {
+			width: 100% !important;
+		}
+		.search-form__title {
+			display: none;
+		}
+		.max-price,
+		.area {
+			margin-bottom: 15px;
+		}
+		.price-wrap.price-wrap {
+			.min-price {
+				margin-bottom: 15px;
 			}
 		}
 	}

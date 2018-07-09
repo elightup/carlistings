@@ -27,6 +27,8 @@ get_header( 'listings' );
 			if ( $the_query->have_posts() ) :
 
 				/**
+				 * Mksckas
+				 *
 				 * @hooked auto_listings_ordering (the ordering dropdown)
 				 * @hooked auto_listings_view_switcher (the view switcher)
 				 * @hooked auto_listings_pagination (the pagination)

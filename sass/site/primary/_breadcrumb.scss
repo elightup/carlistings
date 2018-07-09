@@ -61,3 +61,28 @@
 .breadcrumb * {
 	color: $color__white;
 }
+@media (max-width: 991px) {
+	.page-header.page-header {
+		padding: 50px 50px 60px;
+	}
+	.page-header {
+		.page-title {
+			@include font-size(3.4);
+		}
+		.breadcrumbs {
+			position: unset;
+			background: none;
+			padding: 15px 0;
+		}
+		.breadcrumbs * {
+			color: $color__white;
+		}
+	}
+}
+@media (max-width: 574px) {
+	.page-header {
+		.page-title {
+			@include font-size(2.3);
+		}
+	}
+}

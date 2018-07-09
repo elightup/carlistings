@@ -18,6 +18,9 @@ setup_postdata( $search );
 <section class="section--search container">
 	<h2 class="search-title"><?php the_title(); ?></h2>
 	<div class="search-content">
+		<div class="search-form__title">
+			<p>Select your Vehicle options</p>
+		</div>
 		<?php the_content(); ?>
 	</div>
 </section>

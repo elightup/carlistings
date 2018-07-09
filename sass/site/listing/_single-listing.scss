@@ -73,6 +73,7 @@
 				color: $color__text-main;
 				font-weight: 700;
 				line-height: 1.4;
+				margin-top: 0;
 			}
 			h4 {
 				margin-top: 0;
@@ -107,6 +108,40 @@
 				@include font-size(1.4);
 				color: #777777;
 				line-height: 1.7;
+				del {
+					text-decoration: none;
+					@include font-size(1.8);
+					font-weight: 700;
+					line-height: 2;
+					color: $color__main;
+					position: relative;
+					top: 16px;
+					&:before {
+						content: '';
+						width: 100px;
+						border-top: 1px solid $color__tag-background;
+						position: absolute;
+						top: -23px;
+					}
+				}
+				ul {
+					column-count: 3;
+					margin-top: 35px;
+					margin-bottom: 50px;
+					li {
+						list-style: none;
+						margin-bottom: 15px;
+						@include font-size(1.4);
+						color: $color__black;
+						&:before {
+							content: '\f104';
+							@include ico-font();
+							@include font-size(1.6);
+							color: $color__main;
+							margin-right: 8px;
+						}
+					}
+				}
 			}
 			.auto-listings-tabs {
 				ul {
@@ -223,7 +258,7 @@
 			li {
 				@include font-size(1.2);
 				padding: 15px 13px;
-				width: 143px;
+				width: 50%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -317,4 +352,69 @@
 	> div {
 		margin-bottom: 0;
 	}
+}
+@media (max-width: 767px) {
+	.auto-listings-single.auto-listings-single {
+		.content {
+			.description {
+				ul {
+					column-count: 2;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 574px) {
+	.auto-listings-single.auto-listings-single {
+		.image-gallery {
+			.lSPager {
+				display: none;
+			}
+			.lSAction {
+				i {
+					background: none;
+				}
+			}
+		}
+		.upper {
+			.entry-title,
+			.price-amount {
+				@include font-size(2.2);
+			}
+		}
+		.content.content {
+			.description {
+				ul {
+					column-count: 1;
+				}
+			}
+			.auto-listings-Tabs-panel {
+				padding: 0;
+				h4 {
+					margin-left: 25px;
+				}
+				table {
+					th {
+						width: 50%;
+						padding-right: 10%;
+						word-wrap: break-word;
+					}
+				}
+			}
+		}
+		.sidebar {
+			.at-a-glance {
+				li {
+					width: 100%;
+				}
+				li:first-child {
+					border-bottom: 1px solid $color__border-abbr;
+				}
+				li:nth-child(2n) {
+					border-left: 0;
+				}
+			}
+		}
+	}
+
 }

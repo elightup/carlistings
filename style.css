@@ -583,6 +583,8 @@ table {
 	width: 100%;
 	font-size: 14px;
 	font-size: 0.875rem;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 thead tr {
@@ -834,7 +836,7 @@ a:hover, a:active {
 	position: absolute;
 	z-index: 10;
 	top: 100%;
-	left: 0;
+	left: -6px;
 	background: #fff;
 	-webkit-box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.15);
 	box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.15);
@@ -1597,9 +1599,6 @@ a:hover, a:active {
 @media (max-width: 1279px) {
 	.container {
 		padding: 0 25px;
-	}
-	.site-content .container {
-		padding: 0;
 	}
 }
 
@@ -2439,6 +2438,13 @@ Genericons
 }
 
 /* Slider */
+.featured-posts .slick-track img {
+	max-height: 96vh;
+	width: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
 .featured-posts .featured-content.featured-content {
 	position: absolute;
 	left: 0;
@@ -2483,6 +2489,28 @@ Genericons
 	margin-right: 10px;
 }
 
+@media (max-width: 991px) {
+	.featured-posts img {
+		min-height: 300px;
+	}
+	.featured-posts .featured-content.featured-content {
+		top: 0;
+		height: 100%;
+	}
+	.featured-posts .featured-content.featured-content .entry-title {
+		font-size: 28px;
+		font-size: 1.75rem;
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 574px) {
+	.featured-posts .featured-content.featured-content .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
+
 .section--search {
 	border: 10px solid #f8f8f8;
 	background-color: #fff;
@@ -2519,6 +2547,7 @@ Genericons
 	flex-flow: row wrap;
 	width: 100%;
 	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .section--search .search-content .extras-wrap.extras-wrap.extras-wrap .field {
@@ -2529,6 +2558,8 @@ Genericons
 .section--search .search-content .auto-listings-search {
 	display: flex;
 	flex-flow: row wrap;
+	margin-top: 44px;
+	margin-bottom: 0;
 }
 
 .section--search .search-content .auto-listings-search .row {
@@ -2548,12 +2579,21 @@ Genericons
 }
 
 .section--search .search-content .auto-listings-search .condition-wrap,
-.section--search .search-content .auto-listings-search .make,
 .section--search .search-content .auto-listings-search .min-price,
-.section--search .search-content .auto-listings-search .max-price {
+.section--search .search-content .auto-listings-search .max-price,
+.section--search .search-content .auto-listings-search .search-form__title,
+.section--search .search-content .auto-listings-search .odometer {
 	width: 100%;
-	max-width: 227px;
-	margin-right: 40px;
+	max-width: 226px;
+	margin-right: 42px;
+}
+
+.section--search .search-content .auto-listings-search .search-form__title {
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: #3d414e;
+	text-transform: uppercase;
 }
 
 .section--search .search-content .auto-listings-search .max-price {
@@ -2580,25 +2620,138 @@ Genericons
 
 .section--search .search-content .auto-listings-search .SelectBox {
 	border-radius: 5px;
+	padding: 9px 20px;
+	text-align: left;
+	height: 45px;
+	max-height: 45px;
+}
+
+.section--search .search-content .auto-listings-search .SelectBox span {
+	color: #000;
+	font-weight: 500;
+	text-transform: capitalize;
 }
 
 .section--search .search-content .auto-listings-search .area-wrap {
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
 	align-items: center;
 }
 
-.section--search .search-content .auto-listings-search .area-wrap .within,
 .section--search .search-content .auto-listings-search .area-wrap .al-button {
 	width: 100%;
-	max-width: 227px;
+	max-width: 226px;
+	background-color: #e11e30;
+	border: 2px solid #e11e30;
+	border-radius: 4px;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	transition: all .3s ease;
+	padding: 11px 26px;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .al-button:hover {
+	background-color: #fff;
+	color: #e11e30;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .within {
+	width: 100%;
+	max-width: 125px;
+	margin-right: 12px;
 }
 
 .section--search .search-content .auto-listings-search .area-wrap .area {
 	width: 100%;
-	max-width: 494px;
+	max-width: 358px;
+	margin-right: 42px;
+	margin-top: 0;
+	border-radius: 4px;
+	border-color: #e4e4e4;
+	height: 45px;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .area:focus {
+	border: 1px solid #e4e4e4;
+}
+
+@media (max-width: 1170px) {
+	.section--search.section--search.section--search {
+		position: unset;
+	}
+	.section--search.section--search.section--search .search-form__title,
+	.section--search.section--search.section--search .condition-wrap,
+	.section--search.section--search.section--search .min-price,
+	.section--search.section--search.section--search .max-price,
+	.section--search.section--search.section--search .the-year,
+	.section--search.section--search.section--search .make,
+	.section--search.section--search.section--search .model,
+	.section--search.section--search.section--search .body-type,
+	.section--search.section--search.section--search .odometer,
+	.section--search.section--search.section--search .within,
+	.section--search.section--search.section--search .area,
+	.section--search.section--search.section--search .al-button {
+		width: 48% !important;
+		max-width: 100% !important;
+		margin-right: 0 !important;
+	}
+	.section--search.section--search.section--search .price-wrap.price-wrap {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+	.section--search.section--search.section--search .price-wrap.price-wrap .min-price,
+	.section--search.section--search.section--search .price-wrap.price-wrap .max-price {
+		margin-bottom: 0;
+	}
+	.section--search.section--search.section--search .area-wrap {
+		justify-content: space-between;
+		margin: 0;
+	}
+	.section--search.section--search.section--search .extras-wrap.extras-wrap {
+		margin: 0;
+	}
+	.section--search.section--search.section--search .area-wrap > div,
+	.section--search.section--search.section--search .extras-wrap > div {
+		margin-bottom: 15px;
+	}
+	.section--search.section--search.section--search .search-form__title {
+		margin-right: 4% !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.section--search.section--search.section--search {
+		padding: 0 25px;
+	}
+	.section--search.section--search.section--search .search-form__title,
+	.section--search.section--search.section--search .condition-wrap,
+	.section--search.section--search.section--search .min-price,
+	.section--search.section--search.section--search .max-price,
+	.section--search.section--search.section--search .the-year,
+	.section--search.section--search.section--search .make,
+	.section--search.section--search.section--search .model,
+	.section--search.section--search.section--search .body-type,
+	.section--search.section--search.section--search .odometer,
+	.section--search.section--search.section--search .within,
+	.section--search.section--search.section--search .area,
+	.section--search.section--search.section--search .al-button {
+		width: 100% !important;
+	}
+	.section--search.section--search.section--search .search-form__title {
+		display: none;
+	}
+	.section--search.section--search.section--search .max-price,
+	.section--search.section--search.section--search .area {
+		margin-bottom: 15px;
+	}
+	.section--search.section--search.section--search .price-wrap.price-wrap .min-price {
+		margin-bottom: 15px;
+	}
 }
 
 .home .has-sidebar {
@@ -2728,6 +2881,41 @@ Genericons
 .all--car .all-car-right {
 	width: 50%;
 	max-width: 600px;
+}
+
+@media (max-width: 991px) {
+	.all--car .all-car-left {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	.all--car .all-car-right {
+		width: 100%;
+		max-width: 100%;
+	}
+	.all--car .all-car-right img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 574px) {
+	.all--car .all-car-left ul {
+		column-count: 2;
+	}
+	.all--car .all-car-left .all-car__title {
+		font-size: 21px;
+		font-size: 1.3125rem;
+	}
+	.all--car .all-car-left .all-car__description {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.all--car .all-car-left ul {
+		column-count: 1;
+	}
 }
 
 .section--cta {
@@ -3551,6 +3739,31 @@ ol.children {
 	color: #fff;
 }
 
+@media (max-width: 991px) {
+	.page-header.page-header {
+		padding: 50px 50px 60px;
+	}
+	.page-header .page-title {
+		font-size: 34px;
+		font-size: 2.125rem;
+	}
+	.page-header .breadcrumbs {
+		position: unset;
+		background: none;
+		padding: 15px 0;
+	}
+	.page-header .breadcrumbs * {
+		color: #fff;
+	}
+}
+
+@media (max-width: 574px) {
+	.page-header .page-title {
+		font-size: 23px;
+		font-size: 1.4375rem;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Search
 --------------------------------------------------------------*/
@@ -3755,6 +3968,7 @@ ol.children {
 	color: #3d414e;
 	font-weight: 700;
 	line-height: 1.4;
+	margin-top: 0;
 }
 
 .auto-listings-single .has-sidebar .upper h4 {
@@ -3796,6 +4010,50 @@ ol.children {
 	font-size: 0.875rem;
 	color: #777777;
 	line-height: 1.7;
+}
+
+.auto-listings-single .has-sidebar .content .description del {
+	text-decoration: none;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 2;
+	color: #e11e30;
+	position: relative;
+	top: 16px;
+}
+
+.auto-listings-single .has-sidebar .content .description del:before {
+	content: '';
+	width: 100px;
+	border-top: 1px solid #e4e4e4;
+	position: absolute;
+	top: -23px;
+}
+
+.auto-listings-single .has-sidebar .content .description ul {
+	column-count: 3;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+
+.auto-listings-single .has-sidebar .content .description ul li {
+	list-style: none;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #000;
+}
+
+.auto-listings-single .has-sidebar .content .description ul li:before {
+	content: '\f104';
+	font-family: "IcoFont" !important;
+	display: inline-block;
+	line-height: 1;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #e11e30;
+	margin-right: 8px;
 }
 
 .auto-listings-single .has-sidebar .content .auto-listings-tabs ul {
@@ -3933,7 +4191,7 @@ ol.children {
 	font-size: 12px;
 	font-size: 0.75rem;
 	padding: 15px 13px;
-	width: 143px;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4047,6 +4305,49 @@ ol.children {
 
 .auto-listings-single.auto-listings-single .sidebar > div {
 	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.auto-listings-single.auto-listings-single .content .description ul {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 574px) {
+	.auto-listings-single.auto-listings-single .image-gallery .lSPager {
+		display: none;
+	}
+	.auto-listings-single.auto-listings-single .image-gallery .lSAction i {
+		background: none;
+	}
+	.auto-listings-single.auto-listings-single .upper .entry-title,
+	.auto-listings-single.auto-listings-single .upper .price-amount {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+	.auto-listings-single.auto-listings-single .content.content .description ul {
+		column-count: 1;
+	}
+	.auto-listings-single.auto-listings-single .content.content .auto-listings-Tabs-panel {
+		padding: 0;
+	}
+	.auto-listings-single.auto-listings-single .content.content .auto-listings-Tabs-panel h4 {
+		margin-left: 25px;
+	}
+	.auto-listings-single.auto-listings-single .content.content .auto-listings-Tabs-panel table th {
+		width: 50%;
+		padding-right: 10%;
+		word-wrap: break-word;
+	}
+	.auto-listings-single.auto-listings-single .sidebar .at-a-glance li {
+		width: 100%;
+	}
+	.auto-listings-single.auto-listings-single .sidebar .at-a-glance li:first-child {
+		border-bottom: 1px solid #e4e4e4;
+	}
+	.auto-listings-single.auto-listings-single .sidebar .at-a-glance li:nth-child(2n) {
+		border-left: 0;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -4431,9 +4732,23 @@ ol.children {
 	bottom: -28px;
 }
 
+@media (max-width: 1279px) {
+	.has-sidebar .auto-listings-items.auto-listings-items.auto-listings-items .at-a-glance li {
+		width: 50%;
+		text-align: center;
+	}
+	.has-sidebar .auto-listings-items.auto-listings-items.auto-listings-items .at-a-glance li:nth-child(3) {
+		width: 100%;
+		border-top: 1px solid #e4e4e4;
+	}
+}
+
 @media (max-width: 991px) {
 	.auto-listings.auto-listings .has-sidebar {
 		width: 100%;
+		content: "";
+		display: table;
+		table-layout: fixed;
 	}
 	.auto-listings.auto-listings .sidebar {
 		width: 100%;
@@ -4456,8 +4771,8 @@ ol.children {
 		border-right: 0 !important;
 		border-bottom: 1px solid #e4e4e4;
 	}
-	.auto-listings-items.auto-listings-items li .items-left li {
-		border: 0 !important;
+	.auto-listings-items.auto-listings-items li .items-left li:first-child {
+		border-bottom: 1px solid #e4e4e4;
 	}
 	.auto-listings-items.auto-listings-items li .summary {
 		width: 100% !important;
@@ -4676,13 +4991,16 @@ ol.children {
 	justify-content: space-between;
 }
 
+.sidebar .auto-listings-search.auto-listings-search .price-wrap .min-price,
+.sidebar .auto-listings-search.auto-listings-search .price-wrap .max-price {
+	width: 48%;
+}
+
 .sidebar .auto-listings-search.auto-listings-search .price-wrap .sumo_min_price {
-	width: 140px;
 	margin-right: 0;
 }
 
 .sidebar .auto-listings-search.auto-listings-search .price-wrap .sumo_max_price {
-	width: 140px;
 	margin-right: 0;
 }
 
@@ -4850,6 +5168,17 @@ ol.children {
 	margin-right: 5px;
 }
 
+@media (max-width: 1279px) {
+	.sidebar .auto-listings-items.auto-listings-items.auto-listings-items .at-a-glance.at-a-glance li {
+		width: 50%;
+		text-align: center;
+	}
+	.sidebar .auto-listings-items.auto-listings-items.auto-listings-items .at-a-glance.at-a-glance li:nth-child(3) {
+		width: 100%;
+		border-top: 1px solid #e4e4e4;
+	}
+}
+
 @media (max-width: 991px) {
 	.auto-listings-search.auto-listings-search.auto-listings-search .price-wrap .min-price {
 		width: 100%;
@@ -4864,6 +5193,37 @@ ol.children {
 	}
 	.auto-listings-search.auto-listings-search.auto-listings-search .price-wrap .optWrapper {
 		width: 100%;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact ul,
+	.sidebar .auto-listings-items li.compact ul {
+		border-bottom: 1px solid #e4e4e4;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact ul li:nth-child(3),
+	.sidebar .auto-listings-items li.compact ul li:nth-child(3) {
+		border-top: 1px solid #e4e4e4 !important;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact .items-left,
+	.sidebar .auto-listings-items li.compact .items-left {
+		order: unset;
+		width: 100%;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact .items-left .image,
+	.sidebar .auto-listings-items li.compact .items-left .image {
+		width: 100%;
+		margin: 0;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact .items-left .image img,
+	.sidebar .auto-listings-items li.compact .items-left .image img {
+		height: auto;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact .summary,
+	.sidebar .auto-listings-items li.compact .summary {
+		position: unset;
+	}
+	.sidebar .auto-listings-items.grid-view li.compact .summary .price,
+	.sidebar .auto-listings-items li.compact .summary .price {
+		padding-left: 0;
+		margin-left: 5%;
 	}
 }
 

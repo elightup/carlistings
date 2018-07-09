@@ -258,3 +258,14 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+if ( is_admin() ) {
+	require_once get_template_directory() . '/inc/admin/class-tgm-plugin-activation.php';
+	require_once get_template_directory() . '/inc/admin/plugins.php';
+
+	/**
+	 * Load dashboard
+	 */
+	require get_template_directory() . '/inc/dashboard/class-autodealer-dashboard.php';
+	$dashboard = new Autodealer_Dashboard();
+}

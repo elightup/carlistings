@@ -12,6 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="bottom-wrap">
-	<a class="al-button" href="<?php esc_url( the_permalink() ); ?>" title="<?php _e( 'View', 'auto-listings' ); ?> <?php esc_attr( the_title() ); ?>"><?php _e( 'More Details', 'auto-listings' ); ?>
+	<a class="al-button" href="<?php esc_url( the_permalink() ); ?>" title="<?php esc_html_e( 'View', 'auto-listings' ); ?> <?php esc_attr( the_title() ); ?>"><?php esc_html_e( 'More Details', 'auto-listings' ); ?>
 	</a>
 </div>

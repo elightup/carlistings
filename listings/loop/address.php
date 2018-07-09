@@ -1,6 +1,6 @@
 <?php
 /**
- * loop address
+ * Loop address
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/address.php.
  */

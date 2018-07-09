@@ -53,6 +53,10 @@ add_filter( 'wp_list_categories', 'autodealer_widget_archive_count' );
 
 /**
  * Add tag to the content
+ *
+ * @param string $content Alter the output of the list categories and archives widgets.
+ *
+ * @return string
  */
 function add_tag_the_content( $content ) {
 	// Hide category and tag text for pages.

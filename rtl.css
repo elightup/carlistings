@@ -1,5 +1,5 @@
 /*
-Theme Name: autodealer
+Theme Name: Autodealer
 
 Adding support for languages written in a Right To Left (RTL) direction is easy -
 it's just a matter of overwriting all the horizontal positioning attributes
@@ -9,9 +9,168 @@ https://codex.wordpress.org/Right-to-Left_Language_Support
 
 */
 
-/*
+
 body {
 	direction: rtl;
 	unicode-bidi: embed;
+	text-align: right;
 }
-*/
+
+/* topbar */
+
+.topbar-left .widget_text p {
+	display: flex;
+}
+.topbar-left .time-work {
+	border-left: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.topbar-left .time-work:before,
+.topbar-left .mail-to:before {
+	margin-right: 0;
+	margin-left: 7px;
+}
+.topbar-right .jetpack_widget_social_icons.jetpack_widget_social_icons {
+	border-left: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.topbar-right .jetpack_widget_social_icons.jetpack_widget_social_icons li:first-child {
+	margin-left: 0;
+}
+.topbar-right .jetpack_widget_social_icons.jetpack_widget_social_icons li:last-child {
+	margin-left: 15px;
+}
+
+/* main-navigation */
+
+.main-navigation li:last-child a {
+	padding-right: 15px;
+}
+
+/* search form */
+
+.section--search .search-content .auto-listings-search .condition-wrap,
+.section--search .search-content .auto-listings-search .min-price,
+.section--search .search-content .auto-listings-search .search-form__title,
+.section--search .search-content .auto-listings-search .odometer {
+	margin-right: 0;
+	margin-left: 42px;
+}
+.section--search .search-content .auto-listings-search .area-wrap .within {
+	margin-right: 0;
+	margin-left: 12px;
+}
+.auto-listings-search .area-wrap .SumoSelect {
+	margin-right: 0;
+}
+.section--search .search-content .auto-listings-search .area-wrap .area {
+	margin-right: 0;
+	margin-left: 42px;
+}
+
+/* listings */
+.has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) > li,
+.listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) > li {
+	justify-content: normal;
+}
+.has-sidebar .auto-listings-items.auto-listings-items .summary .address:before,
+.listing-no-sidebar .auto-listings-items.auto-listings-items .summary .address:before {
+	left: 0;
+}
+.has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .summary .bottom-wrap,
+.listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .summary .bottom-wrap {
+	left: 20px;
+}
+.has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance ul,
+.listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance ul {
+	border-left: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li,
+.listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li {
+	border-left: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li:last-child,
+.listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li:last-child {
+	border-left: 0;
+}
+.sidebar .auto-listings-items li.compact .summary,
+.sidebar .auto-listings-items.grid-view li.compact .summary {
+	right: 100px;
+}
+.sidebar .auto-listings-items li.compact .items-left .image,
+.sidebar .auto-listings-items.grid-view li.compact .items-left .image {
+	margin-right: 0;
+	margin-left: 15px;
+}
+.sidebar .auto-listings-items li.compact .items-left .at-a-glance li,
+.sidebar .auto-listings-items.grid-view li.compact .items-left .at-a-glance li {
+	border-left: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.has-sidebar .options.options.options li {
+	padding-right: 19px;
+	padding-left: 0;
+}
+
+/* blog */
+
+.blog .entry-header .entry-header__category,
+.archive .entry-header .entry-header__category,
+.search .entry-header .entry-header__category {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.blog .entry-header .entry-header__category:before,
+.archive .entry-header .entry-header__category:before,
+.search .entry-header .entry-header__category:before {
+	margin-right: 0;
+	margin-left: 7px;
+}
+.breadcrumbs .home:before {
+	margin-right: 0;
+	margin-left: 7px;
+}
+
+/* sidebar */
+
+.search-form .search-submit {
+	left: 10px;
+}
+.widget-area .widget_categories li:before,
+.widget-area .widget_archive li:before,
+.widget-area .widget_pages li:before,
+.widget-area .widget_meta li:before,
+.widget-area .widget_recent_comments li:before,
+.widget-area .widget_nav_menu li:before,
+.widget-area .widget_rss li:before,
+.widget-area .widget_recent_entries li:before {
+	margin-left: 13px;
+	margin-right: 0;
+}
+
+/* single */
+
+.single .entry-header .entry-header__category,
+.page:not(.home) .entry-header .entry-header__category {
+	margin-right: 0;
+
+}
+.single .entry-header .entry-header__category:before,
+.page:not(.home) .entry-header .entry-header__category:before {
+	margin-right: 0;
+	margin-left: 7px;
+}
+.single .entry-content ul,
+.page:not(.home) .entry-content ul {
+	margin-right: 40px;
+	margin-left: 0;
+}
+
+/* comment */
+
+.comment-list .reply {
+	left: 90px;
+	right: unset;
+}

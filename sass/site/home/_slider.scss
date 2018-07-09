@@ -1,4 +1,12 @@
 .featured-posts {
+	.slick-track {
+		img {
+			max-height: 96vh;
+			width: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
 	.featured-content.featured-content {
 		position: absolute;
 		left: 0;
@@ -30,6 +38,30 @@
 				color: $color__main;
 				@include font-size(2);
 				margin-right: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.featured-posts {
+		img {
+			min-height: 300px;
+		}
+		.featured-content.featured-content {
+			top: 0;
+			height: 100%;
+			.entry-title {
+				@include font-size(2.8);
+				margin-top: 50px;
+			}
+		}
+	}
+}
+@media (max-width: 574px) {
+	.featured-posts {
+		.featured-content.featured-content {
+			.entry-title {
+				@include font-size(2);
 			}
 		}
 	}

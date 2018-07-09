@@ -12,7 +12,7 @@ get_header();
 
 <section id="content" class="content-area">
 	<div class="error-404">
-		<p><?php esc_html_e( 'It seems like you have tried to open a page that doesn\'t exist. You are welcome to search for what you are looking for with the form below.', 'thefour' ); ?></p>
+		<p><?php esc_html_e( 'It seems like you have tried to open a page that doesn\'t exist. You are welcome to search for what you are looking for with the form below.', 'autodealer' ); ?></p>
 		<?php get_search_form(); ?>
 	</div>
 </section>
