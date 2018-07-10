@@ -3,10 +3,12 @@
  * Pagination
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/pagination.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 global $wp_query;

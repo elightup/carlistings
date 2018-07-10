@@ -3,6 +3,8 @@
  * View Switcher
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/view-switcher.php.
+ *
+ * @package autodealer
  */
 
 ?>

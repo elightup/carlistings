@@ -3,16 +3,20 @@
  * The Template for displaying the listings archive
  *
  * This template can be overridden by copying it to yourtheme/listings/archive-listing.php.
+ *
+ * @package autodealer
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 get_header( 'listings' );
 
 	/**
-	 * Comment
+	 * Outputs opening divs for the content
 	 *
-	 * @hooked auto_listings_output_content_wrapper (outputs opening divs for the content)
+	 * @hooked auto_listings_output_content_wrapper
 	 */
 	do_action( 'auto_listings_before_main_content' ); ?>
 
@@ -50,13 +54,11 @@ get_header( 'listings' );
 				while ( have_posts() ) :
 						the_post();
 
-						// wrapper for our columns
 						if ( $count % $cols == 1 )
 							echo '<ul class="auto-listings-items">';
 
 							auto_listings_get_part( 'content-listing.php' );
 
-						// wrapper for our columns
 						if ( $count % $cols == 0 )
 							echo '</ul>';
 
@@ -77,7 +79,7 @@ get_header( 'listings' );
 
 				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
 
-			<?php endif; // endif have_posts ?>
+			<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
 

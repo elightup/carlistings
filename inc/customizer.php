@@ -31,6 +31,18 @@ function autodealer_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting( 'slider_speed', array(
+		'sanitize_callback' => 'absint',
+		'default'           => 3000,
+	) );
+	$wp_customize->add_control( 'slider_speed', array(
+		'label'           => esc_html__( 'Top slider speed', 'autodealer' ),
+		'section'         => 'homepage',
+		'type'            => 'number',
+		'active_callback' => 'is_front_page',
+		'description'     => esc_html__( 'The animation speed in milliseconds. Enter 0 to disable the slider.', 'autodealer' ),
+	) );
+
 	/**
 	 * Seach form.
 	 */

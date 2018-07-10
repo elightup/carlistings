@@ -44,7 +44,7 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 	}
 	endif;
 
-	if ( ! function_exists( 'autodealer_posted_by' ) ) :
+if ( ! function_exists( 'autodealer_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
@@ -191,7 +191,7 @@ function autodealer_user_social_links( $id ) {
 	foreach ( $socials as $social ) {
 		$social_value = get_the_author_meta( $social, $id );
 
-		if ( 'twitter' == $social ) {
+		if ( 'twitter' === $social ) {
 			$social_value = 'https://twitter.com/' . get_the_author_meta( 'twitter', $id );
 		}
 

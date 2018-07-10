@@ -3,10 +3,12 @@
  * Ordering
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/orderby.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 global $wp_query;
@@ -28,7 +30,7 @@ $orderby_options = apply_filters(
 );
 
 ?>
-<form class="auto-listings-ordering" method="get">
+<form class="auto-listings-ordering" method="get" >
 
 	<div class="select-wrap">
 		<select name="orderby" class="orderby">
@@ -38,7 +40,7 @@ $orderby_options = apply_filters(
 		</select>
 	</div>
 	<?php
-		// Keep query string vars intact
+
 	foreach ( $_GET as $key => $val ) {
 
 		if ( 'orderby' === $key || 'submit' === $key ) {

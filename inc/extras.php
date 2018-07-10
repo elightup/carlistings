@@ -67,8 +67,7 @@ function add_tag_the_content( $content ) {
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
-		}
-		else {
+		} else {
 			return $content;
 		}
 	} else {
@@ -97,6 +96,59 @@ function user_social_networks_add( $methods ) {
 	return $methods;
 }
 add_filter( 'user_contactmethods', 'user_social_networks_add' );
+
+/**
+ * Demo files for importing.
+ *
+ * @return array List of demos configuration.
+ */
+function autodealer_import_files() {
+	$autodealer_demo_url = trailingslashit( get_template_directory_uri() ) . 'demo/';
+
+	return array(
+		array(
+			'import_file_name'             => esc_html__( 'Demo 1', 'autodealer' ),
+			'import_file_url'              => $autodealer_demo_url . 'content.xml',
+			'import_widget_file_url'       => $autodealer_demo_url . 'widgets.wie',
+			'local_import_customizer_file' => $autodealer_demo_url . 'theme-options.dat',
+			'import_preview_image_url'     => $autodealer_demo_url . 'preview_image.jpg',
+		),
+	);
+}
+
+add_filter( 'pt-ocdi/import_files', 'autodealer_import_files' );
+
+/**
+ * Setup the theme after importing demo.
+ */
+function autodealer_after_import_setup() {
+	// Assign menus to their locations.
+	$header = get_term_by( 'slug', 'Header', 'nav_menu' );
+	$footer = get_term_by( 'slug', 'Footer', 'nav_menu' );
+
+	set_theme_mod(
+		'nav_menu_locations', array(
+			'menu-1'              => $header->term_id,
+			'menu-2'              => $footer->term_id,
+		)
+	);
+
+	// Setup static front page.
+	$front_page = get_page_by_title( 'Home' );
+	$blog       = get_page_by_title( 'Blog' );
+
+	$search_page = get_page_by_title( 'i am looking for' );
+
+	update_option( 'show_on_front', 'page' );
+	update_option( 'page_on_front', $front_page->ID );
+	update_option( 'page_for_posts', $blog->ID );
+
+	set_theme_mod( 'search_section', $search_page->ID );
+
+	update_option( 'permalink_structure', '/%postname%/' );
+}
+
+add_action( 'pt-ocdi/after_import', 'autodealer_after_import_setup' );
 
 /**
  * Add at a glance to left section

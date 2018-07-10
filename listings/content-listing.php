@@ -3,12 +3,13 @@
  * The Template for displaying listing content in the single-listing.php template
  *
  * This template can be overridden by copying it to yourtheme/listings/content-single-listing.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
-
 $cols = auto_listings_columns();
 ?>
 
@@ -16,6 +17,8 @@ $cols = auto_listings_columns();
 	<div class="items-left">
 		<?php
 		/**
+		 * Image and at a glance
+		 *
 		 * @hooked auto_listings_template_loop_image
 		 */
 		do_action( 'auto_listings_before_listings_loop_item_summary' );
@@ -24,12 +27,11 @@ $cols = auto_listings_columns();
 	<div class="summary">
 
 	<?php
-	/**
-	 *
-	 */
 	do_action( 'auto_listings_before_listings_loop_item' );
 
 	/**
+	 * Info single listings
+	 *
 	 * @hooked auto_listings_template_loop_title
 	 * @hooked auto_listings_template_loop_at_a_glance
 	 * @hooked auto_listings_template_loop_address
@@ -39,9 +41,6 @@ $cols = auto_listings_columns();
 	 */
 	do_action( 'auto_listings_listings_loop_item' );
 
-	/**
-	 *
-	 */
 	do_action( 'auto_listings_after_listings_loop_item' );
 	?>
 
@@ -49,9 +48,6 @@ $cols = auto_listings_columns();
 
 	<?php
 
-	/**
-	 *
-	 */
 	do_action( 'auto_listings_after_listings_loop_item_summary' );
 	?>
 

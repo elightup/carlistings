@@ -3,10 +3,12 @@
  * Single listing contact-form
  *
  * This template can be overridden by copying it to yourtheme/listings/single-listing/contact-form.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 ?>

@@ -3,10 +3,12 @@
  * Bottom section
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/bottom.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 ?>

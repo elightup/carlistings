@@ -3,6 +3,8 @@
  * The Template for displaying listing content in the single-listing.php template
  *
  * This template can be overridden by copying it to yourtheme/listings/content-single-listing.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,6 +31,8 @@ if ( post_password_required() ) {
 
 			<?php
 			/**
+			 * Slider
+			 *
 			 * @hooked auto_listings_template_single_gallery
 			 */
 			do_action( 'auto_listings_single_gallery' );
@@ -40,6 +44,8 @@ if ( post_password_required() ) {
 
 			<?php
 			/**
+			 * Title
+			 *
 			 * @hooked auto_listings_template_single_title
 			 */
 			do_action( 'auto_listings_single_upper_full_width' );
@@ -53,6 +59,8 @@ if ( post_password_required() ) {
 
 			<?php
 			/**
+			 * Info single listing
+			 *
 			 * @hooked auto_listings_template_single_tagline
 			 * @hooked auto_listings_template_single_description
 			 * @hooked auto_listings_output_listing_tabs
@@ -68,6 +76,8 @@ if ( post_password_required() ) {
 
 		<?php
 		/**
+		 * Sidebar
+		 *
 		 * @hooked auto_listings_template_single_price
 		 * @hooked auto_listings_template_single_at_a_glance
 		 * @hooked auto_listings_template_single_address

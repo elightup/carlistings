@@ -2986,6 +2986,18 @@ Genericons
 	}
 }
 
+@media (max-width: 574px) {
+	.section-cta__left.section-cta__left {
+		margin-top: 0;
+	}
+	.section-cta__left.section-cta__left .cta-title {
+		font-size: 29px;
+		font-size: 1.8125rem;
+		margin-bottom: 15px;
+		line-height: 1.3;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -3950,6 +3962,8 @@ ol.children {
 
 .auto-listings-single .has-sidebar .image-gallery img {
 	width: 100%;
+	max-height: 450px;
+	object-fit: cover;
 }
 
 .auto-listings-single .has-sidebar .upper {

@@ -10,24 +10,24 @@ jQuery( function ( $ ) {
 	 * Scroll to top
 	 */
 	 function scrollToTop() {
-	 	var $window = $(window),
-	 	$button = $('.scroll-to-top');
-	 	$window.scroll(function() {
-	 		$button[$window.scrollTop() > 100 ? 'removeClass' : 'addClass']('hidden');
-	 	});
-	 	$button.on('click', function(e) {
-	 		e.preventDefault();
-	 		$('body, html').animate({
-	 			scrollTop: 0
-	 		}, 500);
-	 	});
+		var $window = $(window),
+		$button = $('.scroll-to-top');
+		$window.scroll(function() {
+			$button[$window.scrollTop() > 100 ? 'removeClass' : 'addClass']('hidden');
+		});
+		$button.on('click', function(e) {
+			e.preventDefault();
+			$('body, html').animate({
+				scrollTop: 0
+			}, 500);
+		});
 	 }
 
 	 function toggleMobileMenu() {
-	 	var $body = $('body'),
-	 	mobileClass = 'mobile-menu-open',
-	 	clickEvent = 'ontouchstart' in window ? 'touchstart' : 'click',
-	 	transitionEnd = 'transitionend webkitTransitionEnd otransitionend MSTransitionEnd';
+		var $body = $('body'),
+		mobileClass = 'mobile-menu-open',
+		clickEvent = 'ontouchstart' in window ? 'touchstart' : 'click',
+		transitionEnd = 'transitionend webkitTransitionEnd otransitionend MSTransitionEnd';
 
 		// Click to show mobile menu.
 		$('.menu-toggle').on(clickEvent, function(event) {
@@ -83,10 +83,10 @@ jQuery( function ( $ ) {
 	 * Add placeholder to input Comment.
 	 */
 	 function placeholderComment() {
-	 	$("#author").attr("placeholder", "Full Name *");
-	 	$("#email").attr("placeholder", "Mail Address *");
-	 	$("#url").attr("placeholder", "Website URL");
-	 	$("#comment").attr("placeholder", "Write Your Comments Here...");
+		$("#author").attr("placeholder", "Full Name *");
+		$("#email").attr("placeholder", "Mail Address *");
+		$("#url").attr("placeholder", "Website URL");
+		$("#comment").attr("placeholder", "Write Your Comments Here...");
 	 }
 
 	/**
@@ -94,100 +94,98 @@ jQuery( function ( $ ) {
 	 */
 	 function moveTagSearchForm() {
 
-	 	$(".search-content .odometer ").prependTo(".search-content .area-wrap");
-	 	$(".search-content .condition-wrap ").prependTo("#auto-listings-search");
-	 	$(".search-content .search-form__title ").prependTo("#auto-listings-search");
+		$(".search-content .odometer ").prependTo(".search-content .area-wrap");
+		$(".search-content .condition-wrap ").prependTo("#auto-listings-search");
+		$(".search-content .search-form__title ").prependTo("#auto-listings-search");
 	 }
 
 
 	 /**
-     * Buy/Sell option
-     */
-     function auto_listings_buy_sell() {
-     	$( '.auto-listings-search' ).on( 'change', 'select.purpose', function() {
-     		$( this ).closest( 'form' ).submit();
-     	});
-     }
+	 * Buy/Sell option
+	 */
+	 function auto_listings_buy_sell() {
+		$( '.auto-listings-search' ).on( 'change', 'select.purpose', function() {
+			$( this ).closest( 'form' ).submit();
+		});
+	 }
 
 
-    /**
-     * View switcher
-     */
-     function auto_listings_view_switcher() {
+	/**
+	 * View switcher
+	 */
+	 function auto_listings_view_switcher() {
 
-     	if( ! get_cookie( 'view' ) ) { switch_view( default_view ); }
+		$( '.auto-listings-view-switcher div' ).click( function() {
+			var view = $( this ).attr( 'id' );
+			set_cookie( view );
+			switch_view( view );
+		});
 
-     	$( '.auto-listings-view-switcher div' ).click( function() {
-     		var view = $( this ).attr( 'id' );
-     		set_cookie( view );
-     		switch_view( view );
-     	});
+		if( get_cookie( 'view' ) == 'grid') { switch_view( 'grid' ); }
 
-     	if( get_cookie( 'view' ) == 'grid') { switch_view( 'grid' ); }
+		function switch_view( to ) {
 
-     	function switch_view( to ) {
+			var from = ( to == 'list' ) ? 'grid' : 'list';
 
-     		var from = ( to == 'list' ) ? 'grid' : 'list';
+			var listings = $('.auto-listings-items li');
+			$.each( listings, function( index, listing ) {
+				$( '.auto-listings-items' ).removeClass( from + '-view' );
+				$( '.auto-listings-items' ).addClass( to + '-view' );
+			});
+		}
 
-     		var listings = $('.auto-listings-items li');
-     		$.each( listings, function( index, listing ) {
-     			$( '.auto-listings-items' ).removeClass( from + '-view' );
-     			$( '.auto-listings-items' ).addClass( to + '-view' );
-     		});
-     	}
+		function set_cookie( value ) {
+			var days = 30; // set cookie duration
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime()+(days*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+			}
+			else var expires = "";
+			document.cookie = "view="+value+expires+"; path=/";
+		}
 
-     	function set_cookie( value ) {
-            var days = 30; // set cookie duration
-            if (days) {
-            	var date = new Date();
-            	date.setTime(date.getTime()+(days*24*60*60*1000));
-            	var expires = "; expires="+date.toGMTString();
-            }
-            else var expires = "";
-            document.cookie = "view="+value+expires+"; path=/";
-        }
+		function get_cookie( name ) {
+			var value = "; " + document.cookie;
+			var parts = value.split("; " + name + "=");
+			if (parts.length == 2) return parts.pop().split(";").shift();
+		}
 
-        function get_cookie( name ) {
-        	var value = "; " + document.cookie;
-        	var parts = value.split("; " + name + "=");
-        	if (parts.length == 2) return parts.pop().split(";").shift();
-        }
+	}
 
-    }
-
-     /**
-     * Ordering
-     */
-     function auto_listings_ordering() {
-     	$('.auto-listings-ordering select.orderby').SumoSelect();
-     	$( '.auto-listings-ordering' ).on( 'change', 'select.orderby', function() {
-     		$( this ).closest( 'form' ).submit();
-     	});
-     }
-    /**
+	 /**
+	 * Ordering
+	 */
+	 function auto_listings_ordering() {
+		$('.auto-listings-ordering select.orderby').SumoSelect();
+		$( '.auto-listings-ordering' ).on( 'change', 'select.orderby', function() {
+			$( this ).closest( 'form' ).submit();
+		});
+	 }
+	/**
 	 * Homepage featured content slider.
 	 */
 	 function initFeaturedContentSlider() {
-	 	var $slider = $( '.featured-post__content' );
-	 	var $sliderSpeed = $slider.data( 'speed' );
-	 	$slider.slick( {
+		var $slider = $( '.featured-post__content' );
+		var $sliderSpeed = $slider.data( 'speed' );
+		$slider.slick( {
 
-	 		speed: 1000,
-	 		autoplay: true,
-	 		autoplaySpeed: $sliderSpeed,
-	 		arrows: true,
-	 		fade: true,
-	 		dots: false,
-	 		nextArrow: '',
-	 		prevArrow: '',
-	 		pauseOnHover: false,
-	 		cssEase: 'linear',
-	 		adaptiveHeight: false
-	 	} );
-	 	if ( $sliderSpeed == 0 ) {
-	 		$slider.slick( 'pause' );
-	 		$slider.find( $( '.slick-arrow' ) ).hide();
-	 	}
+			speed: 1000,
+			autoplay: true,
+			autoplaySpeed: $sliderSpeed,
+			arrows: true,
+			fade: true,
+			dots: false,
+			nextArrow: '',
+			prevArrow: '',
+			pauseOnHover: false,
+			cssEase: 'linear',
+			adaptiveHeight: false
+		} );
+		if ( $sliderSpeed == 0 ) {
+			$slider.slick( 'pause' );
+			$slider.find( $( '.slick-arrow' ) ).hide();
+		}
 	 }
 
 

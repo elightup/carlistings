@@ -3,10 +3,12 @@
  * Loop address
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/address.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 $address = auto_listings_meta( 'displayed_address' );

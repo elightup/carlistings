@@ -3,10 +3,12 @@
  * Single listing at a glance
  *
  * This template can be overridden by copying it to yourtheme/listings/single-listing/at-a-glance.php.
+ *
+ * @package autodealer
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
 ?>

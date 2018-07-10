@@ -3,6 +3,8 @@
  * The Template for displaying the listings archive
  *
  * This template can be overridden by copying it to yourtheme/listings/archive-listing.php.
+ *
+ * @package autodealer
  */
 
 $args      = array(
@@ -13,6 +15,8 @@ $the_query = new WP_Query( $args );
 get_header( 'listings' );
 
 	/**
+	 * Outputs opening divs for the content
+	 *
 	 * @hooked auto_listings_output_content_wrapper (outputs opening divs for the content)
 	 */
 	do_action( 'auto_listings_before_main_content' ); ?>
@@ -27,7 +31,7 @@ get_header( 'listings' );
 			if ( $the_query->have_posts() ) :
 
 				/**
-				 * Mksckas
+				 * Before listings
 				 *
 				 * @hooked auto_listings_ordering (the ordering dropdown)
 				 * @hooked auto_listings_view_switcher (the view switcher)
@@ -38,18 +42,16 @@ get_header( 'listings' );
 				$cols   = auto_listings_columns();
 				$count  = 1;
 
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post();
+				while ( $the_query->have_posts() ) :
+					$the_query->the_post();
 
-						// wrapper for our columns
-						if ( $count % $cols == 1 )
-							echo '<ul class="auto-listings-items">';
+					if ( $count % $cols == 1 )
+						echo '<ul class="auto-listings-items">';
 
-							auto_listings_get_part( 'content-listing.php' );
+						auto_listings_get_part( 'content-listing.php' );
 
-						// wrapper for our columns
-						if ( $count % $cols == 0 )
-							echo '</ul>';
+					if ( $count % $cols == 0 )
+						echo '</ul>';
 
 					$count++;
 					endwhile;
@@ -59,6 +61,8 @@ get_header( 'listings' );
 				wp_reset_postdata();
 
 				/**
+				 * The pagination
+				 *
 				 * @hooked auto_listings_pagination (the pagination)
 				 */
 				do_action( 'auto_listings_after_listings_loop' );
@@ -66,9 +70,9 @@ get_header( 'listings' );
 			else :
 				?>
 
-				<p class="alert auto-listings-no-results"><?php _e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
+				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
 
-			<?php endif; // endif have_posts ?>
+			<?php endif; ?>
 
 
 			<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
@@ -88,10 +92,12 @@ get_header( 'listings' );
 		</div>
 
 		<?php
-	/**
-	 * @hooked auto_listings_output_content_wrapper_end (outputs closing divs for the content)
-	 */
-	do_action( 'auto_listings_after_main_content' );
+		/**
+		 * Outputs closing divs for the content
+		 *
+		 * @hooked auto_listings_output_content_wrapper_end (outputs closing divs for the content)
+		 */
+		do_action( 'auto_listings_after_main_content' );
 
 
-	get_footer( 'listings' ); ?>
+		get_footer( 'listings' ); ?>
