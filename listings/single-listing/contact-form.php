@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <div class="contact-form">
-	<h3><?php echo __( 'Quick Contact', 'auto-listings' ); ?></h3>
+	<h3><?php echo __( 'Quick Contact', 'autodealer' ); ?></h3>
 	<div id="auto-listings-contact">
 		<?php echo do_shortcode( '[auto_listings_contact_form]' ); ?>
 	</div>

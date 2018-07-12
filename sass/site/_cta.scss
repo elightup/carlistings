@@ -1,9 +1,11 @@
 .section--cta {
 	min-height: 280px;
+	background: #666 url(images/footer.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
 	.container {
 		display: flex;
 		flex-flow: row wrap;

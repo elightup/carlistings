@@ -34,6 +34,9 @@
 			&:last-child a {
 				border-right: none;
 			}
+			&:first-child a {
+				padding-left: 0;
+			}
 		}
 	}
 }

@@ -1,6 +1,12 @@
 .home {
 	.has-sidebar {
 		float: left;
+		.auto-listings-ordering {
+			display: none;
+		}
+		.auto-listings-view-switcher {
+			margin-left: 0;
+		}
 		.auto-listings-items.auto-listings-items.auto-listings-items {
 			.bottom-wrap {
 				a {

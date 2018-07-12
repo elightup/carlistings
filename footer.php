@@ -29,9 +29,11 @@ if ( $logo ) {
 
 	<div class="footer-bottom">
 		<div class="container">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
-				<img src="<?php echo esc_url( $logo ); ?>">
-			</a>
+			<?php if ( $logo ) : ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
+					<img src="<?php echo esc_url( $logo ); ?>">
+				</a>
+			<?php endif; ?>
 			<nav id="footer-site-navigation" class="footer-navigation">
 				<?php
 				wp_nav_menu(

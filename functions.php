@@ -161,8 +161,10 @@ function autodealer_scripts() {
 	 * Register ico font
 	 */
 	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
-	wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
-	wp_enqueue_style( 'sumoselect', get_template_directory_uri() . '/css/sumoselect.css', array() );
+
+	if ( is_front_page() ) {
+		wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
+	}
 
 	/**
 	 * Register Aos
@@ -205,11 +207,11 @@ function autodealer_fonts_url() {
 	$subsets = 'latin,latin-ext';
 
 	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'autodealer' ) ) {
-		$fonts[] = 'Open Sans:100,300,400,500,700';
+		$fonts[] = 'Open Sans:300,400,700';
 	}
 
 	if ( 'off' !== _x( 'on', 'Source Sans Pro font: on or off', 'autodealer' ) ) {
-		$fonts[] = 'Source Sans Pro:100,300,400,500,700';
+		$fonts[] = 'Source Sans Pro:300,400,700';
 	}
 
 	$fonts_url = add_query_arg(

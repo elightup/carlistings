@@ -9,7 +9,7 @@
 
 $args      = array(
 	'post_type' => 'auto-listing',
-	'order'     => 'ASC',
+	'order'     => 'DESC',
 );
 $the_query = new WP_Query( $args );
 get_header( 'listings' );

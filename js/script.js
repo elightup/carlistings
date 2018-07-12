@@ -153,15 +153,6 @@ jQuery( function ( $ ) {
 
 	}
 
-	 /**
-	 * Ordering
-	 */
-	 function auto_listings_ordering() {
-		$('.auto-listings-ordering select.orderby').SumoSelect();
-		$( '.auto-listings-ordering' ).on( 'change', 'select.orderby', function() {
-			$( this ).closest( 'form' ).submit();
-		});
-	 }
 	/**
 	 * Homepage featured content slider.
 	 */
@@ -195,7 +186,6 @@ jQuery( function ( $ ) {
 	 placeholderComment();
 	 auto_listings_buy_sell();
 	 auto_listings_view_switcher();
-	 auto_listings_ordering();
 	 initFeaturedContentSlider();
 	 moveTagSearchForm();
 	} );

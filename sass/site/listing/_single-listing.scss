@@ -372,9 +372,10 @@
 			.lSPager {
 				display: none;
 			}
-			.lSAction {
+			.lSAction.lSAction {
 				i {
 					background: none;
+					display: none;
 				}
 			}
 		}

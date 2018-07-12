@@ -79,9 +79,9 @@
 		color: $color__text-main;
 		text-transform: uppercase;
 		padding: 15px 10px 10px 10px;
-		border-bottom: 2px solid $color__white;
+		border-bottom: 3px solid $color__white;
 		&:hover {
-			border-bottom: 2px solid $color__main;
+			border-bottom: 3px solid $color__main;
 		}
 	}
 	.menu-item-has-children {
@@ -98,6 +98,7 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 		color: $color__main;
+		border-bottom: 3px solid $color__main;
 	}
 	.sub-menu {
 		li {

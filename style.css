@@ -894,11 +894,11 @@ a:hover, a:active {
 	color: #3d414e;
 	text-transform: uppercase;
 	padding: 15px 10px 10px 10px;
-	border-bottom: 2px solid #fff;
+	border-bottom: 3px solid #fff;
 }
 
 .main-navigation a:hover {
-	border-bottom: 2px solid #e11e30;
+	border-bottom: 3px solid #e11e30;
 }
 
 .main-navigation .menu-item-has-children > a:after {
@@ -915,6 +915,7 @@ a:hover, a:active {
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
 	color: #e11e30;
+	border-bottom: 3px solid #e11e30;
 }
 
 .main-navigation .sub-menu li {
@@ -1525,7 +1526,6 @@ a:hover, a:active {
 }
 
 .widget-area .jetpack_widget_social_icons .jetpack-social-widget-list {
-	margin-top: -20px;
 	margin-bottom: 0;
 }
 
@@ -1559,7 +1559,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .container {
 	margin: 0 auto;
-	max-width: 1171px;
+	max-width: 1170px;
 	width: 100%;
 	word-break: break-word;
 }
@@ -1880,6 +1880,10 @@ a:hover, a:active {
 
 .footer-bottom .footer-navigation li:last-child a {
 	border-right: none;
+}
+
+.footer-bottom .footer-navigation li:first-child a {
+	padding-left: 0;
 }
 
 .scroll-to-top {
@@ -2438,6 +2442,10 @@ Genericons
 }
 
 /* Slider */
+.featured-posts {
+	margin-bottom: -82px;
+}
+
 .featured-posts .slick-track img {
 	max-height: 96vh;
 	width: 100%;
@@ -2515,9 +2523,9 @@ Genericons
 	border: 10px solid #f8f8f8;
 	background-color: #fff;
 	position: relative;
-	top: -82px;
 	text-align: center;
 	padding: 0px 60px 50px 60px;
+	margin-bottom: 65px;
 }
 
 .section--search .search-title {
@@ -2628,7 +2636,7 @@ Genericons
 
 .section--search .search-content .auto-listings-search .SelectBox span {
 	color: #000;
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: capitalize;
 }
 
@@ -2756,6 +2764,14 @@ Genericons
 
 .home .has-sidebar {
 	float: left;
+}
+
+.home .has-sidebar .auto-listings-ordering {
+	display: none;
+}
+
+.home .has-sidebar .auto-listings-view-switcher {
+	margin-left: 0;
 }
 
 .home .has-sidebar .auto-listings-items.auto-listings-items.auto-listings-items .bottom-wrap a {
@@ -2920,6 +2936,7 @@ Genericons
 
 .section--cta {
 	min-height: 280px;
+	background: #666 url(images/footer.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -3706,8 +3723,8 @@ ol.children {
 	padding: 15px 90px;
 	margin: 0;
 	display: inline-block;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 13px;
+	font-size: 0.8125rem;
 	position: absolute;
 	bottom: 0;
 	background: #fff;
@@ -3720,6 +3737,8 @@ ol.children {
 .breadcrumbs i {
 	margin: 0 8px;
 	color: #3d414e;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .breadcrumbs a {
@@ -4331,8 +4350,9 @@ ol.children {
 	.auto-listings-single.auto-listings-single .image-gallery .lSPager {
 		display: none;
 	}
-	.auto-listings-single.auto-listings-single .image-gallery .lSAction i {
+	.auto-listings-single.auto-listings-single .image-gallery .lSAction.lSAction i {
 		background: none;
+		display: none;
 	}
 	.auto-listings-single.auto-listings-single .upper .entry-title,
 	.auto-listings-single.auto-listings-single .upper .price-amount {
@@ -4471,6 +4491,8 @@ ol.children {
 	text-transform: uppercase;
 	padding: 9px 10px;
 	font-weight: 600;
+	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items .items-left .highlight-new i,
@@ -4555,6 +4577,16 @@ ol.children {
 	font-size: 0.875rem;
 	line-height: 1.7;
 	color: #777777;
+	position: relative;
+}
+
+.has-sidebar .auto-listings-items.auto-listings-items .summary .description:after,
+.listing-no-sidebar .auto-listings-items.auto-listings-items .summary .description:after {
+	content: '';
+	width: 100px;
+	border-top: 1px solid #e4e4e4;
+	position: absolute;
+	bottom: 26px;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items .summary .address,
@@ -4571,15 +4603,6 @@ ol.children {
 .listing-no-sidebar .auto-listings-items.auto-listings-items .summary .address i {
 	font-size: 16px;
 	font-size: 1rem;
-}
-
-.has-sidebar .auto-listings-items.auto-listings-items .summary .address:before,
-.listing-no-sidebar .auto-listings-items.auto-listings-items .summary .address:before {
-	content: '';
-	width: 100px;
-	border-top: 1px solid #e4e4e4;
-	position: absolute;
-	top: -26px;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items .summary .price,
@@ -4763,6 +4786,9 @@ ol.children {
 		content: "";
 		display: table;
 		table-layout: fixed;
+	}
+	.auto-listings.auto-listings .has-sidebar .auto-listings-items .at-a-glance li:nth-child(2) {
+		border-right: 0;
 	}
 	.auto-listings.auto-listings .sidebar {
 		width: 100%;
@@ -4980,7 +5006,7 @@ ol.children {
 
 .sidebar .auto-listings-search.auto-listings-search .SelectBox.SelectBox span {
 	color: #000;
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: capitalize;
 }
 
@@ -5083,7 +5109,7 @@ ol.children {
 .sidebar .auto-listings-items li.compact .items-left .image,
 .sidebar .auto-listings-items.grid-view li.compact .items-left .image {
 	position: unset;
-	width: 32%;
+	width: 35%;
 }
 
 .sidebar .auto-listings-items li.compact .items-left .image img,
@@ -5137,7 +5163,7 @@ ol.children {
 .sidebar .auto-listings-items li.compact .summary,
 .sidebar .auto-listings-items.grid-view li.compact .summary {
 	position: absolute;
-	left: 100px;
+	left: 105px;
 	width: 60%;
 }
 
