@@ -265,22 +265,26 @@ function autodealer_get_list_cars() {
 		'fields'         => 'ids',
 	);
 	$items = get_posts( $args );
-	$make = array();
+	$makes = array();
 
 	if ( $items ) {
 		foreach ( $items as $id ) {
-			$make[] = get_post_meta( $id, '_al_listing_make_display', true );
+			$makes[] = get_post_meta( $id, '_al_listing_make_display', true );
 		}
 	}
-	$make = array_count_values( $make );
+	$makes        = array_count_values( $makes );
+	$archive_link = get_post_type_archive_link( 'auto-listing' );
+
 	echo '<ul>';
-	foreach ( $make as $car => $value ) {
+	foreach ( $makes as $make => $value ) {
 	?>
 		<li>
-			<?php
-			// translators: make and number of modals.
-			echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'autodealer' ), $car, $value ) );
-			?>
+			<a href="<?php echo esc_url( $archive_link . '?make=' . $make ) ?>">
+				<?php
+				// translators: make and number of modals.
+				echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'autodealer' ), $make, $value ) );
+				?>
+			</a>
 		</li>
 	<?php
 	}

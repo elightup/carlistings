@@ -167,3 +167,27 @@ function remove_active_hooks_description() {
 	remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 }
 add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49 );
+
+/**
+ *
+ * Filter the make in listing archive
+ *
+ * @param object $query query object.
+ */
+function autodealer_filter_make_in_archive( $query ) {
+	if ( ! $query->is_main_query() || ! is_post_type_archive( 'auto-listing' ) || is_admin() ) {
+		return $query;
+	}
+	$make = get_query_var( 'make' );
+	if ( empty( $make ) ) {
+		return $query;
+	}
+	$meta_query = array(
+		array(
+			'key'   => '_al_listing_make_display',
+			'value' => $make,
+		),
+	);
+	$query->set( 'meta_query', $meta_query );
+}
+add_action( 'pre_get_posts', 'autodealer_filter_make_in_archive' );
