@@ -258,12 +258,30 @@ function autodealer_author_box() {
  * Getter function for section car by make.
  */
 function autodealer_get_list_cars() {
-	$data = auto_listings_search_get_vehicle_data();
-	$make = $data['make'];
+	$args = array(
+		'post_type'      => 'auto-listing',
+		'post_per_pages' => -1,
+		'post_status'    => array( 'publish' ),
+		'fields'         => 'ids',
+	);
+	$items = get_posts( $args );
+	$make = array();
+
+	if ( $items ) {
+		foreach ( $items as $id ) {
+			$make[] = get_post_meta( $id, '_al_listing_make_display', true );
+		}
+	}
+	$make = array_count_values( $make );
 	echo '<ul>';
-	foreach ( $make as $car ) {
+	foreach ( $make as $car => $value ) {
 	?>
-		<li><?php echo esc_html( $car ); ?></li>
+		<li>
+			<?php
+			// translators: make and number of modals.
+			echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'autodealer' ), $car, $value ) );
+			?>
+		</li>
 	<?php
 	}
 	echo '</ul>';
