@@ -57,7 +57,7 @@
 		@include font-size(3.2);
 		line-height: 1.3;
 		font-weight: 700;
-		margin-top: 0;
+		margin-top: 15px;
 		margin-bottom: 15px;
 		a {
 			color: #2c2e3b;
@@ -81,11 +81,12 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			color: $color__white;
-			padding: 15px 30px;
+			padding: 12px 27px;
 			background-color: $color__main;
 			border-radius: 5px;
 			font-weight: 700;
 			border: 2px solid $color__main;
+			@include font-size(1.3);
 			&:hover {
 				color: $color__main;
 				background-color: $color__white;

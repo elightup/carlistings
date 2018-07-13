@@ -24,7 +24,7 @@
 		<div class="entry-content">
 			<?php
 
-			the_content();
+			the_content('read more');
 
 			wp_link_pages(
 				array(

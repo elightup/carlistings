@@ -11,7 +11,7 @@
  * Length excerpt
  */
 function autodealer_custom_excerpt_length() {
-	return 25;
+	return 50;
 }
 add_filter( 'excerpt_length', 'autodealer_custom_excerpt_length' );
 
@@ -33,7 +33,7 @@ function autodealer_excerpt_more_link( $link ) {
 		/* translators: %s: Name of current post */
 		sprintf( __( 'Read More<span class="screen-reader-text"> "%s"</span>', 'autodealer' ), get_the_title( get_the_ID() ) )
 	);
-	return ' &hellip; ' . $link;
+	return ' [&hellip;] ' . $link;
 }
 add_filter( 'excerpt_more', 'autodealer_excerpt_more_link' );
 
