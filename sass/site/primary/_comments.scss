@@ -48,7 +48,7 @@
 }
 
 .comments-title {
-	text-transform: uppercase;
+	color: $color__black;
 	font-family: inherit;
 	margin-bottom: 0;
 }
@@ -104,6 +104,7 @@
 .comment-author .fn {
 	@include font-size(1.8);
 	font-weight: 700;
+	color: $color__black;
 	a {
 		color: $color__black;
 		text-decoration: none;
@@ -221,6 +222,7 @@ ol.children {
 	@include font-size(2.4);
 	font-weight: 700;
 	margin-bottom: 34px;
+	color: $color__black;
 	small {
 		a {
 			text-decoration: none;
@@ -268,6 +270,9 @@ ol.children {
 	}
 	input[type="email"] {
 		background: $color__email-background;
+	}
+	input[type="email"]::placeholder {
+		color: $color__black;
 	}
 	input:not([type="submit"]), textarea {
 		@include font-size(1.3);

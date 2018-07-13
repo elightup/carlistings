@@ -52,8 +52,7 @@
 						left: 0;
 						right: 0;
 						box-shadow: 0 -8px 0px -5px $color__main inset;
-						-moz-box-shadow: 0 -8px 0px -5px $color__main inset;
-						-webkit-box-shadow: 0 -8px 0px -5px $color__main inset;
+						transition: opacity 3s ease-in-out;
 					}
 				}
 			}

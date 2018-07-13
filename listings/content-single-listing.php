@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 			do_action( 'auto_listings_single_upper_full_width' );
 			?>
 
-			<h4><?php echo auto_listings_price( $price ); ?></h4>
+			<h4><?php echo auto_listings_price(); ?></h4>
 
 		</div>
 

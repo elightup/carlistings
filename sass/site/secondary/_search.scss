@@ -8,6 +8,9 @@
 		color: $color__black;
 		font-style: italic;
 	}
+	input[type="text"]::placeholder {
+		color: $color__black;
+	}
 	.search-submit {
 		position: absolute;
 		right: 10px;

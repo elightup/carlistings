@@ -29,20 +29,7 @@ if ( post_password_required() ) {
 		<h2 class="comments-title underline-heading">
 			<?php
 			$autodealer_comment_count = get_comments_number();
-			if ( '1' === $autodealer_comment_count ) {
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'autodealer' ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			} else {
-				printf( // WPCS: XSS OK.
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $autodealer_comment_count, 'comments title', 'autodealer' ) ),
-					number_format_i18n( $autodealer_comment_count ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			}
+			echo esc_html( _nx( 'Comment', 'Comments', $autodealer_comment_count, 'comments', 'autodealer' ) );
 			?>
 		</h2><!-- .comments-title -->
 
@@ -72,7 +59,10 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	comment_form(
+		$comments_args = array(
+			'title_reply' => 'Post a Comment',
+		) );
 	?>
 
 </div><!-- #comments -->

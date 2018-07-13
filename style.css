@@ -1388,6 +1388,27 @@ a:hover, a:active {
 	font-size: 0.875rem;
 	color: #777777;
 	margin-right: 13px;
+	transition: all .3s ease;
+}
+
+.widget-area .widget_categories li:hover:before,
+.widget-area .widget_categories li:hover a,
+.widget-area .widget_archive li:hover:before,
+.widget-area .widget_archive li:hover a,
+.widget-area .widget_pages li:hover:before,
+.widget-area .widget_pages li:hover a,
+.widget-area .widget_meta li:hover:before,
+.widget-area .widget_meta li:hover a,
+.widget-area .widget_recent_comments li:hover:before,
+.widget-area .widget_recent_comments li:hover a,
+.widget-area .widget_nav_menu li:hover:before,
+.widget-area .widget_nav_menu li:hover a,
+.widget-area .widget_rss li:hover:before,
+.widget-area .widget_rss li:hover a,
+.widget-area .widget_recent_entries li:hover:before,
+.widget-area .widget_recent_entries li:hover a {
+	color: #e11e30;
+	transition: all .3s ease;
 }
 
 .widget-area .widget_categories li a,
@@ -1403,17 +1424,6 @@ a:hover, a:active {
 	color: #000;
 	text-decoration: none;
 	font-weight: 600;
-}
-
-.widget-area .widget_categories li a:hover,
-.widget-area .widget_archive li a:hover,
-.widget-area .widget_pages li a:hover,
-.widget-area .widget_meta li a:hover,
-.widget-area .widget_recent_comments li a:hover,
-.widget-area .widget_nav_menu li a:hover,
-.widget-area .widget_rss li a:hover,
-.widget-area .widget_recent_entries li a:hover {
-	color: #e11e30;
 }
 
 .widget-area .widget_categories li span,
@@ -1810,6 +1820,7 @@ a:hover, a:active {
 	color: #3d414e;
 	cursor: pointer;
 	padding: 0 10px 0 10px;
+	font-weight: 600;
 }
 
 .topbar-right .custom-html-widget select::-ms-expand {
@@ -1880,6 +1891,7 @@ a:hover, a:active {
 
 .footer-bottom .footer-navigation li:last-child a {
 	border-right: none;
+	padding-right: 0;
 }
 
 .footer-bottom .footer-navigation li:first-child a {
@@ -1978,6 +1990,7 @@ a:hover, a:active {
 .archive .entry-header .entry-meta,
 .search .entry-header .entry-meta {
 	margin-bottom: 10px;
+	color: #555555;
 }
 
 .blog .entry-header .entry-meta i,
@@ -1994,7 +2007,7 @@ a:hover, a:active {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	margin-right: 35px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .blog .entry-header .entry-meta > span:last-child,
@@ -2593,7 +2606,7 @@ Genericons
 .section--search .search-content .auto-listings-search .odometer {
 	width: 100%;
 	max-width: 226px;
-	margin-right: 42px;
+	margin-right: 41px;
 }
 
 .section--search .search-content .auto-listings-search .search-form__title {
@@ -2674,7 +2687,7 @@ Genericons
 .section--search .search-content .auto-listings-search .area-wrap .area {
 	width: 100%;
 	max-width: 358px;
-	margin-right: 42px;
+	margin-right: 41px;
 	margin-top: 0;
 	border-radius: 4px;
 	border-color: #e4e4e4;
@@ -3061,6 +3074,11 @@ Genericons
 	margin-right: 7px;
 }
 
+.single .entry-header .entry-meta,
+.page:not(.home) .entry-header .entry-meta {
+	color: #555555;
+}
+
 .single .entry-header .entry-meta i,
 .page:not(.home) .entry-header .entry-meta i {
 	font-size: 16px;
@@ -3073,7 +3091,7 @@ Genericons
 	font-size: 13px;
 	font-size: 0.8125rem;
 	margin-right: 35px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .single .entry-header .entry-meta > span:last-child,
@@ -3150,8 +3168,7 @@ Genericons
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 100px;
-	margin-left: 9px;
-	margin-bottom: 10px;
+	margin: -4px 0px 10px 9px;
 }
 
 .single .entry-content .tags-links a:hover,
@@ -3370,7 +3387,7 @@ Genericons
 }
 
 .comments-title {
-	text-transform: uppercase;
+	color: #000;
 	font-family: inherit;
 	margin-bottom: 0;
 }
@@ -3439,6 +3456,7 @@ Genericons
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-weight: 700;
+	color: #000;
 }
 
 .comment-author .fn a {
@@ -3559,6 +3577,7 @@ ol.children {
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin-bottom: 34px;
+	color: #000;
 }
 
 .comment-reply-title small a {
@@ -3617,6 +3636,10 @@ ol.children {
 
 .comment-form input[type="email"] {
 	background: #fcfcfc;
+}
+
+.comment-form input[type="email"]::placeholder {
+	color: #000;
 }
 
 .comment-form input:not([type="submit"]), .comment-form textarea {
@@ -3704,7 +3727,7 @@ ol.children {
 	align-items: center;
 	flex-flow: column;
 	justify-content: center;
-	padding: 20px 90px 60px;
+	padding: 20px 220px 60px;
 	position: relative;
 	overflow: hidden;
 	word-break: break-word;
@@ -3810,6 +3833,10 @@ ol.children {
 	font-size: 0.8125rem;
 	color: #000;
 	font-style: italic;
+}
+
+.search-form input[type="text"]::placeholder {
+	color: #000;
 }
 
 .search-form .search-submit {
@@ -3975,8 +4002,7 @@ ol.children {
 	left: 0;
 	right: 0;
 	box-shadow: 0 -8px 0px -5px #e11e30 inset;
-	-moz-box-shadow: 0 -8px 0px -5px #e11e30 inset;
-	-webkit-box-shadow: 0 -8px 0px -5px #e11e30 inset;
+	transition: opacity 3s ease-in-out;
 }
 
 .auto-listings-single .has-sidebar .image-gallery img {
