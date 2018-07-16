@@ -11,6 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * Detect plugin. For use on Front End only.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+	return;
+}
+
 ?>
 <div class="contact-form">
 	<h3><?php echo __( 'Quick Contact', 'autodealer' ); ?></h3>

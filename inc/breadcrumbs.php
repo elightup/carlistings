@@ -69,7 +69,8 @@ function autodealer_breadcrumbs( $args = '' ) {
 	} elseif ( is_post_type_archive() ) {
 
 		// If post is a custom post type.
-		$post_type = get_post_type();
+		$query = get_queried_object();
+		$post_type = $query->name;
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );

@@ -11,14 +11,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * Detect plugin. For use on Front End only.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+	return;
+}
+
 global $wp_query;
 
-
-/*
 if ( 1 === $wp_query->found_posts ) {
 	return;
 }
-*/
+
 $orderby         = isset( $_GET['orderby'] ) ? esc_html( $_GET['orderby'] ) : 'date';
 $orderby_options = apply_filters(
 	'auto_listings_listings_orderby', array(

@@ -266,7 +266,7 @@ function autodealer_get_list_cars() {
 	);
 	$items = get_posts( $args );
 	$makes = array();
-
+	$sum   = 0;
 	if ( $items ) {
 		foreach ( $items as $id ) {
 			$makes[] = get_post_meta( $id, '_al_listing_make_display', true );
@@ -287,6 +287,7 @@ function autodealer_get_list_cars() {
 			</a>
 		</li>
 	<?php
+		$sum += $value;
 	}
 	echo '</ul>';
 }

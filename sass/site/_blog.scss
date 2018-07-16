@@ -7,6 +7,9 @@
 	}
 	.entry-media {
 		margin-bottom: 20px;
+		iframe {
+			width: 100%;
+		}
 	}
 	.entry-header {
 		display: flex;

@@ -25,26 +25,6 @@ if ( has_post_format( array( 'video', 'audio' ) ) ) {
 	}
 }
 
-if ( get_post_gallery() ) {
-	$gallery = get_post_gallery( get_the_id(), false );
-	if ( $gallery['ids'] ) {
-		$gallery_id = explode( ',', $gallery['ids'] );
-		?>
-		<div class="entry-media">
-			<div class="grid-gallery owl-carousel">
-				<?php
-				foreach ( $gallery_id as $id ) :
-				?>
-					<?php echo wp_get_attachment_image( $id, 'post-thumbnail' ); ?>
-				<?php
-				endforeach;
-				?>
-			</div>
-		</div>
-		<?php
-	}
-	return;
-}
 
 if ( ! has_post_thumbnail() ) {
 	return;

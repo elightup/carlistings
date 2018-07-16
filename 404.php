@@ -10,12 +10,25 @@
 get_header();
 ?>
 
-<section id="content" class="content-area">
-	<div class="error-404">
-		<p><?php esc_html_e( 'It seems like you have tried to open a page that doesn\'t exist. You are welcome to search for what you are looking for with the form below.', 'autodealer' ); ?></p>
-		<?php get_search_form(); ?>
-	</div>
-</section>
+<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			<section class="error-404 not-found">
+				<h2><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'autodealer' ); ?></h2>
+
+				<div class="page-content">
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'autodealer' ); ?></p>
+
+					<?php
+						get_search_form();
+					?>
+
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
 
 <?php
 

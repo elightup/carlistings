@@ -11,8 +11,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $wp_query;
+/**
+ * Detect plugin. For use on Front End only.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
+if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+	return;
+}
+
+global $wp_query;
 
 if ( $wp_query->max_num_pages <= 1 ) {
 	return;
