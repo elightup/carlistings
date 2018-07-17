@@ -260,7 +260,7 @@ function autodealer_author_box() {
 function autodealer_get_list_cars() {
 	$args = array(
 		'post_type'      => 'auto-listing',
-		'post_per_pages' => -1,
+		'posts_per_page' => -1,
 		'post_status'    => array( 'publish' ),
 		'fields'         => 'ids',
 	);
