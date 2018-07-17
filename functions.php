@@ -183,7 +183,7 @@ function autodealer_scripts() {
 
 		wp_enqueue_script( 'auto-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
 	}
-	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.6.0', true );
+	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
 
 	/**
 	 * Register and enqueue aos.js.
