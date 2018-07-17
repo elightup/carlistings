@@ -191,3 +191,25 @@ function autodealer_filter_make_in_archive( $query ) {
 	$query->set( 'meta_query', $meta_query );
 }
 add_action( 'pre_get_posts', 'autodealer_filter_make_in_archive' );
+
+/**
+ * Filters the CSS class(es) applied to a menu item's list item element.
+ *
+ * @param array    $classes The CSS classes that are applied to the menu item's `<li>` element.
+ * @param WP_Post  $item    The current menu item.
+ * @param stdClass $args    An object of wp_nav_menu() arguments.
+ * @param int      $depth   Depth of menu item. Used for padding.
+ */
+function autodealer_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
+	if ( 'menu-1' !== $args->theme_location ) {
+		return $classes;
+	}
+	$archive_page_id = auto_listings_option( 'archives_page' );
+	$archive_page = get_post( $archive_page_id );
+	$archive_page = $archive_page->post_title;
+	if ( is_post_type_archive( 'auto-listing' ) && $item->title === $archive_page ) {
+		$classes[] = 'current-menu-item';
+	}
+	return $classes;
+}
+add_filter( 'nav_menu_css_class', 'autodealer_active_autolisting_archive_on_menu', 10, 4 );
