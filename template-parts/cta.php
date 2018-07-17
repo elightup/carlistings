@@ -18,11 +18,11 @@ if ( $image_background ) {
 
 <section class="section--cta"<?php echo $image_background; // WPCS: XSS OK. ?>>
 	<div class="container">
-		<div class="section-cta__left">
+		<div class="section-cta__left" data-aos="fade-right">
 			<h2 class="cta-title"><?php echo esc_html( $title ); ?></h2>
 			<p class="cta-description"><?php echo esc_html( $description ); ?></p>
 		</div>
-		<div class="section-cta__right">
+		<div class="section-cta__right" data-aos="fade-left">
 			<a href="<?php echo esc_url( $button_url ); ?>"><?php echo esc_html( $button_text ); ?></a>
 		</div>
 	</div>

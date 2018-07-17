@@ -27,18 +27,18 @@
 		<header id="masthead" class="site-header">
 			<div class="header-top">
 				<div class="container">
-					<div class="topbar-left">
+					<div class="topbar-left" data-aos="fade-right">
 						<?php dynamic_sidebar( 'topbar-left' ); ?>
 					</div>
 					<?php if ( is_active_sidebar( 'topbar-right' ) ) : ?>
-						<div class="topbar-right">
+						<div class="topbar-right" data-aos="fade-left">
 							<?php dynamic_sidebar( 'topbar-right' ); ?>
 						</div>
 					<?php endif; ?>
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container" data-aos="fade-up">
 				<div class="site-branding">
 					<?php
 					the_custom_logo();

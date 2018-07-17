@@ -24,7 +24,7 @@ $speed = get_theme_mod( 'slider_speed', 3000 );
 				$url_image = get_the_post_thumbnail_url( $post, 'full' );
 				echo '<img src="' . esc_url( $url_image ) . '" data-lazy="' . esc_url( $url_image ) . '" alt="' . get_the_title() . '"/>';
 				?>
-				<div class="featured-content">
+				<div class="featured-content" data-aos="fade-up">
 					<div class="container">
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 						<?php the_content(); ?>
