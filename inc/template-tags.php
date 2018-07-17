@@ -255,9 +255,9 @@ function autodealer_author_box() {
 }
 
 /**
- * Getter function for section car by make.
+ * Get car ids.
  */
-function autodealer_get_list_cars() {
+function autodealer_get_car_ids() {
 	$args = array(
 		'post_type'      => 'auto-listing',
 		'posts_per_page' => -1,
@@ -265,6 +265,14 @@ function autodealer_get_list_cars() {
 		'fields'         => 'ids',
 	);
 	$items = get_posts( $args );
+	return $items;
+}
+
+/**
+ * Getter function for section car by make.
+ */
+function autodealer_get_car_lists() {
+	$items = autodealer_get_car_ids();
 	$makes = array();
 	$sum   = 0;
 	if ( $items ) {
@@ -279,7 +287,7 @@ function autodealer_get_list_cars() {
 	foreach ( $makes as $make => $value ) {
 	?>
 		<li>
-			<a href="<?php echo esc_url( $archive_link . '?make=' . $make ) ?>">
+			<a href="<?php echo esc_url( $archive_link . '?make=' . $make ); ?>">
 				<?php
 				// translators: make and number of modals.
 				echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'autodealer' ), $make, $value ) );

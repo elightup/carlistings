@@ -90,7 +90,7 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_description', array(
-			'default'           => esc_html__( '5371 cars available in different categories', 'autodealer' ),
+			'default'           => esc_html__( 'cars available in different categories', 'autodealer' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
