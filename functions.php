@@ -178,16 +178,17 @@ function autodealer_scripts() {
 
 	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/sumoselect.js', array(), '20180619', true );
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'auto-listing', get_template_directory_uri() . '/js/sumoselect.js', array(), '20180619', true );
 
-	wp_enqueue_script( 'auto-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
-
+		wp_enqueue_script( 'auto-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
+	}
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.6.0', true );
 
 	/**
 	 * Register and enqueue aos.js.
 	 */
-	wp_enqueue_script( 'eros-jquery-aos', get_template_directory_uri() . '/js/aos.js', array( 'jquery' ), '20180629' );
+	wp_enqueue_script( 'autodealer-jquery-aos', get_template_directory_uri() . '/js/aos.js', array( 'jquery' ), '20180629' );
 
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '20180506', true );
 
