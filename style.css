@@ -399,6 +399,7 @@ h5,
 h6 {
 	font-family: "Source Sans Pro", sans-serif;
 	word-wrap: break-word;
+	color: #000;
 }
 
 h1 {
@@ -3424,11 +3425,12 @@ Genericons
 	font-size: 14px;
 	font-size: 0.875rem;
 	width: 100%;
-	margin-top: 5px;
+	margin-top: -10px;
 }
 
 .logged-in-as a {
 	text-decoration: none;
+	color: #000;
 }
 
 .logged-in-as a:hover {
@@ -3446,8 +3448,11 @@ Genericons
 
 .comments-title {
 	color: #000;
-	font-family: inherit;
-	margin-bottom: 0;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: -10px;
+	font-size: 24px;
+	font-size: 1.5rem;
+	margin-top: 35px;
 }
 
 .comment-list {
@@ -3456,6 +3461,10 @@ Genericons
 	display: block;
 	width: 100%;
 	list-style: none;
+}
+
+.comment-list > li:last-child .comment-content {
+	border-bottom: 0;
 }
 
 .comment-list .comment {
@@ -3486,9 +3495,9 @@ Genericons
 .comment-list .reply a {
 	font-size: 12px;
 	font-size: 0.75rem;
-	color: #777780;
+	color: #666666;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 10px 20px;
 	border-radius: 30px;
 	border: 1px solid #e4e4e4;
@@ -3573,7 +3582,7 @@ ol.children {
 }
 
 .comment-metadata {
-	margin-top: 6px;
+	margin-top: 3px;
 }
 
 .comment-metadata a {
@@ -3581,7 +3590,7 @@ ol.children {
 }
 
 @media (min-width: 768px) {
-	.depth-1:not(:last-child) > .comment-body > .comment-content,
+	.depth-1 > .comment-body > .comment-content,
 	.depth-1 > .children {
 		border-bottom: 1px solid #e2e2e2;
 	}
@@ -3634,8 +3643,9 @@ ol.children {
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-weight: 700;
-	margin-bottom: 34px;
+	margin-bottom: 30px;
 	color: #000;
+	margin-top: 0;
 }
 
 .comment-reply-title small a {
@@ -3703,7 +3713,7 @@ ol.children {
 .comment-form input:not([type="submit"]), .comment-form textarea {
 	font-size: 13px;
 	font-size: 0.8125rem;
-	padding: 10px 28px;
+	padding: 14px 28px;
 	width: 100%;
 	border-color: #e2e2e2;
 	border-radius: 0;
@@ -3712,7 +3722,7 @@ ol.children {
 .comment-form input:not([type="submit"]) {
 	margin: 0;
 	border-bottom: none;
-	color: #000;
+	color: #777777;
 }
 
 .comment-form textarea {
