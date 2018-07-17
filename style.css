@@ -385,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #3d414e;
+	color: #777777;
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1670,6 +1670,7 @@ a:hover, a:active {
 
 .header-top {
 	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
 }
 
 .topbar-left {
@@ -2049,6 +2050,20 @@ a:hover, a:active {
 	color: #e11e30;
 }
 
+.blog .entry-header .entry-meta .comments-link a,
+.archive .entry-header .entry-meta .comments-link a,
+.search .entry-header .entry-meta .comments-link a {
+	position: relative;
+	top: -1px;
+}
+
+.blog .entry-header .entry-meta .posted-on time,
+.archive .entry-header .entry-meta .posted-on time,
+.search .entry-header .entry-meta .posted-on time {
+	position: relative;
+	top: -1px;
+}
+
 .blog .entry-title,
 .archive .entry-title,
 .search .entry-title {
@@ -2056,7 +2071,7 @@ a:hover, a:active {
 	font-size: 2rem;
 	line-height: 1.3;
 	font-weight: 700;
-	margin-top: 15px;
+	margin-top: 12px;
 	margin-bottom: 15px;
 }
 
@@ -2085,6 +2100,12 @@ a:hover, a:active {
 .search .entry-content p {
 	color: #777777;
 	line-height: 1.7;
+}
+
+.blog .entry-content strong,
+.archive .entry-content strong,
+.search .entry-content strong {
+	color: #000;
 }
 
 .blog .entry-content .link-more,
@@ -2482,7 +2503,7 @@ Genericons
 }
 
 .featured-posts .slick-track img {
-	max-height: 96vh;
+	height: 600px;
 	width: 100%;
 	object-fit: cover;
 	object-position: center center;
@@ -2533,14 +2554,15 @@ Genericons
 }
 
 @media (max-width: 991px) {
-	.featured-posts img {
-		min-height: 300px;
+	.featured-posts.featured-posts img {
+		height: auto;
+		min-height: 350px;
 	}
-	.featured-posts .featured-content.featured-content {
+	.featured-posts.featured-posts .featured-content.featured-content {
 		top: 0;
 		height: 100%;
 	}
-	.featured-posts .featured-content.featured-content .entry-title {
+	.featured-posts.featured-posts .featured-content.featured-content .entry-title {
 		font-size: 28px;
 		font-size: 1.75rem;
 		margin-top: 50px;
@@ -2988,6 +3010,7 @@ Genericons
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 .section--cta .container {
@@ -3176,7 +3199,7 @@ Genericons
 	font-size: 20px;
 	font-size: 1.25rem;
 	color: #000;
-	font-weight: 600;
+	font-weight: 700;
 	display: flex;
 	flex-flow: row wrap;
 	margin-top: 60px;
@@ -3997,6 +4020,11 @@ ol.children {
 	font-weight: 600;
 }
 
+.auto-listings-single .has-sidebar .image-gallery li::hover .lSPrev {
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 0.3s;
+}
+
 .auto-listings-single .has-sidebar .image-gallery .lSAction.lSAction i {
 	padding: 36px 18px;
 	background-color: rgba(52, 54, 67, 0.85);
@@ -4008,12 +4036,16 @@ ol.children {
 .auto-listings-single .has-sidebar .image-gallery .lSAction.lSAction .lSPrev {
 	left: 0;
 	margin-top: -43px;
+	transform: translate3d(-45px, 0px, 0px);
+	transition: all 0.3s;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSAction.lSAction .lSNext {
 	right: 0;
 	width: inherit;
 	margin-top: -43px;
+	transform: translate3d(45px, 0px, 0px);
+	transition: all 0.3s;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li {
