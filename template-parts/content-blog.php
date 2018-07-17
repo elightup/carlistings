@@ -15,7 +15,11 @@
 		<header class="entry-header">
 			<?php autodealer_get_category(); ?>
 			<div class="entry-meta">
-				<?php autodealer_posted_on(); ?>
+				<?php
+				autodealer_posted_by();
+				autodealer_print_comment_link();
+				autodealer_posted_on();
+				?>
 			</div>
 		</header><!-- .entry-header -->
 

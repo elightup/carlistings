@@ -26,21 +26,8 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		$byline = sprintf(
-			/* translators: the author name */
-			esc_html_x( '%s', 'post author', 'autodealer' ),
-			'<span class="author vcard"><i class="icofont icofont-user-male"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
+		echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
 
-			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
-		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
-			/* translators: %s: post title */
-			comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-			echo '</span>';
-		}
-			echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
 	}
 	endif;
 
@@ -50,15 +37,31 @@ if ( ! function_exists( 'autodealer_posted_by' ) ) :
 	 */
 	function autodealer_posted_by() {
 		$byline = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'autodealer' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			/* translators: the author name */
+			esc_html_x( '%s', 'post author', 'autodealer' ),
+			'<span class="author vcard"><i class="icofont icofont-user-male"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
+
+/**
+ * Prints HTML with meta information for the comment number.
+ */
+function autodealer_print_comment_link() {
+	$comment_number = get_comments_number();
+	if ( in_the_loop() && ! is_single() && ! $comment_number ) {
+		return;
+	}
+	if ( ! post_password_required() && ( comments_open() || $comment_number ) ) {
+		$comment_number_output = 'Comments: ' . $comment_number;
+		echo '<span class="comments-link"><i class="icofont icofont-speech-comments"></i>';
+		comments_popup_link( $comment_number_output, $comment_number_output, $comment_number_output );
+		echo '</span>';
+	}
+}
 
 if ( ! function_exists( 'autodealer_entry_footer' ) ) :
 	/**
@@ -274,7 +277,7 @@ function autodealer_get_car_ids() {
 function autodealer_get_car_lists() {
 	$items = autodealer_get_car_ids();
 	$makes = array();
-	$sum   = 0;
+
 	if ( $items ) {
 		foreach ( $items as $id ) {
 			$makes[] = get_post_meta( $id, '_al_listing_make_display', true );
@@ -295,7 +298,6 @@ function autodealer_get_car_lists() {
 			</a>
 		</li>
 	<?php
-		$sum += $value;
 	}
 	echo '</ul>';
 }
