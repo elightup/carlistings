@@ -89,27 +89,32 @@
 	}
 }
 
+.auto-listings-items.auto-listings-items {
+	.items-left {
+		.highlight-new {
+			right: inherit;
+			left: 10px;
+			text-transform: uppercase;
+			padding: 9px 10px;
+			font-weight: 700;
+			@include font-size(1.2);
+			i {
+				display: none;
+			}
+			&:before {
+				content: '\f0e6';
+				@include ico-font();
+				@include font-size(1.4);
+			}
+		}
+	}
+}
 /* auto listings items */
 
 .has-sidebar,
 .listing-no-sidebar {
 	.auto-listings-items.auto-listings-items {
 		.items-left {
-			.highlight-new {
-				right: inherit;
-				left: 10px;
-				text-transform: uppercase;
-				padding: 9px 10px;
-				font-weight: 600;
-				@include font-size(1.2);
-				i {
-					display: none;
-				}
-				&:before {
-					content: '\f0e6';
-					@include ico-font();
-				}
-			}
 			.image {
 				.status {
 					i {

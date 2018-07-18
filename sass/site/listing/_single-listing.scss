@@ -8,7 +8,15 @@
 			left: 10px;
 			text-transform: uppercase;
 			padding: 9px 10px;
-			font-weight: 600;
+			font-weight: 700;
+			i {
+				display: none;
+			}
+			&:before {
+				content: '\f0e6';
+				@include ico-font();
+				@include font-size(1.4);
+			}
 		}
 		.image-gallery {
 			li::hover .lSPrev {
