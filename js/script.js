@@ -188,4 +188,4 @@ jQuery( function ( $ ) {
 	 auto_listings_view_switcher();
 	 initFeaturedContentSlider();
 	 moveTagSearchForm();
-	} );
+} );
