@@ -3023,7 +3023,7 @@ Genericons
 }
 
 .section--cta {
-	background: url(images/footer.png);
+	background-color: #999999;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

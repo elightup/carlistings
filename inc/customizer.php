@@ -224,10 +224,11 @@ function autodealer_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Footer background.
+	// Cta background.
 	$wp_customize->add_setting(
 		'cta_background', array(
 			'sanitize_callback' => 'autodealer_sanitize_image',
+			'default'           => get_template_directory_uri() . '/images/cta.png',
 		)
 	);
 	$wp_customize->add_control(
