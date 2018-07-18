@@ -1801,7 +1801,7 @@ a:hover, a:active {
 }
 
 .topbar-right .custom-html-widget {
-	padding: 18px 8px 18px 37px;
+	padding: 18px 0 18px 37px;
 	position: relative;
 }
 
@@ -1816,7 +1816,8 @@ a:hover, a:active {
 .topbar-right .custom-html-widget .icofont-caret-down {
 	color: #e11e30;
 	position: relative;
-	right: 10px;
+	right: 18px;
+	z-index: -1;
 }
 
 .topbar-right .custom-html-widget select {
@@ -1827,7 +1828,7 @@ a:hover, a:active {
 	background: transparent;
 	color: #3d414e;
 	cursor: pointer;
-	padding: 0 10px 0 10px;
+	padding: 0 20px 0 10px;
 	font-weight: 600;
 }
 
