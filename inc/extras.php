@@ -38,20 +38,6 @@ function autodealer_excerpt_more_link( $link ) {
 add_filter( 'excerpt_more', 'autodealer_excerpt_more_link' );
 
 /**
- * Change markup of archive and category widget to include .count for post count
- *
- * @param string $output Alter the output of the list categories and archives widgets.
- *
- * @return string
- */
-function autodealer_widget_archive_count( $output ) {
-	$output = preg_replace( '|\((\d+)\)|', '<span class="count">(\\1)</span>', $output );
-
-	return $output;
-}
-add_filter( 'wp_list_categories', 'autodealer_widget_archive_count' );
-
-/**
  * Add tag to the content
  *
  * @param string $content Alter the output of the list categories and archives widgets.
