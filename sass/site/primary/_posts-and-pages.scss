@@ -28,7 +28,7 @@
 			}
 		}
 		.entry-meta {
-			color: #555555;
+			color: $color__gray;
 			i {
 				@include font-size(1.6);
 				margin-right: 7px;
@@ -41,7 +41,7 @@
 					margin-right: 0;
 				}
 				a {
-					color: #555555;
+					color: $color__gray;
 					text-decoration: none;
 					&:hover {
 						color: $color__main;
@@ -56,7 +56,7 @@
 		font-weight: 700;
 		margin-top: 10px;
 		margin-bottom: 5px;
-		color: #2c2e3b;
+		color: $color__title;
 	}
 	.entry-content {
 		p {
@@ -207,7 +207,7 @@
 	word-break: break-word;
 	@include font-size(1.4);
 	line-height: 1.7;
-	color: #777777;
+	color: $color__text;
 	margin-top: 10px;
 }
 

@@ -18,7 +18,7 @@
 		}
 		.all-car__description {
 			@include font-size(1.8);
-			color: #777777;
+			color: $color__text;
 			margin-top: 0;
 		}
 		ul {
@@ -33,7 +33,7 @@
 					font-weight: 600;
 					span {
 						@include font-size(1.4);
-						color: #aaaaaa;
+						color: $color__number-li;
 					}
 					&:hover {
 						color: $color__main;
@@ -42,7 +42,7 @@
 				&:before {
 					content: '\eb27';
 					@include ico-font();
-					color: #aaaaaa;
+					color: $color__number-li;
 					margin-right: 4px;
 				}
 			}

@@ -88,7 +88,7 @@
 		right: 0;
 		a {
 			@include font-size(1.2);
-			color: #666666;
+			color: $color__twitter-name;
 			text-transform: uppercase;
 			font-weight: 700;
 			padding: 10px 20px;
@@ -143,7 +143,7 @@ ol.children {
 .comment-content {
 	margin-top: 20px;
 	padding: 9px 0 38px;
-	color: #777777;
+	color: $color__text;
 	word-wrap: break-word;
 	margin-left: 90px;
 	@include font-size(1.4);
@@ -279,9 +279,9 @@ ol.children {
 	}
 	input[type="email"] {
 		background: $color__email-background;
-	}
-	input[type="email"]::placeholder {
-		color: $color__black;
+		@include placeholder() {
+			color: $color__black;
+		}
 	}
 	input:not([type="submit"]), textarea {
 		@include font-size(1.3);

@@ -32,15 +32,15 @@
 	}
 }
 .header-top {
-	border-bottom: 1px solid #e4e4e4;
+	border-bottom: 1px solid $color__border-abbr;
 	overflow: hidden;
 }
 .topbar-left {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	border-left: 1px solid #e4e4e4;
-	border-right: 1px solid #e4e4e4;
+	border-left: 1px solid $color__border-abbr;
+	border-right: 1px solid $color__border-abbr;
 	.widget_text {
 		p {
 			margin: 0;
@@ -51,7 +51,7 @@
 		font-weight: 400;
 		margin: 0;
 		padding: 22px 18px 22px 18px;
-		border-right: 1px solid #e4e4e4;
+		border-right: 1px solid $color__border-abbr;
 		&:before {
 			content: '\efb0';
 			@include ico-font();
@@ -82,10 +82,10 @@
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	border-left: 1px solid #e4e4e4;
-	border-right: 1px solid #e4e4e4;
+	border-left: 1px solid $color__border-abbr;
+	border-right: 1px solid $color__border-abbr;
 	.jetpack_widget_social_icons.jetpack_widget_social_icons {
-		border-right: 1px solid #e4e4e4;
+		border-right: 1px solid $color__border-abbr;
 		.jetpack-social-widget-list {
 			margin-top: 20px;
 		}
@@ -111,7 +111,7 @@
 		}
 	}
 	.social-media {
-		border-right: 1px solid #e4e4e4;
+		border-right: 1px solid $color__border-abbr;
 		.jetpack-social-navigation {
 			padding: 20px 20px;
 			.menu {

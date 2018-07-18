@@ -208,7 +208,7 @@ function autodealer_fonts_url() {
 	$subsets = 'latin,latin-ext';
 
 	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'autodealer' ) ) {
-		$fonts[] = 'Open Sans:300,400,600,700';
+		$fonts[] = 'Open Sans:300,400,600,700,800';
 	}
 
 	if ( 'off' !== _x( 'on', 'Source Sans Pro font: on or off', 'autodealer' ) ) {

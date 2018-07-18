@@ -2,7 +2,7 @@
 .archive,
 .search {
 	article {
-		border-bottom: 1px solid #e4e4e4;
+		border-bottom: 1px solid $color__border-abbr;
 		margin-bottom: 38px;
 	}
 	.entry-media {
@@ -34,7 +34,7 @@
 		}
 		.entry-meta {
 			margin-bottom: 10px;
-			color: #555555;
+			color: $color__gray;
 			i {
 				@include font-size(1.6);
 				margin-right: 7px;
@@ -47,7 +47,7 @@
 					margin-right: 0;
 				}
 				a {
-					color: #555555;
+					color: $color__gray;
 					text-decoration: none;
 					&:hover {
 						color: $color__main;
@@ -75,7 +75,7 @@
 		margin-top: 12px;
 		margin-bottom: 15px;
 		a {
-			color: #2c2e3b;
+			color: $color__title;
 			text-decoration: none;
 			&:hover {
 				color: $color__main;
@@ -86,7 +86,7 @@
 		margin-top: -15px;
 		padding-bottom: 30px;
 		p {
-			color: #777777;
+			color: $color__text;
 			line-height: 1.7;
 		}
 		strong {

@@ -3740,7 +3740,19 @@ ol.children {
 	background: #fcfcfc;
 }
 
-.comment-form input[type="email"]::placeholder {
+.comment-form input[type="email"]::-webkit-input-placeholder {
+	color: #000;
+}
+
+.comment-form input[type="email"]:-moz-placeholder {
+	color: #000;
+}
+
+.comment-form input[type="email"]::-moz-placeholder {
+	color: #000;
+}
+
+.comment-form input[type="email"]:-ms-input-placeholder {
 	color: #000;
 }
 
@@ -5189,11 +5201,6 @@ ol.children {
 
 .sidebar .auto-listings-search.auto-listings-search .SelectBox {
 	padding: 7px 20px;
-}
-
-.sidebar .auto-listings-search.auto-listings-search input::placeholder {
-	opacity: 1;
-	color: black;
 }
 
 .sidebar .auto-listings-search.auto-listings-search .price-wrap {
