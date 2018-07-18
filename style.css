@@ -2737,6 +2737,23 @@ Genericons
 	border-radius: 4px;
 	border-color: #e4e4e4;
 	height: 45px;
+	font-weight: 400;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .area::-webkit-input-placeholder {
+	color: #000;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .area:-moz-placeholder {
+	color: #000;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .area::-moz-placeholder {
+	color: #000;
+}
+
+.section--search .search-content .auto-listings-search .area-wrap .area:-ms-input-placeholder {
+	color: #000;
 }
 
 .section--search .search-content .auto-listings-search .area-wrap .area:focus {
@@ -3903,7 +3920,19 @@ ol.children {
 	font-style: italic;
 }
 
-.search-form input[type="text"]::placeholder {
+.search-form input[type="text"]::-webkit-input-placeholder {
+	color: #000;
+}
+
+.search-form input[type="text"]:-moz-placeholder {
+	color: #000;
+}
+
+.search-form input[type="text"]::-moz-placeholder {
+	color: #000;
+}
+
+.search-form input[type="text"]:-ms-input-placeholder {
 	color: #000;
 }
 
@@ -5174,8 +5203,25 @@ ol.children {
 	border: 1px solid #e4e4e4;
 	border-radius: 4px;
 	color: #000;
+	font-weight: 400;
 	font-size: 13px;
 	font-size: 0.8125rem;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .area::-webkit-input-placeholder {
+	color: #000;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .area:-moz-placeholder {
+	color: #000;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .area::-moz-placeholder {
+	color: #000;
+}
+
+.sidebar .auto-listings-search.auto-listings-search .area-wrap .area:-ms-input-placeholder {
+	color: #000;
 }
 
 .sidebar .auto-listings-search.auto-listings-search .area-wrap button {

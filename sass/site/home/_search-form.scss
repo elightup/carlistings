@@ -137,6 +137,10 @@
 					border-radius: 4px;
 					border-color: $color__border-abbr;
 					height: 45px;
+					font-weight: 400;
+					@include placeholder() {
+						color: $color__black;
+					}
 					&:focus {
 						border: 1px solid $color__border-abbr;
 					}
@@ -161,7 +165,7 @@
 		.within,
 		.area,
 		.al-button
-		 {
+		{
 			width: 48% !important;
 			max-width: 100% !important;
 			margin-right: 0 !important;

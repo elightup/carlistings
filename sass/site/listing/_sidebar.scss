@@ -106,7 +106,11 @@
 				border: 1px solid $color__border-abbr;
 				border-radius: 4px;
 				color: $color__black;
+				font-weight: 400;
 				@include font-size(1.3);
+				@include placeholder() {
+					color: $color__black;
+				}
 			}
 			button {
 				background-color: $color__main;
