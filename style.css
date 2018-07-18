@@ -3934,7 +3934,7 @@ ol.children {
 
 .search-form input[type="text"] {
 	width: 100%;
-	padding: 12px 22px;
+	padding: 12px 50px 12px 22px;
 	border-radius: 100px;
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -4064,6 +4064,10 @@ ol.children {
 
 #wp-calendar #next {
 	text-align: right;
+}
+
+#wp-calendar a {
+	color: #e11e30;
 }
 
 /*--------------------------------------------------------------
