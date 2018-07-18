@@ -2,7 +2,7 @@
 	margin-bottom: -82px;
 	.slick-track {
 		img {
-			max-height: 96vh;
+			height: 600px;
 			width: 100%;
 			object-fit: cover;
 			object-position: center center;
@@ -44,9 +44,10 @@
 	}
 }
 @media (max-width: 991px) {
-	.featured-posts {
+	.featured-posts.featured-posts {
 		img {
-			min-height: 300px;
+			height: auto;
+			min-height: 350px;
 		}
 		.featured-content.featured-content {
 			top: 0;

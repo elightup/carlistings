@@ -125,7 +125,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		/* translators: search query */
 		$title = sprintf( esc_html__( 'Search results for &quot;%s&quot;', 'autodealer' ), get_search_query() );
 	} elseif ( is_404() ) {
-		$title = esc_html__( 'Not Found', 'autodealer' );
+		$title = esc_html__( '404', 'autodealer' );
 	} elseif ( is_author() ) {
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
 		the_post();
