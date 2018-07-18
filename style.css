@@ -423,7 +423,7 @@ blockquote {
 	font-style: italic;
 	font-size: 28px;
 	font-size: 1.75rem;
-	color: #000;
+	color: #2c2e3b;
 	position: relative;
 }
 
@@ -2108,14 +2108,7 @@ a:hover, a:active {
 .blog .entry-content p,
 .archive .entry-content p,
 .search .entry-content p {
-	color: #777777;
 	line-height: 1.7;
-}
-
-.blog .entry-content strong,
-.archive .entry-content strong,
-.search .entry-content strong {
-	color: #000;
 }
 
 .blog .entry-content .link-more,
