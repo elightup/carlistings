@@ -545,6 +545,7 @@ hr {
 
 ol {
 	list-style: decimal;
+	padding: 0;
 }
 
 ul {
@@ -1466,6 +1467,17 @@ a:hover, a:active {
 	font-size: 0.75rem;
 	color: #777777;
 	margin-left: 2px;
+}
+
+.widget-area .widget_categories li.page_item_has_children .children,
+.widget-area .widget_archive li.page_item_has_children .children,
+.widget-area .widget_pages li.page_item_has_children .children,
+.widget-area .widget_meta li.page_item_has_children .children,
+.widget-area .widget_recent_comments li.page_item_has_children .children,
+.widget-area .widget_nav_menu li.page_item_has_children .children,
+.widget-area .widget_rss li.page_item_has_children .children,
+.widget-area .widget_recent_entries li.page_item_has_children .children {
+	margin-left: 26px;
 }
 
 .widget-area .widget_text ul {
@@ -3260,13 +3272,24 @@ Genericons
 }
 
 .single .entry-content ul,
-.page:not(.home) .entry-content ul {
+.single .entry-content ol,
+.page:not(.home) .entry-content ul,
+.page:not(.home) .entry-content ol {
 	margin-left: 40px;
 }
 
 .single .entry-content ul li,
-.page:not(.home) .entry-content ul li {
+.single .entry-content ol li,
+.page:not(.home) .entry-content ul li,
+.page:not(.home) .entry-content ol li {
 	margin-bottom: 20px;
+}
+
+.single .entry-content ul li ul,
+.single .entry-content ol li ul,
+.page:not(.home) .entry-content ul li ul,
+.page:not(.home) .entry-content ol li ul {
+	margin-top: 20px;
 }
 
 .single .entry-content .tags-links,
