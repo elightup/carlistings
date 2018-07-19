@@ -47,7 +47,7 @@ function autodealer_jetpack_setup() {
 			'post-details'    => array(
 				'stylesheet' => 'autodealer-style',
 				'date'       => '.posted-on',
-				'categories' => '.cat-links',
+				'categories' => '.entry-header__category',
 				'tags'       => '.tags-links',
 				'author'     => '.byline',
 				'comment'    => '.comments-link',
