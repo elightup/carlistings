@@ -3084,11 +3084,11 @@ Genericons
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 0px 105px;
+	padding: 25px 0px 105px;
 }
 
 .section--cta .section-cta__left {
-	margin-top: 89px;
+	margin-top: 65px;
 }
 
 .section--cta .section-cta__left .cta-title {
@@ -3109,7 +3109,7 @@ Genericons
 }
 
 .section--cta .section-cta__right {
-	margin-top: 89px;
+	margin-top: 65px;
 }
 
 .section--cta .section-cta__right a {
