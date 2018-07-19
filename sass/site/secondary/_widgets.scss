@@ -8,6 +8,11 @@
 		}
 		select {
 			max-width: 100%;
+			width: 100%;
+			&:active,
+			&:focus {
+				outline: none;
+			}
 		}
 		.widget-title {
 			@include font-size(2);

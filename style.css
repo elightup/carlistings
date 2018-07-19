@@ -1330,6 +1330,11 @@ a:hover, a:active {
 
 .widget-area .widget select {
 	max-width: 100%;
+	width: 100%;
+}
+
+.widget-area .widget select:active, .widget-area .widget select:focus {
+	outline: none;
 }
 
 .widget-area .widget .widget-title {
