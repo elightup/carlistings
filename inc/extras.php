@@ -8,6 +8,14 @@
  */
 
 /**
+ * The content more link
+ */
+function autodealer_read_more_link() {
+	return '<p class="link-more"><a class="more-link" href="' . get_permalink() . '">Read More</a></p>';
+}
+add_filter( 'the_content_more_link', 'autodealer_read_more_link' );
+
+/**
  * Length excerpt
  */
 function autodealer_custom_excerpt_length() {
