@@ -2747,12 +2747,9 @@ Genericons
 	color: #000;
 }
 
-.section--search .search-content .auto-listings-search .area-wrap .area:-moz-placeholder {
-	color: #000;
-}
-
 .section--search .search-content .auto-listings-search .area-wrap .area::-moz-placeholder {
 	color: #000;
+	opacity: 1;
 }
 
 .section--search .search-content .auto-listings-search .area-wrap .area:-ms-input-placeholder {
@@ -3738,12 +3735,9 @@ ol.children {
 	color: #000;
 }
 
-.comment-form input[type="email"]:-moz-placeholder {
-	color: #000;
-}
-
 .comment-form input[type="email"]::-moz-placeholder {
 	color: #000;
+	opacity: 1;
 }
 
 .comment-form input[type="email"]:-ms-input-placeholder {
@@ -3947,12 +3941,9 @@ ol.children {
 	color: #000;
 }
 
-.search-form input[type="text"]:-moz-placeholder {
-	color: #000;
-}
-
 .search-form input[type="text"]::-moz-placeholder {
 	color: #000;
+	opacity: 1;
 }
 
 .search-form input[type="text"]:-ms-input-placeholder {
@@ -5246,12 +5237,9 @@ ol.children {
 	color: #000;
 }
 
-.sidebar .auto-listings-search.auto-listings-search .area-wrap .area:-moz-placeholder {
-	color: #000;
-}
-
 .sidebar .auto-listings-search.auto-listings-search .area-wrap .area::-moz-placeholder {
 	color: #000;
+	opacity: 1;
 }
 
 .sidebar .auto-listings-search.auto-listings-search .area-wrap .area:-ms-input-placeholder {
