@@ -127,7 +127,7 @@ Genericons
 .widget-area .jetpack_widget_social_icons a:before {
 	@include ico-font();
 	padding: 10px;
-	border: 1px solid #e4e4e4;
+	border: 1px solid $color__border-abbr;
 	@include font-size(1.6);
 	border-radius: 3px;
 	margin-right: 10px;

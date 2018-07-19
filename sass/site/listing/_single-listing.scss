@@ -116,7 +116,7 @@
 				&:before {
 					content: '';
 					width: 100px;
-					border-top: 1px solid $color__tag-background;
+					border-top: 1px solid $color__border-abbr;
 					position: absolute;
 					top: -23px;
 				}
@@ -136,7 +136,7 @@
 					&:before {
 						content: '';
 						width: 100px;
-						border-top: 1px solid $color__tag-background;
+						border-top: 1px solid $color__border-abbr;
 						position: absolute;
 						top: -23px;
 					}
@@ -166,7 +166,7 @@
 					margin-bottom: 0;
 				}
 				& > div {
-					border: 1px solid $color__tag-background;
+					border: 1px solid $color__border-abbr;
 					border-top: 0;
 				}
 				.active {
@@ -192,8 +192,8 @@
 					}
 					table {
 						border-collapse: collapse;
-						border-top: 1px solid $color__tag-background;
-						border-bottom: 1px solid $color__tag-background;
+						border-top: 1px solid $color__border-abbr;
+						border-bottom: 1px solid $color__border-abbr;
 						padding-left: 27px;
 						padding-right: 27px;
 						margin-bottom: 40px;

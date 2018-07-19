@@ -48,7 +48,7 @@
 					&:before {
 						content: '\eb25' !important;
 						@include ico-font();
-						color: #000 !important;
+						color: $color__black !important;
 					}
 				}
 			}

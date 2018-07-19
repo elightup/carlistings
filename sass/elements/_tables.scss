@@ -7,7 +7,7 @@ table {
 }
 
 thead tr {
-	background: #f3f5f8;
+	background: $color__sidebar;
 }
 
 th {
@@ -16,11 +16,11 @@ th {
 }
 
 td {
-	color: #777780;
+	color: $color__tag-text;
 }
 
 th, td {
 	text-align: center;
 	padding: 26px 5px;
-	border: 1px solid #e2e2e2;
+	border: 1px solid $color__border-info-box;
 }

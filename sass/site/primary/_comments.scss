@@ -93,7 +93,7 @@
 			font-weight: 700;
 			padding: 10px 20px;
 			border-radius: 30px;
-			border: 1px solid $color__tag-background;
+			border: 1px solid $color__border-abbr;
 			text-decoration: none;
 			&:after {
 				content: '\f0b9';
@@ -198,7 +198,7 @@ ol.children {
 	.depth-1 {
 		padding-bottom: 40px;
 		> .children {
-			background: $color__tag-background;
+			background: $color__border-abbr;
 			padding: 15px 15px 30px;
 			margin-top: 30px;
 			border-radius: 5px;

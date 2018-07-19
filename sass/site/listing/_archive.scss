@@ -129,7 +129,7 @@
 			.at-a-glance {
 				li {
 					@include font-size(1.2);
-					color: #555555;
+					color: $color__gray;
 					font-weight: 700;
 					margin: 0;
 					border-right: 1px solid $color__border-abbr;
@@ -138,7 +138,7 @@
 					}
 					a {
 						text-decoration: none;
-						color: #555555;
+						color: $color__gray;
 						&:hover {
 							color: $color__main;
 						}
@@ -165,7 +165,7 @@
 			.description {
 				@include font-size(1.4);
 				line-height: 1.7;
-				color: #777777;
+				color: $color__text;
 				position: relative;
 				margin-bottom: 50px;
 				&:after {
@@ -250,7 +250,7 @@
 						display: flex;
 						flex-flow: row wrap;
 						border-right: 1px solid $color__border-abbr;
-						background-color: #f8f8f8;
+						background-color: $color__border-section;
 					}
 					li {
 						padding: 11px 9px;
@@ -361,10 +361,10 @@
 				ul {
 					justify-content: space-around;
 					border-right: 0 !important;
-					border-bottom: 1px solid #e4e4e4;
+					border-bottom: 1px solid $color__border-abbr;
 				}
 				li:first-child {
-					border-bottom: 1px solid #e4e4e4;
+					border-bottom: 1px solid $color__border-abbr;
 				}
 			}
 			.summary {
