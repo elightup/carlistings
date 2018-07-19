@@ -27,18 +27,29 @@
 		<header id="masthead" class="site-header">
 			<div class="header-top">
 				<div class="container">
-					<div class="topbar-left" data-aos="fade-right">
-						<?php dynamic_sidebar( 'topbar-left' ); ?>
+					<?php if ( is_active_sidebar( 'topbar-contact' ) ) : ?>
+					<div class="topbar-contact" data-aos="fade-right">
+						<?php dynamic_sidebar( 'topbar-contact' ); ?>
 					</div>
-					<?php if ( is_active_sidebar( 'topbar-right' ) ) : ?>
-						<div class="topbar-right" data-aos="fade-left">
-							<?php dynamic_sidebar( 'topbar-right' ); ?>
+					<?php endif; ?>
+					<div class="topbar-right" data-aos="fade-left">
+						<div class="social-media">
+						<?php
+						if ( function_exists( 'jetpack_social_menu' ) ) {
+							jetpack_social_menu();
+						}
+						?>
+						</div>
+						<?php if ( is_active_sidebar( 'topbar-languages' ) ) : ?>
+						<div class="topbar-languages">
+							<?php dynamic_sidebar( 'topbar-languages' ); ?>
 						</div>
 					<?php endif; ?>
+					</div>
 				</div>
 			</div>
 
-			<div class="container" data-aos="fade-up">
+			<div class="container">
 				<div class="site-branding">
 					<?php
 					the_custom_logo();

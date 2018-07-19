@@ -129,8 +129,8 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Topbar Left', 'autodealer' ),
-			'id'            => 'topbar-left',
+			'name'          => esc_html__( 'Topbar Contact', 'autodealer' ),
+			'id'            => 'topbar-contact',
 			'description'   => esc_html__( 'Add your time and email widget here.', 'autodealer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -140,15 +140,16 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Topbar Right', 'autodealer' ),
-			'id'            => 'topbar-right',
-			'description'   => esc_html__( 'Add your social icon and languages widget here.', 'autodealer' ),
+			'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
+			'id'            => 'topbar-languages',
+			'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
 	);
+	register_widget( 'Autodealer_Contact_Widget' );
 }
 add_action( 'widgets_init', 'autodealer_widgets_init' );
 
@@ -224,6 +225,11 @@ function autodealer_fonts_url() {
 
 	return $fonts_url;
 }
+
+/**
+ * Include widget file
+ */
+require get_template_directory() . '/inc/widgets/class-autodealer-contact-widget.php';
 
 /**
  * Implement the Breadcrumbs.
