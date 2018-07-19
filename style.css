@@ -826,14 +826,16 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation ul {
+.main-navigation ul,
+.widget_nav_menu ul {
 	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
 
-.main-navigation ul ul {
+.main-navigation ul ul,
+.widget_nav_menu ul ul {
 	position: absolute;
 	z-index: 10;
 	top: 100%;
@@ -848,22 +850,28 @@ a:hover, a:active {
 	transition: all 0.3s;
 }
 
-.main-navigation ul ul ul {
+.main-navigation ul ul ul,
+.widget_nav_menu ul ul ul {
 	left: -999em;
 	top: 0;
 }
 
 .main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li.focus > ul,
+.widget_nav_menu ul ul li:hover > ul,
+.widget_nav_menu ul ul li.focus > ul {
 	left: 100%;
 }
 
-.main-navigation ul ul a {
+.main-navigation ul ul a,
+.widget_nav_menu ul ul a {
 	width: 200px;
 }
 
 .main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li.focus > ul,
+.widget_nav_menu ul li:hover > ul,
+.widget_nav_menu ul li.focus > ul {
 	display: block;
 	visibility: visible;
 	opacity: 1;
@@ -872,21 +880,25 @@ a:hover, a:active {
 	z-index: 10;
 }
 
-.main-navigation li {
+.main-navigation li,
+.widget_nav_menu li {
 	float: left;
 	position: relative;
 	margin-right: 7px;
 }
 
-.main-navigation li:last-child {
+.main-navigation li:last-child,
+.widget_nav_menu li:last-child {
 	margin-right: 0;
 }
 
-.main-navigation li:last-child a {
+.main-navigation li:last-child a,
+.widget_nav_menu li:last-child a {
 	padding-right: 0;
 }
 
-.main-navigation a {
+.main-navigation a,
+.widget_nav_menu a {
 	display: block;
 	text-decoration: none;
 	font-size: 14px;
@@ -898,11 +910,13 @@ a:hover, a:active {
 	border-bottom: 3px solid #fff;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.widget_nav_menu a:hover {
 	border-bottom: 3px solid #e11e30;
 }
 
-.main-navigation .menu-item-has-children > a:after {
+.main-navigation .menu-item-has-children > a:after,
+.widget_nav_menu .menu-item-has-children > a:after {
 	content: '\eb25';
 	font-family: "IcoFont" !important;
 	display: inline-block;
@@ -914,22 +928,29 @@ a:hover, a:active {
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
-.main-navigation .current-menu-ancestor > a {
+.main-navigation .current-menu-ancestor > a,
+.widget_nav_menu .current_page_item > a,
+.widget_nav_menu .current-menu-item > a,
+.widget_nav_menu .current_page_ancestor > a,
+.widget_nav_menu .current-menu-ancestor > a {
 	color: #e11e30;
 	border-bottom: 3px solid #e11e30;
 }
 
-.main-navigation .sub-menu li {
+.main-navigation .sub-menu li,
+.widget_nav_menu .sub-menu li {
 	margin-right: 0;
 	border-bottom: 1px solid #e4e4e4;
 }
 
-.main-navigation .sub-menu a {
+.main-navigation .sub-menu a,
+.widget_nav_menu .sub-menu a {
 	padding: 15px 15px 11px 15px;
 	border-bottom: 0;
 }
 
-.main-navigation .sub-menu a:hover {
+.main-navigation .sub-menu a:hover,
+.widget_nav_menu .sub-menu a:hover {
 	border-bottom: 0;
 	color: #e11e30;
 }
@@ -1671,7 +1692,6 @@ a:hover, a:active {
 
 .header-top {
 	border-bottom: 1px solid #e4e4e4;
-	overflow: hidden;
 }
 
 .topbar-contact {
@@ -1718,6 +1738,35 @@ a:hover, a:active {
 	font-size: 1.25rem;
 	color: #e11e30;
 	margin-right: 7px;
+}
+
+.topbar-contact .widget_nav_menu ul {
+	list-style: none;
+}
+
+.topbar-contact .widget_nav_menu .menu {
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.topbar-contact .widget_nav_menu .menu a {
+	border: 0;
+	padding: 10px 10px;
+}
+
+.topbar-contact .widget_nav_menu .menu a:hover {
+	border: 0;
+	color: #e11e30;
+}
+
+.topbar-contact .widget_nav_menu .menu a:last-child {
+	padding-right: 10px;
+}
+
+.topbar-contact .widget_nav_menu .menu .current_page_item > a {
+	border: 0;
+	color: #e11e30;
 }
 
 .topbar-right {

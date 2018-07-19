@@ -33,7 +33,6 @@
 }
 .header-top {
 	border-bottom: 1px solid $color__border-abbr;
-	overflow: hidden;
 }
 .topbar-contact {
 	display: flex;
@@ -67,6 +66,31 @@
 				@include font-size(2);
 				color: $color__main;
 				margin-right: 7px;
+			}
+		}
+	}
+	.widget_nav_menu {
+		ul {
+			list-style: none;
+		}
+		.menu {
+			margin: 0;
+			display: flex;
+			flex-flow: row wrap;
+			a {
+				border: 0;
+				padding: 10px 10px;
+				&:hover {
+					border: 0;
+					color: $color__main;
+				}
+				&:last-child {
+					padding-right: 10px;
+				}
+			}
+			.current_page_item > a {
+				border: 0;
+				color: $color__main;
 			}
 		}
 	}
