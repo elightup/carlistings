@@ -5,108 +5,8 @@
 		border-bottom: 1px solid $color__border-abbr;
 		margin-bottom: 38px;
 	}
-	.entry-media {
-		margin-bottom: 20px;
-		iframe {
-			width: 100%;
-		}
-	}
-	.entry-header {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		.entry-header__category {
-			color: $color__main;
-			margin-bottom: 15px;
-			margin-right: 50px;
-			a {
-				@include font-size(1.3);
-				color: $color__main;
-				font-weight: 600;
-				text-decoration: none;
-			}
-			&:before {
-				content: '\f007';
-				@include ico-font();
-				color: $color__main;
-				margin-right: 7px;
-			}
-		}
-		.entry-meta {
-			margin-bottom: 10px;
-			color: $color__gray;
-			i {
-				@include font-size(1.6);
-				margin-right: 7px;
-			}
-			>span {
-				@include font-size(1.3);
-				margin-right: 35px;
-				font-weight: 600;
-				&:last-child {
-					margin-right: 0;
-				}
-				a {
-					color: $color__gray;
-					text-decoration: none;
-					&:hover {
-						color: $color__main;
-					}
-				}
-			}
-			.comments-link {
-				a {
-					position: relative;
-					top: -1px;
-				}
-			}
-			.posted-on {
-				time {
-					position: relative;
-					top: -1px;
-				}
-			}
-		}
-	}
-	.entry-title {
-		@include font-size(3.2);
-		line-height: 1.3;
-		font-weight: 700;
-		margin-top: 12px;
-		margin-bottom: 15px;
-		a {
-			color: $color__title;
-			text-decoration: none;
-			&:hover {
-				color: $color__main;
-			}
-		}
-	}
 	.entry-content {
-		margin-top: -15px;
 		padding-bottom: 30px;
-		p {
-			line-height: 1.7;
-		}
-		.link-more {
-			margin-top: 45px;
-		}
-		.more-link {
-			text-decoration: none;
-			text-transform: uppercase;
-			color: $color__white;
-			padding: 12px 27px;
-			background-color: $color__main;
-			border-radius: 5px;
-			font-weight: 700;
-			border: 2px solid $color__main;
-			@include font-size(1.3);
-			&:hover {
-				color: $color__main;
-				background-color: $color__white;
-				border: 2px solid $color__main;
-			}
-		}
 	}
 }
 
@@ -138,7 +38,6 @@
 }
 
 @media (max-width: 320px) {
-
 	.entry-meta {
 		display: flex;
 		flex-flow: column wrap;

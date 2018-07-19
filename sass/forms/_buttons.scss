@@ -21,3 +21,22 @@ input[type="submit"] {
 		outline: none;
 	}
 }
+.link-more {
+	margin-top: 45px;
+}
+.more-link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color__white;
+	padding: 12px 27px;
+	background-color: $color__main;
+	border-radius: 5px;
+	font-weight: 700;
+	border: 2px solid $color__main;
+	@include font-size(1.3);
+	&:hover {
+		color: $color__main;
+		background-color: $color__white;
+		border: 2px solid $color__main;
+	}
+}
