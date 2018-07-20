@@ -3026,12 +3026,12 @@ Genericons
 .entry-header .entry-meta > span {
 	font-size: 13px;
 	font-size: 0.8125rem;
-	margin-right: 35px;
+	margin-left: 35px;
 	font-weight: 600;
 }
 
-.entry-header .entry-meta > span:last-child {
-	margin-right: 0;
+.entry-header .entry-meta > span:first-child {
+	margin-left: 0;
 }
 
 .entry-header .entry-meta > span a {
@@ -3359,10 +3359,6 @@ Genericons
 	list-style: none;
 }
 
-.comment-list > li:last-child .comment-content {
-	border-bottom: 0;
-}
-
 .comment-list .comment {
 	overflow: hidden;
 	margin-top: -1px;
@@ -3451,8 +3447,7 @@ ol.children {
 }
 
 .comment-content {
-	margin-top: 20px;
-	padding: 9px 0 38px;
+	padding: 30px 0 34px;
 	color: #777777;
 	word-wrap: break-word;
 	margin-left: 90px;
