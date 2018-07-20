@@ -1403,45 +1403,6 @@ a:hover, a:active {
 	padding-top: 0;
 }
 
-.widget-area .widget_categories li:before,
-.widget-area .widget_archive li:before,
-.widget-area .widget_pages li:before,
-.widget-area .widget_meta li:before,
-.widget-area .widget_recent_comments li:before,
-.widget-area .widget_nav_menu li:before,
-.widget-area .widget_rss li:before,
-.widget-area .widget_recent_entries li:before {
-	content: '\eb59';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-	color: #777777;
-	margin-right: 13px;
-	transition: all .3s ease;
-}
-
-.widget-area .widget_categories li:hover:before,
-.widget-area .widget_categories li:hover a,
-.widget-area .widget_archive li:hover:before,
-.widget-area .widget_archive li:hover a,
-.widget-area .widget_pages li:hover:before,
-.widget-area .widget_pages li:hover a,
-.widget-area .widget_meta li:hover:before,
-.widget-area .widget_meta li:hover a,
-.widget-area .widget_recent_comments li:hover:before,
-.widget-area .widget_recent_comments li:hover a,
-.widget-area .widget_nav_menu li:hover:before,
-.widget-area .widget_nav_menu li:hover a,
-.widget-area .widget_rss li:hover:before,
-.widget-area .widget_rss li:hover a,
-.widget-area .widget_recent_entries li:hover:before,
-.widget-area .widget_recent_entries li:hover a {
-	color: #e11e30;
-	transition: all .3s ease;
-}
-
 .widget-area .widget_categories li a,
 .widget-area .widget_archive li a,
 .widget-area .widget_pages li a,
@@ -1455,6 +1416,44 @@ a:hover, a:active {
 	color: #000;
 	text-decoration: none;
 	font-weight: 600;
+}
+
+.widget-area .widget_categories li a:before,
+.widget-area .widget_archive li a:before,
+.widget-area .widget_pages li a:before,
+.widget-area .widget_meta li a:before,
+.widget-area .widget_recent_comments li a:before,
+.widget-area .widget_nav_menu li a:before,
+.widget-area .widget_rss li a:before,
+.widget-area .widget_recent_entries li a:before {
+	content: '\eb59';
+	font-family: "IcoFont" !important;
+	display: inline-block;
+	line-height: 1;
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #777777;
+	margin-right: 13px;
+	transition: all .3s ease;
+}
+
+.widget-area .widget_categories li a:hover:before, .widget-area .widget_categories li a:hover,
+.widget-area .widget_archive li a:hover:before,
+.widget-area .widget_archive li a:hover,
+.widget-area .widget_pages li a:hover:before,
+.widget-area .widget_pages li a:hover,
+.widget-area .widget_meta li a:hover:before,
+.widget-area .widget_meta li a:hover,
+.widget-area .widget_recent_comments li a:hover:before,
+.widget-area .widget_recent_comments li a:hover,
+.widget-area .widget_nav_menu li a:hover:before,
+.widget-area .widget_nav_menu li a:hover,
+.widget-area .widget_rss li a:hover:before,
+.widget-area .widget_rss li a:hover,
+.widget-area .widget_recent_entries li a:hover:before,
+.widget-area .widget_recent_entries li a:hover {
+	color: #e11e30;
+	transition: all .3s ease;
 }
 
 .widget-area .widget_categories li span,
@@ -1471,15 +1470,17 @@ a:hover, a:active {
 	margin-left: 2px;
 }
 
-.widget-area .widget_categories li.page_item_has_children .children,
-.widget-area .widget_archive li.page_item_has_children .children,
-.widget-area .widget_pages li.page_item_has_children .children,
-.widget-area .widget_meta li.page_item_has_children .children,
-.widget-area .widget_recent_comments li.page_item_has_children .children,
-.widget-area .widget_nav_menu li.page_item_has_children .children,
-.widget-area .widget_rss li.page_item_has_children .children,
-.widget-area .widget_recent_entries li.page_item_has_children .children {
-	margin-left: 26px;
+.widget-area .widget_categories li .children li,
+.widget-area .widget_archive li .children li,
+.widget-area .widget_pages li .children li,
+.widget-area .widget_meta li .children li,
+.widget-area .widget_recent_comments li .children li,
+.widget-area .widget_nav_menu li .children li,
+.widget-area .widget_rss li .children li,
+.widget-area .widget_recent_entries li .children li {
+	margin-top: 12px;
+	border: 0;
+	padding: 0;
 }
 
 .widget-area .widget_text ul {
@@ -3380,10 +3381,6 @@ Genericons
 	list-style: none;
 }
 
-.comment-list > li:last-child .comment-content {
-	border-bottom: 0;
-}
-
 .comment-list .comment {
 	overflow: hidden;
 	margin-top: -1px;
@@ -3472,8 +3469,7 @@ ol.children {
 }
 
 .comment-content {
-	margin-top: 20px;
-	padding: 9px 0 38px;
+	padding: 30px 0 34px;
 	color: #777777;
 	word-wrap: break-word;
 	margin-left: 90px;

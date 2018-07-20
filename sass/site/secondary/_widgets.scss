@@ -56,24 +56,24 @@
 			&:first-child {
 				padding-top: 0;
 			}
-			&:before {
-				content: '\eb59';
-				@include ico-font();
-				@include font-size(1.4);
-				color: $color__text;
-				margin-right: 13px;
-				transition: all .3s ease;
-			}
-			&:hover:before,
-			&:hover a {
-				color: $color__main;
-				transition: all .3s ease;
-			}
 			a {
 				@include font-size(1.3);
 				color: $color__black;
 				text-decoration: none;
 				font-weight: 600;
+				&:before {
+					content: '\eb59';
+					@include ico-font();
+					@include font-size(1.4);
+					color: $color__text;
+					margin-right: 13px;
+					transition: all .3s ease;
+				}
+				&:hover:before,
+				&:hover {
+					color: $color__main;
+					transition: all .3s ease;
+				}
 			}
 			span {
 				@include font-size(1.2);
@@ -81,9 +81,13 @@
 				margin-left: 2px;
 			}
 		}
-		li.page_item_has_children {
+		li {
 			.children {
-				margin-left: 26px;
+				li {
+					margin-top: 12px;
+					border: 0;
+					padding: 0;
+				}
 			}
 		}
 	}
