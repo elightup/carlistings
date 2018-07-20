@@ -1784,7 +1784,7 @@ a:hover, a:active {
 }
 
 .topbar-contact .widget_nav_menu .menu {
-	margin: 0;
+	margin: 0 5px;
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -1813,10 +1813,6 @@ a:hover, a:active {
 	flex-flow: row wrap;
 	align-items: center;
 	border-left: 1px solid #e4e4e4;
-	border-right: 1px solid #e4e4e4;
-}
-
-.topbar-right .social-media {
 	border-right: 1px solid #e4e4e4;
 }
 
