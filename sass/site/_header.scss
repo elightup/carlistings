@@ -115,31 +115,6 @@
 				color: $color__main;
 			}
 		}
-		a[href*='facebook.com']:before {
-			content: '\ee08';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='twitter.com']:before {
-			content: '\ee34';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='vimeo.com']:before {
-			content: '\ee39';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='youtube.com']:before {
-			content: '\f137';
-			@include ico-font();
-			@include font-size(1.4);
-		}
-		a[href*='feed']:before {
-			content: '\ee28';
-			@include ico-font();
-			@include font-size(1.4);
-		}
 	}
 	.topbar-languages {
 		padding: 18px 0 18px 16px;

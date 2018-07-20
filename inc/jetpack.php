@@ -87,3 +87,11 @@ function autodealer_infinite_scroll_render() {
 function autodealer_get_featured_posts() {
 	return apply_filters( 'autodealer_get_featured_posts', array() );
 }
+
+/**
+ * Deregister jetpack style.
+ */
+function autodealer_deregister_jetpack_style() {
+	wp_deregister_style( 'jetpack-social-menu' );
+}
+add_action( 'wp_enqueue_scripts', 'autodealer_deregister_jetpack_style', 99 );

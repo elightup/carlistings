@@ -116,6 +116,10 @@ Genericons
     -moz-osx-font-smoothing: grayscale;
 }
 
+.jetpack-social-navigation li {
+	display: inline-block;
+}
+
 .topbar-right .jetpack_widget_social_icons a:before {
 	@include ico-font();
 	@include font-size(1.4);

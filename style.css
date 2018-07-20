@@ -1811,51 +1811,6 @@ a:hover, a:active {
 	color: #e11e30;
 }
 
-.topbar-right .social-media a[href*='facebook.com']:before {
-	content: '\ee08';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
-.topbar-right .social-media a[href*='twitter.com']:before {
-	content: '\ee34';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
-.topbar-right .social-media a[href*='vimeo.com']:before {
-	content: '\ee39';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
-.topbar-right .social-media a[href*='youtube.com']:before {
-	content: '\f137';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
-.topbar-right .social-media a[href*='feed']:before {
-	content: '\ee28';
-	font-family: "IcoFont" !important;
-	display: inline-block;
-	line-height: 1;
-	font-size: 14px;
-	font-size: 0.875rem;
-}
-
 .topbar-right .topbar-languages {
 	padding: 18px 0 18px 16px;
 	position: relative;
@@ -2176,6 +2131,10 @@ Genericons
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.jetpack-social-navigation li {
+	display: inline-block;
 }
 
 .topbar-right .jetpack_widget_social_icons a:before {
@@ -3381,6 +3340,10 @@ Genericons
 	list-style: none;
 }
 
+.comment-list > li:last-child .comment-content {
+	border-bottom: 0;
+}
+
 .comment-list .comment {
 	overflow: hidden;
 	margin-top: -1px;
@@ -3469,7 +3432,8 @@ ol.children {
 }
 
 .comment-content {
-	padding: 30px 0 34px;
+	margin-top: 20px;
+	padding: 9px 0 38px;
 	color: #777777;
 	word-wrap: break-word;
 	margin-left: 90px;
