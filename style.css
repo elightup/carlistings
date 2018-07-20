@@ -3140,7 +3140,9 @@ Genericons
 }
 
 .entry-content ul li ul,
-.entry-content ol li ul {
+.entry-content ul li ol,
+.entry-content ol li ul,
+.entry-content ol li ol {
 	margin-top: 20px;
 }
 
