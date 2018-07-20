@@ -75,11 +75,10 @@
 		}
 		.menu {
 			margin: 0 5px;
-			display: flex;
-			flex-flow: row wrap;
 			a {
 				border: 0;
 				padding: 10px 10px;
+				@include font-size(1.2);
 				&:hover {
 					border: 0;
 					color: $color__main;
@@ -87,10 +86,6 @@
 				&:last-child {
 					padding-right: 10px;
 				}
-			}
-			.current_page_item > a {
-				border: 0;
-				color: $color__main;
 			}
 		}
 	}
