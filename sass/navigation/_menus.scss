@@ -12,17 +12,15 @@
 			top: 100%;
 			left: -6px;
 			background: $color__white;
-			-webkit-box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.15);
 			box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.15);
-			-ms-transform: translateY(10px);
 			transform: translateY(10px);
 			opacity: 0;
 			visibility: hidden;
 			transition: all 0.3s;
 
 			ul {
-				left: -999em;
 				top: 0;
+				box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 			}
 
 			li {
@@ -106,8 +104,11 @@
 			margin-right: 0;
 			border-bottom: 1px solid $color__border-abbr;
 		}
+		li.menu-item-has-children a {
+			border-right: 1px solid $color__border-abbr;
+		}
 		a {
-			padding: 15px 15px 11px 15px;
+			padding: 13px 15px 13px 15px;
 			border-bottom: 0;
 		}
 		a:hover {

@@ -472,3 +472,6 @@
 .icofont-user-male:before {
 	content: '\edda';
 }
+.icofont-rounded-down:before {
+  content: '\eb5a';
+}
