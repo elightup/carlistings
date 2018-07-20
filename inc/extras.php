@@ -11,7 +11,11 @@
  * The content more link
  */
 function autodealer_read_more_link() {
-	return '<p class="link-more"><a class="more-link" href="' . get_permalink() . '">Read More</a></p>';
+	// Translators: %s - post title.
+	$text = wp_kses_post( sprintf( __( 'Read More %s', 'autodealer' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
+	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
+
+	return $more;
 }
 add_filter( 'the_content_more_link', 'autodealer_read_more_link' );
 
@@ -30,18 +34,12 @@ add_filter( 'excerpt_length', 'autodealer_custom_excerpt_length' );
  *
  * @return string 'Read More' link prepended with an ellipsis.
  */
-function autodealer_excerpt_more_link( $link ) {
-	if ( is_admin() || is_front_page() ) {
-		return $link;
-	}
+function autodealer_excerpt_more_link() {
+	// Translators: %s - post title.
+	$text = wp_kses_post( sprintf( __( 'Read More %s', 'autodealer' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
+	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
 
-	$link = sprintf(
-		'<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
-		esc_url( get_permalink( get_the_ID() ) ),
-		/* translators: %s: Name of current post */
-		wp_kses_post( sprintf( __( 'Read More<span class="screen-reader-text"> "%s"</span>', 'autodealer' ), get_the_title( get_the_ID() ) ) )
-	);
-	return ' [&hellip;] ' . $link;
+	return $more;
 }
 add_filter( 'excerpt_more', 'autodealer_excerpt_more_link' );
 
