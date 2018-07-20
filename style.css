@@ -871,6 +871,7 @@ a:hover, a:active {
 .main-navigation ul ul ul,
 .widget_nav_menu ul ul ul {
 	top: 0;
+	left: 100%;
 	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -884,6 +885,16 @@ a:hover, a:active {
 .main-navigation ul ul a,
 .widget_nav_menu ul ul a {
 	width: 200px;
+}
+
+.main-navigation ul ul .menu-item-has-children > a:after,
+.widget_nav_menu ul ul .menu-item-has-children > a:after {
+	content: '\eb27';
+	margin-left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
 }
 
 .main-navigation ul li:hover > ul,

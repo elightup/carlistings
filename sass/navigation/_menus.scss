@@ -20,6 +20,7 @@
 
 			ul {
 				top: 0;
+				left: 100%;
 				box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 			}
 
@@ -34,12 +35,15 @@
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
+			.menu-item-has-children {
+				> a:after {
+					content: '\eb27';
+					margin-left: 0;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 10px;
+				}
 			}
 		}
 

@@ -4,10 +4,8 @@
     "postcss": "postcss style.css -u autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
     "watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 --source-map true -w sass -r -o .",
     "zip": "git archive -o theme-slug.zip --prefix=theme-slug/ HEAD",
+    "sync": "browser-sync start --proxy \"autolisting.test\" --files \"style.css\"",
     "check": "phpcs --standard=WordPress --extensions=php . > check.txt",
     "fix": "phpcbf --standard=WordPress --extensions=php ."
-  },
-  "dependencies": {
-    "node-sass": "^4.7.2"
   }
 }
