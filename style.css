@@ -1397,7 +1397,7 @@ a:hover, a:active {
 	margin-left: 2px;
 }
 
-.widget-area .widget li .children li {
+.widget-area .widget li ul li {
 	margin-top: 12px;
 	border: 0;
 	padding: 0;
@@ -1438,6 +1438,10 @@ a:hover, a:active {
 
 .widget-area .widget_text a:hover {
 	color: #e11e30;
+}
+
+.widget-area .about-widget.about-widget a:before {
+	display: none;
 }
 
 .widget-area .jr-insta-slider .jr-insta-thumb a {

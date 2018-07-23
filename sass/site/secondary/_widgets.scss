@@ -69,7 +69,7 @@
 			}
 		}
 		li {
-			.children {
+			ul {
 				li {
 					margin-top: 12px;
 					border: 0;
@@ -105,6 +105,13 @@
 			line-height: 1.8;
 			&:hover {
 				color: $color__main;
+			}
+		}
+	}
+	.about-widget.about-widget {
+		a {
+			&:before {
+				display: none;
 			}
 		}
 	}
