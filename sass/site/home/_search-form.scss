@@ -3,10 +3,9 @@
 	background-color: $color__white;
 	position: relative;
 	text-align: center;
-	padding: 0px 60px 50px 60px;
 	margin-bottom: 65px;
 	.search-title {
-		margin-top: 0;
+		margin: 0 0 60px 0;
 		display: inline-block;
 		text-transform: uppercase;
 		@include font-size(1.8);
@@ -17,214 +16,177 @@
 		top: -10px;
 		color: $color__white;
 	}
-	.search-content {
-		.prefix {
+	.auto-listings-search {
+		display: flex;
+		flex-flow: row wrap;
+		width: unset;
+		.prefix, .refine {
 			display: none;
 		}
-		.refine {
-			display: none;
-		}
-		.extras-wrap.extras-wrap.extras-wrap {
-			display: flex;
-			flex-flow: row wrap;
-			width: 100%;
-			justify-content: space-between;
-			margin-bottom: 30px;
-			.field {
-				width: 100%;
-				max-width: 227px;
-			}
-		}
-		.auto-listings-search {
-			display: flex;
-			flex-flow: row wrap;
-			margin-top: 44px;
+		.row {
 			margin-bottom: 0;
-			.row {
-				width: auto;
+		}
+		.field {
+			display: block;
+		}
+		.SumoSelect {
+			width: 100%;
+			margin: 0;
+			label > i:before {
+				content: '\eb25';
+				@include ico-font();
+				color: $color__black;
 			}
-			label {
-				i {
-					&:before {
-						content: '\eb25' !important;
-						@include ico-font();
-						color: $color__black !important;
-					}
-				}
+		}
+		.SelectBox {
+			border-radius: 5px;
+			padding: 9px 20px;
+			text-align: left;
+			height: 45px;
+			max-height: 45px;
+			span {
+				color: $color__black;
+				font-weight: 400;
+				text-transform: capitalize;
 			}
-			.area-wrap {
-				order: 1;
+		}
+		.search-form__title {
+			@include font-size(1.4);
+			align-self: center;
+			width: 25%;
+			font-weight: 700;
+			color: $color__text-main;
+			text-transform: uppercase;
+			p {
+				margin: 0;
 			}
-			.condition-wrap,
-			.min-price,
-			.max-price,
-			.search-form__title,
-			.odometer {
-				width: 100%;
-				max-width: 226px;
-				margin-right: 41px;
-			}
-			.search-form__title {
-				@include font-size(1.4);
-				font-weight: 700;
-				color: $color__text-main;
-				text-transform: uppercase;
-			}
-
-			.max-price {
-				margin-right: 0;
-			}
-			.condition-wrap {
-				.SumoSelect {
-					margin: 0;
-				}
-			}
-			.price-wrap {
-				display: flex;
-				flex-flow: row wrap;
-				width: 48%;
-				.SumoSelect {
-					margin: 0;
-
-				}
-			}
+		}
+		.condition-wrap {
+			width: 25%;
 			.SumoSelect {
 				width: 100%;
+				margin: 0;
 			}
-			.SelectBox {
-				border-radius: 5px;
-				padding: 9px 20px;
-				text-align: left;
-				height: 45px;
-				max-height: 45px;
-				span {
-					color: $color__black;
-					font-weight: 400;
-					text-transform: capitalize;
-				}
+		}
+		.price-wrap {
+			flex: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			.SumoSelect {
+				margin: 0;
 			}
-			.area-wrap {
-				width: 100%;
-				display: flex;
-				flex-flow: row wrap;
-				align-items: center;
-
-				.al-button {
-					width: 100%;
-					max-width: 226px;
-					background-color: $color__main;
-					border: 2px solid $color__main;
-					border-radius: 4px;
-					@include font-size(1.3);
-					font-weight: 700;
-					transition: all .3s ease;
-					padding: 11px 26px;
-					&:hover {
-						background-color: $color__white;
-						color: $color__main;
-					}
-				}
-				.within {
-					width: 100%;
-					max-width: 125px;
-					margin-right: 12px;
-				}
-				.area {
-					width: 100%;
-					max-width: 358px;
-					margin-right: 41px;
-					margin-top: 0;
-					border-radius: 4px;
-					border-color: $color__border-abbr;
-					height: 45px;
-					font-weight: 400;
-					@include placeholder() {
-						color: $color__black;
-					}
-					&:focus {
-						border: 1px solid $color__border-abbr;
-					}
-				}
-
+		}
+		.extras-wrap {
+			display: flex;
+			flex-flow: row wrap;
+			flex: 100%;
+		}
+		.area-wrap {
+			order: 1;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			flex: 100%;
+		}
+		.odometer {
+			width: calc( 25% - 40px );
+		}
+		.area {
+			border-radius: 4px;
+			border-color: $color__border-abbr;
+			height: 45px;
+			@include placeholder() {
+				color: $color__black;
+			}
+			&:focus {
+				border: 1px solid $color__border-abbr;
+			}
+		}
+		.al-button {
+			width: calc( 25% - 40px );
+			background-color: $color__main;
+			border: 2px solid $color__main;
+			border-radius: 4px;
+			@include font-size(1.3);
+			font-weight: 700;
+			transition: all .3s ease;
+			padding: 11px 26px;
+			&:hover {
+				border-color: currentColor;
+				background-color: $color__white;
+				color: $color__main;
 			}
 		}
 	}
-}
-@media (max-width: 1170px) {
-	.section--search.section--search.section--search {
-		position: unset;
-		.search-form__title,
-		.condition-wrap,
-		.min-price,
-		.max-price,
-		.the-year,
-		.make,
-		.model,
-		.body-type,
-		.odometer,
-		.within,
-		.area,
-		.al-button
-		{
-			width: 48% !important;
-			max-width: 100% !important;
-			margin-right: 0 !important;
+	@media (min-width: 1200px) {
+		padding: 0px 60px 50px 60px;
+		.auto-listings-search {
+			margin: -40px 0 0 -40px;
+			> * {
+				padding: 40px 0 0 40px;
+			}
 		}
-		.price-wrap.price-wrap {
-			width: 100%;
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			margin-bottom: 15px;
-			.min-price,
-			.max-price {
-				margin-bottom: 0;
+		.price-wrap {
+			margin-left: -40px;
+			.field {
+				width: 50%;
+				padding-left: 40px;
+			}
+		}
+		.extras-wrap {
+			margin: -40px 0 0 -40px;
+			.field {
+				width: 25%;
+				padding: 40px 0 0 40px;
 			}
 		}
 		.area-wrap {
-			justify-content: space-between;
-			margin: 0;
-		}
-		.extras-wrap.extras-wrap {
-			margin: 0;
-		}
-		.area-wrap > div,
-		.extras-wrap > div {
-			margin-bottom: 15px;
-		}
-		.search-form__title {
-			margin-right: 4% !important;
+			margin-left: -40px;
+			> * {
+				margin-left: 40px;
+			}
+			.area {
+				margin: 0 0 0 12px;
+			}
+			.within {
+				flex: 0 0 125px;
+			}
+			.area {
+				flex: 0 0 358px;
+			}
 		}
 	}
-}
-@media (max-width: 767px) {
-	.section--search.section--search.section--search {
-		padding: 0 25px;
-		.search-form__title,
-		.condition-wrap,
-		.min-price,
-		.max-price,
-		.the-year,
-		.make,
-		.model,
-		.body-type,
-		.odometer,
-		.within,
-		.area,
-		.al-button {
-			width: 100% !important;
-		}
-		.search-form__title {
-			display: none;
-		}
-		.max-price,
-		.area {
-			margin-bottom: 15px;
-		}
-		.price-wrap.price-wrap {
-			.min-price {
+	@media (max-width: 1199px) {
+		.auto-listings-search {
+			position: unset;
+			justify-content: space-between;
+			> * {
+				justify-content: space-between;
+			}
+			.search-form__title, .condition-wrap, .row > * {
+				width: 48%;
+				margin-right: 0;
+			}
+			.extras-wrap {
+				margin-top: 0;
+			}
+			.condition-wrap .field {
+				width: 100%;
+			}
+			.field, .al-button, .search-form__title {
 				margin-bottom: 15px;
 			}
 		}
 	}
+	@media (max-width: 767px) {
+		.auto-listings-search {
+			.search-form__title, .condition-wrap, .row > * {
+				width: 100%;
+			}
+			.price-wrap .SumoSelect.sumo_min_price {
+				padding: 0;
+			}
+		}
+	}
 }
+

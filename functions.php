@@ -91,6 +91,8 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		add_post_type_support( 'page', 'excerpt' );
 	}
 endif;
 add_action( 'after_setup_theme', 'autodealer_setup' );

@@ -7,6 +7,8 @@
  * @package autodealer
  */
 
+remove_filter( 'the_excerpt', 'wpautop' );
+
 /**
  * The content more link
  */

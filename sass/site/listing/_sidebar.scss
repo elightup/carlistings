@@ -239,25 +239,25 @@
 
 }
 @media (max-width: 991px) {
-	.auto-listings-search.auto-listings-search.auto-listings-search {
-		.price-wrap {
-			.min-price {
-				width: 100%;
-				margin-bottom: 15px;
-			}
-			.max-price {
-				width: 100%;
-			}
-			.SumoSelect {
-				width: 100%;
-				padding: 0;
-			}
-			.optWrapper {
-				width: 100%;
+	.sidebar {
+		.auto-listings-search.auto-listings-search.auto-listings-search {
+			.price-wrap {
+				.min-price {
+					width: 100%;
+					margin-bottom: 15px;
+				}
+				.max-price {
+					width: 100%;
+				}
+				.SumoSelect {
+					width: 100%;
+					padding: 0;
+				}
+				.optWrapper {
+					width: 100%;
+				}
 			}
 		}
-	}
-	.sidebar {
 		.auto-listings-items.grid-view li.compact,
 		.auto-listings-items li.compact {
 			ul {
