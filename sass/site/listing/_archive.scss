@@ -191,7 +191,6 @@
 				line-height: 1.4;
 				color: $color__text-main;
 				font-weight: 700;
-				margin-bottom: 20px;
 				.currency-symbol {
 					margin-right: 5px;
 				}
@@ -253,13 +252,13 @@
 						background-color: $color__border-section;
 					}
 					li {
-						padding: 11px 9px;
-						padding-top: 14px;
+						padding: 14px 9px 11px;
 					}
 				}
 			}
 			.summary {
 				width: 58%;
+				padding-bottom: 0;
 				.title {
 					line-height: 1.8;
 					margin-top: 20px;
@@ -333,7 +332,7 @@
 @media (max-width: 1170px) {
 	.has-sidebar,
 	.listing-no-sidebar {
-		.auto-listings-items.auto-listings-items.grid-view {
+		.auto-listings-items.auto-listings-items.auto-listings-items {
 			.items-left {
 				.image {
 					img {
@@ -387,7 +386,7 @@
 					margin-bottom: 10px;
 				}
 				.price {
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 				}
 			}
 		}

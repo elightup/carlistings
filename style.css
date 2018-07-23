@@ -4586,7 +4586,6 @@ ol.children {
 	line-height: 1.4;
 	color: #3d414e;
 	font-weight: 700;
-	margin-bottom: 20px;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items .summary .price .currency-symbol,
@@ -4674,13 +4673,13 @@ ol.children {
 
 .has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li,
 .listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .items-left .at-a-glance li {
-	padding: 11px 9px;
-	padding-top: 14px;
+	padding: 14px 9px 11px;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .summary,
 .listing-no-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .summary {
 	width: 58%;
+	padding-bottom: 0;
 }
 
 .has-sidebar .auto-listings-items.auto-listings-items:not(.grid-view) .summary .title,
@@ -4756,8 +4755,8 @@ ol.children {
 }
 
 @media (max-width: 1170px) {
-	.has-sidebar .auto-listings-items.auto-listings-items.grid-view .items-left .image img,
-	.listing-no-sidebar .auto-listings-items.auto-listings-items.grid-view .items-left .image img {
+	.has-sidebar .auto-listings-items.auto-listings-items.auto-listings-items .items-left .image img,
+	.listing-no-sidebar .auto-listings-items.auto-listings-items.auto-listings-items .items-left .image img {
 		min-height: auto;
 	}
 }
@@ -4803,7 +4802,7 @@ ol.children {
 		margin-bottom: 10px;
 	}
 	.auto-listings-items.auto-listings-items li .summary .price {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 }
 
