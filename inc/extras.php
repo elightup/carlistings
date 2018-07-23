@@ -205,3 +205,53 @@ function autodealer_active_autolisting_archive_on_menu( $classes, $item, $args, 
 	return $classes;
 }
 add_filter( 'nav_menu_css_class', 'autodealer_active_autolisting_archive_on_menu', 10, 4 );
+
+add_filter( 'comment_form_default_fields', 'autodealer_modify_comment_form_default' );
+/**
+ * Modify default comment form.
+ *
+ * @param array $fields default field.
+ */
+function autodealer_modify_comment_form_default( $fields ) {
+	$commenter = wp_get_current_commenter();
+	$req       = get_option( 'require_name_email' );
+	$aria_req  = ( $req ? " aria-required='true'" : '' );
+	$html_req  = ( $req ? " required='required'" : '' );
+	$html5     = 'html5' === current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : 'xhtml';
+
+	$fields['author'] = '<p class="comment-form-author">' .
+				'<input id="author" name="author" placeholder="' . esc_attr__( 'Full Name *', 'autodealer' ) . '" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>';
+	$fields['email']  = '<p class="comment-form-email">' .
+				'<input id="email" placeholder="' . esc_attr__( 'Mail Address *', 'autodealer' ) . '" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req . ' /></p>';
+	$fields['url']    = '<p class="comment-form-url">' .
+				'<input id="url" placeholder="' . esc_attr__( 'Website URL', 'autodealer' ) . '" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></p>';
+	return $fields;
+}
+
+add_filter( 'comment_form_defaults', 'autodealer_modify_comment_form_args' );
+/**
+ * Modify default comment form args.
+ *
+ * @param array $defaults default args.
+ */
+function autodealer_modify_comment_form_args( $defaults ) {
+	$defaults['label_submit']         = esc_html__( 'Submit Comment', 'autodealer' );
+	$defaults['title_reply_before']   = '';
+	$submit_button                    = sprintf(
+		$defaults['submit_button'],
+		esc_attr( $defaults['name_submit'] ),
+		esc_attr( $defaults['id_submit'] ),
+		esc_attr( $defaults['class_submit'] ),
+		esc_attr( $defaults['label_submit'] )
+	);
+	$submit_field                     = sprintf(
+		$defaults['submit_field'],
+		$submit_button,
+		get_comment_id_fields( get_the_ID() )
+	);
+	$defaults['submit_field']         = '';
+	$defaults['comment_field']        = '<div class="comment-form-comment"><textarea id="comment" placeholder="' . esc_attr__( 'Write Your Comments Here...', 'autodealer' ) . '" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>' . $submit_field . '</div>';
+	$defaults['title_reply']          = '';
+	$defaults['comment_notes_before'] = '';
+	return $defaults;
+}

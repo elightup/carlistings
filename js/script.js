@@ -80,16 +80,6 @@ jQuery( function ( $ ) {
 	} )
 
 	/**
-	 * Add placeholder to input Comment.
-	 */
-	 function placeholderComment() {
-		$("#author").attr("placeholder", "Full Name *");
-		$("#email").attr("placeholder", "Mail Address *");
-		$("#url").attr("placeholder", "Website URL");
-		$("#comment").attr("placeholder", "Write Your Comments Here...");
-	 }
-
-	/**
 	 * Move tag html in search form.
 	 */
 	 function moveTagSearchForm() {
@@ -183,7 +173,6 @@ jQuery( function ( $ ) {
 	 scrollToTop();
 	 toggleMobileMenu();
 	 initMobileNavigation($('.mobile-menu'));
-	 placeholderComment();
 	 auto_listings_buy_sell();
 	 auto_listings_view_switcher();
 	 initFeaturedContentSlider();

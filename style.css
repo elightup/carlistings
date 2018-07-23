@@ -3226,12 +3226,13 @@ Genericons
 	font-size: 14px;
 	font-size: 0.875rem;
 	width: 100%;
-	margin-top: -10px;
+	margin-top: -15px;
 }
 
 .logged-in-as a {
 	text-decoration: none;
 	color: #000;
+	font-weight: 400;
 }
 
 .logged-in-as a:hover {
@@ -3262,10 +3263,6 @@ Genericons
 	display: block;
 	width: 100%;
 	list-style: none;
-}
-
-.comment-list > li:last-child .comment-content {
-	border-bottom: 0;
 }
 
 .comment-list .comment {
@@ -3356,8 +3353,7 @@ ol.children {
 }
 
 .comment-content {
-	margin-top: 20px;
-	padding: 9px 0 38px;
+	padding: 30px 0 34px;
 	color: #777777;
 	word-wrap: break-word;
 	margin-left: 90px;
@@ -3390,13 +3386,28 @@ ol.children {
 	text-decoration: none;
 }
 
+.comment-respond {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #000;
+	margin-top: 5px;
+}
+
 @media (min-width: 768px) {
-	.depth-1 > .comment-body > .comment-content,
-	.depth-1 > .children {
+	.depth-1:not(:last-child) > .comment-body > .comment-content,
+	.depth-1:not(:last-child) > .children {
 		border-bottom: 1px solid #e2e2e2;
 	}
 	.depth-1 > .children .children {
 		border-top: 1px solid #e2e2e2;
+	}
+	.depth-1.parent:first-child > .comment-body > .comment-content,
+	.depth-1.parent:first-child .children li:not(:last-child) {
+		border-bottom: 1px solid #e2e2e2;
+	}
+	.depth-1.parent:last-child > .comment-body > .comment-content {
+		border-bottom: 1px solid #e2e2e2;
 	}
 	.comment-list .children {
 		margin: 0 0 0 90px;
@@ -3461,6 +3472,7 @@ ol.children {
 	position: relative;
 	display: flex;
 	flex-flow: row wrap;
+	margin-top: 30px;
 }
 
 .comment-form label {
@@ -3503,23 +3515,6 @@ ol.children {
 	}
 }
 
-.comment-form input[type="email"] {
-	background: #fcfcfc;
-}
-
-.comment-form input[type="email"]::-webkit-input-placeholder {
-	color: #000;
-}
-
-.comment-form input[type="email"]::-moz-placeholder {
-	color: #000;
-	opacity: 1;
-}
-
-.comment-form input[type="email"]:-ms-input-placeholder {
-	color: #000;
-}
-
 .comment-form input:not([type="submit"]), .comment-form textarea {
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -3535,9 +3530,43 @@ ol.children {
 	color: #777777;
 }
 
+.comment-form input:not([type="submit"]):focus {
+	background: #fcfcfc;
+}
+
+.comment-form input:not([type="submit"]):focus::-webkit-input-placeholder {
+	color: #000;
+}
+
+.comment-form input:not([type="submit"]):focus::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+.comment-form input:not([type="submit"]):focus:-ms-input-placeholder {
+	color: #000;
+}
+
 .comment-form textarea {
 	height: 170px;
 	resize: none;
+}
+
+.comment-form textarea:focus {
+	background: #fcfcfc;
+}
+
+.comment-form textarea:focus::-webkit-input-placeholder {
+	color: #000;
+}
+
+.comment-form textarea:focus::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+.comment-form textarea:focus:-ms-input-placeholder {
+	color: #000;
 }
 
 .comment-form .comment-form-comment {
@@ -3572,7 +3601,7 @@ ol.children {
 	}
 	.comment-form .form-submit input {
 		position: absolute;
-		bottom: 30px;
+		bottom: 26px;
 		right: 20px;
 	}
 }
