@@ -219,10 +219,6 @@ function autodealer_fonts_url() {
 		$fonts[] = 'Open Sans:300,400,600,700,800';
 	}
 
-	if ( 'off' !== _x( 'on', 'Source Sans Pro font: on or off', 'autodealer' ) ) {
-		$fonts[] = 'Source Sans Pro:700';
-	}
-
 	$fonts_url = add_query_arg(
 		array(
 			'family' => rawurlencode( implode( '|', $fonts ) ),

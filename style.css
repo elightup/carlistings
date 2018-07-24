@@ -398,7 +398,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	word-wrap: break-word;
 	color: #000;
 	margin-bottom: 28px;
@@ -508,7 +508,7 @@ pre {
 }
 
 .first-letter:first-letter {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	color: #fff;
 	font-size: 48px;
