@@ -1,4 +1,4 @@
-
+h1,
 h2,
 h3,
 h4,
@@ -7,9 +7,29 @@ h6 {
 	font-family: $font__heading;
 	word-wrap: break-word;
 	color: $color__black;
+	margin-bottom: 28px;
 }
 
 h1 {
-	@include font-size(4.8);
-	font-family: $font__main;
+	@include font-size(3.2);
+}
+
+h2 {
+	@include font-size(2.8);
+}
+
+h3 {
+	@include font-size(2.4);
+}
+
+h4 {
+	@include font-size(2.2);
+}
+
+h5 {
+	@include font-size(2);
+}
+
+h6 {
+	@include font-size(1.8);
 }
