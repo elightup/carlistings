@@ -3661,6 +3661,8 @@ ol.children {
 }
 
 .page-header.page-header .page-title {
+	font-size: 48px;
+	font-size: 3rem;
 	color: #fff;
 	font-weight: 800;
 	margin-top: 10px;

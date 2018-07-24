@@ -12,6 +12,7 @@
 	margin-bottom: 80px;
 	background-size: cover;
 	.page-title {
+		@include font-size(4.8);
 		color: $color__white;
 		font-weight: 800;
 		margin-top: 10px;
