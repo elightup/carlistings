@@ -558,7 +558,6 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 18px;
-	padding-left: 21px;
 }
 
 dt {
@@ -1715,14 +1714,6 @@ a:hover, a:active {
 	border-right: 1px solid #e4e4e4;
 }
 
-.topbar-right > div:nth-child(2) {
-	border-left: 1px solid #e4e4e4;
-}
-
-.topbar-right .social-media {
-	height: 100%;
-}
-
 .topbar-right .social-media .jetpack-social-navigation {
 	padding: 20px 17px;
 }
@@ -1748,9 +1739,8 @@ a:hover, a:active {
 }
 
 .topbar-right .topbar-languages {
-	padding: 19px 0 18px 16px;
+	padding: 18px 0 18px 16px;
 	position: relative;
-	height: 100%;
 }
 
 .topbar-right .topbar-languages .icofont-globe {
