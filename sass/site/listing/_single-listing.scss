@@ -57,10 +57,7 @@
 					position: relative;
 					max-width: 100%;
 					float: left;
-				}
-				li:hover,
-				li.active {
-					a:before {
+					&:before {
 						content: "";
 						position: absolute;
 						top: 0;
@@ -68,7 +65,14 @@
 						left: 0;
 						right: 0;
 						box-shadow: 0 -8px 0px -5px $color__main inset;
-						transition: opacity 3s ease-in-out;
+						transition: opacity .4s;
+						opacity: 0;
+					}
+				}
+				li:hover,
+				li.active {
+					a:before {
+						opacity: 1;
 					}
 				}
 			}

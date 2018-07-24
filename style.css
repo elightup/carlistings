@@ -1715,6 +1715,14 @@ a:hover, a:active {
 	border-right: 1px solid #e4e4e4;
 }
 
+.topbar-right > div:nth-child(2) {
+	border-left: 1px solid #e4e4e4;
+}
+
+.topbar-right .social-media {
+	height: 100%;
+}
+
 .topbar-right .social-media .jetpack-social-navigation {
 	padding: 20px 17px;
 }
@@ -1740,8 +1748,9 @@ a:hover, a:active {
 }
 
 .topbar-right .topbar-languages {
-	padding: 18px 0 18px 16px;
+	padding: 19px 0 18px 16px;
 	position: relative;
+	height: 100%;
 }
 
 .topbar-right .topbar-languages .icofont-globe {
@@ -3916,8 +3925,7 @@ ol.children {
 	float: left;
 }
 
-.auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li:hover a:before,
-.auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li.active a:before {
+.auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery a:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -3925,7 +3933,13 @@ ol.children {
 	left: 0;
 	right: 0;
 	box-shadow: 0 -8px 0px -5px #e11e30 inset;
-	transition: opacity 3s ease-in-out;
+	transition: opacity .4s;
+	opacity: 0;
+}
+
+.auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li:hover a:before,
+.auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li.active a:before {
+	opacity: 1;
 }
 
 .auto-listings-single .has-sidebar .image-gallery img {
