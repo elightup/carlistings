@@ -156,6 +156,19 @@ function autodealer_widgets_init() {
 add_action( 'widgets_init', 'autodealer_widgets_init' );
 
 /**
+ * Enqueue plugins scripts and styles first.
+ */
+function autodealer_plugin_scripts() {
+	if ( is_front_page() ) {
+		wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
+		wp_enqueue_script( 'autodealer-sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '', true );
+
+		wp_enqueue_script( 'autodealer-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '', true );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'autodealer_plugin_scripts', 0 );
+
+/**
  * Enqueue scripts and styles.
  */
 function autodealer_scripts() {
@@ -164,10 +177,6 @@ function autodealer_scripts() {
 	 * Register ico font
 	 */
 	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
-
-	if ( is_front_page() ) {
-		wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
-	}
 
 	/**
 	 * Register Aos
@@ -181,11 +190,7 @@ function autodealer_scripts() {
 
 	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	if ( is_front_page() ) {
-		wp_enqueue_script( 'autodealer-sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '20180619', true );
 
-		wp_enqueue_script( 'autodealer-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '20180619', true );
-	}
 	wp_enqueue_script( 'autodealer-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
 
 	/**
