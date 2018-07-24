@@ -1423,9 +1423,9 @@ a:hover, a:active {
 }
 
 .widget-area .widget li ul li {
-	margin-top: 12px;
-	border: 0;
-	padding: 0;
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #e4e4e4;
 }
 
 .widget-area .widget_text ul {
@@ -1498,6 +1498,7 @@ a:hover, a:active {
 
 .widget-area .jr-insta-slider .jr-insta-thumb a:hover:before, .widget-area .jr-insta-slider .jr-insta-thumb a:hover:after {
 	opacity: 0.8;
+	color: #fff;
 }
 
 .widget-area .tagcloud.tagcloud {
@@ -3931,16 +3932,12 @@ ol.children {
 .auto-listings-single .has-sidebar .image-gallery .lSAction.lSAction .lSPrev {
 	left: 0;
 	margin-top: -43px;
-	transform: translate3d(-45px, 0px, 0px);
-	transition: all 0.3s;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSAction.lSAction .lSNext {
 	right: 0;
 	width: inherit;
 	margin-top: -43px;
-	transform: translate3d(45px, 0px, 0px);
-	transition: all 0.3s;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery.lSGallery li {
