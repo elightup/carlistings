@@ -194,7 +194,7 @@ function autodealer_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'autodealer_scripts' );
+add_action( 'wp_enqueue_scripts', 'autodealer_scripts', 99 );
 
 /**
  * Get Google fonts URL for the theme.

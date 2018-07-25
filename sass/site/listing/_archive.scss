@@ -2,12 +2,16 @@
 .site-content.container > .container {
 	padding: 0;
 }
-.auto-listings-ordering.auto-listings-ordering {
+.auto-listings-ordering {
 	margin-bottom: 30px;
+	.SelectBox {
+		border-radius: 100px;
+		padding: 13px 20px;
+	}
 }
 .SumoSelect {
 	.SelectBox.SelectBox {
-		border: 1px solid $color__border-abbr !important;
+		border: 1px solid $color__border-abbr;
 		i {
 			margin-right: 17px;
 		}
@@ -17,36 +21,35 @@
 		}
 	}
 }
-.SumoSelect.SumoSelect {
+.SumoSelect {
 	&:hover > .CaptionCont,
 	&:focus > .CaptionCont {
 		box-shadow: none;
 		border-color: $color__border-abbr;
 	}
 }
-.auto-listings-ordering {
-	.SelectBox.SelectBox {
-		border-radius: 100px;
-		padding: 13px 20px;
-	}
-}
-.SumoSelect.open.SumoSelect.open {
+.SumoSelect.open {
 	.optWrapper {
 		top: 47px;
 	}
 }
 .has-sidebar {
-	.options.options {
-		li {
-			padding-left: 19px;
-			@include font-size(1.3);
+	.SumoSelect {
+		.optWrapper {
+			.options {
+				li {
+					padding-left: 19px;
+					@include font-size(1.3);
+					color: $color__black;
+				}
+			}
 		}
 	}
 }
 
 /* view switcher  */
 
-.auto-listings-view-switcher.auto-listings-view-switcher {
+.auto-listings-view-switcher {
 	margin: 0 0 30px 7px;
 	div {
 		border: 1px solid $color__border-abbr;
@@ -67,33 +70,40 @@
 
 /* pagination */
 
-.auto-listings-pagination.auto-listings-pagination {
+.auto-listings-pagination {
 	position: relative;
 	top: 10px;
+	ul {
+		li {
+			span,
+			a {
+				border: 1px solid $color__border-abbr;
+				padding: 12px 17px;
+			}
+			span {
+				color: $color__white;
+				background-color: $color__main;
+				border-color: $color__main;
+			}
+			a.prev,
+			a.next {
+				padding: 12px 14px;
+				border-radius: 100%;
+			}
+		}
+	}
 	span,
 	a {
-		border: 1px solid $color__border-abbr;
 		border-radius: 100%;
-		padding: 12px 17px;
 		margin-right: 7px;
-		color: $color__black;
 		text-decoration: none;
 		font-weight: 600;
+		color: $color__black;
 		&:hover {
 			color: $color__white;
 			background-color: $color__main;
 			border-color: $color__main;
 		}
-	}
-	span {
-		color: $color__white;
-		background-color: $color__main;
-		border-color: $color__main;
-	}
-	.next,
-	.prev {
-		padding: 12px 14px;
-		border-radius: 100%;
 	}
 }
 
@@ -316,52 +326,57 @@
 		bottom: -28px;
 	}
 }
-.auto-listings-items.auto-listings-items.grid-view {
+.auto-listings-items.grid-view {
 	> li {
 		overflow: inherit;
 		margin-bottom: 50px;
 	}
-	.summary {
-		padding: 20px 30px;
+	li {
+		.summary {
+			padding: 20px 30px;
+		}
 	}
 }
 
 @media (max-width: 1279px) {
 	.auto-listings-items {
-		.at-a-glance.at-a-glance {
-			li {
-				width: 50%;
-				text-align: center;
-				&:nth-child(2) {
-					border-right: 0;
-				}
-				&:nth-child(3) {
-					width: 100%;
-					border-top: 1px solid $color__border-abbr;
+		.at-a-glance {
+			ul {
+				li {
+					width: 50%;
+					text-align: center;
+					&:nth-child(2) {
+						border-right: 0;
+					}
+					&:nth-child(3) {
+						width: 100%;
+						border-top: 1px solid $color__border-abbr;
+					}
 				}
 			}
 		}
 	}
 }
 @media (max-width: 1169px) {
-	.auto-listings-items.auto-listings-items {
-		.items-left.items-left {
-			img {
-				min-height: auto;
+	.auto-listings-items:not(.grid-view),
+	.auto-listings-items.grid-view {
+		.items-left {
+			.image {
+				img {
+					min-height: auto;
+				}
 			}
 		}
 	}
 }
 @media (max-width: 991px) {
-	.auto-listings.auto-listings {
+	.auto-listings {
 		.has-sidebar {
 			width: 100%;
 			@include clearfix();
-			.auto-listings-items {
-				.at-a-glance {
-					li:nth-child(2) {
-						border-right: 0;
-					}
+			.at-a-glance {
+				li:nth-child(2) {
+					border-right: 0;
 				}
 			}
 		}
@@ -371,7 +386,8 @@
 	}
 }
 @media (max-width: 650px) {
-	.auto-listings-items.auto-listings-items {
+	.auto-listings-items:not(.grid-view),
+	.auto-listings-items.grid-view {
 		flex-flow: column wrap;
 		li {
 			flex-flow: column wrap;
@@ -458,19 +474,18 @@
 	}
 }
 .listing-no-sidebar {
-	.auto-listings-items.auto-listings-items.auto-listings-items:not(.grid-view) {
+	.auto-listings-items:not(.grid-view) {
 		.title {
 			margin-top: 45px;
 		}
 		.at-a-glance {
 			li {
-				padding: 11px 30px;
-				padding-top: 14px;
+				padding: 14px 30px 11px;
 				width: 33.333%;
 			}
 		}
 	}
-	.auto-listings-items.auto-listings-items.grid-view {
+	.auto-listings-items.grid-view {
 		.bottom-wrap {
 			bottom: -20px;
 		}

@@ -64,13 +64,6 @@ if ( $logo ) {
 	?>
 </nav>
 
-<script type="text/javascript">
-	AOS.init({
-		offset: 10,
-		duration: 1000,
-		once: true,
-	})
-</script>
 <?php wp_footer(); ?>
 <a href="#" class="scroll-to-top hidden"><i class="icofont icofont-rounded-up"></i></a>
 </body>

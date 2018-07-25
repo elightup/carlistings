@@ -94,4 +94,9 @@ function autodealer_get_featured_posts() {
 function autodealer_deregister_jetpack_style() {
 	wp_deregister_style( 'jetpack-social-menu' );
 }
-add_action( 'wp_enqueue_scripts', 'autodealer_deregister_jetpack_style', 99 );
+add_action( 'wp_enqueue_scripts', 'autodealer_deregister_jetpack_style', 999 );
+
+/**
+ * Remove Jetpack css
+ */
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
