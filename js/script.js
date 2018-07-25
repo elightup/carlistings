@@ -169,6 +169,17 @@ jQuery( function ( $ ) {
 		}
 	 }
 
+	/**
+	 * Aos.
+	 */
+	function aos() {
+		AOS.init({
+			offset: 10,
+			duration: 1000,
+			once: true,
+		})
+	}
+
 
 	 scrollToTop();
 	 toggleMobileMenu();
@@ -177,4 +188,5 @@ jQuery( function ( $ ) {
 	 auto_listings_view_switcher();
 	 initFeaturedContentSlider();
 	 moveTagSearchForm();
+	 aos();
 } );
