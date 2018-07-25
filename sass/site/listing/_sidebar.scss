@@ -19,8 +19,7 @@
 			@include font-size(1.6);
 			font-weight: 700;
 			color: $color__black;
-			margin-top: 0;
-			margin-bottom: 25px;
+			margin: 0 0 25px 0;
 			position: relative;
 			&:before {
 				content: '';
@@ -35,31 +34,32 @@
 			}
 		}
 	}
-	.auto-listings-search.auto-listings-search {
+	.auto-listings-search {
 		display: flex;
 		flex-flow: column wrap;
 		margin-bottom: 0;
 		text-align: left;
-		label {
-			i {
-				&:before {
-					content: '\eb25' !important;
-					@include ico-font();
-					color: $color__black !important;
+		.SumoSelect  {
+			.CaptionCont {
+				label {
+					i {
+						&:before {
+							content: '\eb25';
+							@include ico-font();
+							color: $color__black;
+						}
+					}
+				}
+				span {
+					color: $color__black;
+					font-weight: 400;
+					text-transform: capitalize;
 				}
 			}
 		}
-
 		.prefix,
 		.refine {
 			display: none;
-		}
-		.SelectBox.SelectBox {
-			span {
-				color: $color__black;
-				font-weight: 400;
-				text-transform: capitalize;
-			}
 		}
 		.SumoSelect {
 			width: 100%;
@@ -124,7 +124,7 @@
 			}
 		}
 	}
-	.auto-listings-items.auto-listings-items {
+	.auto-listings-items {
 		display: inline-block;
 	}
 
@@ -135,6 +135,7 @@
 		position: relative;
 		box-shadow: none;
 		border: 1px solid $color__border-abbr;
+		margin-bottom: 20px;
 		.items-left {
 			display: flex;
 			flex-flow: row wrap;
@@ -161,8 +162,7 @@
 					background-color: $color__border-section;
 				}
 				li {
-					padding: 11px 7px;
-					padding-top: 14px;
+					padding: 14px 7px 11px;
 					@include font-size(1.2);
 					font-weight: 700;
 					border-right: 1px solid $color__border-abbr;
@@ -174,7 +174,7 @@
 						}
 					}
 					&:last-child {
-						border: 0;
+						border-right: 0;
 					}
 				}
 			}
@@ -215,28 +215,27 @@
 	}
 }
 @media (max-width: 1279px) {
-	.sidebar.sidebar {
-		.auto-listings-items.auto-listings-items.auto-listings-items {
-			.at-a-glance.at-a-glance {
-				li {
-					width: 50%;
-					text-align: center;
-					&:nth-child(2) {
-						border-right: 0;
-					}
-					&:nth-child(3) {
-						width: 100%;
-						border-top: 1px solid $color__border-abbr;
-					}
+	.sidebar {
+		.at-a-glance {
+			li {
+				width: 50%;
+				text-align: center;
+				&:nth-child(3) {
+					width: 100%;
+					border-top: 1px solid $color__border-abbr;
 				}
 			}
 		}
+		.auto-listings-items li.compact .items-left .at-a-glance li {
+			&:nth-child(2) {
+				border-right: 0;
+			}
+		}
 	}
-
 }
 @media (max-width: 991px) {
 	.sidebar {
-		.auto-listings-search.auto-listings-search.auto-listings-search {
+		.auto-listings-search {
 			.price-wrap {
 				.min-price {
 					width: 100%;
