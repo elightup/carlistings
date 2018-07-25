@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Detect plugin. For use on Front End only.
  */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 	return;

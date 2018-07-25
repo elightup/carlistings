@@ -60,6 +60,8 @@
 	z-index: 99;
 	background: $color__main;
 	border-radius: 100%;
+	transform: translateY(0);
+    transition: all 0.3s ease;
 	i {
 		@include font-size(2);
 		color: $color__white;
@@ -68,7 +70,7 @@
 		background: #bf1a29;
 	}
 	&.hidden {
-		display: none;
+		transform: translateY(100px);
 	}
 }
 @media (max-width: 1279px) {

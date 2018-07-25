@@ -1898,6 +1898,8 @@ a:hover, a:active {
 	z-index: 99;
 	background: #e11e30;
 	border-radius: 100%;
+	transform: translateY(0);
+	transition: all 0.3s ease;
 }
 
 .scroll-to-top i {
@@ -1911,7 +1913,7 @@ a:hover, a:active {
 }
 
 .scroll-to-top.hidden {
-	display: none;
+	transform: translateY(100px);
 }
 
 @media (max-width: 1279px) {
@@ -2900,6 +2902,10 @@ Genericons
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
 .entry-media {
 	margin-bottom: 20px;
 }
