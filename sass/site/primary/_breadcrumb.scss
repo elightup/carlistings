@@ -1,4 +1,4 @@
-.page-header.page-header {
+.page-header {
 	min-height: 260px;
 	text-align: center;
 	display: flex;
@@ -27,8 +27,12 @@
 	position: absolute;
 	bottom: 0;
 	background: $color__white;
-	* {
+	li {
 		color: $color__twitter-name;
+		&:last-child {
+			color: $color__main;
+			font-weight: 600;
+		}
 	}
 	i {
 		margin: 0 8px;
@@ -40,12 +44,7 @@
 		color: $color__twitter-name;
 		font-weight: 600;
 	}
-	li:last-child {
-		span {
-			color: $color__main;
-			font-weight: 600;
-		}
-	}
+	li
 	.home {
 		&:before {
 			content: '\f01f';

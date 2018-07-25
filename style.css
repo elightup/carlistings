@@ -3646,7 +3646,7 @@ ol.children {
 /*--------------------------------------------------------------
 ## Breadcrumb
 --------------------------------------------------------------*/
-.page-header.page-header {
+.page-header {
 	min-height: 260px;
 	text-align: center;
 	display: flex;
@@ -3661,7 +3661,7 @@ ol.children {
 	background-size: cover;
 }
 
-.page-header.page-header .page-title {
+.page-header .page-title {
 	font-size: 48px;
 	font-size: 3rem;
 	color: #fff;
@@ -3681,8 +3681,13 @@ ol.children {
 	background: #fff;
 }
 
-.breadcrumbs * {
+.breadcrumbs li {
 	color: #666666;
+}
+
+.breadcrumbs li:last-child {
+	color: #e11e30;
+	font-weight: 600;
 }
 
 .breadcrumbs i {
@@ -3698,12 +3703,8 @@ ol.children {
 	font-weight: 600;
 }
 
-.breadcrumbs li:last-child span {
-	color: #e11e30;
-	font-weight: 600;
-}
-
-.breadcrumbs .home:before {
+.breadcrumbs li
+.home:before {
 	content: '\f01f';
 	font-family: "IcoFont" !important;
 	display: inline-block;
