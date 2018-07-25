@@ -181,7 +181,7 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_description', array(
-			'default'           => esc_html__( 'We’ve a big list of modern & classic cars in both used and new categories.', 'autodealer' ),
+			'default'           => esc_html__( 'We have a big list of modern & classic cars in both used and new categories.', 'autodealer' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)

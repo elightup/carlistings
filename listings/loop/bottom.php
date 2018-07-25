@@ -21,6 +21,6 @@ if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 ?>
 
 <div class="bottom-wrap">
-	<a class="al-button" href="<?php esc_url( the_permalink() ); ?>" title="<?php esc_html_e( 'View', 'auto-listings' ); ?> <?php esc_attr( the_title() ); ?>"><?php esc_html_e( 'More Details', 'auto-listings' ); ?>
+	<a class="al-button" href="<?php esc_url( the_permalink() ); ?>" title="<?php esc_html_e( 'View', 'autodealer' ); ?> <?php esc_attr( the_title() ); ?>"><?php esc_html_e( 'More Details', 'autodealer' ); ?>
 	</a>
 </div>

@@ -79,7 +79,7 @@ get_header( 'listings' );
 			else :
 				?>
 
-				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'auto-listings' ); ?></p>
+				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'autodealer' ); ?></p>
 
 			<?php endif; ?>
 
