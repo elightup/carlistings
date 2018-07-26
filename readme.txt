@@ -42,14 +42,12 @@ Slick Slider
 	License: MIT
 	Source : http://kenwheeler.github.io/slick/
 
-Images used in the screenshot:
-	License: CC0 1.0 Universal (CC0 1.0)
-	Source:
-	- https://www.pexels.com/photo/light-sky-bird-blue-57019/
-	- https://www.pexels.com/photo/view-of-city-at-airport-326410/
-	- https://www.pexels.com/photo/macro-shot-of-person-holding-pinecone-827110/
+AOS - Animate on scroll library
+	License: MIT
+	Source : https://michalsnik.github.io/aos/
 
-AutoDealer is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+
+AutoDealer is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 AutoDealer is Licensed under the GNU GPL 3 license

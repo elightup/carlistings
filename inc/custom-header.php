@@ -40,7 +40,7 @@ if ( ! function_exists( 'autodealer_header_style' ) ) :
 	 */
 	function autodealer_header_style() {
 		?>
-		<style id="autodealer-lite-header-css">
+		<style id="autodealer-header-css">
 			<?php if ( has_header_image() ) : ?>
 				.page-header {
 					background: url(<?php echo esc_url( get_header_image() ); ?>) top center no-repeat;

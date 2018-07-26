@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package autodealer
+ * @package Autodealer
  */
 
 if ( ! function_exists( 'autodealer_setup' ) ) :
@@ -95,9 +95,6 @@ add_action( 'after_setup_theme', 'autodealer_setup' );
  * @global int $content_width
  */
 function autodealer_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( 'autodealer_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'autodealer_content_width', 0 );
@@ -179,7 +176,6 @@ function autodealer_scripts() {
 	wp_enqueue_script( 'autodealer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
 
 	wp_enqueue_script( 'autodealer-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
 
@@ -279,10 +275,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( is_admin() ) {
 	require_once get_template_directory() . '/inc/admin/class-tgm-plugin-activation.php';
 	require_once get_template_directory() . '/inc/admin/plugins.php';
-
-	/**
-	 * Load dashboard
-	 */
-	require get_template_directory() . '/inc/dashboard/class-autodealer-dashboard.php';
-	$dashboard = new Autodealer_Dashboard();
 }
+
+/**
+ * Dashboard.
+ */
+require get_template_directory() . '/inc/dashboard/class-autodealer-dashboard.php';
+new Autodealer_Dashboard();
+
+/**
+ * Customizer Pro.
+ */
+require get_template_directory() . '/inc/customizer-pro/class-autodealer-customizer-pro.php';
+$customizer_pro = new Autodealer_Customizer_Pro();
+$customizer_pro->init();
