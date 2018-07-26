@@ -1429,6 +1429,10 @@ a:hover, a:active {
 	border-top: 1px solid #e4e4e4;
 }
 
+.widget-area .widget .about-widget a:before {
+	display: none;
+}
+
 .widget-area .widget_text ul {
 	list-style: none;
 	margin-bottom: 0;
@@ -1464,10 +1468,6 @@ a:hover, a:active {
 
 .widget-area .widget_text a:hover {
 	color: #e11e30;
-}
-
-.widget-area .about-widget a:before {
-	display: none;
 }
 
 .widget-area .jr-insta-slider .jr-insta-thumb a {

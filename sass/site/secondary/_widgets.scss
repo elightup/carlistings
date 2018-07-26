@@ -77,6 +77,13 @@
 				}
 			}
 		}
+		.about-widget {
+			a {
+				&:before {
+					display: none;
+				}
+			}
+		}
 	}
 	.widget_text {
 		ul {
@@ -105,13 +112,6 @@
 			line-height: 1.8;
 			&:hover {
 				color: $color__main;
-			}
-		}
-	}
-	.about-widget {
-		a {
-			&:before {
-				display: none;
 			}
 		}
 	}
