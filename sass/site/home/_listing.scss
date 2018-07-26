@@ -7,7 +7,7 @@
 		.auto-listings-view-switcher {
 			margin-left: 0;
 		}
-		.auto-listings-items.auto-listings-items.auto-listings-items {
+		.auto-listings-items {
 			.bottom-wrap {
 				a {
 					color: $color__white;
@@ -34,7 +34,7 @@
 				}
 			}
 		}
-		.auto-listings-items.auto-listings-items.auto-listings-items.grid-view {
+		.auto-listings-items.grid-view {
 			.bottom-wrap {
 				bottom: -28px;
 			}
@@ -44,7 +44,7 @@
 		float: right;
 		margin-top: 79px;
 		margin-bottom: 50px;
-		.SumoSelect.SumoSelect {
+		.SumoSelect {
 			.SelectBox {
 				border-radius: 4px;
 			}

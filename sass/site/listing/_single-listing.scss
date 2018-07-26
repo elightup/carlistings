@@ -1,4 +1,4 @@
-.auto-listings.auto-listings .container > .content {
+.auto-listings .container > .content {
 	padding-top: 0;
 }
 .auto-listings-single {
@@ -23,7 +23,7 @@
 				transform: translate3d(0px, 0px, 0px);
 				transition: all 0.3s;
 			}
-			.lSAction.lSAction {
+			.lSAction {
 				i {
 					padding: 36px 18px;
 					background-color: rgba(52,54,67,0.85);
@@ -40,7 +40,7 @@
 					margin-top: -43px;
 				}
 			}
-			.lSGallery.lSGallery.lSGallery {
+			.lSGallery.lSGallery {
 				li {
 					border: 0;
 					&:hover,
@@ -361,61 +361,67 @@
 		}
 	}
 }
-.auto-listings-single.auto-listings-single .has-sidebar {
+.auto-listings-single .has-sidebar {
 	width: 66%;
 }
-.auto-listings-single.auto-listings-single .sidebar {
+.auto-listings-single .sidebar {
 	width: 31.5%;
 	> div {
 		margin-bottom: 0;
 	}
 }
 @media (max-width: 767px) {
-	.auto-listings-single.auto-listings-single {
-		.content {
-			.description {
-				ul {
-					column-count: 2;
+	.auto-listings-single {
+		.has-sidebar {
+			.content {
+				.description {
+					ul {
+						column-count: 2;
+					}
 				}
 			}
 		}
 	}
 }
 @media (max-width: 574px) {
-	.auto-listings-single.auto-listings-single {
+	.auto-listings-single {
 		.image-gallery {
 			.lSPager {
 				display: none;
 			}
-			.lSAction.lSAction {
+			.lSAction {
 				i {
 					background: none;
 					display: none;
 				}
 			}
 		}
-		.upper {
-			.entry-title,
-			.price-amount {
-				@include font-size(2.2);
-			}
-		}
-		.content.content {
-			.description {
-				ul {
-					column-count: 1;
+		.has-sidebar {
+			.upper {
+				.entry-title,
+				.price-amount {
+					@include font-size(2.2);
 				}
 			}
-			.auto-listings-Tabs-panel {
-				padding: 0;
-				h4 {
-					margin-left: 25px;
+			.content {
+				.description {
+					ul {
+						column-count: 1;
+					}
 				}
-				table {
-					th {
-						width: 50%;
-						padding-right: 10%;
-						word-wrap: break-word;
+				.auto-listings-tabs {
+					.auto-listings-Tabs-panel {
+						padding: 0;
+						h4 {
+							margin-left: 25px;
+						}
+						table {
+							th {
+								width: 50%;
+								padding-right: 10%;
+								word-wrap: break-word;
+							}
+						}
 					}
 				}
 			}
@@ -434,5 +440,4 @@
 			}
 		}
 	}
-
 }

@@ -66,17 +66,18 @@
 	.section--cta {
 		.container {
 			padding-bottom: 85px;
+			.section-cta__left {
+				margin-top: 40px;
+				.cta-title{
+					@include font-size(2.9);
+					margin-bottom: 15px;
+					line-height: 1.3;
+				}
+			}
+			.section-cta__right {
+				margin-top: 40px;
+			}
 		}
 	}
-	.section-cta__left.section-cta__left {
-		margin-top: 40px;
-		.cta-title{
-			@include font-size(2.9);
-			margin-bottom: 15px;
-			line-height: 1.3;
-		}
-	}
-	.section-cta__right.section-cta__right {
-		margin-top: 40px;
-	}
+
 }
