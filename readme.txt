@@ -1,28 +1,24 @@
 === AutoDealer ===
-
-Contributors: automattic
-Tags: auto-listing, custom-logo, custom-menu, custom-header, editor-style, featured-images, threaded-comments, translation-ready, rtl-language-support, two-columns
-
-Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+Contributors: GretaThemes
+Requires at least: WordPress 4.5
+Tested up to: WordPress 4.9
+Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns
 
 == Description ==
 
-A beautiful auto listing theme. AutoDealer has a modern, clean and elegant look and lots of customization for your blog. Built on the latest technology of WordPress, AutoDealer is lightweight, fast and optimized for all mobile phones.
+AutoDealer is a beautiful and easy to use WordPress auto listing theme for car sellers and dealers. Working perfectly with plugin Auto Listing, this theme will help you build a beautiful car listing Wordpress site with ease.
+Built on the latest technology of WordPress, AutoDealer is fully responsvive, fast and optimized for all mobile phones.
 
 == Installation ==
 
-Please go to https://wpautolistings.com/themes/
+Please go to http://gretathemes.com/docs/autodealer/
 
 == License ==
 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License Version 3.
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-AutoDealer WordPress Theme, Copyright 2018 GretaThemes
+AutoDealer WordPress Theme, Copyright 2017 GretaThemes
 AutoDealer is distributed under the terms of the GNU General Public License v3
 
 Unless otherwise specified, all Images are self shot by GretaThemes
@@ -49,17 +45,9 @@ Slick Slider
 Images used in the screenshot:
 	License: CC0 1.0 Universal (CC0 1.0)
 	Source:
-	- https://unsplash.com/photos/fxliDZFt-qY
-	- https://unsplash.com/photos/Os7C4iw2rDc
-	- https://unsplash.com/photos/7Cdw956mZ4w
-	- https://unsplash.com/photos/cAbH8B-14Vo
-	- https://unsplash.com/photos/3ZUsNJhi_Ik
-	- https://unsplash.com/photos/u6BPMXgURuI
-	- https://unsplash.com/photos/YApiWyp0lqo
-	- https://unsplash.com/photos/Hf1rAKkfMAg
-	- https://unsplash.com/photos/1nVbppFJl-s
-	- https://unsplash.com/photos/0GyzS1Hjjko
-	- https://unsplash.com/photos/N9Pf2J656aQ
+	- https://www.pexels.com/photo/light-sky-bird-blue-57019/
+	- https://www.pexels.com/photo/view-of-city-at-airport-326410/
+	- https://www.pexels.com/photo/macro-shot-of-person-holding-pinecone-827110/
 
 AutoDealer is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -70,4 +58,4 @@ http://gretathemes.com/
 
 == Changelog ==
 
-See https://wpautolistings.com/themes/
+See http://gretathemes.com/wordpress-themes/autodealer/

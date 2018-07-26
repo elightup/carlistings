@@ -220,6 +220,21 @@ function autodealer_fonts_url() {
 }
 
 /**
+ * Add editor style.
+ */
+function autodealer_add_editor_styles() {
+	add_editor_style(
+		array(
+			'css/editor-style.css',
+			autodealer_fonts_url(),
+			get_template_directory_uri() . '/css/icofont.css',
+		)
+	);
+}
+add_action( 'init', 'autodealer_add_editor_styles' );
+
+
+/**
  * Include widget file
  */
 require get_template_directory() . '/inc/widgets/class-autodealer-contact-widget.php';
