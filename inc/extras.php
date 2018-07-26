@@ -257,3 +257,20 @@ function autodealer_modify_comment_form_args( $defaults ) {
 	$defaults['comment_notes_before'] = '';
 	return $defaults;
 }
+
+/**
+ * Change the Tag Cloud's Font Sizes
+ *
+ * @param array $args Widget area.
+ *
+ * @return array.
+ */
+function autodealer_lite_tag_cloud_fz( $args ) {
+	$args['largest']  = 0.8125;
+	$args['smallest'] = 0.8125;
+	$args['unit']     = 'rem';
+
+	return $args;
+}
+
+add_filter( 'widget_tag_cloud_args', 'autodealer_lite_tag_cloud_fz' );

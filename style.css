@@ -949,7 +949,7 @@ a:hover, a:active {
 .topbar-contact .widget_nav_menu .menu-item-has-children > a:after,
 .topbar-contact .widget_nav_menu .page_item_has_children > a:after {
 	content: '\eb25';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	margin-left: 5px;
@@ -1401,7 +1401,7 @@ a:hover, a:active {
 
 .widget-area .widget li a:before {
 	content: '\eb59';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -1476,7 +1476,7 @@ a:hover, a:active {
 
 .widget-area .jr-insta-slider .jr-insta-thumb a:before {
 	content: '\ecfd';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	display: inline-block;
@@ -1501,16 +1501,15 @@ a:hover, a:active {
 	color: #fff;
 }
 
-.widget-area .tagcloud.tagcloud {
+.widget-area .tagcloud {
 	margin: -5px;
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.widget-area .tagcloud.tagcloud a {
+.widget-area .tagcloud a {
 	display: block;
 	line-height: 1;
-	font-size: 13px !important;
 	border-radius: 3px;
 	font-weight: 600;
 	padding: 9px 14px;
@@ -1520,7 +1519,7 @@ a:hover, a:active {
 	border: 1px solid #e4e4e4;
 }
 
-.widget-area .tagcloud.tagcloud a:hover {
+.widget-area .tagcloud a:hover {
 	background-color: #e11e30;
 	color: #fff;
 	border: 1px solid #e11e30;
@@ -2102,7 +2101,7 @@ Genericons
 }
 
 .topbar-right .jetpack_widget_social_icons a:before {
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -2115,7 +2114,7 @@ Genericons
 }
 
 .widget-area .jetpack_widget_social_icons .jetpack-social-widget-item a:before {
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	padding: 10px;
@@ -2353,7 +2352,7 @@ Genericons
 
 .featured-posts .featured-content li:before {
 	content: '\efae';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -2436,7 +2435,7 @@ Genericons
 
 .section--search .auto-listings-search .SumoSelect label > i:before {
 	content: '\eb25';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	color: #000;
@@ -2654,7 +2653,7 @@ Genericons
 
 .home .has-sidebar .auto-listings-items .image .status:before {
 	content: '\f0d9';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 }
@@ -2740,7 +2739,7 @@ Genericons
 
 .all--car .all-car-left ul li:before {
 	content: '\eb27';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	color: #aaaaaa;
@@ -2933,7 +2932,7 @@ Genericons
 
 .entry-header .entry-header__category:before {
 	content: '\f007';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	color: #e11e30;
@@ -3033,7 +3032,7 @@ Genericons
 .single .entry-content .tags-links:before,
 .page:not(.home) .entry-content .tags-links:before {
 	content: '\f0ec';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	margin-right: 5px;
@@ -3075,7 +3074,7 @@ Genericons
 
 .sharedaddy.sharedaddy .sd-title:before {
 	content: '\f0ca';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	display: inline-block;
@@ -3231,7 +3230,7 @@ Genericons
 
 .bypostauthor .reply:before {
 	content: '\edda';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	background: #e11e30;
@@ -3327,7 +3326,7 @@ Genericons
 
 .comment-list .reply a:after {
 	content: '\f0b9';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 12px;
@@ -3710,7 +3709,7 @@ ol.children {
 .breadcrumbs li
 .home:before {
 	content: '\f01f';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -3914,7 +3913,7 @@ ol.children {
 
 .auto-listings-single .has-sidebar .highlight-new:before {
 	content: '\f0e6';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -4077,7 +4076,7 @@ ol.children {
 
 .auto-listings-single .has-sidebar .content .description ul li:before {
 	content: '\f104';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 16px;
@@ -4507,7 +4506,7 @@ ol.children {
 
 .auto-listings-items .items-left .highlight-new:before {
 	content: '\f0e6';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	font-size: 14px;
@@ -4521,7 +4520,7 @@ ol.children {
 
 .auto-listings-items .items-left .status:before {
 	content: '\f0d9';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 }
@@ -4976,7 +4975,7 @@ ol.children {
 
 .sidebar .auto-listings-search .SumoSelect .CaptionCont label i:before {
 	content: '\eb25';
-	font-family: "IcoFont" !important;
+	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
 	color: #000;
@@ -5221,7 +5220,7 @@ ol.children {
 	}
 	.sidebar .auto-listings-items.grid-view li.compact ul li:nth-child(3),
 	.sidebar .auto-listings-items li.compact ul li:nth-child(3) {
-		border-top: 1px solid #e4e4e4 !important;
+		border-top: 1px solid #e4e4e4;
 	}
 	.sidebar .auto-listings-items.grid-view li.compact .items-left,
 	.sidebar .auto-listings-items li.compact .items-left {

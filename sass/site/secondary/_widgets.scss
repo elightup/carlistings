@@ -146,14 +146,13 @@
 			}
 		}
 	}
-	.tagcloud.tagcloud {
+	.tagcloud {
 		margin: -5px;
 		display: flex;
 		flex-flow: row wrap;
 		a {
 			display: block;
 			line-height: 1;
-			font-size: 13px !important;
 			border-radius: 3px;
 			font-weight: 600;
 			padding: 9px 14px;
@@ -190,7 +189,6 @@
 				}
 			}
 		}
-
 	}
 }
 
