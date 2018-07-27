@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package autodealer
+ * @package CarListings
  */
 
-if ( ! function_exists( 'autodealer_posted_on' ) ) :
+if ( ! function_exists( 'carlistings_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function autodealer_posted_on() {
+	function carlistings_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">Date: %2$s</time>';
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -31,14 +31,14 @@ if ( ! function_exists( 'autodealer_posted_on' ) ) :
 	}
 	endif;
 
-if ( ! function_exists( 'autodealer_posted_by' ) ) :
+if ( ! function_exists( 'carlistings_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function autodealer_posted_by() {
+	function carlistings_posted_by() {
 		$byline = sprintf(
 			/* translators: the author name */
-			esc_html_x( '%s', 'post author', 'autodealer' ),
+			esc_html_x( '%s', 'post author', 'carlistings' ),
 			'<span class="author vcard"><i class="icofont icofont-user-male"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -50,7 +50,7 @@ endif;
 /**
  * Prints HTML with meta information for the comment number.
  */
-function autodealer_print_comment_link() {
+function carlistings_print_comment_link() {
 	$comment_number = get_comments_number();
 	if ( in_the_loop() && ! is_single() && ! $comment_number ) {
 		return;
@@ -63,19 +63,19 @@ function autodealer_print_comment_link() {
 	}
 }
 
-if ( ! function_exists( 'autodealer_entry_footer' ) ) :
+if ( ! function_exists( 'carlistings_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function autodealer_entry_footer() {
+	function carlistings_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'autodealer' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'carlistings' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'autodealer' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'carlistings' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -85,7 +85,7 @@ if ( ! function_exists( 'autodealer_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'autodealer' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'carlistings' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -102,7 +102,7 @@ if ( ! function_exists( 'autodealer_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'autodealer' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'carlistings' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -120,27 +120,27 @@ endif;
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function autodealer_get_category() {
+function carlistings_get_category() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 
 		/* translators: used between list items, there is a space after the comma */
-		$cate_list = get_the_category_list( esc_html__( ', ', 'autodealer' ) );
+		$cate_list = get_the_category_list( esc_html__( ', ', 'carlistings' ) );
 		if ( $cate_list ) {
 			/* translators: 1: list of tags. */
-			printf( '<span class="entry-header__category">' . esc_html__( '%1$s', 'autodealer' ) . '</span>', $cate_list ); // WPCS: XSS OK.
+			printf( '<span class="entry-header__category">' . esc_html__( '%1$s', 'carlistings' ) . '</span>', $cate_list ); // WPCS: XSS OK.
 		}
 	}
 }
 
-if ( ! function_exists( 'autodealer_post_thumbnail' ) ) :
+if ( ! function_exists( 'carlistings_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function autodealer_post_thumbnail() {
+	function carlistings_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -178,7 +178,7 @@ endif;
  *
  * @param string $id user id.
  */
-function autodealer_user_social_links( $id ) {
+function carlistings_user_social_links( $id ) {
 	$socials        = array( 'facebook', 'twitter', 'google-plus', 'dribbble', 'instagram', 'youtube-play', 'pinterest' );
 	$author_website = get_the_author_meta( 'user_url', $id );
 	$output         = '';
@@ -187,7 +187,7 @@ function autodealer_user_social_links( $id ) {
 		$output = sprintf(
 			'<li class="author-website"><a href="%s" class="tag-alike-style ">%s</a>',
 			esc_url( $author_website ),
-			esc_html__( "visit author's website", 'autodealer' )
+			esc_html__( "visit author's website", 'carlistings' )
 		);
 	}
 
@@ -219,7 +219,7 @@ function autodealer_user_social_links( $id ) {
 /**
  * Author Box.
  */
-function autodealer_author_box() {
+function carlistings_author_box() {
 	if ( ! empty( get_the_author_meta( 'description' ) ) ) {
 		?>
 		<div class="entry-author">
@@ -239,12 +239,12 @@ function autodealer_author_box() {
 							$twitter = get_the_author_meta( 'twitter' );
 							if ( $twitter ) {
 								/* translators: author twitter name. */
-								printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'autodealer' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
+								printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'carlistings' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
 							}
 							?>
 						</div>
 					</div>
-					<?php autodealer_user_social_links( get_the_author_meta( 'ID' ) ); ?>
+					<?php carlistings_user_social_links( get_the_author_meta( 'ID' ) ); ?>
 				</div>
 
 				<div class="author-bio">
@@ -260,7 +260,7 @@ function autodealer_author_box() {
 /**
  * Get car ids.
  */
-function autodealer_get_car_ids() {
+function carlistings_get_car_ids() {
 	$args = array(
 		'post_type'      => 'auto-listing',
 		'posts_per_page' => -1,
@@ -274,8 +274,8 @@ function autodealer_get_car_ids() {
 /**
  * Getter function for section car by make.
  */
-function autodealer_get_car_lists() {
-	$items = autodealer_get_car_ids();
+function carlistings_get_car_lists() {
+	$items = carlistings_get_car_ids();
 	$makes = array();
 
 	if ( $items ) {
@@ -293,7 +293,7 @@ function autodealer_get_car_lists() {
 			<a href="<?php echo esc_url( $archive_link . '?make=' . $make ); ?>">
 				<?php
 				// translators: make and number of modals.
-				echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'autodealer' ), $make, $value ) );
+				echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'carlistings' ), $make, $value ) );
 				?>
 			</a>
 		</li>

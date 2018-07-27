@@ -2,13 +2,13 @@
 /**
  * The template part for displaying cta section
  *
- * @package autodealer
+ * @package CarListings
  */
 
-$title       = get_theme_mod( 'cta_title', __( 'You Want To Have Your Favorite Car?', 'autodealer' ) );
-$description = get_theme_mod( 'cta_description', __( 'We have a big list of modern & classic cars in both used and new categories.', 'autodealer' ) );
+$title       = get_theme_mod( 'cta_title', __( 'You Want To Have Your Favorite Car?', 'carlistings' ) );
+$description = get_theme_mod( 'cta_description', __( 'We have a big list of modern & classic cars in both used and new categories.', 'carlistings' ) );
 $button_url  = get_theme_mod( 'cta_button_url', 'https://gretathemes.com/' );
-$button_text = get_theme_mod( 'cta_button_text', __( 'go to car listings', 'autodealer' ) );
+$button_text = get_theme_mod( 'cta_button_text', __( 'go to car listings', 'carlistings' ) );
 
 $image_background = get_theme_mod( 'cta_background', get_template_directory_uri() . '/images/footer.png' );
 if ( $image_background ) {

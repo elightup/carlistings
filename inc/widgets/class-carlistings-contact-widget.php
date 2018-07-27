@@ -2,26 +2,26 @@
 /**
  * Contact Widget
  *
- * @package autodealer
+ * @package CarListings
  */
 
 /**
  * Class Contact Widget
  */
-class Autodealer_Contact_Widget extends WP_Widget {
+class Carlistings_Contact_Widget extends WP_Widget {
 
 	/**
 	 * Constructor
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'classname' => 'autodealer-contact-info',
-			'description' => __( 'Display your location and contact information.', 'autodealer' ),
+			'classname' => 'carlistings-contact-info',
+			'description' => __( 'Display your location and contact information.', 'carlistings' ),
 			'customize_selective_refresh' => true,
 		);
 		parent::__construct(
-			'autodealer-contact-info',
-			esc_html__( 'Autodealer: Contact Info', 'autodealer' ),
+			'carlistings-contact-info',
+			esc_html__( 'Carlistings: Contact Info', 'carlistings' ),
 			$widget_ops
 		);
 	}
@@ -35,9 +35,8 @@ class Autodealer_Contact_Widget extends WP_Widget {
 	 */
 	public function defaults() {
 		return array(
-			'time'  => __( '10:00 AM To 5:00 PM', 'autodealer' ),
-			'phone' => _x( '+559-843-4919', 'phone', 'autodealer' ),
-			'email' => __( 'autodealer@no-reply.com ', 'autodealer' ),
+			'time'  => __( '10:00 AM To 5:00 PM', 'carlistings' ),
+			'email' => __( 'carlistings@no-reply.com ', 'carlistings' ),
 		);
 	}
 
@@ -87,7 +86,6 @@ class Autodealer_Contact_Widget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance            = array();
 		$instance['time'] = wp_kses( $new_instance['time'], array() );
-		$instance['phone']   = wp_kses( $new_instance['phone'], array() );
 		$instance['email']   = wp_kses( $new_instance['email'], array() );
 
 		return $instance;
@@ -106,17 +104,12 @@ class Autodealer_Contact_Widget extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>"><?php esc_html_e( 'time:', 'autodealer' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>"><?php esc_html_e( 'time:', 'carlistings' ); ?></label>
 			<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'time' ) ); ?>"><?php echo esc_textarea( $instance['time'] ); ?></textarea>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'phone' ) ); ?>"><?php esc_html_e( 'Phone:', 'autodealer' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'phone' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'phone' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['phone'] ); ?>" />
-		</p>
-
-		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>"><?php esc_html_e( 'Email time:', 'autodealer' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>"><?php esc_html_e( 'Email time:', 'carlistings' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'email' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['email'] ); ?>" />
 		</p>
 

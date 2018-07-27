@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package autodealer
+ * @package CarListings
  */
 
 ?>
 
 <section class="no-results not-found">
-	<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'autodealer' ); ?></h1>
+	<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'carlistings' ); ?></h1>
 
 	<div class="page-content">
 		<?php
@@ -19,7 +19,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'autodealer' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'carlistings' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -32,14 +32,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'autodealer' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'carlistings' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'autodealer' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'carlistings' ); ?></p>
 			<?php
 			get_search_form();
 

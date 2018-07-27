@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package autodealer
+ * @package CarListings
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'autodealer' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'carlistings' ); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="header-top">
@@ -62,15 +62,15 @@
 						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 						<?php
 					endif;
-					$autodealer_description = get_bloginfo( 'description', 'display' );
-					if ( $autodealer_description || is_customize_preview() ) :
+					$carlistings_description = get_bloginfo( 'description', 'display' );
+					if ( $carlistings_description || is_customize_preview() ) :
 						?>
-						<p class="site-description"><?php echo $autodealer_description; /* WPCS: xss ok. */ ?></p>
+						<p class="site-description"><?php echo $carlistings_description; /* WPCS: xss ok. */ ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="bar"></span><?php esc_html_e( 'Menu', 'autodealer' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="bar"></span><?php esc_html_e( 'Menu', 'carlistings' ); ?></button>
 					<?php
 					wp_nav_menu(
 						array(
@@ -90,7 +90,7 @@
 
 		<?php if ( ! is_front_page() ) : ?>
 			<div class="page-header">
-				<?php autodealer_breadcrumbs(); ?>
+				<?php carlistings_breadcrumbs(); ?>
 			</div>
 		<?php endif; ?>
 

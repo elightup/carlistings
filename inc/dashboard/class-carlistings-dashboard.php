@@ -2,13 +2,13 @@
 /**
  * Add theme dashboard page
  *
- * @package Autodealer
+ * @package CarListings
  */
 
 /**
  * Dashboard class.
  */
-class Autodealer_Dashboard {
+class Carlistings_Dashboard {
 
 	/**
 	 * Store the theme data.
@@ -107,7 +107,7 @@ class Autodealer_Dashboard {
 	 */
 	public function footer_text() {
 		// Translators: theme name and theme slug.
-		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from GretaThemes!', 'autodealer' ), $this->theme->name, $this->lite_slug ) );
+		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from GretaThemes!', 'carlistings' ), $this->theme->name, $this->lite_slug ) );
 	}
 
 	/**
@@ -121,14 +121,14 @@ class Autodealer_Dashboard {
 			<p>
 				<?php
 				// Translators: theme name and welcome page.
-				echo wp_kses_post( sprintf( __( 'Welcome! Thank you for choosing %1$s. To get started, visit our <a href="%2$s">welcome page</a>.', 'autodealer' ), $this->theme->name, esc_url( admin_url( 'themes.php?page=' . $this->slug ) ) ) );
+				echo wp_kses_post( sprintf( __( 'Welcome! Thank you for choosing %1$s. To get started, visit our <a href="%2$s">welcome page</a>.', 'carlistings' ), $this->theme->name, esc_url( admin_url( 'themes.php?page=' . $this->slug ) ) ) );
 				?>
 			</p>
 			<p>
 				<a class="button" href="<?php echo esc_url( admin_url( 'themes.php?page=' . $this->slug ) ); ?>">
 					<?php
 					// Translators: theme name.
-					echo esc_html( sprintf( __( 'Get started with %s', 'autodealer' ), $this->theme->name ) );
+					echo esc_html( sprintf( __( 'Get started with %s', 'carlistings' ), $this->theme->name ) );
 					?>
 				</a>
 			</p>
@@ -141,32 +141,32 @@ class Autodealer_Dashboard {
 	 * Recommended Plugin Action.
 	 */
 	public function recommended_plugins_action() {
-		$plugins        = autodealer_required_plugins();
+		$plugins        = carlistings_required_plugins();
 		$plugins_number = count( $plugins );
 		$installer      = TGM_Plugin_Activation::get_instance();
 		$action         = array();
 
 		if ( $plugins_number > 1 ) {
-			$action['title'] = esc_html__( 'Install The Required Plugins', 'autodealer' );
+			$action['title'] = esc_html__( 'Install The Required Plugins', 'carlistings' );
 			/* translators: theme name. */
-			$action['body']  = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our required plugins.', 'autodealer' ), $this->theme->name );
-			$action['button_text'] = esc_html__( 'Install Plugins', 'autodealer' );
+			$action['body']  = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our required plugins.', 'carlistings' ), $this->theme->name );
+			$action['button_text'] = esc_html__( 'Install Plugins', 'carlistings' );
 		} else {
 			$plugin_name = $plugins[0]['name'];
 			/* translators: theme name. */
-			$action['body']        = sprintf( __( '%1$s needs %2$s to working properly. Please install and activate it.', 'autodealer' ), $this->theme->name, $plugin_name );
+			$action['body']        = sprintf( __( '%1$s needs %2$s to working properly. Please install and activate it.', 'carlistings' ), $this->theme->name, $plugin_name );
 			/* translators: plugin name. */
-			$action['button_text'] = sprintf( esc_html__( 'Install %s', 'autodealer' ), $plugin_name );
+			$action['button_text'] = sprintf( esc_html__( 'Install %s', 'carlistings' ), $plugin_name );
 			$action['title']       = $action['button_text'];
 
 		}
 
 		if ( $installer->is_tgmpa_complete() ) {
 			if ( $plugins_number > 1 ) {
-				$action['body'] = '<strong>' . esc_html__( 'You have installed and active all required plugins', 'autodealer' ) . '</strong>';
+				$action['body'] = '<strong>' . esc_html__( 'You have installed and active all required plugins', 'carlistings' ) . '</strong>';
 			} else {
 				/* translators: plugin name. */
-				$action['body'] = sprintf( __( '<strong>%s has been installed and activated</strong>', 'autodealer' ), $plugin_name );
+				$action['body'] = sprintf( __( '<strong>%s has been installed and activated</strong>', 'carlistings' ), $plugin_name );
 			}
 			$action['button_text'] = '';
 		}
@@ -177,7 +177,7 @@ class Autodealer_Dashboard {
 	 * Check if Jetpack is recommended
 	 */
 	public function jetpack_is_recommended() {
-		$plugins = autodealer_required_plugins();
+		$plugins = carlistings_required_plugins();
 		foreach ( $plugins as $plugin ) {
 			if ( 'jetpack' === $plugin['slug'] ) {
 				return true;

@@ -2,10 +2,10 @@
 /**
  * Display featured content on the homepage.
  *
- * @package autodealer
+ * @package CarListings
  */
 
-$featured_posts = autodealer_get_featured_posts();
+$featured_posts = carlistings_get_featured_posts();
 
 if ( empty( $featured_posts ) ) {
 	return;

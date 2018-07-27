@@ -3,7 +3,7 @@
  * Display an optional post thumbnail, video, gallery in according to post formats
  * above the post excerpt in the archive page.
  *
- * @package autodealer
+ * @package CarListings
  */
 
 if ( has_post_format( array( 'video', 'audio' ) ) ) {

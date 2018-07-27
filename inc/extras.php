@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package autodealer
+ * @package CarListings
  */
 
 remove_filter( 'the_excerpt', 'wpautop' );
@@ -12,22 +12,22 @@ remove_filter( 'the_excerpt', 'wpautop' );
 /**
  * The content more link
  */
-function autodealer_read_more_link() {
+function carlistings_read_more_link() {
 	// Translators: %s - post title.
-	$text = wp_kses_post( sprintf( __( 'Read More %s', 'autodealer' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
+	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
 	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
 
 	return $more;
 }
-add_filter( 'the_content_more_link', 'autodealer_read_more_link' );
+add_filter( 'the_content_more_link', 'carlistings_read_more_link' );
 
 /**
  * Length excerpt
  */
-function autodealer_custom_excerpt_length() {
+function carlistings_custom_excerpt_length() {
 	return 50;
 }
-add_filter( 'excerpt_length', 'autodealer_custom_excerpt_length' );
+add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Read More' link.
@@ -36,14 +36,14 @@ add_filter( 'excerpt_length', 'autodealer_custom_excerpt_length' );
  *
  * @return string 'Read More' link prepended with an ellipsis.
  */
-function autodealer_excerpt_more_link() {
+function carlistings_excerpt_more_link() {
 	// Translators: %s - post title.
-	$text = wp_kses_post( sprintf( __( 'Read More %s', 'autodealer' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
+	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
 	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
 
 	return $more;
 }
-add_filter( 'excerpt_more', 'autodealer_excerpt_more_link' );
+add_filter( 'excerpt_more', 'carlistings_excerpt_more_link' );
 
 /**
  * Add tag to the content
@@ -57,7 +57,7 @@ function add_tag_the_content( $content ) {
 	if ( is_single() ) {
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( 'Tags: ', esc_html_x( ' ', 'list item separator', 'autodealer' ) );
+		$tags_list = get_the_tag_list( 'Tags: ', esc_html_x( ' ', 'list item separator', 'carlistings' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
@@ -78,14 +78,14 @@ add_filter( 'the_content', 'add_tag_the_content' );
  * @return array
  */
 function user_social_networks_add( $methods ) {
-	$methods['googleplus'] = esc_html__( 'Google+', 'autodealer' );
-	$methods['twitter']    = esc_html__( 'Twitter username (without @)', 'autodealer' );
-	$methods['facebook']   = esc_html__( 'Facebook profile URL', 'autodealer' );
-	$methods['linkedin']   = esc_html__( 'Linkedin', 'autodealer' );
-	$methods['instagram']  = esc_html__( 'Instagram', 'autodealer' );
-	$methods['dribbble']   = esc_html__( 'Dribbble', 'autodealer' );
-	$methods['youtube']    = esc_html__( 'Youtube', 'autodealer' );
-	$methods['pinterest']  = esc_html__( 'Pinterest', 'autodealer' );
+	$methods['googleplus'] = esc_html__( 'Google+', 'carlistings' );
+	$methods['twitter']    = esc_html__( 'Twitter username (without @)', 'carlistings' );
+	$methods['facebook']   = esc_html__( 'Facebook profile URL', 'carlistings' );
+	$methods['linkedin']   = esc_html__( 'Linkedin', 'carlistings' );
+	$methods['instagram']  = esc_html__( 'Instagram', 'carlistings' );
+	$methods['dribbble']   = esc_html__( 'Dribbble', 'carlistings' );
+	$methods['youtube']    = esc_html__( 'Youtube', 'carlistings' );
+	$methods['pinterest']  = esc_html__( 'Pinterest', 'carlistings' );
 
 	return $methods;
 }
@@ -96,10 +96,10 @@ add_filter( 'user_contactmethods', 'user_social_networks_add' );
  *
  * @return array List of demos configuration.
  */
-function autodealer_import_files() {
+function carlistings_import_files() {
 	return array(
 		array(
-			'import_file_name'             => esc_html__( 'Demo', 'autodealer' ),
+			'import_file_name'             => esc_html__( 'Demo', 'carlistings' ),
 			'local_import_file'            => get_template_directory() . '/demos/content.xml',
 			'local_import_widget_file'     => get_template_directory() . '/demos/widgets.wie',
 			'local_import_customizer_file' => get_template_directory() . '/demos/theme-options.dat',
@@ -107,12 +107,12 @@ function autodealer_import_files() {
 	);
 }
 
-add_filter( 'pt-ocdi/import_files', 'autodealer_import_files' );
+add_filter( 'pt-ocdi/import_files', 'carlistings_import_files' );
 
 /**
  * Setup the theme after importing demo.
  */
-function autodealer_after_import_setup() {
+function carlistings_after_import_setup() {
 	// Assign menus to their locations.
 	$header = get_term_by( 'slug', 'Header', 'nav_menu' );
 	$footer = get_term_by( 'slug', 'Footer', 'nav_menu' );
@@ -141,7 +141,7 @@ function autodealer_after_import_setup() {
 	update_option( 'permalink_structure', '/%postname%/' );
 }
 
-add_action( 'pt-ocdi/after_import', 'autodealer_after_import_setup' );
+add_action( 'pt-ocdi/after_import', 'carlistings_after_import_setup' );
 
 /**
  * Add at a glance to left section
@@ -167,7 +167,7 @@ add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description
  *
  * @param object $query query object.
  */
-function autodealer_filter_make_in_archive( $query ) {
+function carlistings_filter_make_in_archive( $query ) {
 	if ( ! $query->is_main_query() || ! is_post_type_archive( 'auto-listing' ) || is_admin() ) {
 		return $query;
 	}
@@ -183,7 +183,7 @@ function autodealer_filter_make_in_archive( $query ) {
 	);
 	$query->set( 'meta_query', $meta_query );
 }
-add_action( 'pre_get_posts', 'autodealer_filter_make_in_archive' );
+add_action( 'pre_get_posts', 'carlistings_filter_make_in_archive' );
 
 /**
  * Filters the CSS class(es) applied to a menu item's list item element.
@@ -193,7 +193,7 @@ add_action( 'pre_get_posts', 'autodealer_filter_make_in_archive' );
  * @param stdClass $args    An object of wp_nav_menu() arguments.
  * @param int      $depth   Depth of menu item. Used for padding.
  */
-function autodealer_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
+function carlistings_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
 	if ( 'menu-1' !== $args->theme_location ) {
 		return $classes;
 	}
@@ -205,15 +205,15 @@ function autodealer_active_autolisting_archive_on_menu( $classes, $item, $args, 
 	}
 	return $classes;
 }
-add_filter( 'nav_menu_css_class', 'autodealer_active_autolisting_archive_on_menu', 10, 4 );
+add_filter( 'nav_menu_css_class', 'carlistings_active_autolisting_archive_on_menu', 10, 4 );
 
-add_filter( 'comment_form_default_fields', 'autodealer_modify_comment_form_default' );
+add_filter( 'comment_form_default_fields', 'carlistings_modify_comment_form_default' );
 /**
  * Modify default comment form.
  *
  * @param array $fields default field.
  */
-function autodealer_modify_comment_form_default( $fields ) {
+function carlistings_modify_comment_form_default( $fields ) {
 	$commenter = wp_get_current_commenter();
 	$req       = get_option( 'require_name_email' );
 	$aria_req  = ( $req ? " aria-required='true'" : '' );
@@ -221,22 +221,22 @@ function autodealer_modify_comment_form_default( $fields ) {
 	$html5     = 'html5' === current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : 'xhtml';
 
 	$fields['author'] = '<p class="comment-form-author">' .
-				'<input id="author" name="author" placeholder="' . esc_attr__( 'Full Name *', 'autodealer' ) . '" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>';
+				'<input id="author" name="author" placeholder="' . esc_attr__( 'Full Name *', 'carlistings' ) . '" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>';
 	$fields['email']  = '<p class="comment-form-email">' .
-				'<input id="email" placeholder="' . esc_attr__( 'Mail Address *', 'autodealer' ) . '" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req . ' /></p>';
+				'<input id="email" placeholder="' . esc_attr__( 'Mail Address *', 'carlistings' ) . '" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req . ' /></p>';
 	$fields['url']    = '<p class="comment-form-url">' .
-				'<input id="url" placeholder="' . esc_attr__( 'Website URL', 'autodealer' ) . '" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></p>';
+				'<input id="url" placeholder="' . esc_attr__( 'Website URL', 'carlistings' ) . '" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></p>';
 	return $fields;
 }
 
-add_filter( 'comment_form_defaults', 'autodealer_modify_comment_form_args' );
+add_filter( 'comment_form_defaults', 'carlistings_modify_comment_form_args' );
 /**
  * Modify default comment form args.
  *
  * @param array $defaults default args.
  */
-function autodealer_modify_comment_form_args( $defaults ) {
-	$defaults['label_submit']         = esc_html__( 'Submit Comment', 'autodealer' );
+function carlistings_modify_comment_form_args( $defaults ) {
+	$defaults['label_submit']         = esc_html__( 'Submit Comment', 'carlistings' );
 	$defaults['title_reply_before']   = '';
 	$submit_button                    = sprintf(
 		$defaults['submit_button'],
@@ -251,7 +251,7 @@ function autodealer_modify_comment_form_args( $defaults ) {
 		get_comment_id_fields( get_the_ID() )
 	);
 	$defaults['submit_field']         = '';
-	$defaults['comment_field']        = '<div class="comment-form-comment"><textarea id="comment" placeholder="' . esc_attr__( 'Write Your Comments Here...', 'autodealer' ) . '" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>' . $submit_field . '</div>';
+	$defaults['comment_field']        = '<div class="comment-form-comment"><textarea id="comment" placeholder="' . esc_attr__( 'Write Your Comments Here...', 'carlistings' ) . '" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>' . $submit_field . '</div>';
 	$defaults['title_reply']          = '';
 	$defaults['comment_notes_before'] = '';
 	return $defaults;
@@ -264,7 +264,7 @@ function autodealer_modify_comment_form_args( $defaults ) {
  *
  * @return array.
  */
-function autodealer_lite_tag_cloud_fz( $args ) {
+function carlistings_lite_tag_cloud_fz( $args ) {
 	$args['largest']  = 0.8125;
 	$args['smallest'] = 0.8125;
 	$args['unit']     = 'rem';
@@ -272,4 +272,4 @@ function autodealer_lite_tag_cloud_fz( $args ) {
 	return $args;
 }
 
-add_filter( 'widget_tag_cloud_args', 'autodealer_lite_tag_cloud_fz' );
+add_filter( 'widget_tag_cloud_args', 'carlistings_lite_tag_cloud_fz' );

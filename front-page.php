@@ -2,7 +2,7 @@
 /**
  * Template Name: Front-page
  *
- * @package autodealer
+ * @package CarListings
  */
 
 if ( 'posts' === get_option( 'show_on_front' ) ) {

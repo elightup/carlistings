@@ -1,13 +1,13 @@
 <?php
 /**
- * Autodealer functions and definitions
+ * Carlistings functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Autodealer
+ * @package CarListings
  */
 
-if ( ! function_exists( 'autodealer_setup' ) ) :
+if ( ! function_exists( 'carlistings_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function autodealer_setup() {
+	function carlistings_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on autodealer, use a find and replace
-		 * to change 'autodealer' to the name of your theme in all the template files.
+		 * If you're building a theme based on carlistings, use a find and replace
+		 * to change 'carlistings' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'autodealer', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'carlistings', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -46,8 +46,8 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'autodealer' ),
-				'menu-2' => esc_html__( 'Footer', 'autodealer' ),
+				'menu-1' => esc_html__( 'Primary', 'carlistings' ),
+				'menu-2' => esc_html__( 'Footer', 'carlistings' ),
 			)
 		);
 
@@ -85,7 +85,7 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 		add_post_type_support( 'page', 'excerpt' );
 	}
 endif;
-add_action( 'after_setup_theme', 'autodealer_setup' );
+add_action( 'after_setup_theme', 'carlistings_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -94,22 +94,22 @@ add_action( 'after_setup_theme', 'autodealer_setup' );
  *
  * @global int $content_width
  */
-function autodealer_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'autodealer_content_width', 770 );
+function carlistings_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'carlistings_content_width', 770 );
 }
-add_action( 'after_setup_theme', 'autodealer_content_width', 0 );
+add_action( 'after_setup_theme', 'carlistings_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function autodealer_widgets_init() {
+function carlistings_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'autodealer' ),
+			'name'          => esc_html__( 'Sidebar', 'carlistings' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'autodealer' ),
+			'description'   => esc_html__( 'Add widgets here.', 'carlistings' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -118,9 +118,9 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Topbar Contact', 'autodealer' ),
+			'name'          => esc_html__( 'Topbar Contact', 'carlistings' ),
 			'id'            => 'topbar-contact',
-			'description'   => esc_html__( 'Add your time and email widget here.', 'autodealer' ),
+			'description'   => esc_html__( 'Add your time and email widget here.', 'carlistings' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -129,36 +129,36 @@ function autodealer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Topbar Languages', 'autodealer' ),
+			'name'          => esc_html__( 'Topbar Languages', 'carlistings' ),
 			'id'            => 'topbar-languages',
-			'description'   => esc_html__( 'Add your languages widget here.', 'autodealer' ),
+			'description'   => esc_html__( 'Add your languages widget here.', 'carlistings' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
 	);
-	register_widget( 'Autodealer_Contact_Widget' );
+	register_widget( 'Carlistings_Contact_Widget' );
 }
-add_action( 'widgets_init', 'autodealer_widgets_init' );
+add_action( 'widgets_init', 'carlistings_widgets_init' );
 
 /**
  * Enqueue plugins scripts and styles first.
  */
-function autodealer_plugin_scripts() {
+function carlistings_plugin_scripts() {
 	if ( is_front_page() ) {
 		wp_enqueue_style( 'auto-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
-		wp_enqueue_script( 'autodealer-sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '', true );
+		wp_enqueue_script( 'carlistings-sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '', true );
 
-		wp_enqueue_script( 'autodealer-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '', true );
+		wp_enqueue_script( 'carlistings-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '', true );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'autodealer_plugin_scripts', 0 );
+add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
 
 /**
  * Enqueue scripts and styles.
  */
-function autodealer_scripts() {
+function carlistings_scripts() {
 
 	/**
 	 * Register ico font
@@ -170,38 +170,38 @@ function autodealer_scripts() {
 	 */
 	wp_enqueue_style( 'aos', get_template_directory_uri() . '/css/aos.css', array() );
 
-	wp_enqueue_style( 'autodealer-fonts', autodealer_fonts_url() );
-	wp_enqueue_style( 'autodealer-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'carlistings-fonts', carlistings_fonts_url() );
+	wp_enqueue_style( 'carlistings-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'autodealer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'carlistings-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'autodealer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'carlistings-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'autodealer-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
+	wp_enqueue_script( 'carlistings-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
 
 	/**
 	 * Register and enqueue aos.js.
 	 */
-	wp_enqueue_script( 'autodealer-jquery-aos', get_template_directory_uri() . '/js/aos.js', array( 'jquery' ), '20180629' );
+	wp_enqueue_script( 'carlistings-jquery-aos', get_template_directory_uri() . '/js/aos.js', array( 'jquery' ), '20180629' );
 
-	wp_enqueue_script( 'autodealer-script', get_template_directory_uri() . '/js/script.js', array(), '20180506', true );
+	wp_enqueue_script( 'carlistings-script', get_template_directory_uri() . '/js/script.js', array(), '20180506', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'autodealer_scripts', 99 );
+add_action( 'wp_enqueue_scripts', 'carlistings_scripts', 99 );
 
 /**
  * Get Google fonts URL for the theme.
  *
  * @return string Google fonts URL for the theme.
  */
-function autodealer_fonts_url() {
+function carlistings_fonts_url() {
 	$fonts   = array();
 	$subsets = 'latin,latin-ext';
 
-	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'autodealer' ) ) {
+	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'carlistings' ) ) {
 		$fonts[] = 'Open Sans:300,400,600,700,800';
 	}
 
@@ -218,22 +218,22 @@ function autodealer_fonts_url() {
 /**
  * Add editor style.
  */
-function autodealer_add_editor_styles() {
+function carlistings_add_editor_styles() {
 	add_editor_style(
 		array(
 			'css/editor-style.css',
-			autodealer_fonts_url(),
+			carlistings_fonts_url(),
 			get_template_directory_uri() . '/css/icofont.css',
 		)
 	);
 }
-add_action( 'init', 'autodealer_add_editor_styles' );
+add_action( 'init', 'carlistings_add_editor_styles' );
 
 
 /**
  * Include widget file
  */
-require get_template_directory() . '/inc/widgets/class-autodealer-contact-widget.php';
+require get_template_directory() . '/inc/widgets/class-carlistings-contact-widget.php';
 
 /**
  * Implement the Breadcrumbs.
@@ -280,12 +280,12 @@ if ( is_admin() ) {
 /**
  * Dashboard.
  */
-require get_template_directory() . '/inc/dashboard/class-autodealer-dashboard.php';
-new Autodealer_Dashboard();
+require get_template_directory() . '/inc/dashboard/class-carlistings-dashboard.php';
+new Carlistings_Dashboard();
 
 /**
  * Customizer Pro.
  */
-require get_template_directory() . '/inc/customizer-pro/class-autodealer-customizer-pro.php';
-$customizer_pro = new Autodealer_Customizer_Pro();
+require get_template_directory() . '/inc/customizer-pro/class-carlistings-customizer-pro.php';
+$customizer_pro = new Carlistings_Customizer_Pro();
 $customizer_pro->init();

@@ -4,7 +4,7 @@
  *
  * This template can be overridden by copying it to yourtheme/listings/content-single-listing.php.
  *
- * @package autodealer
+ * @package CarListings
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

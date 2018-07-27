@@ -2,41 +2,41 @@
 /**
  * Getting started section.
  *
- * @package Autodealer
+ * @package CarListings
  */
 
 ?>
 <div id="getting-started" class="gt-tab-pane gt-is-active">
 	<div class="feature-section two-col">
 		<div class="col">
-			<h3><?php esc_html_e( 'Implement Recommended Actions', 'autodealer' ); ?></h3>
+			<h3><?php esc_html_e( 'Implement Recommended Actions', 'carlistings' ); ?></h3>
 			<p>
 				<?php
 				/* translators: theme name. */
-				echo esc_html( sprintf( __( 'We have made a list of steps for you, to make sure you will get the most of %s. They are easy to follow.', 'autodealer' ), $this->theme->name ) );
+				echo esc_html( sprintf( __( 'We have made a list of steps for you, to make sure you will get the most of %s. They are easy to follow.', 'carlistings' ), $this->theme->name ) );
 				?>
 			</p>
 			<p>
-				<a href="#recommended-actions" class="action-links button"><?php esc_html_e( 'Recommended Actions', 'autodealer' ); ?></a>
+				<a href="#recommended-actions" class="action-links button"><?php esc_html_e( 'Recommended Actions', 'carlistings' ); ?></a>
 			</p>
 
 
-			<h3><?php esc_html_e( 'Customize The Theme', 'autodealer' ); ?></h3>
-			<p><?php esc_html_e( 'Using the WordPress Customizer you can easily customize every aspect of the theme.', 'autodealer' ); ?></p>
+			<h3><?php esc_html_e( 'Customize The Theme', 'carlistings' ); ?></h3>
+			<p><?php esc_html_e( 'Using the WordPress Customizer you can easily customize every aspect of the theme.', 'carlistings' ); ?></p>
 			<p>
-				<a href="<?php echo esc_url( admin_url( 'customize.php' ) ); ?>" class="button"><?php esc_html_e( 'Start Customize', 'autodealer' ); ?></a>
+				<a href="<?php echo esc_url( admin_url( 'customize.php' ) ); ?>" class="button"><?php esc_html_e( 'Start Customize', 'carlistings' ); ?></a>
 			</p>
 
 
-			<h3><?php esc_html_e( 'Read Full Documentation', 'autodealer' ); ?></h3>
-			<p class="about"><?php esc_html_e( 'Need any help to setup and configure the theme? Please check our full documentation for detailed information on how to use it.', 'autodealer' ); ?></p>
+			<h3><?php esc_html_e( 'Read Full Documentation', 'carlistings' ); ?></h3>
+			<p class="about"><?php esc_html_e( 'Need any help to setup and configure the theme? Please check our full documentation for detailed information on how to use it.', 'carlistings' ); ?></p>
 			<p>
-				<a href="<?php echo esc_url( "https://gretathemes.com/docs/{$this->slug}/{$this->utm }" ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e( 'Read Documentation', 'autodealer' ); ?></a>
+				<a href="<?php echo esc_url( "https://gretathemes.com/docs/{$this->slug}/{$this->utm }" ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e( 'Read Documentation', 'carlistings' ); ?></a>
 			</p>
 		</div>
 
 		<div class="col">
-			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'screenshot', 'autodealer' ); ?>">
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'screenshot', 'carlistings' ); ?>">
 		</div>
 	</div>
 	<?php include get_stylesheet_directory() . '/inc/dashboard/sections/recommended-themes.php'; ?>

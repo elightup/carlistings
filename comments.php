@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package autodealer
+ * @package CarListings
  */
 
 /*
@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title underline-heading">
 			<?php
-			$autodealer_comment_count = get_comments_number();
-			echo esc_html( _nx( 'Comment', 'Comments', $autodealer_comment_count, 'comments', 'autodealer' ) );
+			$carlistings_comment_count = get_comments_number();
+			echo esc_html( _nx( 'Comment', 'Comments', $carlistings_comment_count, 'comments', 'carlistings' ) );
 			?>
 		</h2><!-- .comments-title -->
 
@@ -53,7 +53,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'autodealer' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'carlistings' ); ?></p>
 			<?php
 		endif;
 

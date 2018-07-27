@@ -2,7 +2,7 @@
 /**
  * Display breadcrumbs for posts, pages, archive page with the microdata that search engines understand
  *
- * @package autodealer
+ * @package CarListings
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param array|string $args argument for HTML output.
  */
-function autodealer_breadcrumbs( $args = '' ) {
+function carlistings_breadcrumbs( $args = '' ) {
 	if ( is_front_page() ) {
 		return;
 	}
@@ -18,7 +18,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 	$args = wp_parse_args(
 		$args, array(
 			'separator'         => '<i class="icofont icofont-rounded-right"></i>',
-			'home_label'        => esc_html__( 'Home', 'autodealer' ),
+			'home_label'        => esc_html__( 'Home', 'carlistings' ),
 			'home_class'        => 'home',
 			'before'            => '<ul class="breadcrumbs">',
 			'after'             => '</ul>',
@@ -29,7 +29,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		)
 	);
 
-	$args = apply_filters( 'autodealer_breadcrumbs_args', $args );
+	$args = apply_filters( 'carlistings_breadcrumbs_args', $args );
 
 	$items = array();
 
@@ -89,7 +89,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
 		if ( $terms && ! is_wp_error( $terms ) ) {
 			$term    = current( $terms );
-			$terms   = autodealer_get_term_parents( $term->term_id, $args['taxonomy'] );
+			$terms   = carlistings_get_term_parents( $term->term_id, $args['taxonomy'] );
 			$terms[] = $term->term_id;
 			foreach ( $terms as $term_id ) {
 				$term    = get_term( $term_id, $args['taxonomy'] );
@@ -102,7 +102,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 
 		}
 	} elseif ( is_page() ) {
-		$pages = autodealer_get_post_parents( get_queried_object_id() );
+		$pages = carlistings_get_post_parents( get_queried_object_id() );
 		foreach ( $pages as $page ) {
 			$items[] = sprintf( $item_tpl_link, get_permalink( $page ), get_the_title( $page ) );
 		}
@@ -112,7 +112,7 @@ function autodealer_breadcrumbs( $args = '' ) {
 		}
 	} elseif ( is_tax() || is_category() || is_tag() ) {
 		$current_term = get_queried_object();
-		$terms        = autodealer_get_term_parents( get_queried_object_id(), $current_term->taxonomy );
+		$terms        = carlistings_get_term_parents( get_queried_object_id(), $current_term->taxonomy );
 		foreach ( $terms as $term_id ) {
 			$term    = get_term( $term_id, $current_term->taxonomy );
 			$items[] = sprintf( $item_tpl_link, get_category_link( $term_id ), $term->name );
@@ -123,9 +123,9 @@ function autodealer_breadcrumbs( $args = '' ) {
 		}
 	} elseif ( is_search() ) {
 		/* translators: search query */
-		$title = sprintf( esc_html__( 'Search results for &quot;%s&quot;', 'autodealer' ), get_search_query() );
+		$title = sprintf( esc_html__( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
 	} elseif ( is_404() ) {
-		$title = esc_html__( 'Not found', 'autodealer' );
+		$title = esc_html__( 'Not found', 'carlistings' );
 	} elseif ( is_author() ) {
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
 		the_post();
@@ -135,13 +135,13 @@ function autodealer_breadcrumbs( $args = '' ) {
 		);
 		rewind_posts();
 	} elseif ( is_day() ) {
-		$title = sprintf( esc_html( '%s', 'autodealer' ), get_the_date() );
+		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date() );
 	} elseif ( is_month() ) {
-		$title = sprintf( esc_html( '%s', 'autodealer' ), get_the_date( 'F Y' ) );
+		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date( 'F Y' ) );
 	} elseif ( is_year() ) {
-		$title = sprintf( esc_html( '%s', 'autodealer' ), get_the_date( 'Y' ) );
+		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date( 'Y' ) );
 	} else {
-		$title = esc_html__( 'Archives', 'autodealer' );
+		$title = esc_html__( 'Archives', 'carlistings' );
 	} // End if().
 	$items[] = sprintf( $item_text_tpl, $title );
 
@@ -160,7 +160,7 @@ function autodealer_breadcrumbs( $args = '' ) {
  *
  * @return array Array of parent terms' IDs.
  */
-function autodealer_get_term_parents( $term_id = '', $taxonomy = 'category' ) {
+function carlistings_get_term_parents( $term_id = '', $taxonomy = 'category' ) {
 	// Set up some default arrays.
 	$list = array();
 
@@ -192,7 +192,7 @@ function autodealer_get_term_parents( $term_id = '', $taxonomy = 'category' ) {
  *
  * @return array Array of parent posts' IDs.
  */
-function autodealer_get_post_parents( $post_id = '' ) {
+function carlistings_get_post_parents( $post_id = '' ) {
 	// Set up some default array.
 	$list = array();
 

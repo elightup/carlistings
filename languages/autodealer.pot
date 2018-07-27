@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: autodealer\n"
+"Project-Id-Version: carlistings\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-28 09:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -72,11 +72,11 @@ msgid "Archives"
 msgstr ""
 
 #. Name of the theme
-msgid "autodealer"
+msgid "carlistings"
 msgstr ""
 
 #: inc/customizer.php:53
-msgid "autodealer@no-reply.com"
+msgid "carlistings@no-reply.com"
 msgstr ""
 
 #: inc/customizer.php:101 template-parts/home/cars-by-make.php:8

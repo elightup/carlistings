@@ -1,8 +1,8 @@
 <?php
 /**
- * AutoDealer Theme Customizer
+ * CarListings Theme Customizer
  *
- * @package autodealer
+ * @package CarListings
  */
 
 /**
@@ -10,14 +10,14 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function autodealer_customize_register( $wp_customize ) {
+function carlistings_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
 	// Add theme options panel.
 	$wp_customize->add_panel(
-		'autodealer', array(
-			'title' => esc_html__( 'Theme Options', 'autodealer' ),
+		'carlistings', array(
+			'title' => esc_html__( 'Theme Options', 'carlistings' ),
 		)
 	);
 
@@ -26,8 +26,8 @@ function autodealer_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_section(
 		'homepage', array(
-			'title' => esc_html__( 'Homepage', 'autodealer' ),
-			'panel' => 'autodealer',
+			'title' => esc_html__( 'Homepage', 'carlistings' ),
+			'panel' => 'carlistings',
 		)
 	);
 
@@ -36,11 +36,11 @@ function autodealer_customize_register( $wp_customize ) {
 		'default'           => 3000,
 	) );
 	$wp_customize->add_control( 'slider_speed', array(
-		'label'           => esc_html__( 'Top slider speed', 'autodealer' ),
+		'label'           => esc_html__( 'Top slider speed', 'carlistings' ),
 		'section'         => 'homepage',
 		'type'            => 'number',
 		'active_callback' => 'is_front_page',
-		'description'     => esc_html__( 'The animation speed in milliseconds. Enter 0 to disable the slider.', 'autodealer' ),
+		'description'     => esc_html__( 'The animation speed in milliseconds. Enter 0 to disable the slider.', 'carlistings' ),
 	) );
 
 	/**
@@ -54,10 +54,10 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'search_section', array(
-			'label'       => esc_html__( 'Search', 'autodealer' ),
+			'label'       => esc_html__( 'Search', 'carlistings' ),
 			'section'     => 'homepage',
 			'type'        => 'dropdown-pages',
-			'description' => wp_kses_post( __( 'The content of this page will be displayed below the search on your static front page.', 'autodealer' ) ),
+			'description' => wp_kses_post( __( 'The content of this page will be displayed below the search on your static front page.', 'carlistings' ) ),
 		)
 	);
 	$wp_customize->selective_refresh->add_partial(
@@ -65,7 +65,7 @@ function autodealer_customize_register( $wp_customize ) {
 		array(
 			'selector'            => '.section--search',
 			'container_inclusive' => true,
-			'render_callback'     => 'autodealer_refresh_search_section',
+			'render_callback'     => 'carlistings_refresh_search_section',
 		)
 	);
 
@@ -75,14 +75,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_title', array(
-			'default'           => esc_html__( 'Browse Cars By Make', 'autodealer' ),
+			'default'           => esc_html__( 'Browse Cars By Make', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'allcar_title', array(
-			'label'       => esc_html__( 'All car title', 'autodealer' ),
+			'label'       => esc_html__( 'All car title', 'carlistings' ),
 			'section'     => 'homepage',
 			'type'        => 'text',
 		)
@@ -90,14 +90,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_description', array(
-			'default'           => esc_html__( 'cars available in different categories', 'autodealer' ),
+			'default'           => esc_html__( 'cars available in different categories', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'allcar_description', array(
-			'label'       => esc_html__( 'All car description', 'autodealer' ),
+			'label'       => esc_html__( 'All car description', 'carlistings' ),
 			'section'     => 'homepage',
 			'type'        => 'textarea',
 		)
@@ -105,14 +105,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_button_text', array(
-			'default'           => esc_html__( 'see all cars', 'autodealer' ),
+			'default'           => esc_html__( 'see all cars', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'allcar_button_text', array(
-			'label'   => esc_html__( 'All Car Button Text', 'autodealer' ),
+			'label'   => esc_html__( 'All Car Button Text', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'text',
 		)
@@ -127,7 +127,7 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_button_url', array(
-			'label'   => esc_html__( 'All Car Button URL', 'autodealer' ),
+			'label'   => esc_html__( 'All Car Button URL', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'text',
 		)
@@ -135,7 +135,7 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_image', array(
-			'sanitize_callback' => 'autodealer_sanitize_image',
+			'sanitize_callback' => 'carlistings_sanitize_image',
 		)
 	);
 	$wp_customize->add_control(
@@ -143,7 +143,7 @@ function autodealer_customize_register( $wp_customize ) {
 			$wp_customize,
 			'homepage',
 			array(
-				'label'    => esc_html__( 'All Car Image Right', 'autodealer' ),
+				'label'    => esc_html__( 'All Car Image Right', 'carlistings' ),
 				'section'  => 'homepage',
 				'settings' => 'allcar_image',
 			)
@@ -155,8 +155,8 @@ function autodealer_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_section(
 		'footer', array(
-			'title' => esc_html__( 'Footer', 'autodealer' ),
-			'panel' => 'autodealer',
+			'title' => esc_html__( 'Footer', 'carlistings' ),
+			'panel' => 'carlistings',
 		)
 	);
 
@@ -166,14 +166,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_title', array(
-			'default'           => wp_kses_post( __( 'You Want To Have Your Favorite Car?', 'autodealer' ) ),
+			'default'           => wp_kses_post( __( 'You Want To Have Your Favorite Car?', 'carlistings' ) ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'cta_title', array(
-			'label'   => esc_html__( 'Footer Title', 'autodealer' ),
+			'label'   => esc_html__( 'Footer Title', 'carlistings' ),
 			'section' => 'footer',
 			'type'    => 'textarea',
 		)
@@ -181,14 +181,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_description', array(
-			'default'           => esc_html__( 'We have a big list of modern & classic cars in both used and new categories.', 'autodealer' ),
+			'default'           => esc_html__( 'We have a big list of modern & classic cars in both used and new categories.', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'cta_description', array(
-			'label'   => esc_html__( 'Footer Description', 'autodealer' ),
+			'label'   => esc_html__( 'Footer Description', 'carlistings' ),
 			'section' => 'footer',
 			'type'    => 'textarea',
 		)
@@ -196,14 +196,14 @@ function autodealer_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_button_text', array(
-			'default'           => esc_html__( 'go to car listings', 'autodealer' ),
+			'default'           => esc_html__( 'go to car listings', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'cta_button_text', array(
-			'label'   => esc_html__( 'Footer Button Text', 'autodealer' ),
+			'label'   => esc_html__( 'Footer Button Text', 'carlistings' ),
 			'section' => 'footer',
 			'type'    => 'text',
 		)
@@ -218,7 +218,7 @@ function autodealer_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'cta_button_url', array(
-			'label'   => esc_html__( 'Footer Button URL', 'autodealer' ),
+			'label'   => esc_html__( 'Footer Button URL', 'carlistings' ),
 			'section' => 'footer',
 			'type'    => 'text',
 		)
@@ -227,7 +227,7 @@ function autodealer_customize_register( $wp_customize ) {
 	// Cta background.
 	$wp_customize->add_setting(
 		'cta_background', array(
-			'sanitize_callback' => 'autodealer_sanitize_image',
+			'sanitize_callback' => 'carlistings_sanitize_image',
 			'default'           => get_template_directory_uri() . '/images/cta.png',
 		)
 	);
@@ -236,7 +236,7 @@ function autodealer_customize_register( $wp_customize ) {
 			$wp_customize,
 			'cta_background',
 			array(
-				'label'    => esc_html__( 'Footer Image', 'autodealer' ),
+				'label'    => esc_html__( 'Footer Image', 'carlistings' ),
 				'section'  => 'footer',
 				'settings' => 'cta_background',
 			)
@@ -248,7 +248,7 @@ function autodealer_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'footer_logo', array(
-			'sanitize_callback' => 'autodealer_sanitize_image',
+			'sanitize_callback' => 'carlistings_sanitize_image',
 		)
 	);
 	$wp_customize->add_control(
@@ -256,21 +256,21 @@ function autodealer_customize_register( $wp_customize ) {
 			$wp_customize,
 			'footer-logo',
 			array(
-				'label'    => esc_html__( 'Footer Logo', 'autodealer' ),
+				'label'    => esc_html__( 'Footer Logo', 'carlistings' ),
 				'section'  => 'footer',
 				'settings' => 'footer_logo',
 			)
 		)
 	);
 }
-add_action( 'customize_register', 'autodealer_customize_register' );
+add_action( 'customize_register', 'carlistings_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function autodealer_customize_partial_blogname() {
+function carlistings_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -279,17 +279,17 @@ function autodealer_customize_partial_blogname() {
  *
  * @return void
  */
-function autodealer_customize_partial_blogdescription() {
+function carlistings_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function autodealer_customize_preview_js() {
-	wp_enqueue_script( 'autodealer-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20180702', true );
+function carlistings_customize_preview_js() {
+	wp_enqueue_script( 'carlistings-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20180702', true );
 }
-add_action( 'customize_preview_init', 'autodealer_customize_preview_js' );
+add_action( 'customize_preview_init', 'carlistings_customize_preview_js' );
 
 /**
  * Sanitizes Image Upload.
@@ -298,7 +298,7 @@ add_action( 'customize_preview_init', 'autodealer_customize_preview_js' );
  *
  * @return string
  */
-function autodealer_sanitize_image( $input ) {
+function carlistings_sanitize_image( $input ) {
 	$filetype = wp_check_filetype( $input );
 	if ( $filetype['ext'] && wp_ext2type( $filetype['ext'] ) === 'image' ) {
 		return esc_url( $input );
@@ -310,6 +310,6 @@ function autodealer_sanitize_image( $input ) {
 /**
  * Live refresh search section.
  */
-function autodealer_refresh_search_section() {
+function carlistings_refresh_search_section() {
 	get_template_part( 'template-parts/home/search-form' );
 }

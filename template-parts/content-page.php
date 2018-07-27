@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package autodealer
+ * @package CarListings
  */
 
 ?>
@@ -25,7 +25,7 @@
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'autodealer' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'carlistings' ),
 					'after'  => '</div>',
 				)
 			);

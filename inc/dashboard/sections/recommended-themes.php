@@ -2,7 +2,7 @@
 /**
  * More themes section.
  *
- * @package Autodealer
+ * @package CarListings
  */
 
 $themes = array(
@@ -18,7 +18,7 @@ if ( in_array( $this->slug, array_keys( $themes ) ) ) {
 	unset( $themes[ $this->slug ] );
 }
 ?>
-<h3 class="more-themes"><?php esc_html_e( 'More themes from us', 'autodealer' ); ?></h3>
+<h3 class="more-themes"><?php esc_html_e( 'More themes from us', 'carlistings' ); ?></h3>
 <div class="recommended-themes">
 	<?php foreach ( $themes as $slug => $theme ) : ?>
 		<?php
@@ -33,7 +33,7 @@ if ( in_array( $this->slug, array_keys( $themes ) ) ) {
 			</a>
 			<div class="entry-header">
 				<h3><a href="<?php echo esc_url( $theme_url ); ?>"><?php echo esc_html( $theme ); ?></a></h3>
-				<a href="<?php echo esc_url( $demo_url ); ?>"><?php echo esc_html__( 'Live Demo', 'autodealer' ); ?></a>
+				<a href="<?php echo esc_url( $demo_url ); ?>"><?php echo esc_html__( 'Live Demo', 'carlistings' ); ?></a>
 			</div>
 		</div>
 	<?php endforeach; ?>
@@ -43,7 +43,7 @@ if ( in_array( $this->slug, array_keys( $themes ) ) ) {
 	<a href="<?php echo esc_url( "https://gretathemes.com/wordpress-themes/{$this->utm}" ); ?>" target="_blank" class="button button-primary">
 		<?php
 		/* translators: theme name. */
-		esc_html_e( 'Browser All Themes', 'autodealer' );
+		esc_html_e( 'Browser All Themes', 'carlistings' );
 		?>
 	</a>
 </p>

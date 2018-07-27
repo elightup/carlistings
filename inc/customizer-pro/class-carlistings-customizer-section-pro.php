@@ -2,13 +2,13 @@
 /**
  * The "Go Pro" section in the Customizer.
  *
- * @package Autodealer
+ * @package CarListings
  */
 
 /**
  * Pro customizer section.
  */
-class Autodealer_Customizer_Section_Pro extends WP_Customize_Section {
+class Carlistings_Customizer_Section_Pro extends WP_Customize_Section {
 	/**
 	 * The type of customize section being rendered.
 	 *

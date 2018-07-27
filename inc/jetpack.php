@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package autodealer
+ * @package CarListings
  */
 
 /**
@@ -14,12 +14,12 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function autodealer_jetpack_setup() {
+function carlistings_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll', array(
 			'container' => 'main',
-			'render'    => 'autodealer_infinite_scroll_render',
+			'render'    => 'carlistings_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function autodealer_jetpack_setup() {
 	// Featured content.
 	add_theme_support(
 		'featured-content', array(
-			'filter'     => 'autodealer_get_featured_posts',
+			'filter'     => 'carlistings_get_featured_posts',
 			'max_posts'  => 3,
 			'post_types' => array( 'post', 'page' ),
 		)
@@ -45,7 +45,7 @@ function autodealer_jetpack_setup() {
 			'blog-display'    => 'content',
 			// the default setting of the theme: 'content', 'excerpt' or array( 'content', 'excerpt' ) for themes mixing both display.
 			'post-details'    => array(
-				'stylesheet' => 'autodealer-style',
+				'stylesheet' => 'carlistings-style',
 				'date'       => '.posted-on',
 				'categories' => '.entry-header__category',
 				'tags'       => '.tags-links',
@@ -63,12 +63,12 @@ function autodealer_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'autodealer_jetpack_setup' );
+add_action( 'after_setup_theme', 'carlistings_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function autodealer_infinite_scroll_render() {
+function carlistings_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
@@ -84,17 +84,17 @@ function autodealer_infinite_scroll_render() {
  *
  * @return array An array of WP_Post objects.
  */
-function autodealer_get_featured_posts() {
-	return apply_filters( 'autodealer_get_featured_posts', array() );
+function carlistings_get_featured_posts() {
+	return apply_filters( 'carlistings_get_featured_posts', array() );
 }
 
 /**
  * Deregister jetpack style.
  */
-function autodealer_deregister_jetpack_style() {
+function carlistings_deregister_jetpack_style() {
 	wp_deregister_style( 'jetpack-social-menu' );
 }
-add_action( 'wp_enqueue_scripts', 'autodealer_deregister_jetpack_style', 999 );
+add_action( 'wp_enqueue_scripts', 'carlistings_deregister_jetpack_style', 999 );
 
 /**
  * Remove Jetpack css

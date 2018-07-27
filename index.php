@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package autodealer
+ * @package CarListings
  */
 
 get_header();
@@ -36,8 +36,8 @@ get_header();
 
 			the_posts_pagination(
 				array(
-					'prev_text' => __( '<i class="icofont icofont-rounded-left"></i>', 'autodealer' ),
-					'next_text' => __( '<i class="icofont icofont-rounded-right"></i>', 'autodealer' ),
+					'prev_text' => __( '<i class="icofont icofont-rounded-left"></i>', 'carlistings' ),
+					'next_text' => __( '<i class="icofont icofont-rounded-right"></i>', 'carlistings' ),
 				)
 			);
 

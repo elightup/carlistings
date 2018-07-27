@@ -4,7 +4,7 @@
  *
  * This template can be overridden by copying it to yourtheme/listings/loop/orderby.php.
  *
- * @package autodealer
+ * @package CarListings
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,10 +29,10 @@ if ( 1 === $wp_query->found_posts ) {
 $orderby         = isset( $_GET['orderby'] ) ? esc_html( $_GET['orderby'] ) : 'date';
 $orderby_options = apply_filters(
 	'auto_listings_listings_orderby', array(
-		'date'       => __( '- New Listings -', 'autodealer' ),
-		'date-old'   => __( '- Oldest Listings -', 'autodealer' ),
-		'price'      => __( '- Price (Low to High) -', 'autodealer' ),
-		'price-high' => __( '- Price (High to Low) -', 'autodealer' ),
+		'date'       => __( '- New Listings -', 'carlistings' ),
+		'date-old'   => __( '- Oldest Listings -', 'carlistings' ),
+		'price'      => __( '- Price (Low to High) -', 'carlistings' ),
+		'price-high' => __( '- Price (High to Low) -', 'carlistings' ),
 	)
 );
 

@@ -2,21 +2,21 @@
 /**
  * Add required and recommended plugins.
  *
- * @package AutoDealer
+ * @package CarListings
  */
 
-add_action( 'tgmpa_register', 'autodealer_register_required_plugins' );
+add_action( 'tgmpa_register', 'carlistings_register_required_plugins' );
 
 /**
  * Register required plugins
  *
  * @since  1.0
  */
-function autodealer_register_required_plugins() {
-	$plugins = autodealer_required_plugins();
+function carlistings_register_required_plugins() {
+	$plugins = carlistings_required_plugins();
 
 	$config = array(
-		'id'          => 'autodealer',
+		'id'          => 'carlistings',
 		'has_notices' => false,
 	);
 
@@ -26,31 +26,31 @@ function autodealer_register_required_plugins() {
 /**
  * List of required plugins
  */
-function autodealer_required_plugins() {
+function carlistings_required_plugins() {
 	return array(
 		array(
-			'name'     => esc_html__( 'Jetpack', 'autodealer' ),
+			'name'     => esc_html__( 'Jetpack', 'carlistings' ),
 			'slug'     => 'jetpack',
 		),
 		array(
-			'name'     => esc_html__( 'Auto Listings', 'autodealer' ),
+			'name'     => esc_html__( 'Auto Listings', 'carlistings' ),
 			'slug'     => 'auto-listings',
 			'required' => true,
 		),
 		array(
-			'name' => esc_html__( 'One click demo import', 'autodealer' ),
+			'name' => esc_html__( 'One click demo import', 'carlistings' ),
 			'slug' => 'one-click-demo-import',
 		),
 		array(
-			'name' => esc_html__( 'Ultimate Fonts', 'autodealer' ),
+			'name' => esc_html__( 'Ultimate Fonts', 'carlistings' ),
 			'slug' => 'ultimate-fonts',
 		),
 		array(
-			'name' => esc_html__( 'Ultimate Colors', 'autodealer' ),
+			'name' => esc_html__( 'Ultimate Colors', 'carlistings' ),
 			'slug' => 'ultimate-colors',
 		),
 		array(
-			'name' => esc_html__( 'Instagram Slider Widget', 'autodealer' ),
+			'name' => esc_html__( 'Instagram Slider Widget', 'carlistings' ),
 			'slug' => 'instagram-slider-widget',
 		),
 	);

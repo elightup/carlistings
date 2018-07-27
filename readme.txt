@@ -1,4 +1,4 @@
-=== AutoDealer ===
+=== CarListings ===
 Contributors: GretaThemes
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.9
@@ -6,20 +6,20 @@ Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right
 
 == Description ==
 
-AutoDealer is a beautiful and easy to use WordPress auto listing theme for car sellers and dealers. Working perfectly with plugin Auto Listing, this theme will help you build a beautiful car listing Wordpress site with ease.
-Built on the latest technology of WordPress, AutoDealer is fully responsvive, fast and optimized for all mobile phones.
+CarListings is a beautiful and easy to use WordPress auto listing theme for car sellers and dealers. Working perfectly with plugin Auto Listing, this theme will help you build a beautiful car listing Wordpress site with ease.
+Built on the latest technology of WordPress, CarListings is fully responsvive, fast and optimized for all mobile phones.
 
 == Installation ==
 
-Please go to http://gretathemes.com/docs/autodealer/
+Please go to http://gretathemes.com/docs/carlistings/
 
 == License ==
 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License Version 3.
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-AutoDealer WordPress Theme, Copyright 2017 GretaThemes
-AutoDealer is distributed under the terms of the GNU General Public License v3
+CarListings WordPress Theme, Copyright 2017 GretaThemes
+CarListings is distributed under the terms of the GNU General Public License v3
 
 Unless otherwise specified, all Images are self shot by GretaThemes
 Copyright: GretaThemes, gretathemes.com
@@ -47,13 +47,13 @@ AOS - Animate on scroll library
 	Source : https://michalsnik.github.io/aos/
 
 
-AutoDealer is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
+CarListings is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-AutoDealer is Licensed under the GNU GPL 3 license
+CarListings is Licensed under the GNU GPL 3 license
 http://gretathemes.com/
 
 
 == Changelog ==
 
-See http://gretathemes.com/wordpress-themes/autodealer/
+See http://gretathemes.com/wordpress-themes/carlistings/

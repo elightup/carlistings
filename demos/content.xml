@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.7" created="2018-07-25 10:27" -->
+<!-- generator="WordPress/4.9.7" created="2018-07-27 01:31" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,10 +26,10 @@
 >
 
 <channel>
-	<title>autodealer</title>
+	<title>CarDealer</title>
 	<link>http://demo.wpautolistings.com</link>
-	<description>Just another WordPress site</description>
-	<pubDate>Wed, 25 Jul 2018 10:27:36 +0000</pubDate>
+	<description>Car Listing And Renting</description>
+	<pubDate>Fri, 27 Jul 2018 01:31:19 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://demo.wpautolistings.com</wp:base_site_url>
@@ -462,37 +462,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>road_and_sky-wide-b&amp;w1</title>
-		<link>http://demo.wpautolistings.com/road_and_sky-wide-bw1/</link>
-		<pubDate>Wed, 04 Jul 2018 10:30:41 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/wp-content/uploads/2018/07/road_and_sky-wide-bw1.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1368</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-04 10:30:41]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-04 10:30:41]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[road_and_sky-wide-bw1]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://demo.wpautolistings.com/wp-content/uploads/2018/07/road_and_sky-wide-bw1.jpg]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/07/road_and_sky-wide-bw1.jpg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:1000;s:4:"file";s:33:"2018/07/road_and_sky-wide-bw1.jpg";s:5:"sizes";a:7:{s:9:"thumbnail";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-768x480.jpg";s:5:"width";i:768;s:6:"height";i:480;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:34:"road_and_sky-wide-bw1-1024x640.jpg";s:5:"width";i:1024;s:6:"height";i:640;s:9:"mime-type";s:10:"image/jpeg";}s:25:"autodealer-blog-thumbnail";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-770x450.jpg";s:5:"width";i:770;s:6:"height";i:450;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-lge";a:4:{s:4:"file";s:34:"road_and_sky-wide-bw1-1200x750.jpg";s:5:"width";i:1200;s:6:"height";i:750;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-sml";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-400x250.jpg";s:5:"width";i:400;s:6:"height";i:250;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>kartik-bhattacharjee-257547-unsplash</title>
 		<link>http://demo.wpautolistings.com/hello-world__trashed/kartik-bhattacharjee-257547-unsplash/</link>
 		<pubDate>Mon, 16 Jul 2018 04:52:59 +0000</pubDate>
@@ -769,6 +738,37 @@
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
 			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:770;s:6:"height";i:513;s:4:"file";s:43:"2018/07/lance-asper-259085-unsplash-min.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:43:"lance-asper-259085-unsplash-min-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:43:"lance-asper-259085-unsplash-min-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:43:"lance-asper-259085-unsplash-min-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:25:"autodealer-blog-thumbnail";a:4:{s:4:"file";s:43:"lance-asper-259085-unsplash-min-770x450.jpg";s:5:"width";i:770;s:6:"height";i:450;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-sml";a:4:{s:4:"file";s:43:"lance-asper-259085-unsplash-min-400x250.jpg";s:5:"width";i:400;s:6:"height";i:250;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>matt-henry-59403-unsplash-min</title>
+		<link>http://demo.wpautolistings.com/financing-tips-for-buying-new-or-used-car/matt-henry-59403-unsplash-min/</link>
+		<pubDate>Mon, 16 Jul 2018 07:41:17 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/wp-content/uploads/2018/07/matt-henry-59403-unsplash-min.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1465</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-16 07:41:17]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-16 07:41:17]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[matt-henry-59403-unsplash-min]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>1464</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url><![CDATA[http://demo.wpautolistings.com/wp-content/uploads/2018/07/matt-henry-59403-unsplash-min.jpg]]></wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018/07/matt-henry-59403-unsplash-min.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:770;s:6:"height";i:513;s:4:"file";s:41:"2018/07/matt-henry-59403-unsplash-min.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:25:"autodealer-blog-thumbnail";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-770x450.jpg";s:5:"width";i:770;s:6:"height";i:450;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-sml";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-400x250.jpg";s:5:"width";i:400;s:6:"height";i:250;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1162,37 +1162,6 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>matt-henry-59403-unsplash-min</title>
-		<link>http://demo.wpautolistings.com/financing-tips-for-buying-new-or-used-car/matt-henry-59403-unsplash-min/</link>
-		<pubDate>Mon, 16 Jul 2018 07:41:17 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/wp-content/uploads/2018/07/matt-henry-59403-unsplash-min.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1465</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-16 07:41:17]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-16 07:41:17]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[matt-henry-59403-unsplash-min]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>1464</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://demo.wpautolistings.com/wp-content/uploads/2018/07/matt-henry-59403-unsplash-min.jpg]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/07/matt-henry-59403-unsplash-min.jpg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:770;s:6:"height";i:513;s:4:"file";s:41:"2018/07/matt-henry-59403-unsplash-min.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:25:"autodealer-blog-thumbnail";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-770x450.jpg";s:5:"width";i:770;s:6:"height";i:450;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-sml";a:4:{s:4:"file";s:41:"matt-henry-59403-unsplash-min-400x250.jpg";s:5:"width";i:400;s:6:"height";i:250;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>vlad-sorodoc-49620-unsplash-min</title>
 		<link>http://demo.wpautolistings.com/how-to-select-a-local-dealer-for-new-used-car/vlad-sorodoc-49620-unsplash-min/</link>
 		<pubDate>Mon, 16 Jul 2018 07:42:23 +0000</pubDate>
@@ -1364,7 +1333,7 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532071089;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532537011;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1501,6 +1470,10 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_al_listing_seller]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532633168;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1821,6 +1794,10 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 			<wp:meta_key><![CDATA[_al_listing_displayed_address]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2561 Apple Tree St, Hemet, CA, 92545]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532616554;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Porsche Panamera</title>
@@ -1928,7 +1905,7 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532472687;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532605394;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2099,7 +2076,7 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532434264;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532634464;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2208,7 +2185,7 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532504882;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"5d48100659715771790f1ab223418a06";a:2:{s:7:"expires";i:1532636828;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2274,58 +2251,34 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home</title>
-		<link>http://demo.wpautolistings.com/home/</link>
-		<pubDate>Thu, 31 May 2018 04:44:45 +0000</pubDate>
+		<title>road_and_sky-wide-bw1</title>
+		<link>http://demo.wpautolistings.com/road_and_sky-wide-bw1/</link>
+		<pubDate>Thu, 26 Jul 2018 10:33:01 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=33</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/wp-content/uploads/2018/07/road_and_sky-wide-bw1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>33</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-31 04:44:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-31 04:44:45]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:post_id>1545</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-26 10:33:01]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-26 10:33:01]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[road_and_sky-wide-bw1]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="header"><![CDATA[Header]]></category>
+		<wp:attachment_url><![CDATA[http://demo.wpautolistings.com/wp-content/uploads/2018/07/road_and_sky-wide-bw1.jpg]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018/07/road_and_sky-wide-bw1.jpg]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[33]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://demo.wpautolistings.com]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:1000;s:4:"file";s:33:"2018/07/road_and_sky-wide-bw1.jpg";s:5:"sizes";a:7:{s:9:"thumbnail";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-768x480.jpg";s:5:"width";i:768;s:6:"height";i:480;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:34:"road_and_sky-wide-bw1-1024x640.jpg";s:5:"width";i:1024;s:6:"height";i:640;s:9:"mime-type";s:10:"image/jpeg";}s:24:"cardealer-blog-thumbnail";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-770x450.jpg";s:5:"width";i:770;s:6:"height";i:450;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-lge";a:4:{s:4:"file";s:34:"road_and_sky-wide-bw1-1200x750.jpg";s:5:"width";i:1200;s:6:"height";i:750;s:9:"mime-type";s:10:"image/jpeg";}s:6:"al-sml";a:4:{s:4:"file";s:33:"road_and_sky-wide-bw1-400x250.jpg";s:5:"width";i:400;s:6:"height";i:250;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2381,61 +2334,6 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Home</title>
-		<link>http://demo.wpautolistings.com/home-2/</link>
-		<pubDate>Fri, 01 Jun 2018 04:58:29 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=54</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>54</wp:post_id>
-		<wp:post_date><![CDATA[2018-06-01 04:58:29]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-06-01 04:58:29]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home-2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[54]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://demo.wpautolistings.com]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3550,905 +3448,6 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Listings</title>
-		<link>http://demo.wpautolistings.com/listings/</link>
-		<pubDate>Wed, 30 May 2018 07:23:55 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/listings/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>4</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-30 07:23:55]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-30 07:23:55]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[listings]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Support</title>
-		<link>http://demo.wpautolistings.com/support/</link>
-		<pubDate>Thu, 31 May 2018 03:50:05 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=23</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>23</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-31 03:50:05]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-31 03:50:05]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[support]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Download</title>
-		<link>http://demo.wpautolistings.com/download/</link>
-		<pubDate>Thu, 31 May 2018 03:50:15 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=25</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>25</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-31 03:50:15]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-31 03:50:15]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[download]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Amazon Store</title>
-		<link>http://demo.wpautolistings.com/amazon-store__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 22:48:51 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1062</guid>
-		<description></description>
-		<content:encoded><![CDATA[<iframe src="http://astore.amazon.com/iogiea09-20" height="4000" width="100%" frameborder="0" scrolling="no"></iframe>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1062</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 17:48:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 22:48:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[amazon-store__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727594]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[amazon-store]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Home</title>
-		<link>http://demo.wpautolistings.com/</link>
-		<pubDate>Fri, 15 Mar 2013 22:56:11 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1064</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1064</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 17:56:11]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 22:56:11]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[home-2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Blog</title>
-		<link>http://demo.wpautolistings.com/blog-2/</link>
-		<pubDate>Fri, 15 Mar 2013 22:59:55 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1066</guid>
-		<description></description>
-		<content:encoded><![CDATA[Note that you will probably want to test this page in conjunction with the <strong>Home</strong> page.
-
-To test this page:
-<ul>
-	<li>Navigate to <strong><em>Settings &gt; Reading</em></strong> in the WordPress admin.</li>
-	<li>Then use the settings in the screenshot below.</li>
-</ul>
-<img class="alignnone size-full wp-image-1071" alt="Static Pages" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/static-pages.png" width="1390" height="1022" />
-
-A few things to check once this is done.
-<ul>
-	<li>Navigating to the Blog page does <strong>not</strong> display this page. It should display blog posts.</li>
-	<li>Check that the browser window / tab name is what you intend it to show.</li>
-	<li>If your theme displays breadcrumbs, they should probably not show when this is the posts page.</li>
-</ul>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1066</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 17:59:55]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 22:59:55]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[blog-2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Comments Disabled</title>
-		<link>http://demo.wpautolistings.com/page-comments-disabled__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:15:14 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1075</guid>
-		<description></description>
-		<content:encoded><![CDATA[This page has its comments, pingbacks, and trackbacks disabled.
-
-There should be no comment reply form or any pingbacks and trackbacks listed.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1075</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:15:14]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:15:14]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-comments-disabled__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727580]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-comments-disabled]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Comments</title>
-		<link>http://demo.wpautolistings.com/page-comments__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:16:08 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1077</guid>
-		<description></description>
-		<content:encoded><![CDATA[This post has its comments, pingbacks, and trackbacks enabled.
-
-If your theme support comments on pages, then they should show up below.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1077</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:16:08]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:16:08]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-comments__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727579]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-comments]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:2;s:5:"trash";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>2</wp:comment_id>
-			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[yo@chrisam.es]]></wp:comment_author_email>
-			<wp:comment_author_url>http://chrisam.es/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2013-03-15 18:16:59]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2013-03-15 23:16:59]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Ello! Pretend you're reading this comment with an English accent.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-			<wp:commentmeta>
-				<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-				<wp:meta_value><![CDATA[1]]></wp:meta_value>
-			</wp:commentmeta>
-			<wp:commentmeta>
-				<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-				<wp:meta_value><![CDATA[1531727145]]></wp:meta_value>
-			</wp:commentmeta>
-		</wp:comment>
-	</item>
-	<item>
-		<title>Page Image Alignment</title>
-		<link>http://demo.wpautolistings.com/page-image-alignment__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:19:23 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1080</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let's get started.
-
-On the topic of alignment, it should be noted that users can choose from the options of <em>None</em>, <em>Left</em>, <em>Right, </em>and <em>Center</em>. In addition, they also get the options of <em>Thumbnail</em>, <em>Medium</em>, <em>Large</em> &amp; <em>Fullsize</em>.
-<p style="text-align: center;"><img class="size-full wp-image-906 aligncenter" title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" /></p>
-The image above happens to be <em><strong>centered</strong></em>.
-
-<strong><img class="size-full wp-image-904 alignleft" title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-150x150.jpg" width="150" height="150" /></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150x150 image, which is <em><strong>left aligned</strong></em>. <strong></strong>
-
-As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we'll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it's thang. Mission accomplished!
-
-And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.
-
-<img class="alignnone  wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" />
-
-The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
-
-<img class="size-full wp-image-905 alignright" title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-300x200.jpg" width="300" height="200" />
-
-And now we're going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there... Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
-
-In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah... Just like that. It never felt so good to be right.
-
-And just when you thought we were done, we're going to do them all over again with captions!
-
-[caption id="attachment_906" align="aligncenter" width="580"]<img class="size-full wp-image-906  " title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-580x300.jpg" width="580" height="300" /> Look at 580x300 getting some <a title="Image Settings" href="http://en.support.wordpress.com/images/image-settings/">caption</a> love.[/caption]
-
-The image above happens to be <em><strong>centered</strong></em>. The caption also has a link in it, just to see if it does anything funky.
-
-[caption id="attachment_904" align="alignleft" width="150"]<img class="size-full wp-image-904  " title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-150x150.jpg" width="150" height="150" /> Itty-bitty caption.[/caption]
-
-<strong></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150x150 image, which is <em><strong>left aligned</strong></em>. <strong></strong>
-
-As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we'll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it's thang. Mission accomplished!
-
-And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.
-
-[caption id="attachment_907" align="alignnone" width="1200"]<img class=" wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" /> Massive image comment for your eyeballs.[/caption]
-
-The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
-
-[caption id="attachment_905" align="alignright" width="300"]<img class="size-full wp-image-905 " title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/image-alignment-300x200.jpg" width="300" height="200" /> Feels good to be right all the time.[/caption]
-
-And now we're going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there... Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
-
-In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah... Just like that. It never felt so good to be right.
-
-And that's a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1080</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:19:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:19:23]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-image-alignment__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727580]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-image-alignment]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Markup And Formatting</title>
-		<link>http://demo.wpautolistings.com/page-markup-and-formatting__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:20:05 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1083</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h2>Headings</h2>
-<h1>Header one</h1>
-<h2>Header two</h2>
-<h3>Header three</h3>
-<h4>Header four</h4>
-<h5>Header five</h5>
-<h6>Header six</h6>
-<h2>Blockquotes</h2>
-Single line blockquote:
-<blockquote>Stay hungry. Stay foolish.</blockquote>
-Multi line blockquote with a cite reference:
-<blockquote>People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite></blockquote>
-<h2>Tables</h2>
-<table>
-<tbody>
-<tr>
-<th>Employee</th>
-<th class="views">Salary</th>
-<th></th>
-</tr>
-<tr class="odd">
-<td><a href="http://john.do/">John Saddington</a></td>
-<td>$1</td>
-<td>Because that's all Steve Job' needed for a salary.</td>
-</tr>
-<tr class="even">
-<td><a href="http://tommcfarlin.com/">Tom McFarlin</a></td>
-<td>$100K</td>
-<td>For all the blogging he does.</td>
-</tr>
-<tr class="odd">
-<td><a href="http://jarederickson.com/">Jared Erickson</a></td>
-<td>$100M</td>
-<td>Pictures are worth a thousand words, right? So Tom x 1,000.</td>
-</tr>
-<tr class="even">
-<td><a href="http://chrisam.es/">Chris Ames</a></td>
-<td>$100B</td>
-<td>With hair like that?! Enough said...</td>
-</tr>
-</tbody>
-</table>
-<h2>Definition Lists</h2>
-<dl><dt>Definition List Title</dt><dd>Definition list division.</dd><dt>Startup</dt><dd>A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.</dd><dt>#dowork</dt><dd>Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.</dd><dt>Do It Live</dt><dd>I'll let Bill O'Reilly will <a title="We'll Do It Live" href="https://www.youtube.com/watch?v=O_HyZ5aW76c">explain</a> this one.</dd></dl>
-<h2>Unordered Lists (Nested)</h2>
-<ul>
-	<li>List item one
-<ul>
-	<li>List item one
-<ul>
-	<li>List item one</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ul>
-</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ul>
-</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ul>
-<h2>Ordered List (Nested)</h2>
-<ol>
-	<li>List item one
-<ol>
-	<li>List item one
-<ol>
-	<li>List item one</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ol>
-</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ol>
-</li>
-	<li>List item two</li>
-	<li>List item three</li>
-	<li>List item four</li>
-</ol>
-<h2>HTML Tags</h2>
-These supported tags come from the WordPress.com code <a title="Code" href="http://en.support.wordpress.com/code/">FAQ</a>.
-
-<strong>Address Tag</strong>
-
-<address>1 Infinite Loop
-Cupertino, CA 95014
-United States</address><strong>Anchor Tag (aka. Link)</strong>
-
-This is an example of a <a title="Apple" href="http://apple.com">link</a>.
-
-<strong>Abbreviation Tag</strong>
-
-The abbreviation <abbr title="Seriously">srsly</abbr> stands for "seriously".
-
-<strong>Acronym Tag</strong>
-
-The acronym <acronym title="For The Win">ftw</acronym> stands for "for the win".
-
-<strong>Big Tag</strong>
-
-These tests are a <big>big</big> deal, but this tag is no longer supported in HTML5.
-
-<strong>Cite Tag</strong>
-
-"Code is poetry." --<cite>Automattic</cite>
-
-<strong>Code Tag</strong>
-
-You will learn later on in these tests that <code>word-wrap: break-word;</code> will be your best friend.
-
-<strong>Delete Tag</strong>
-
-This tag will let you <del>strikeout text</del>, but this tag is no longer supported in HTML5 (use the <code>&lt;strike&gt;</code> instead).
-
-<strong>Emphasize Tag</strong>
-
-The emphasize tag should <em>italicize</em> text.
-
-<strong>Insert Tag</strong>
-
-This tag should denote <ins>inserted</ins> text.
-
-<strong>Keyboard Tag</strong>
-
-This scarsly known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the <code>&lt;code&gt;</code> tag.
-
-<strong>Preformatted Tag</strong>
-
-This tag styles large blocks of code.
-<pre>.post-title {
-	margin: 0 0 5px;
-	font-weight: bold;
-	font-size: 38px;
-	line-height: 1.2;
-}</pre>
-<strong>Quote Tag</strong>
-
-<q>Developers, developers, developers...</q> --Steve Ballmer
-
-<strong>Strong Tag</strong>
-
-This tag shows <strong>bold<strong> text.</strong></strong>
-
-<strong>Subscript Tag</strong>
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-<strong>Superscript Tag</strong>
-
-Still sticking with science and Albert Einstein's E = MC<sup>2</sup>, which should lift the "2" up.
-
-<strong>Teletype Tag</strong>
-
-This rarely used tag emulates <tt>teletype text</tt>, which is usually styled like the <code>&lt;code&gt;</code> tag.
-
-<strong>Variable Tag</strong>
-
-This allows you to denote <var>variables</var>.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1083</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:20:05]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:20:05]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-markup-and-formatting__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727581]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-markup-and-formatting]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>About</title>
-		<link>http://demo.wpautolistings.com/about__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:21:12 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1086</guid>
-		<description></description>
-		<content:encoded><![CDATA[We are a global network of experts working with clients, communities and colleagues to develop and implement innovative solutions to the world’s most complex challenges.
-
-Michael S. Burke Chairman and Chief Executive Officer
-Delivering clean water and energy. Building iconic skyscrapers. Planning new cities. Restoring damaged environments. Connecting people and economies with roads, bridges, tunnels and transit systems. Designing parks where children play. Helping governments maintain stability and security.
-
-We connect expertise across services, markets, and geographies to deliver transformative outcomes. Worldwide, we design, build, finance, operate and manage projects and programs that unlock opportunities, protect our environment and improve people’s lives.
-
-By anticipating and addressing permit requirements early on in the project design, we help implement a permitting strategy, development schedule and mitigation plans that expedite permit acquisition and compliance. Expert regulatory negotiations throughout the project help resolve technical and external stakeholder issues and create favorable permit conditions while achieving the ultimate goals of maintaining project schedules and ensuring compliance. This method has contributed to successful projects for a broad range of government, energy (oil and gas, wind, solar, tidal), industrial, waste disposal, utilities, mining and real-estate clients worldwide. For example, our thorough approach helped us prepare one of Australia’s largest and most comprehensive environmental impact statements and technical studies for a mining expansion project.
-
-Across our broad impact analysis, assessment and permitting practice, our experience serves to achieve our clients’ goals, ensuring they are operating according to their own business requirements as well as complying with regulatory requirements.
-
-Clients in every region of the world depend on our ability to design, build, finance and operate their most critical projects. Our technical knowledge, local connections and broad market experience allow us to deliver specialized solutions across the entire project life cycle.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1086</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:21:12]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:21:12]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[about__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727578]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[about]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Parent Page</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:24:09 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1088</guid>
-		<description></description>
-		<content:encoded><![CDATA[This page the a parent page.
-
-It contains child pages.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1088</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:24:09]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:24:09]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[parent-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727581]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[parent-page]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Find Your Favorite Car In A Minute!</title>
-		<link>http://demo.wpautolistings.com/find-your-favorite-car-in-a-minute/</link>
-		<pubDate>Sat, 23 Jun 2018 07:21:53 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1294</guid>
-		<description></description>
-		<content:encoded><![CDATA[<ul>
- 	<li>Great Buying Experience</li>
- 	<li>24/7 Online Support</li>
-</ul>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1294</wp:post_id>
-		<wp:post_date><![CDATA[2018-06-23 07:21:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-06-23 07:21:53]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[find-your-favorite-car-in-a-minute]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="featured"><![CDATA[featured]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1485]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Top Brand Tyres for Winter Season</title>
-		<link>http://demo.wpautolistings.com/find-your-favorite-car-in-a-minute-1/</link>
-		<pubDate>Sat, 23 Jun 2018 08:20:17 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1299</guid>
-		<description></description>
-		<content:encoded><![CDATA[<ul>
- 	<li>Great Buying Experience</li>
- 	<li>24/7 Online Support</li>
-</ul>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1299</wp:post_id>
-		<wp:post_date><![CDATA[2018-06-23 08:20:17]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-06-23 08:20:17]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[find-your-favorite-car-in-a-minute-1]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="featured"><![CDATA[featured]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1522]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>i am looking for</title>
-		<link>http://demo.wpautolistings.com/im-looking-for/</link>
-		<pubDate>Mon, 25 Jun 2018 03:00:39 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1303</guid>
-		<description></description>
-		<content:encoded><![CDATA[Select your Vehicle options
-[auto_listings_search]]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1303</wp:post_id>
-		<wp:post_date><![CDATA[2018-06-25 03:00:39]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-06-25 03:00:39]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[im-looking-for]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[8]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>About</title>
-		<link>http://demo.wpautolistings.com/about/</link>
-		<pubDate>Mon, 16 Jul 2018 09:03:51 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1514</guid>
-		<description></description>
-		<content:encoded><![CDATA[Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.
-<h2>Our vision</h2>
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci.
-
-Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.
-
-<img class="alignnone size-medium" src="https://i.imgur.com/t9IT6sA.jpg?1" width="229" height="60" />
-
-Jerri Johnson
-CEO of Greta Themes]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1514</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-16 09:03:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-16 09:03:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[about]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Location</title>
-		<link>http://demo.wpautolistings.com/location/</link>
-		<pubDate>Mon, 16 Jul 2018 09:06:11 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1518</guid>
-		<description></description>
-		<content:encoded><![CDATA[<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7189.0912866241715!2d-73.98754257938022!3d40.74793435549734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire+State+Building%2C+New+York%2C+NY+10001!5e0!3m2!1sen!2s!4v1524463475665" width="840" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-<h3>New York Branch</h3>
-Address: Empire State Building, New York, NY 10001
-Tel.: +1-706-308-3661
-Email: newyork@company.com
-<h3>Los Angeles Branch</h3>
-Address: 2163 Sherwood Circle, Kaplan, LA 70548
-Tel.: +1-337-225-7078
-Email: losangeles@company.com]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1518</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-16 09:06:11]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-16 09:06:11]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[location]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>vimeo</title>
 		<link>http://demo.wpautolistings.com/vimeo/</link>
 		<pubDate>Wed, 25 Jul 2018 03:15:40 +0000</pubDate>
@@ -4559,76 +3558,73 @@ Email: losangeles@company.com]]></content:encoded>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>feed</title>
-		<link>http://demo.wpautolistings.com/feed-2/</link>
-		<pubDate>Wed, 25 Jul 2018 03:15:40 +0000</pubDate>
-		<dc:creator><![CDATA[elightup]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1532</guid>
+		<title>Listings</title>
+		<link>http://demo.wpautolistings.com/listings/</link>
+		<pubDate>Wed, 30 May 2018 07:23:55 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/listings/</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1532</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-25 03:15:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-25 03:15:40]]></wp:post_date_gmt>
+		<wp:post_id>4</wp:post_id>
+		<wp:post_date><![CDATA[2018-05-30 07:23:55]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-05-30 07:23:55]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[feed-2]]></wp:post_name>
+		<wp:post_name><![CDATA[listings]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="social-menu"><![CDATA[social menu]]></category>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1532]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://feed]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home</title>
-		<link>http://demo.wpautolistings.com/home__trashed/</link>
-		<pubDate>Thu, 31 May 2018 03:49:37 +0000</pubDate>
+		<title>Support</title>
+		<link>http://demo.wpautolistings.com/support/</link>
+		<pubDate>Thu, 31 May 2018 03:50:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=19</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=23</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>19</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-31 03:49:37]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-31 03:49:37]]></wp:post_date_gmt>
+		<wp:post_id>23</wp:post_id>
+		<wp:post_date><![CDATA[2018-05-31 03:50:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-05-31 03:50:05]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_name><![CDATA[support]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Download</title>
+		<link>http://demo.wpautolistings.com/download/</link>
+		<pubDate>Thu, 31 May 2018 03:50:15 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=25</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>25</wp:post_id>
+		<wp:post_date><![CDATA[2018-05-31 03:50:15]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-05-31 03:50:15]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[download]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
@@ -4639,54 +3635,8 @@ Email: losangeles@company.com]]></content:encoded>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727579]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[home]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Blog</title>
-		<link>http://demo.wpautolistings.com/blog__trashed/</link>
-		<pubDate>Thu, 31 May 2018 03:49:51 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=21</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>21</wp:post_id>
-		<wp:post_date><![CDATA[2018-05-31 03:49:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-05-31 03:49:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[blog__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727579]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[blog]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -4781,6 +3731,10 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[40]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532591268;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
 		<wp:comment>
 			<wp:comment_id>32</wp:comment_id>
 			<wp:comment_author><![CDATA[admin]]></wp:comment_author>
@@ -4871,452 +3825,184 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 		</wp:comment>
 	</item>
 	<item>
-		<title>Many Tags</title>
-		<link>http://demo.wpautolistings.com/many-tags__trashed/</link>
-		<pubDate>Thu, 01 Nov 2012 06:00:34 +0000</pubDate>
+		<title>Home</title>
+		<link>http://demo.wpautolistings.com/</link>
+		<pubDate>Fri, 15 Mar 2013 22:56:11 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-tags/</guid>
+		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1064</guid>
 		<description></description>
-		<content:encoded><![CDATA[This post has many tags.]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>167</wp:post_id>
-		<wp:post_date><![CDATA[2012-11-01 01:00:34]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2012-11-01 06:00:34]]></wp:post_date_gmt>
+		<wp:post_id>1064</wp:post_id>
+		<wp:post_date><![CDATA[2013-03-15 17:56:11]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-03-15 22:56:11]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[home-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Blog</title>
+		<link>http://demo.wpautolistings.com/blog-2/</link>
+		<pubDate>Fri, 15 Mar 2013 22:59:55 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1066</guid>
+		<description></description>
+		<content:encoded><![CDATA[Note that you will probably want to test this page in conjunction with the <strong>Home</strong> page.
+
+To test this page:
+<ul>
+	<li>Navigate to <strong><em>Settings &gt; Reading</em></strong> in the WordPress admin.</li>
+	<li>Then use the settings in the screenshot below.</li>
+</ul>
+<img class="alignnone size-full wp-image-1071" alt="Static Pages" src="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/static-pages.png" width="1390" height="1022" />
+
+A few things to check once this is done.
+<ul>
+	<li>Navigating to the Blog page does <strong>not</strong> display this page. It should display blog posts.</li>
+	<li>Check that the browser window / tab name is what you intend it to show.</li>
+	<li>If your theme displays breadcrumbs, they should probably not show when this is the posts page.</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1066</wp:post_id>
+		<wp:post_date><![CDATA[2013-03-15 17:59:55]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-03-15 22:59:55]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[blog-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Find Your Favorite Car In A Minute!</title>
+		<link>http://demo.wpautolistings.com/find-your-favorite-car-in-a-minute/</link>
+		<pubDate>Sat, 23 Jun 2018 07:21:53 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1294</guid>
+		<description></description>
+		<content:encoded><![CDATA[<ul>
+ 	<li>Great Buying Experience</li>
+ 	<li>24/7 Online Support</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1294</wp:post_id>
+		<wp:post_date><![CDATA[2018-06-23 07:21:53]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-06-23 07:21:53]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[many-tags__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_name><![CDATA[find-your-favorite-car-in-a-minute]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<category domain="post_tag" nicename="featured"><![CDATA[featured]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723783]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[many-tags]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1485]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Many Categories</title>
-		<link>http://demo.wpautolistings.com/many-categories__trashed/</link>
-		<pubDate>Fri, 02 Nov 2012 07:00:03 +0000</pubDate>
+		<title>Top Brand Tyres for Winter Season</title>
+		<link>http://demo.wpautolistings.com/find-your-favorite-car-in-a-minute-1/</link>
+		<pubDate>Sat, 23 Jun 2018 08:20:17 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-categories/</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1299</guid>
 		<description></description>
-		<content:encoded><![CDATA[This post has many categories.]]></content:encoded>
+		<content:encoded><![CDATA[<ul>
+ 	<li>Great Buying Experience</li>
+ 	<li>24/7 Online Support</li>
+</ul>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>168</wp:post_id>
-		<wp:post_date><![CDATA[2012-11-02 02:00:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2012-11-02 07:00:03]]></wp:post_date_gmt>
+		<wp:post_id>1299</wp:post_id>
+		<wp:post_date><![CDATA[2018-06-23 08:20:17]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-06-23 08:20:17]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[many-categories__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_name><![CDATA[find-your-favorite-car-in-a-minute-1]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723779]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[many-categories]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Post Format: Video</title>
-		<link>http://demo.wpautolistings.com/post-format-video__trashed/</link>
-		<pubDate>Sun, 02 Dec 2012 08:00:58 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=582</guid>
-		<description></description>
-		<content:encoded><![CDATA[http://www.youtube.com/watch?v=nwe-H6l4beM
-
-The official music video of "Rise Up" from <a title="Eddy Music" href="http://eddymusic.com/" target="_blank">Eddy's</a> <a title="Eddy - Start An Uproar! EP" href="http://bit.ly/bVmAyI" target="_blank">Start An Uproar!</a> EP.
-
-Learn more about <a title="WordPress Embeds" href="http://codex.wordpress.org/Embeds" target="_blank">WordPress Embeds</a>.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>582</wp:post_id>
-		<wp:post_date><![CDATA[2012-12-02 02:00:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2012-12-02 08:00:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[post-format-video__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<category domain="post_format" nicename="post-format-video"><![CDATA[Video]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-test-video]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_oembed_7338f2ed6983f1e8f5ec2aef019d9c39]]></wp:meta_key>
-			<wp:meta_value><![CDATA[<iframe width="610" height="343" src="http://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allowfullscreen></iframe>]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_oembed_98bd4e46ec9c614c133aee7a86064d6a]]></wp:meta_key>
-			<wp:meta_value><![CDATA[<iframe width="640" height="360" src="https://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_oembed_time_98bd4e46ec9c614c133aee7a86064d6a]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1527907674]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723778]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-video]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Post Format: Audio</title>
-		<link>http://demo.wpautolistings.com/post-format-audio__trashed/</link>
-		<pubDate>Sat, 01 Dec 2012 07:00:44 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=587</guid>
-		<description></description>
-		<content:encoded><![CDATA[Link:
-
-<a href="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3">Eddy - Need (Remix)</a>
-
-Shortcode:
-
-[audio http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3]]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>587</wp:post_id>
-		<wp:post_date><![CDATA[2012-12-01 01:00:44]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2012-12-01 07:00:44]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[post-format-audio__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_format" nicename="post-format-audio"><![CDATA[Audio]]></category>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-test-audio]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[enclosure]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3
-11039151
-audio/mpeg
-]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723779]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-audio]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 01</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-01__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:25:40 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1090</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1090</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:25:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:25:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-01__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="featured"><![CDATA[featured]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727582]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-01]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1522]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Child Page 02</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-02__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:25:51 +0000</pubDate>
+		<title>i am looking for</title>
+		<link>http://demo.wpautolistings.com/im-looking-for/</link>
+		<pubDate>Mon, 25 Jun 2018 03:00:39 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1092</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1303</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
+		<content:encoded><![CDATA[Select your Vehicle options
+[auto_listings_search]]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1092</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:25:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:25:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:post_id>1303</wp:post_id>
+		<wp:post_date><![CDATA[2018-06-25 03:00:39]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-06-25 03:00:39]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-02__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
+		<wp:post_name><![CDATA[im-looking-for]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+			<wp:meta_value><![CDATA[8]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727583]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-02]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 03</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-03__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:26:23 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1094</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.
-
-And, just for fun, it also contains a child page (aka. a grandchild page).]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1094</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:26:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:26:23]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-03__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727583]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-03]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 04</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-04__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:26:40 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1096</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1096</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:26:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:26:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-04__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727602]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-04]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 05</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-05__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:27:40 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1098</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1098</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:27:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:27:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-05__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727602]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-05]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Grandchild Page</title>
-		<link>http://demo.wpautolistings.com/parent-page__trashed/child-page-03__trashed/grandchild-page__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:28:48 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1102</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a grandchild page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1105</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:28:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:28:48]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[grandchild-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1094</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531727583]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[grandchild-page]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -5414,6 +4100,10 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1401]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532613286;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Top Brand Tyres for Winter Season</title>
@@ -5510,7 +4200,7 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532485728;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532612874;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -5606,6 +4296,10 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1455]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532612858;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>The Mercedes Benz G Class 2018</title>
@@ -5699,6 +4393,10 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1459]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532612862;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -5797,7 +4495,7 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532488607;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532655062;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -5894,104 +4592,251 @@ To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Ben
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1465]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532591238;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
-		<title>How to Select a Local Dealer for New &amp; Used Car</title>
-		<link>http://demo.wpautolistings.com/how-to-select-a-local-dealer-for-new-used-car/</link>
-		<pubDate>Mon, 16 Jul 2018 07:42:28 +0000</pubDate>
+		<title>About</title>
+		<link>http://demo.wpautolistings.com/about/</link>
+		<pubDate>Mon, 16 Jul 2018 09:03:51 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1467</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1514</guid>
 		<description></description>
-		<content:encoded><![CDATA[The changes may not be obvious at first glance, the venerable Mercedes Benz G Class has received its biggest update since it was first launched in 1979.
+		<content:encoded><![CDATA[Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.
+<h2>Our vision</h2>
+Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci.
 
-The Mercedes G Class, the three decade old off-roading icon has come up with new features and characters thanks to Mercedes-Benz World. Available in right hand drive and with a choice of one diesel or one petrol engine, the all-new G Wagen is offered with rugged, boxy, five-seat hand-built 4x4s on the driveway.
-<blockquote><strong>This revival has brought about a couple of special edition run outs including the rugged G 500 4x4 squared and the 6-wheeler giant G.</strong>
-<span style="color: #bdbec0;"><cite>Jonh Doe</cite></span></blockquote>
-<!--more-->
-<p class="first-letter">AAccording to Mercedes Benz experts, The G-Class, the luxury off-road vehicle from Mercedes-Benz, has long been deemed a design icon. However, Mercedes has not significantly facelifted the G since 1979. Iconic elements continue to add essence to its distinctive appearance. The new G-Class comes equipped with the unique door handle and the characteristic closing sound, the robust exterior protective strip, the characteristic closing sound, the exposed spare wheel on the rear door and the prominent indicator lights. All such distinctive features seem to add essence to its special look.</p>
+Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.
 
-<h2 class="underline-heading">Tables inside a post</h2>
-<table>
-<thead>
-<tr>
-<th>Title Number 1</th>
-<th>Title Number 2</th>
-<th>Title Number 3</th>
-<th>Title Number 4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>First Item 1</td>
-<td>First Item 2</td>
-<td><img class="size-full wp-image-319 aligncenter" src="https://i.imgur.com/C8mMQhJ.png" alt="" width="16" height="14" /></td>
-<td>First Item 4</td>
-</tr>
-<tr>
-<td>Second Item 1</td>
-<td>Second Item 2</td>
-<td><img class="size-full wp-image-319 aligncenter" src="https://i.imgur.com/C8mMQhJ.png" alt="" width="16" height="14" /></td>
-<td>Second Item 4</td>
-</tr>
-<tr>
-<td>Third Item 1</td>
-<td>Third Item 2</td>
-<td><img class="size-full wp-image-320 aligncenter" src="https://i.imgur.com/TKunKZT.png" alt="" width="16" height="15" /></td>
-<td>Third Item 4</td>
-</tr>
-<tr>
-<td>Fourth Item 1</td>
-<td>Fourth Item 2</td>
-<td><img class="size-full wp-image-320 aligncenter" src="https://i.imgur.com/TKunKZT.png" alt="" width="16" height="15" /></td>
-<td>Fourth Item 4</td>
-</tr>
-</tbody>
-</table>
-<h2></h2>
-<h2 class="underline-heading">Images Inside a post</h2>
-[gallery columns="2" link="none" size="full" ids="1442,1443"]
+<img class="alignnone size-medium" src="https://i.imgur.com/t9IT6sA.jpg?1" width="229" height="60" />
 
-The unique design of the G-Class sums up the sensual purity and at the same time remains true to the character of the original. As a result, the door hinges located on the outside and the surface-mounted bonnet are taken to a newer heights.
-<h2 class="underline-heading">5 Ways to Find Great Deals on Used Cars</h2>
-<ul>
- 	<li>Best Time to Buy a Car.</li>
- 	<li>Check the Car’s History.</li>
- 	<li>Don’t Bring Up Your Trade-in.</li>
- 	<li>Tell the Dealership You’re Shopping Around.</li>
- 	<li>Take Your Time.</li>
-</ul>
-With its sublime character and high-quality elements, the G-Class has always managed to combine off-road character and luxury in a particularly harmonious way. Even in its standard specification, the G-Class’s timeless and authentic open-pore wood gives it an air of classic elegance. Its stylish elements include the decent use of high-quality metal or carbon fiber trim, and its leather seats.
-
-Equipped with 5.5 liter V8 AMG model, the G-Class delivers supreme driving experience at an impressive 416 hp and cranks out 450 lb-ft of torque at 2000 rpm. More so, the new G-Class features Benz’ nine speed automatic transmission. In spite of being available in other models, the torque converter and the transmission software have been specially modified for G-duty.
-
-To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Benz repair Greensboro Free Web Content, North Carolina auto shop.]]></content:encoded>
+Jerri Johnson
+CEO of Greta Themes]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1467</wp:post_id>
-		<wp:post_date><![CDATA[2018-07-16 07:42:28]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-07-16 07:42:28]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[how-to-select-a-local-dealer-for-new-used-car]]></wp:post_name>
+		<wp:post_id>1514</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-16 09:03:51]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-16 09:03:51]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="auto"><![CDATA[Auto]]></category>
-		<category domain="post_tag" nicename="new-used"><![CDATA[new &amp; used]]></category>
-		<category domain="category" nicename="technology"><![CDATA[Technology]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1468]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Location</title>
+		<link>http://demo.wpautolistings.com/location/</link>
+		<pubDate>Mon, 16 Jul 2018 09:06:11 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?page_id=1518</guid>
+		<description></description>
+		<content:encoded><![CDATA[<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7189.0912866241715!2d-73.98754257938022!3d40.74793435549734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire+State+Building%2C+New+York%2C+NY+10001!5e0!3m2!1sen!2s!4v1524463475665" width="840" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<h3>New York Branch</h3>
+Address: Empire State Building, New York, NY 10001
+Tel.: +1-706-308-3661
+Email: newyork@company.com
+<h3>Los Angeles Branch</h3>
+Address: 2163 Sherwood Circle, Kaplan, LA 70548
+Tel.: +1-337-225-7078
+Email: losangeles@company.com]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1518</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-16 09:06:11]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-16 09:06:11]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[location]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532487060;s:7:"payload";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>feed</title>
+		<link>http://demo.wpautolistings.com/feed-2/</link>
+		<pubDate>Wed, 25 Jul 2018 03:15:40 +0000</pubDate>
+		<dc:creator><![CDATA[elightup]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1532</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1532</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-25 03:15:40]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-25 03:15:40]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[feed-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="social-menu"><![CDATA[social menu]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1532]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[http://feed]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>http://demo.wpautolistings.com/1538/</link>
+		<pubDate>Thu, 26 Jul 2018 08:14:36 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1538</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1538</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-26 08:14:36]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-26 08:14:36]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[1538]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="header"><![CDATA[Header]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1064]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>http://demo.wpautolistings.com/1539/</link>
+		<pubDate>Thu, 26 Jul 2018 08:14:54 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1539</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1539</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-26 08:14:54]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-26 08:14:54]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[1539]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="footer"><![CDATA[Footer]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1064]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -6742,6 +5587,84 @@ There should be no comment reply form or any pingbacks and trackbacks listed.]]>
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Many Tags</title>
+		<link>http://demo.wpautolistings.com/many-tags__trashed/</link>
+		<pubDate>Thu, 01 Nov 2012 06:00:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-tags/</guid>
+		<description></description>
+		<content:encoded><![CDATA[This post has many tags.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>167</wp:post_id>
+		<wp:post_date><![CDATA[2012-11-01 01:00:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2012-11-01 06:00:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[many-tags__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723783]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[many-tags]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Many Categories</title>
+		<link>http://demo.wpautolistings.com/many-categories__trashed/</link>
+		<pubDate>Fri, 02 Nov 2012 07:00:03 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-categories/</guid>
+		<description></description>
+		<content:encoded><![CDATA[This post has many categories.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>168</wp:post_id>
+		<wp:post_date><![CDATA[2012-11-02 02:00:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2012-11-02 07:00:03]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[many-categories__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723779]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[many-categories]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Post Format: Gallery</title>
 		<link>http://demo.wpautolistings.com/post-format-gallery__trashed/</link>
 		<pubDate>Mon, 10 Dec 2012 16:00:14 +0000</pubDate>
@@ -7098,6 +6021,123 @@ I really love this wallpaper. It makes me think fondly of <a title="Chris Ames"
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Post Format: Video</title>
+		<link>http://demo.wpautolistings.com/post-format-video__trashed/</link>
+		<pubDate>Sun, 02 Dec 2012 08:00:58 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=582</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.youtube.com/watch?v=nwe-H6l4beM
+
+The official music video of "Rise Up" from <a title="Eddy Music" href="http://eddymusic.com/" target="_blank">Eddy's</a> <a title="Eddy - Start An Uproar! EP" href="http://bit.ly/bVmAyI" target="_blank">Start An Uproar!</a> EP.
+
+Learn more about <a title="WordPress Embeds" href="http://codex.wordpress.org/Embeds" target="_blank">WordPress Embeds</a>.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>582</wp:post_id>
+		<wp:post_date><![CDATA[2012-12-02 02:00:58]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2012-12-02 08:00:58]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[post-format-video__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<category domain="post_format" nicename="post-format-video"><![CDATA[Video]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-test-video]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_7338f2ed6983f1e8f5ec2aef019d9c39]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<iframe width="610" height="343" src="http://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allowfullscreen></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_98bd4e46ec9c614c133aee7a86064d6a]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<iframe width="640" height="360" src="https://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_98bd4e46ec9c614c133aee7a86064d6a]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1527907674]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723778]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-video]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Post Format: Audio</title>
+		<link>http://demo.wpautolistings.com/post-format-audio__trashed/</link>
+		<pubDate>Sat, 01 Dec 2012 07:00:44 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=587</guid>
+		<description></description>
+		<content:encoded><![CDATA[Link:
+
+<a href="http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3">Eddy - Need (Remix)</a>
+
+Shortcode:
+
+[audio http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>587</wp:post_id>
+		<wp:post_date><![CDATA[2012-12-01 01:00:44]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2012-12-01 07:00:44]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[post-format-audio__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_format" nicename="post-format-audio"><![CDATA[Audio]]></category>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-test-audio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[enclosure]]></wp:meta_key>
+			<wp:meta_value><![CDATA[http://wptest.io/demo/wp-content/uploads/sites/2/2013/03/Eddy-Need-Remix.mp3
+11039151
+audio/mpeg
+]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723779]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-audio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Post Format: Image (Caption)</title>
 		<link>http://demo.wpautolistings.com/post-format-image-caption__trashed/</link>
 		<pubDate>Thu, 06 Dec 2012 12:00:19 +0000</pubDate>
@@ -7140,163 +6180,6 @@ I really love this wallpaper. It makes me think fondly of <a title="Chris Ames"
 			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
 			<wp:meta_value><![CDATA[post-format-image-caption]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>Title With Markup</title>
-		<link>http://demo.wpautolistings.com/title-with-markup__trashed/</link>
-		<pubDate>Sat, 05 Jan 2013 16:00:49 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=861</guid>
-		<description></description>
-		<content:encoded><![CDATA[Verify that:
-<ul>
-	<li>The post title renders the word "with" in <em>italics</em> and the word "markup" in <strong>bold</strong>.</li>
-	<li>The post title markup should be removed from the browser window / tab.</li>
-</ul>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>861</wp:post_id>
-		<wp:post_date><![CDATA[2013-01-05 10:00:49]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-01-05 16:00:49]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[title-with-markup__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723737]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[title-with-markup]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Title With Special Characters ~`!@#$%^&amp;*()-_=+{}[]/\;:&#039;&quot;?,.&gt;</title>
-		<link>http://demo.wpautolistings.com/title-with-special-characters__trashed/</link>
-		<pubDate>Sat, 05 Jan 2013 17:00:20 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=867</guid>
-		<description></description>
-		<content:encoded><![CDATA[Putting special characters in the title should have no adverse effect on the layout or functionality.
-
-Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.).]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>867</wp:post_id>
-		<wp:post_date><![CDATA[2013-01-05 11:00:20]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-01-05 17:00:20]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[title-with-special-characters__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723737]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[title-with-special-characters]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</title>
-		<link>http://demo.wpautolistings.com/non-breaking-text__trashed/</link>
-		<pubDate>Sat, 05 Jan 2013 18:00:59 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=877</guid>
-		<description></description>
-		<content:encoded><![CDATA[Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt
-
-A few things to check for:
-<ul>
-	<li>Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.</li>
-	<li>Check the browser window / tab title.</li>
-	<li>If you are a plugin or widget developer, check that this text does not break anything.</li>
-</ul>
-The following CSS properties will help you support non-breaking text.
-<pre>-ms-word-wrap: break-word;
-word-wrap: break-word;</pre>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>877</wp:post_id>
-		<wp:post_date><![CDATA[2013-01-05 12:00:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-01-05 18:00:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[non-breaking-text__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[non-breaking-tex]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723736]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[non-breaking-text]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:31;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>31</wp:comment_id>
-			<wp:comment_author><![CDATA[Jared Erickson]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[jared@lessmade.com]]></wp:comment_author_email>
-			<wp:comment_author_url>http://jarederickson.com/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2013-03-14 13:07:19]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2013-03-14 18:07:19]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Non-breaking text is my favorite!
-
-Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
 	</item>
 	<item>
 		<title>Post Format: Standard</title>
@@ -7514,123 +6397,102 @@ This is typically done by placing the permalink on the post date.]]></content:en
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>No Content</title>
-		<link>http://demo.wpautolistings.com/no-content__trashed/</link>
-		<pubDate>Sun, 06 Jan 2013 15:39:56 +0000</pubDate>
+		<title>How to Select a Local Dealer for New &amp; Used Car</title>
+		<link>http://demo.wpautolistings.com/how-to-select-a-local-dealer-for-new-used-car/</link>
+		<pubDate>Mon, 16 Jul 2018 07:42:28 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/09/04/this-post-has-no-body/</guid>
+		<guid isPermaLink="false">http://demo.wpautolistings.com/?p=1467</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1108</wp:post_id>
-		<wp:post_date><![CDATA[2013-01-06 09:39:56]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-01-06 15:39:56]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[no-content__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[this-post-has-no-body]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723735]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[no-content]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:30;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>30</wp:comment_id>
-			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[yo@chrisam.es]]></wp:comment_author_email>
-			<wp:comment_author_url>http://chrisam.es</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2013-03-14 12:35:07]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2013-03-14 17:35:07]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Having no content in the post should have no adverse effects on the layout or functionality.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
-		<title>Sticky</title>
-		<link>http://demo.wpautolistings.com/sticky__trashed/</link>
-		<pubDate>Mon, 07 Jan 2013 13:07:21 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=1241</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a sticky post.
+		<content:encoded><![CDATA[The changes may not be obvious at first glance, the venerable Mercedes Benz G Class has received its biggest update since it was first launched in 1979.
 
-There are a few things to verify:
+The Mercedes G Class, the three decade old off-roading icon has come up with new features and characters thanks to Mercedes-Benz World. Available in right hand drive and with a choice of one diesel or one petrol engine, the all-new G Wagen is offered with rugged, boxy, five-seat hand-built 4x4s on the driveway.
+<blockquote><strong>This revival has brought about a couple of special edition run outs including the rugged G 500 4x4 squared and the 6-wheeler giant G.</strong>
+<span style="color: #bdbec0;"><cite>Jonh Doe</cite></span></blockquote>
+<!--more-->
+<p class="first-letter">AAccording to Mercedes Benz experts, The G-Class, the luxury off-road vehicle from Mercedes-Benz, has long been deemed a design icon. However, Mercedes has not significantly facelifted the G since 1979. Iconic elements continue to add essence to its distinctive appearance. The new G-Class comes equipped with the unique door handle and the characteristic closing sound, the robust exterior protective strip, the characteristic closing sound, the exposed spare wheel on the rear door and the prominent indicator lights. All such distinctive features seem to add essence to its special look.</p>
+
+<h2 class="underline-heading">Tables inside a post</h2>
+<table>
+<thead>
+<tr>
+<th>Title Number 1</th>
+<th>Title Number 2</th>
+<th>Title Number 3</th>
+<th>Title Number 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Item 1</td>
+<td>First Item 2</td>
+<td><img class="size-full wp-image-319 aligncenter" src="https://i.imgur.com/C8mMQhJ.png" alt="" width="16" height="14" /></td>
+<td>First Item 4</td>
+</tr>
+<tr>
+<td>Second Item 1</td>
+<td>Second Item 2</td>
+<td><img class="size-full wp-image-319 aligncenter" src="https://i.imgur.com/C8mMQhJ.png" alt="" width="16" height="14" /></td>
+<td>Second Item 4</td>
+</tr>
+<tr>
+<td>Third Item 1</td>
+<td>Third Item 2</td>
+<td><img class="size-full wp-image-320 aligncenter" src="https://i.imgur.com/TKunKZT.png" alt="" width="16" height="15" /></td>
+<td>Third Item 4</td>
+</tr>
+<tr>
+<td>Fourth Item 1</td>
+<td>Fourth Item 2</td>
+<td><img class="size-full wp-image-320 aligncenter" src="https://i.imgur.com/TKunKZT.png" alt="" width="16" height="15" /></td>
+<td>Fourth Item 4</td>
+</tr>
+</tbody>
+</table>
+<h2></h2>
+<h2 class="underline-heading">Images Inside a post</h2>
+[gallery columns="2" link="none" size="full" ids="1442,1443"]
+
+The unique design of the G-Class sums up the sensual purity and at the same time remains true to the character of the original. As a result, the door hinges located on the outside and the surface-mounted bonnet are taken to a newer heights.
+<h2 class="underline-heading">5 Ways to Find Great Deals on Used Cars</h2>
 <ul>
-	<li>The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the <code>.sticky</code> class if you are using the <a title="WordPress Codex post_class() Function" href="http://codex.wordpress.org/Function_Reference/post_class" target="_blank">post_class()</a> function to generate your post classes, which is a best practice.</li>
-	<li>They should show at the very top of the blog index page, even though they could be several posts back chronologically.</li>
-	<li>They should still show up again in their chronologically correct postion in time, but without the sticky indicator.</li>
-	<li>If you have a plugin or widget that lists popular posts or comments, make sure that this sticky post is not always at the top of those lists unless it really is popular.</li>
-</ul>]]></content:encoded>
+ 	<li>Best Time to Buy a Car.</li>
+ 	<li>Check the Car’s History.</li>
+ 	<li>Don’t Bring Up Your Trade-in.</li>
+ 	<li>Tell the Dealership You’re Shopping Around.</li>
+ 	<li>Take Your Time.</li>
+</ul>
+With its sublime character and high-quality elements, the G-Class has always managed to combine off-road character and luxury in a particularly harmonious way. Even in its standard specification, the G-Class’s timeless and authentic open-pore wood gives it an air of classic elegance. Its stylish elements include the decent use of high-quality metal or carbon fiber trim, and its leather seats.
+
+Equipped with 5.5 liter V8 AMG model, the G-Class delivers supreme driving experience at an impressive 416 hp and cranks out 450 lb-ft of torque at 2000 rpm. More so, the new G-Class features Benz’ nine speed automatic transmission. In spite of being available in other models, the torque converter and the transmission software have been specially modified for G-duty.
+
+To keep the vehicle in good shape, be sure to take it to the nearby Mercedes Benz repair Greensboro Free Web Content, North Carolina auto shop.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1241</wp:post_id>
-		<wp:post_date><![CDATA[2013-01-07 07:07:21]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-01-07 13:07:21]]></wp:post_date_gmt>
+		<wp:post_id>1467</wp:post_id>
+		<wp:post_date><![CDATA[2018-07-16 07:42:28]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-07-16 07:42:28]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sticky__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_name><![CDATA[how-to-select-a-local-dealer-for-new-used-car]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<category domain="category" nicename="auto"><![CDATA[Auto]]></category>
+		<category domain="post_tag" nicename="new-used"><![CDATA[new &amp; used]]></category>
+		<category domain="category" nicename="technology"><![CDATA[Technology]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_level_layout]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1468]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_link_url_field]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1531723735]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[sticky]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_jetpack_related_posts_cache]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1532591242;s:7:"payload";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -7787,6 +6649,163 @@ It should not be displayed by the theme.]]></content:encoded>
 			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
 			<wp:meta_value><![CDATA[scheduled]]></wp:meta_value>
 		</wp:postmeta>
+	</item>
+	<item>
+		<title>Title With Markup</title>
+		<link>http://demo.wpautolistings.com/title-with-markup__trashed/</link>
+		<pubDate>Sat, 05 Jan 2013 16:00:49 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=861</guid>
+		<description></description>
+		<content:encoded><![CDATA[Verify that:
+<ul>
+	<li>The post title renders the word "with" in <em>italics</em> and the word "markup" in <strong>bold</strong>.</li>
+	<li>The post title markup should be removed from the browser window / tab.</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>861</wp:post_id>
+		<wp:post_date><![CDATA[2013-01-05 10:00:49]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-01-05 16:00:49]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[title-with-markup__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723737]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[title-with-markup]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Title With Special Characters ~`!@#$%^&amp;*()-_=+{}[]/\;:&#039;&quot;?,.&gt;</title>
+		<link>http://demo.wpautolistings.com/title-with-special-characters__trashed/</link>
+		<pubDate>Sat, 05 Jan 2013 17:00:20 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=867</guid>
+		<description></description>
+		<content:encoded><![CDATA[Putting special characters in the title should have no adverse effect on the layout or functionality.
+
+Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.).]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>867</wp:post_id>
+		<wp:post_date><![CDATA[2013-01-05 11:00:20]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-01-05 17:00:20]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[title-with-special-characters__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723737]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[title-with-special-characters]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</title>
+		<link>http://demo.wpautolistings.com/non-breaking-text__trashed/</link>
+		<pubDate>Sat, 05 Jan 2013 18:00:59 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=877</guid>
+		<description></description>
+		<content:encoded><![CDATA[Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt
+
+A few things to check for:
+<ul>
+	<li>Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.</li>
+	<li>Check the browser window / tab title.</li>
+	<li>If you are a plugin or widget developer, check that this text does not break anything.</li>
+</ul>
+The following CSS properties will help you support non-breaking text.
+<pre>-ms-word-wrap: break-word;
+word-wrap: break-word;</pre>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>877</wp:post_id>
+		<wp:post_date><![CDATA[2013-01-05 12:00:59]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-01-05 18:00:59]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[non-breaking-text__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[non-breaking-tex]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723736]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[non-breaking-text]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:31;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>31</wp:comment_id>
+			<wp:comment_author><![CDATA[Jared Erickson]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[jared@lessmade.com]]></wp:comment_author_email>
+			<wp:comment_author_url>http://jarederickson.com/</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2013-03-14 13:07:19]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2013-03-14 18:07:19]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Non-breaking text is my favorite!
+
+Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
 	</item>
 	<item>
 		<title>Text Alignment</title>
@@ -8649,6 +7668,126 @@ This is some text after the Tiled Gallery just to make sure that everything spac
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
 			<wp:meta_value><![CDATA[tiled-gallery]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>No Content</title>
+		<link>http://demo.wpautolistings.com/no-content__trashed/</link>
+		<pubDate>Sun, 06 Jan 2013 15:39:56 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/09/04/this-post-has-no-body/</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1108</wp:post_id>
+		<wp:post_date><![CDATA[2013-01-06 09:39:56]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-01-06 15:39:56]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[no-content__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[this-post-has-no-body]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723735]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[no-content]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:30;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>30</wp:comment_id>
+			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[yo@chrisam.es]]></wp:comment_author_email>
+			<wp:comment_author_url>http://chrisam.es</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2013-03-14 12:35:07]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2013-03-14 17:35:07]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Having no content in the post should have no adverse effects on the layout or functionality.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
+		<title>Sticky</title>
+		<link>http://demo.wpautolistings.com/sticky__trashed/</link>
+		<pubDate>Mon, 07 Jan 2013 13:07:21 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=1241</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is a sticky post.
+
+There are a few things to verify:
+<ul>
+	<li>The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the <code>.sticky</code> class if you are using the <a title="WordPress Codex post_class() Function" href="http://codex.wordpress.org/Function_Reference/post_class" target="_blank">post_class()</a> function to generate your post classes, which is a best practice.</li>
+	<li>They should show at the very top of the blog index page, even though they could be several posts back chronologically.</li>
+	<li>They should still show up again in their chronologically correct postion in time, but without the sticky indicator.</li>
+	<li>If you have a plugin or widget that lists popular posts or comments, make sure that this sticky post is not always at the top of those lists unless it really is popular.</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1241</wp:post_id>
+		<wp:post_date><![CDATA[2013-01-07 07:07:21]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2013-01-07 13:07:21]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[sticky__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Cars]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[standard_seo_post_level_layout]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[standard_link_url_field]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1531723735]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[sticky]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

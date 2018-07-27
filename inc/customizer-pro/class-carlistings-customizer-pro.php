@@ -2,13 +2,13 @@
 /**
  * Handles the "Go Pro" section in the Customizer.
  *
- * @package Autodealer
+ * @package CarListings
  */
 
 /**
  * The customizer pro class.
  */
-final class Autodealer_Customizer_Pro {
+final class Carlistings_Customizer_Pro {
 
 	/**
 	 * Theme slug.
@@ -47,19 +47,19 @@ final class Autodealer_Customizer_Pro {
 	 */
 	public function sections( $manager ) {
 		// Load custom sections.
-		require get_template_directory() . '/inc/customizer-pro/class-autodealer-customizer-section-pro.php';
+		require get_template_directory() . '/inc/customizer-pro/class-carlistings-customizer-section-pro.php';
 
 		// Register custom section types.
-		$manager->register_section_type( 'Autodealer_Customizer_Section_Pro' );
+		$manager->register_section_type( 'Carlistings_Customizer_Section_Pro' );
 
 		// Register sections.
 		$manager->add_section(
-			new Autodealer_Customizer_Section_Pro(
+			new Carlistings_Customizer_Section_Pro(
 				$manager,
-				'autodealer',
+				'carlistings',
 				array(
-					'doc_title' => esc_html__( 'Need Some Help?', 'autodealer' ),
-					'doc_text'  => esc_html__( 'Documentation', 'autodealer' ),
+					'doc_title' => esc_html__( 'Need Some Help?', 'carlistings' ),
+					'doc_text'  => esc_html__( 'Documentation', 'carlistings' ),
 					'doc_url'   => esc_url( "https://gretathemes.com/wordpress-themes/{$this->slug}/{$this->utm}" ),
 					'priority'  => 99999999,
 				)
@@ -71,7 +71,7 @@ final class Autodealer_Customizer_Pro {
 	 * Loads theme customizer CSS.
 	 */
 	public function enqueue_control_scripts() {
-		wp_enqueue_script( 'autodealer-customize-pro-script', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.js', array( 'customize-controls' ) );
-		wp_enqueue_style( 'autodealer-customize-pro-style', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.css' );
+		wp_enqueue_script( 'carlistings-customize-pro-script', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.js', array( 'customize-controls' ) );
+		wp_enqueue_style( 'carlistings-customize-pro-style', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.css' );
 	}
 }

@@ -1,0 +1,736 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CarListings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-27 03:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/dashboard/sections/welcome.php:30
+msgid " Share"
+msgstr ""
+
+#: inc/dashboard/sections/welcome.php:31
+msgid " Tweet"
+msgstr ""
+
+#: inc/dashboard/sections/support.php:24
+msgid ""
+" We build high quality WordPress Themes that are well designed and simple to "
+"set up. Check them out here!"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:131
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#. make and number of modals.
+#: inc/template-tags.php:296
+#, php-format
+msgid "%1$s <span>(%2$s)</span>"
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/class-carlistings-dashboard.php:157
+#, php-format
+msgid "%1$s needs %2$s to working properly. Please install and activate it."
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/class-carlistings-dashboard.php:152
+#, php-format
+msgid ""
+"%s needs some plugins to working properly. Please install and activate our "
+"required plugins."
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/sections/recommended-actions.php:25
+#, php-format
+msgid ""
+"%s uses Jetpack to support featured content, social menu. Connect to Jetpack "
+"to use these features as well as variety of other tools."
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:128
+msgid ", "
+msgstr ""
+
+#: listings/loop/orderby.php:32
+msgid "- New Listings -"
+msgstr ""
+
+#: listings/loop/orderby.php:33
+msgid "- Oldest Listings -"
+msgstr ""
+
+#: listings/loop/orderby.php:35
+msgid "- Price (High to Low) -"
+msgstr ""
+
+#: listings/loop/orderby.php:34
+msgid "- Price (Low to High) -"
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:38
+msgid "10:00 AM To 5:00 PM"
+msgstr ""
+
+#: archive.php:34 index.php:39 search.php:34
+msgid "<i class=\"icofont icofont-rounded-left\"></i>"
+msgstr ""
+
+#: archive.php:35 index.php:40 search.php:35
+msgid "<i class=\"icofont icofont-rounded-right\"></i>"
+msgstr ""
+
+#. plugin name.
+#: inc/dashboard/class-carlistings-dashboard.php:169
+#, php-format
+msgid "<strong>%s has been installed and activated</strong>"
+msgstr ""
+
+#: functions.php:112
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:134
+msgid "Add your languages widget here."
+msgstr ""
+
+#: functions.php:123
+msgid "Add your time and email widget here."
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "All Car Button Text"
+msgstr ""
+
+#: inc/customizer.php:130
+msgid "All Car Button URL"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "All car description"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "All Car Image Right"
+msgstr ""
+
+#: inc/customizer.php:85
+msgid "All car title"
+msgstr ""
+
+#: inc/breadcrumbs.php:144
+msgid "Archives"
+msgstr ""
+
+#: inc/admin/plugins.php:36
+msgid "Auto Listings"
+msgstr ""
+
+#: inc/customizer.php:78 template-parts/home/cars-by-make.php:8
+msgid "Browse Cars By Make"
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/sections/recommended-themes.php:46
+msgid "Browser All Themes"
+msgstr ""
+
+#. Name of the theme
+msgid "CarListings"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"CarListings is a beautiful and easy to use WordPress auto listing theme for "
+"car sellers and dealers. Working perfectly with plugin Auto Listings, this "
+"theme will help you build a beautiful car listing Wordpress site with ease."
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:24
+msgid "Carlistings: Contact Info"
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:39
+msgid "carlistings@no-reply.com "
+msgstr ""
+
+#: inc/customizer.php:93 template-parts/home/cars-by-make.php:9
+msgid "cars available in different categories"
+msgstr ""
+
+#: comments.php:32
+msgctxt "comments"
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/dashboard/sections/recommended-actions.php:28
+msgid "Connect To Jetpack"
+msgstr ""
+
+#: inc/dashboard/sections/recommended-actions.php:21
+msgid "Connect Your Site To Jetpack"
+msgstr ""
+
+#: inc/dashboard/sections/support.php:12
+msgid "Contact Support"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:24
+msgid "Customize The Theme"
+msgstr ""
+
+#: inc/extras.php:102
+msgid "Demo"
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:19
+msgid "Display your location and contact information."
+msgstr ""
+
+#: inc/customizer-pro/class-carlistings-customizer-pro.php:62
+msgid "Documentation"
+msgstr ""
+
+#: inc/extras.php:86
+msgid "Dribbble"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:105
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:112
+msgid "Email time:"
+msgstr ""
+
+#: inc/extras.php:83
+msgid "Facebook profile URL"
+msgstr ""
+
+#: functions.php:50 inc/customizer.php:158
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:206
+msgid "Footer Button Text"
+msgstr ""
+
+#: inc/customizer.php:221
+msgid "Footer Button URL"
+msgstr ""
+
+#: inc/customizer.php:191
+msgid "Footer Description"
+msgstr ""
+
+#: inc/customizer.php:239
+msgid "Footer Image"
+msgstr ""
+
+#: inc/customizer.php:259
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Footer Title"
+msgstr ""
+
+#. Name of the template
+msgid "Front-page"
+msgstr ""
+
+#: inc/extras.php:224
+msgid "Full Name *"
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/class-carlistings-dashboard.php:131
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: inc/dashboard/sections/tabs.php:10
+msgid "Getting Started"
+msgstr ""
+
+#: inc/customizer.php:199 template-parts/cta.php:11
+msgid "go to car listings"
+msgstr ""
+
+#: inc/extras.php:81
+msgid "Google+"
+msgstr ""
+
+#. Author of the theme
+#: inc/dashboard/sections/welcome.php:26
+msgid "GretaThemes"
+msgstr ""
+
+#: inc/dashboard/sections/newsletter.php:11
+msgid "GretaThemes Newsletter"
+msgstr ""
+
+#: inc/breadcrumbs.php:21
+msgid "Home"
+msgstr ""
+
+#: inc/customizer.php:29
+msgid "Homepage"
+msgstr ""
+
+#. URI of the theme
+msgid "http://demo.wpautolistings.com/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://gretathemes.com"
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/sections/support.php:21
+#, php-format
+msgid "If you like %s, you might want to see another beautiful themes from "
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:12
+msgid "Implement Recommended Actions"
+msgstr ""
+
+#: inc/dashboard/sections/recommended-actions.php:32
+msgid "Import demo data if you want your website exactly the same as our demo."
+msgstr ""
+
+#: inc/extras.php:85
+msgid "Instagram"
+msgstr ""
+
+#: inc/admin/plugins.php:53
+msgid "Instagram Slider Widget"
+msgstr ""
+
+#. plugin name.
+#: inc/dashboard/class-carlistings-dashboard.php:159
+#, php-format
+msgid "Install %s"
+msgstr ""
+
+#: inc/dashboard/class-carlistings-dashboard.php:153
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/dashboard/class-carlistings-dashboard.php:150
+msgid "Install The Required Plugins"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:42
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/admin/plugins.php:32
+msgid "Jetpack"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:88
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/extras.php:84
+msgid "Linkedin"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/extras.php:60
+msgctxt "list item separator"
+msgid " "
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:75
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: listings/single-listing/address.php:31
+msgid "Listing Location:"
+msgstr ""
+
+#: inc/dashboard/sections/recommended-themes.php:36
+msgid "Live Demo"
+msgstr ""
+
+#: inc/extras.php:226
+msgid "Mail Address *"
+msgstr ""
+
+#: header.php:73
+msgid "Menu"
+msgstr ""
+
+#. placeholder for HTML
+#: inc/dashboard/sections/support.php:42
+#, php-format
+msgid ""
+"Modern, clean, responsive %s for all your needs. Fast loading, easy to use "
+"and optimized for SEO."
+msgstr ""
+
+#: listings/loop/bottom.php:24
+msgid "More Details"
+msgstr ""
+
+#: inc/dashboard/sections/support.php:17
+msgid "More Themes From Us"
+msgstr ""
+
+#: inc/dashboard/sections/recommended-themes.php:21
+msgid "More themes from us"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:32
+msgid ""
+"Need any help to setup and configure the theme? Please check our full "
+"documentation for detailed information on how to use it."
+msgstr ""
+
+#: inc/customizer-pro/class-carlistings-customizer-pro.php:61
+msgid "Need Some Help?"
+msgstr ""
+
+#: inc/breadcrumbs.php:128
+msgid "Not found"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/admin/plugins.php:41
+msgid "One click demo import"
+msgstr ""
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: functions.php:204
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: template-parts/content-blog.php:46 template-parts/content-page.php:28
+#: template-parts/content-search.php:31 template-parts/content.php:39
+msgid "Pages:"
+msgstr ""
+
+#: inc/extras.php:88
+msgid "Pinterest"
+msgstr ""
+
+#. theme name and theme slug.
+#: inc/dashboard/class-carlistings-dashboard.php:110
+#, php-format
+msgid ""
+"Please rate <strong>%1$s</strong> <a href=\"https://wordpress."
+"org/support/theme/%2$s/reviews/?filter=5\" target=\"_blank\">&#9733;&#9733;"
+"&#9733;&#9733;&#9733;</a> on <a href=\"https://wordpress."
+"org/support/theme/%2$s/reviews/?filter=5\" target=\"_blank\">WordPress."
+"org</a> to help us spread the word. Thank you from GretaThemes!"
+msgstr ""
+
+#. theme slug.
+#: inc/dashboard/sections/welcome.php:19
+#, php-format
+msgid ""
+"Please rate us <a href=\"https://wordpress.org/support/theme/%1$s/reviews/?"
+"filter=5\" target=\"_blank\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a "
+"href=\"https://wordpress.org/support/theme/%1$s/reviews/?filter=5\" "
+"target=\"_blank\">WordPress.org</a> to help us spread the word. Thank you "
+"from GretaThemes!"
+msgstr ""
+
+#. the author name
+#: inc/template-tags.php:41
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: functions.php:49
+msgid "Primary"
+msgstr ""
+
+#. placeholder for HTML
+#: inc/dashboard/sections/support.php:70
+#, php-format
+msgid ""
+"Professional %s that help you empower your e-commerce sites and grow your "
+"business."
+msgstr ""
+
+#: listings/single-listing/contact-form.php:25
+msgid "Quick Contact"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:34
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:31
+msgid "Read Full Documentation"
+msgstr ""
+
+#. %s - post title.
+#: inc/extras.php:17 inc/extras.php:41
+#, php-format
+msgid "Read More %s"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:20
+#: inc/dashboard/sections/tabs.php:11
+msgid "Recommended Actions"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:39
+msgid "screenshot"
+msgstr ""
+
+#: searchform.php:17 inc/customizer.php:57
+msgid "Search"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search for:"
+msgstr ""
+
+#. search query
+#: inc/breadcrumbs.php:126
+#, php-format
+msgid "Search results for &quot;%s&quot;"
+msgstr ""
+
+#: template-parts/home/cars-by-make.php:11
+msgid "See all cars"
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "see all cars"
+msgstr ""
+
+#: functions.php:110
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: listings/archive-listing.php:89 template-parts/home/listings.php:82
+msgid "Sorry, no listings were found."
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:27
+msgid "Start Customize"
+msgstr ""
+
+#: inc/dashboard/sections/recommended-actions.php:31
+msgid "Step 3 - Import Demo Data (Optional)"
+msgstr ""
+
+#: inc/dashboard/sections/support.php:13
+msgid ""
+"Still need help with carlistings? We offer excellent support for you. Open "
+"up a ticket and we will get back to you as soon as possible."
+msgstr ""
+
+#: inc/extras.php:239
+msgid "Submit Comment"
+msgstr ""
+
+#: inc/dashboard/sections/newsletter.php:15
+msgid "Subscribe"
+msgstr ""
+
+#: inc/dashboard/sections/newsletter.php:13
+msgid ""
+"Subscribe to our newsletter to receive news and tutorials about our themes "
+"and WordPress. We will never spam you."
+msgstr ""
+
+#: inc/dashboard/sections/welcome.php:29
+msgid "Support"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:78
+#, php-format
+msgid "Tags: %1$s"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "The animation speed in milliseconds. Enter 0 to disable the slider."
+msgstr ""
+
+#: inc/customizer.php:60
+msgid ""
+"The content of this page will be displayed below the search on your static "
+"front page."
+msgstr ""
+
+#. placeholder for HTML
+#: inc/dashboard/sections/support.php:55
+#, php-format
+msgid ""
+"The lightweight %1$s feature-rich WordPress plugin that helps developers to "
+"save time building %2$s."
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "Theme Options"
+msgstr ""
+
+#: inc/widgets/class-carlistings-contact-widget.php:107
+msgid "time:"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Top slider speed"
+msgstr ""
+
+#: functions.php:121
+msgid "Topbar Contact"
+msgstr ""
+
+#: functions.php:132
+msgid "Topbar Languages"
+msgstr ""
+
+#: inc/extras.php:82
+msgid "Twitter username (without @)"
+msgstr ""
+
+#: searchform.php:13
+msgid "Type and Hit Enter ..."
+msgstr ""
+
+#: inc/admin/plugins.php:49
+msgid "Ultimate Colors"
+msgstr ""
+
+#: inc/admin/plugins.php:45
+msgid "Ultimate Fonts"
+msgstr ""
+
+#: inc/dashboard/sections/getting-started.php:25
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: listings/loop/bottom.php:24
+msgid "View"
+msgstr ""
+
+#: inc/template-tags.php:190
+msgid "visit author's website"
+msgstr ""
+
+#: inc/customizer.php:184 template-parts/cta.php:9
+msgid ""
+"We have a big list of modern & classic cars in both used and new categories."
+msgstr ""
+
+#. theme name.
+#: inc/dashboard/sections/getting-started.php:16
+#, php-format
+msgid ""
+"We have made a list of steps for you, to make sure you will get the most of "
+"%s. They are easy to follow."
+msgstr ""
+
+#: inc/extras.php:228
+msgid "Website URL"
+msgstr ""
+
+#. %1$s - Theme name, %2$s - Theme version.
+#: inc/dashboard/sections/welcome.php:12
+#, php-format
+msgid "Welcome to %1$s"
+msgstr ""
+
+#. theme name and welcome page.
+#: inc/dashboard/class-carlistings-dashboard.php:124
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s. To get started, visit our <a "
+"href=\"%2$s\">welcome page</a>."
+msgstr ""
+
+#: inc/custom-header.php:30
+msgid "Work Space"
+msgstr ""
+
+#: inc/extras.php:254
+msgid "Write Your Comments Here..."
+msgstr ""
+
+#: inc/dashboard/class-carlistings-dashboard.php:166
+msgid "You have installed and active all required plugins"
+msgstr ""
+
+#: inc/dashboard/sections/support.php:29
+msgid "You Might Also Like"
+msgstr ""
+
+#: inc/customizer.php:169 template-parts/cta.php:8
+msgid "You Want To Have Your Favorite Car?"
+msgstr ""
+
+#: inc/extras.php:87
+msgid "Youtube"
+msgstr ""
