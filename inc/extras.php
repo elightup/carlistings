@@ -97,15 +97,12 @@ add_filter( 'user_contactmethods', 'user_social_networks_add' );
  * @return array List of demos configuration.
  */
 function autodealer_import_files() {
-	$autodealer_demo_url = trailingslashit( get_template_directory_uri() ) . 'demo/';
-
 	return array(
 		array(
-			'import_file_name'             => esc_html__( 'Demo 1', 'autodealer' ),
-			'import_file_url'              => $autodealer_demo_url . 'content.xml',
-			'import_widget_file_url'       => $autodealer_demo_url . 'widgets.wie',
-			'local_import_customizer_file' => $autodealer_demo_url . 'theme-options.dat',
-			'import_preview_image_url'     => $autodealer_demo_url . 'preview_image.jpg',
+			'import_file_name'             => esc_html__( 'Demo', 'autodealer' ),
+			'local_import_file'            => get_template_directory() . '/demos/content.xml',
+			'local_import_widget_file'     => get_template_directory() . '/demos/widgets.wie',
+			'local_import_customizer_file' => get_template_directory() . '/demos/theme-options.dat',
 		),
 	);
 }
@@ -119,11 +116,13 @@ function autodealer_after_import_setup() {
 	// Assign menus to their locations.
 	$header = get_term_by( 'slug', 'Header', 'nav_menu' );
 	$footer = get_term_by( 'slug', 'Footer', 'nav_menu' );
+	$social = get_term_by( 'slug', 'social-menu', 'nav_menu' );
 
 	set_theme_mod(
 		'nav_menu_locations', array(
 			'menu-1'              => $header->term_id,
 			'menu-2'              => $footer->term_id,
+			'jetpack-social-menu' => $social->term_id,
 		)
 	);
 

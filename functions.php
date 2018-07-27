@@ -41,7 +41,7 @@ if ( ! function_exists( 'autodealer_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'autodealer-blog-thumbnail', 770, 450, true );
+		set_post_thumbnail_size( 770, 420, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -95,7 +95,7 @@ add_action( 'after_setup_theme', 'autodealer_setup' );
  * @global int $content_width
  */
 function autodealer_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'autodealer_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'autodealer_content_width', 770 );
 }
 add_action( 'after_setup_theme', 'autodealer_content_width', 0 );
 
