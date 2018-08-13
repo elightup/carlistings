@@ -4,11 +4,11 @@
  *
  * @package CarListings
  */
-
-$title       = get_theme_mod( 'allcar_title', __( 'Browse Cars By Make', 'carlistings' ) );
-$description = get_theme_mod( 'allcar_description', __( 'cars available in different categories', 'carlistings' ) );
-$button_url  = get_theme_mod( 'allcar_button_url', 'https://gretathemes.com/' );
-$button_text = get_theme_mod( 'allcar_button_text', __( 'See all cars', 'carlistings' ) );
+$listings_archive_link = get_post_type_archive_link( 'auto-listing' );
+$title                 = get_theme_mod( 'allcar_title', __( 'Browse Cars By Make', 'carlistings' ) );
+$description           = get_theme_mod( 'allcar_description', __( 'cars available in different categories', 'carlistings' ) );
+$button_url            = get_theme_mod( 'allcar_button_url', esc_url( $listings_archive_link ) );
+$button_text           = get_theme_mod( 'allcar_button_text', __( 'See all cars', 'carlistings' ) );
 
 $image       = get_theme_mod( 'allcar_image' );
 $cars        = carlistings_get_car_ids();

@@ -29,11 +29,19 @@ if ( $logo ) {
 
 	<div class="footer-bottom">
 		<div class="container">
-			<?php if ( $logo ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
-					<img src="<?php echo esc_url( $logo ); ?>">
+			<div class="footer-copyright">
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'carlistings' ) ); ?>">
+					<?php
+						/* translators: placeholder replaced with string */
+						printf( esc_html__( 'Proudly powered by %s', 'carlistings' ), 'WordPress' );
+					?>
 				</a>
-			<?php endif; ?>
+				<span class="sep"> | </span>
+				<?php
+					/* translators: placeholder replaced with string */
+					printf( esc_html__( 'Theme: %1$s by %2$s.', 'carlistings' ), 'carlistings', '<a href="https://wpautolistings.com/" rel="designer">WP Auto Listings</a>' );
+				?>
+			</div><!-- .site-info -->
 			<nav id="footer-site-navigation" class="footer-navigation">
 				<?php
 				wp_nav_menu(

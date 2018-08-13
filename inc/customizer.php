@@ -120,7 +120,7 @@ function carlistings_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_button_url', array(
-			'default'           => esc_url( 'https://gretathemes.com/' ),
+			'default'           => esc_url( get_post_type_archive_link('auto-listing') ),
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => 'postMessage',
 		)
@@ -211,7 +211,7 @@ function carlistings_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_button_url', array(
-			'default'           => esc_url( 'https://gretathemes.com/' ),
+			'default'           => esc_url( 'https://wpautolistings.com/' ),
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => 'postMessage',
 		)
@@ -239,26 +239,6 @@ function carlistings_customize_register( $wp_customize ) {
 				'label'    => esc_html__( 'Footer Image', 'carlistings' ),
 				'section'  => 'footer',
 				'settings' => 'cta_background',
-			)
-		)
-	);
-
-	/**
-	 * Footer section.
-	 */
-	$wp_customize->add_setting(
-		'footer_logo', array(
-			'sanitize_callback' => 'carlistings_sanitize_image',
-		)
-	);
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			$wp_customize,
-			'footer-logo',
-			array(
-				'label'    => esc_html__( 'Footer Logo', 'carlistings' ),
-				'section'  => 'footer',
-				'settings' => 'footer_logo',
 			)
 		)
 	);
