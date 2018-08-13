@@ -1,5 +1,5 @@
 === CarListings ===
-Contributors: GretaThemes
+Contributors: WP Auto Listings
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.9
 Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns
@@ -11,18 +11,18 @@ Built on the latest technology of WordPress, CarListings is fully responsvive, f
 
 == Installation ==
 
-Please go to http://gretathemes.com/docs/carlistings/
+Please go to http://wpautolistings.com/docs/carlistings/
 
 == License ==
 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License Version 3.
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-CarListings WordPress Theme, Copyright 2017 GretaThemes
+CarListings WordPress Theme, Copyright 2018 WP Auto Listings
 CarListings is distributed under the terms of the GNU General Public License v3
 
-Unless otherwise specified, all Images are self shot by GretaThemes
-Copyright: GretaThemes, gretathemes.com
+Unless otherwise specified, all Images are self shot by WP Auto Listings
+Copyright: WP Auto Listings, https://wpautolistings.com/
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -51,9 +51,17 @@ CarListings is based on Underscores http://underscores.me/, (C) 2012-2018 Automa
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 CarListings is Licensed under the GNU GPL 3 license
-http://gretathemes.com/
+https://wpautolistings.com/
 
 
 == Changelog ==
 
-See http://gretathemes.com/wordpress-themes/carlistings/
+= 1.0.2 =
+* New dashboard and change some options for footer
+
+= 1.0.1 =
+* Fix style on some elements
+
+= 1.0.0 =
+* First submit
+
