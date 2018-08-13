@@ -60,7 +60,7 @@ final class Carlistings_Customizer_Pro {
 				array(
 					'doc_title' => esc_html__( 'Need Some Help?', 'carlistings' ),
 					'doc_text'  => esc_html__( 'Documentation', 'carlistings' ),
-					'doc_url'   => esc_url( "https://gretathemes.com/wordpress-themes/{$this->slug}/{$this->utm}" ),
+					'doc_url'   => esc_url( "https://wpautolistings.com/docs/{$this->slug}/{$this->utm}" ),
 					'priority'  => 99999999,
 				)
 			)

@@ -17,7 +17,7 @@
 				?>
 			</p>
 			<p>
-				<a href="#recommended-actions" class="action-links button"><?php esc_html_e( 'Recommended Actions', 'carlistings' ); ?></a>
+				<a href="#actions" class="action-links button"><?php esc_html_e( 'Recommended Actions', 'carlistings' ); ?></a>
 			</p>
 
 
@@ -31,7 +31,7 @@
 			<h3><?php esc_html_e( 'Read Full Documentation', 'carlistings' ); ?></h3>
 			<p class="about"><?php esc_html_e( 'Need any help to setup and configure the theme? Please check our full documentation for detailed information on how to use it.', 'carlistings' ); ?></p>
 			<p>
-				<a href="<?php echo esc_url( "https://gretathemes.com/docs/{$this->slug}/{$this->utm }" ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e( 'Read Documentation', 'carlistings' ); ?></a>
+				<a href="<?php echo esc_url( "https://wpautolistings.com/docs/{$this->slug}/{$this->utm}" ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e( 'Read Documentation', 'carlistings' ); ?></a>
 			</p>
 		</div>
 
@@ -39,5 +39,4 @@
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.png" alt="<?php esc_attr_e( 'screenshot', 'carlistings' ); ?>">
 		</div>
 	</div>
-	<?php include get_stylesheet_directory() . '/inc/dashboard/sections/recommended-themes.php'; ?>
 </div>

@@ -28,24 +28,6 @@
 		} );
 	}
 
-	function initRecommendedThemeSlider() {
-		$( '.recommended-themes' ).slick( {
-			slidesToShow: 3,
-			rows: 0,
-			arrows: false,
-			dots: true,
-			responsive: [
-				{
-					breakpoint: 768,
-					settings  : {
-						slidesToShow: 1
-					}
-				}
-			]
-		} );
-	}
-
 	// Auto activate tabs when DOM ready.
 	$( tabs );
-	initRecommendedThemeSlider();
 } ( jQuery ) );

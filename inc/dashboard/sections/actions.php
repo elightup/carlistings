@@ -7,7 +7,7 @@
 
 $action = $this->recommended_plugins_action();
 ?>
-<div id="recommended-actions" class="gt-tab-pane">
+<div id="actions" class="gt-tab-pane">
 	<div class="feature-section two-col">
 		<div class="col">
 			<h3><?php echo esc_html( $action['title'] ); ?></h3>

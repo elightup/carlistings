@@ -25,13 +25,6 @@ class Carlistings_Dashboard {
 	private $slug;
 
 	/**
-	 * Lite version slug.
-	 *
-	 * @var string Lite version slug.
-	 */
-	private $lite_slug;
-
-	/**
 	 * UTM link.
 	 *
 	 * @var string UTM link.
@@ -45,7 +38,6 @@ class Carlistings_Dashboard {
 
 		$this->theme     = wp_get_theme();
 		$this->slug      = $this->theme->template;
-		$this->lite_slug = $this->slug . '';
 		$this->utm      = '?utm_source=WordPress&utm_medium=link&utm_campaign=' . $this->slug;
 
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
@@ -80,7 +72,8 @@ class Carlistings_Dashboard {
 							<?php include get_template_directory() . '/inc/dashboard/sections/welcome.php'; ?>
 							<?php include get_template_directory() . '/inc/dashboard/sections/tabs.php'; ?>
 							<?php include get_template_directory() . '/inc/dashboard/sections/getting-started.php'; ?>
-							<?php include get_template_directory() . '/inc/dashboard/sections/recommended-actions.php'; ?>
+							<?php include get_template_directory() . '/inc/dashboard/sections/actions.php'; ?>
+							<?php include get_template_directory() . '/inc/dashboard/sections/recommendation.php'; ?>
 						</div>
 						<div id="postbox-container-1" class="postbox-container">
 							<?php include get_template_directory() . '/inc/dashboard/sections/newsletter.php'; ?>
@@ -97,7 +90,6 @@ class Carlistings_Dashboard {
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_style( "{$this->slug}-dashboard-style", get_template_directory_uri() . '/inc/dashboard/css/dashboard-style.css' );
-		wp_enqueue_script( "{$this->slug}-dashboard-slick", get_template_directory_uri() . '/inc/dashboard/js/slick.js', array( 'jquery' ), '1.8.0', true );
 		wp_enqueue_script( "{$this->slug}-dashboard-script", get_template_directory_uri() . '/inc/dashboard/js/script.js', array( 'jquery' ), '', true );
 	}
 
@@ -107,7 +99,7 @@ class Carlistings_Dashboard {
 	 */
 	public function footer_text() {
 		// Translators: theme name and theme slug.
-		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from GretaThemes!', 'carlistings' ), $this->theme->name, $this->lite_slug ) );
+		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from WP Auto Listings!', 'carlistings' ), $this->theme->name, $this->slug ) );
 	}
 
 	/**
