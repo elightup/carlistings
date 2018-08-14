@@ -60,10 +60,6 @@ class Carlistings_Contact_Widget extends WP_Widget {
 			echo '<li><i class="icofont icofont-clock-time"></i>' . esc_html( $instance['time'] ) . '</li>';
 		}
 
-		if ( '' != $instance['phone'] ) {
-			echo '<li><a href="' . esc_url( 'tel:' . $instance['phone'] ) . '"><i class="icofont icofont-ui-call"></i>' . esc_html( $instance['phone'] ) . '</a></li>';
-		}
-
 		if ( is_email( trim( $instance['email'] ) ) ) {
 			printf(
 				'<li><a href="mailto:%1$s"><i class="icofont icofont-envelope"></i>%1$s</a></li>',
