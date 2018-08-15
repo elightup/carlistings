@@ -100,12 +100,12 @@ class Carlistings_Contact_Widget extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>"><?php esc_html_e( 'time:', 'carlistings' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>"><?php esc_html_e( 'Working Time:', 'carlistings' ); ?></label>
 			<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'time' ) ); ?>"><?php echo esc_textarea( $instance['time'] ); ?></textarea>
 		</p>
 
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>"><?php esc_html_e( 'Email time:', 'carlistings' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>"><?php esc_html_e( 'Email:', 'carlistings' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'email' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['email'] ); ?>" />
 		</p>
 

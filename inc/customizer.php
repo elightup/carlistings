@@ -151,11 +151,11 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 
 	/**
-	 * Footer.
+	 * Call To Action.
 	 */
 	$wp_customize->add_section(
-		'footer', array(
-			'title' => esc_html__( 'Footer', 'carlistings' ),
+		'cta_section', array(
+			'title' => esc_html__( 'Call To Action Section', 'carlistings' ),
 			'panel' => 'carlistings',
 		)
 	);
@@ -173,8 +173,8 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'cta_title', array(
-			'label'   => esc_html__( 'Footer Title', 'carlistings' ),
-			'section' => 'footer',
+			'label'   => esc_html__( 'Title', 'carlistings' ),
+			'section' => 'cta_section',
 			'type'    => 'textarea',
 		)
 	);
@@ -188,8 +188,8 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'cta_description', array(
-			'label'   => esc_html__( 'Footer Description', 'carlistings' ),
-			'section' => 'footer',
+			'label'   => esc_html__( 'Description', 'carlistings' ),
+			'section' => 'cta_section',
 			'type'    => 'textarea',
 		)
 	);
@@ -203,8 +203,8 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'cta_button_text', array(
-			'label'   => esc_html__( 'Footer Button Text', 'carlistings' ),
-			'section' => 'footer',
+			'label'   => esc_html__( 'Button Text', 'carlistings' ),
+			'section' => 'cta_section',
 			'type'    => 'text',
 		)
 	);
@@ -218,8 +218,8 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'cta_button_url', array(
-			'label'   => esc_html__( 'Footer Button URL', 'carlistings' ),
-			'section' => 'footer',
+			'label'   => esc_html__( 'Button URL', 'carlistings' ),
+			'section' => 'cta_section',
 			'type'    => 'text',
 		)
 	);
@@ -236,8 +236,8 @@ function carlistings_customize_register( $wp_customize ) {
 			$wp_customize,
 			'cta_background',
 			array(
-				'label'    => esc_html__( 'Footer Image', 'carlistings' ),
-				'section'  => 'footer',
+				'label'    => esc_html__( 'Call To Action Image', 'carlistings' ),
+				'section'  => 'cta_section',
 				'settings' => 'cta_background',
 			)
 		)
