@@ -3541,7 +3541,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 
 							// Add "read more" link only for WP < 4.8.
 							if ( version_compare( $this->tgmpa->wp_version, '4.8', '<' ) ) {
-								$this->upgrader->strings['skin_update_successful'] .= ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'tgmpa' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'tgmpa' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_update_successful'] .= ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'carlistings' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'carlistings' ) . '</span>.</a>';
 							}
 						}
 					}
