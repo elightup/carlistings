@@ -28,11 +28,11 @@
 			<div class="header-top">
 				<div class="container">
 					<?php if ( is_active_sidebar( 'topbar-contact' ) ) : ?>
-					<div class="topbar-contact" data-aos="fade-right">
+					<div class="topbar-contact">
 						<?php dynamic_sidebar( 'topbar-contact' ); ?>
 					</div>
 					<?php endif; ?>
-					<div class="topbar-right" data-aos="fade-left">
+					<div class="topbar-right">
 						<div class="social-media">
 						<?php
 						if ( function_exists( 'jetpack_social_menu' ) ) {
