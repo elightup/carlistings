@@ -13,6 +13,10 @@ body {
 	overflow-x: hidden;
 }
 
+.is-hidden {
+	display: none;
+}
+
 hr {
 	background-color: $color__background-hr;
 	border: 0;

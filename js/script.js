@@ -147,6 +147,7 @@ jQuery( function ( $ ) {
 	 * Homepage featured content slider.
 	 */
 	 function initFeaturedContentSlider() {
+	 	$( '.featured-posts' ).removeClass( 'is-hidden' );
 		var $slider = $( '.featured-post__content' );
 		var $sliderSpeed = $slider.data( 'speed' );
 		$slider.slick( {
@@ -169,24 +170,11 @@ jQuery( function ( $ ) {
 		}
 	 }
 
-	/**
-	 * Aos.
-	 */
-	function aos() {
-		AOS.init({
-			offset: 10,
-			duration: 1000,
-			once: true,
-		})
-	}
-
-
-	 scrollToTop();
-	 toggleMobileMenu();
-	 initMobileNavigation($('.mobile-menu'));
-	 auto_listings_buy_sell();
-	 auto_listings_view_switcher();
-	 initFeaturedContentSlider();
-	 moveTagSearchForm();
-	 aos();
+		scrollToTop();
+		toggleMobileMenu();
+		initMobileNavigation($('.mobile-menu'));
+		auto_listings_buy_sell();
+		auto_listings_view_switcher();
+		initFeaturedContentSlider();
+		moveTagSearchForm();
 } );

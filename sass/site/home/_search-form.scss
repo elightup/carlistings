@@ -1,4 +1,7 @@
 .section--search {
+	.featured-posts.is-hidden + .site-content & {
+		display: none;
+	}
 	border: 10px solid $color__border-section;
 	background-color: $color__white;
 	position: relative;
