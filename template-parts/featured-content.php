@@ -13,8 +13,8 @@ if ( empty( $featured_posts ) ) {
 $speed = get_theme_mod( 'slider_speed', 3000 );
 ?>
 
-<div class="featured-posts">
-	<div class="featured-post__content is-hidden" data-speed="<?php echo esc_html( $speed ); ?>">
+<div class="featured-posts is-hidden">
+	<div class="featured-post__content" data-speed="<?php echo esc_html( $speed ); ?>">
 		<?php
 		foreach ( $featured_posts as $index => $post ) :
 			setup_postdata( $post );
@@ -24,7 +24,7 @@ $speed = get_theme_mod( 'slider_speed', 3000 );
 				$url_image = get_the_post_thumbnail_url( $post, 'full' );
 				echo '<img src="' . esc_url( $url_image ) . '" data-lazy="' . esc_url( $url_image ) . '" alt="' . get_the_title() . '"/>';
 				?>
-				<div class="featured-content" data-aos="fade-up">
+				<div class="featured-content">
 					<div class="container">
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 						<?php the_content(); ?>

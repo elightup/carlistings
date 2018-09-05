@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-aos="fade-up">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php get_template_part( 'template-parts/content', 'media' ); ?>
 

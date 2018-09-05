@@ -22,7 +22,7 @@ if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 $cols = auto_listings_columns();
 ?>
 
-<li <?php post_class( 'col-' . $cols ); ?> data-aos='fade-up'>
+<li <?php post_class( 'col-' . $cols ); ?>>
 	<div class="items-left">
 		<?php
 		/**

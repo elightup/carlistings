@@ -21,7 +21,7 @@ if ( ! $cars ) {
 
 <section class="all--car">
 	<div class="container">
-		<div class="all-car-left" data-aos="fade-right">
+		<div class="all-car-left">
 			<h3 class="all-car__title"><?php echo esc_html( $title ); ?></h3>
 			<p class="all-car__description"><?php echo esc_html( $cars . ' ' . $description ); ?></p>
 
@@ -29,7 +29,7 @@ if ( ! $cars ) {
 
 			<a href="<?php echo esc_url( $button_url ); ?>" class="all-car__button"><?php echo esc_html( $button_text ); ?></a>
 		</div>
-		<div class="all-car-right" data-aos="fade-left">
+		<div class="all-car-right">
 			<img src="<?php echo esc_url( $image ); ?>">
 		</div>
 	</div>

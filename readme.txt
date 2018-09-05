@@ -42,11 +42,6 @@ Slick Slider
 	License: MIT
 	Source : http://kenwheeler.github.io/slick/
 
-AOS - Animate on scroll library
-	License: MIT
-	Source : https://michalsnik.github.io/aos/
-
-
 CarListings is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 

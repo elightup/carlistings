@@ -159,7 +159,6 @@ add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
  */
 function carlistings_scripts() {
 	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
-	wp_enqueue_style( 'aos', get_template_directory_uri() . '/css/aos.css', array() );
 
 	wp_enqueue_style( 'carlistings-fonts', carlistings_fonts_url() );
 	wp_enqueue_style( 'carlistings-style', get_stylesheet_uri() );
@@ -168,8 +167,7 @@ function carlistings_scripts() {
 	wp_enqueue_script( 'carlistings-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'carlistings-slick', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.8.0', true );
-	wp_enqueue_script( 'carlistings-aos', get_template_directory_uri() . '/js/aos.js', array(), '', true );
-	wp_enqueue_script( 'carlistings-script', get_template_directory_uri() . '/js/script.js', array( 'carlistings-slick', 'carlistings-aos' ), '1.0', true );
+	wp_enqueue_script( 'carlistings-script', get_template_directory_uri() . '/js/script.js', array( 'carlistings-slick' ), '1.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
