@@ -129,10 +129,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} elseif ( is_author() ) {
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
 		the_post();
-		$title = sprintf(
-			'%s',
-			'<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>'
-		);
+		$title = '<span class="vcard">' . get_the_author() . '</span>';
 		rewind_posts();
 	} elseif ( is_day() ) {
 		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date() );
@@ -145,7 +142,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} // End if().
 	$items[] = sprintf( $item_text_tpl, $title );
 
-	$title = '<h1 class="page-title">' . esc_html( $title ) . '</h1>';
+	$title = '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
 	echo $title . $args['before'] . implode( $args['separator'], $items ) . $args['after']; // WPCS: XSS OK.
 }
