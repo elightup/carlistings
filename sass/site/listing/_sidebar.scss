@@ -124,9 +124,6 @@
 			}
 		}
 	}
-	.auto-listings-items {
-		display: inline-block;
-	}
 
 	/* compact listing */
 	.auto-listings-items li.compact {
@@ -136,6 +133,9 @@
 		box-shadow: none;
 		border: 1px solid $color__border-abbr;
 		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 		.items-left {
 			display: flex;
 			flex-flow: row wrap;
