@@ -23,16 +23,14 @@ $cols = auto_listings_columns();
 ?>
 
 <li <?php post_class( 'col-' . $cols ); ?>>
-	<div class="items-left">
-		<?php
-		/**
-		 * Image and at a glance
-		 *
-		 * @hooked auto_listings_template_loop_image
-		 */
-		do_action( 'auto_listings_before_listings_loop_item_summary' );
-		?>
-	</div>
+	<?php
+	/**
+	 * Image and at a glance
+	 *
+	 * @hooked auto_listings_template_loop_image
+	 */
+	do_action( 'auto_listings_before_listings_loop_item_summary' );
+	?>
 	<div class="summary">
 
 	<?php
