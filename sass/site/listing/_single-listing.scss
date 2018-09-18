@@ -245,7 +245,7 @@
 			}
 		}
 
-		h3 {
+		h3.listings {
 			@include font-size(1.6);
 			font-weight: 700;
 			color: $color__black;
@@ -265,6 +265,28 @@
 		.price {
 			display: none;
 		}
+
+		// Fix for sidebar in seller page.
+		ul:not(.auto-listings-items).at-a-glance {
+			li {
+				width: 50%;
+				padding: 15px 13px;
+				&:nth-child(3n) {
+					border-top: 1px solid $color__border-abbr;
+				}
+				&:nth-child(2n) {
+					border-left: 1px solid $color__border-abbr;
+				}
+
+				&:nth-child(4n) {
+					border-top: 1px solid $color__border-abbr;
+					border-left: 1px solid $color__border-abbr;
+				}
+				&:nth-child(3n):last-child {
+					width: 100%;
+				}
+			}
+		}
 		.at-a-glance {
 			ul {
 				display: flex;
@@ -274,8 +296,6 @@
 			}
 			li {
 				@include font-size(1.2);
-				padding: 15px 13px;
-				width: 50%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -291,20 +311,6 @@
 					&:hover {
 						color: $color__main;
 					}
-				}
-				&:nth-child(3n) {
-					border-top: 1px solid $color__border-abbr;
-				}
-				&:nth-child(2n) {
-					border-left: 1px solid $color__border-abbr;
-				}
-
-				&:nth-child(4n) {
-					border-top: 1px solid $color__border-abbr;
-					border-left: 1px solid $color__border-abbr;
-				}
-				&:nth-child(3n):last-child {
-					width: 100%;
 				}
 			}
 		}

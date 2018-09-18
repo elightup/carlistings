@@ -42,12 +42,10 @@
 		.SumoSelect  {
 			.CaptionCont {
 				label {
-					i {
-						&:before {
-							content: '\eb25';
-							@include ico-font();
-							color: $color__black;
-						}
+					i:before {
+						content: '\eb25';
+						@include ico-font();
+						color: $color__black;
 					}
 				}
 				span {
@@ -139,6 +137,7 @@
 		.image {
 			position: unset;
 			width: 35%;
+			margin-right: 0;
 			img {
 				min-height: auto;
 				width: 100%;
@@ -146,14 +145,15 @@
 			}
 		}
 		.at-a-glance {
+			width: 100%;
 			margin: 0;
 			padding: 0;
 			border: 0;
 			ul {
 				display: flex;
 				flex-flow: row wrap;
+				border: none;
 				border-top: 1px solid $color__border-abbr;
-				border-right: 0;
 				background-color: $color__border-section;
 			}
 			li {
@@ -175,18 +175,17 @@
 		}
 
 		.summary {
-			position: absolute;
-			left: 105px;
-			width: 60%;
+			width: 65%;
 			.description,
 			.address,
 			.at-a-glance {
 				display: none;
 			}
 			.title {
+				width: 100%;
 				@include font-size(1.6);
 				font-family: $font__main;
-				margin: 7px 0 0 5%;
+				margin: 7px 0 0 15px;
 				padding: 0;
 				line-height: 1.8;
 				a {
@@ -197,13 +196,15 @@
 					}
 				}
 			}
-			.price {
-				@include font-size(1.6);
-				font-weight: 700;
-				color: $color__main;
-				.currency-symbol {
-					margin-right: 5px;
-				}
+		}
+		.price {
+			@include font-size(1.6);
+			font-weight: 700;
+			color: $color__main;
+			margin-bottom: 0;
+			padding-left: 15px;
+			.currency-symbol {
+				margin-right: 5px;
 			}
 		}
 
@@ -223,7 +224,7 @@
 		}
 		.auto-listings-items li.compact .at-a-glance li {
 			&:nth-child(2) {
-				border-right: 0;
+				border-right: none;
 			}
 		}
 	}

@@ -281,8 +281,6 @@
 /* auto listings items grid-view */
 
 .auto-listings-items.grid-view {
-	display: flex;
-	flex-flow: row wrap;
 	> li {
 		margin-bottom: 50px;
 		overflow: inherit;
