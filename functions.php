@@ -149,7 +149,6 @@ function carlistings_plugin_scripts() {
 	if ( is_front_page() ) {
 		wp_enqueue_style( 'car-listings-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
 		wp_enqueue_script( 'car-listings-listing-sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '', true );
-		wp_enqueue_script( 'car-listings-listing-js', get_template_directory_uri() . '/js/auto-listing.js', array(), '', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
