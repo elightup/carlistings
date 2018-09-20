@@ -51,6 +51,12 @@ https://wpautolistings.com/
 
 == Changelog ==
 
+= 1.0.4 =
+* Remove unnecessary files and code.
+
+= 1.0.3 =
+* Update demo content
+
 = 1.0.2 =
 * New dashboard and change some options for footer
 
