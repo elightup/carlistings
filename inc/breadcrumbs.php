@@ -127,10 +127,9 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} elseif ( is_404() ) {
 		$title = esc_html__( 'Not found', 'carlistings' );
 	} elseif ( is_author() ) {
+		$author_obj = get_queried_object();
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
-		the_post();
-		$title = '<span class="vcard">' . get_the_author() . '</span>';
-		rewind_posts();
+		$title = '<span class="vcard">' . $author_obj->display_name . '</span>';
 	} elseif ( is_day() ) {
 		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date() );
 	} elseif ( is_month() ) {
