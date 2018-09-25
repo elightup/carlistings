@@ -34,13 +34,19 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Font Icons
-	License: http://icofont.com/license/
-	Source : http://icofont.com/
+#Font Icons License
+IcoFont icons, Copyright IcoFont
+License: SIL Open Font License
+Source: http://icofont.com/
 
-Slick Slider
-	License: MIT
-	Source : http://kenwheeler.github.io/slick/
+#Slick Slider License
+Slick Slider, Copyright Ken Wheeler
+License: MIT
+Source : http://kenwheeler.github.io/slick/
+
+Screenshot Image, Copyright Pixabay
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pixabay.com/en/buildings-car-city-porsche-rainy-1851246/
 
 CarListings is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -50,6 +56,8 @@ https://wpautolistings.com/
 
 
 == Changelog ==
+= 1.0.5 =
+* Update license for image
 
 = 1.0.4 =
 * Remove unnecessary files and code.
