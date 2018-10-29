@@ -245,7 +245,7 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		&.col-2 .image {
+		.image {
 			width: 39%;
 		}
 	}

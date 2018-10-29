@@ -4677,7 +4677,7 @@ ol.children {
 	justify-content: space-between;
 }
 
-.auto-listings-items:not(.grid-view) > li.col-2 .image {
+.auto-listings-items:not(.grid-view) > li .image {
 	width: 39%;
 }
 
