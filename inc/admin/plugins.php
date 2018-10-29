@@ -29,12 +29,12 @@ function carlistings_register_required_plugins() {
 function carlistings_required_plugins() {
 	return array(
 		array(
-			'name'     => esc_html__( 'Jetpack', 'carlistings' ),
-			'slug'     => 'jetpack',
+			'name' => esc_html__( 'Jetpack', 'carlistings' ),
+			'slug' => 'jetpack',
 		),
 		array(
-			'name'     => esc_html__( 'Auto Listings', 'carlistings' ),
-			'slug'     => 'auto-listings',
+			'name' => esc_html__( 'Auto Listings', 'carlistings' ),
+			'slug' => 'auto-listings',
 		),
 		array(
 			'name' => esc_html__( 'One click demo import', 'carlistings' ),

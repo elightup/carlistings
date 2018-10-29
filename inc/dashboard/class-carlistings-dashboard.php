@@ -41,7 +41,7 @@ class Carlistings_Dashboard {
 		$this->utm      = '?utm_source=WordPress&utm_medium=link&utm_campaign=' . $this->slug;
 
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
-		add_action( 'admin_init', array( $this, 'notice' ) );
+		add_action( 'admin_notices', array( $this, 'notice' ) );
 	}
 
 	/**
@@ -73,10 +73,6 @@ class Carlistings_Dashboard {
 							<?php include get_template_directory() . '/inc/dashboard/sections/tabs.php'; ?>
 							<?php include get_template_directory() . '/inc/dashboard/sections/getting-started.php'; ?>
 							<?php include get_template_directory() . '/inc/dashboard/sections/actions.php'; ?>
-							<?php include get_template_directory() . '/inc/dashboard/sections/recommendation.php'; ?>
-						</div>
-						<div id="postbox-container-1" class="postbox-container">
-							<?php include get_template_directory() . '/inc/dashboard/sections/newsletter.php'; ?>
 						</div>
 					</div>
 				</div>
