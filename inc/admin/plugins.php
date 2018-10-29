@@ -35,12 +35,6 @@ function carlistings_required_plugins() {
 		array(
 			'name'     => esc_html__( 'Auto Listings', 'carlistings' ),
 			'slug'     => 'auto-listings',
-			'required' => true,
-		),
-		array(
-			'name'     => 'Meta Box',
-			'slug'     => 'meta-box',
-			'required' => true,
 		),
 		array(
 			'name' => esc_html__( 'One click demo import', 'carlistings' ),

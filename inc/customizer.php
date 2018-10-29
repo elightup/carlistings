@@ -211,7 +211,7 @@ function carlistings_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'cta_button_url', array(
-			'default'           => esc_url( 'https://wpautolistings.com/' ),
+			'default'           => esc_url( 'http://example.com/' ),
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => 'postMessage',
 		)

@@ -14,6 +14,6 @@
 	</label>
 	<button type="submit" class="search-submit">
 		<i class="icofont icofont-search"></i>
-		<span class="screen-reader-text"><?php esc_attr_e( 'Search', 'carlistings' ); ?></span>
+		<span class="screen-reader-text"><?php esc_html_e( 'Search', 'carlistings' ); ?></span>
 	</button>
 </form>

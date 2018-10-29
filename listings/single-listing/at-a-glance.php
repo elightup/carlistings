@@ -24,7 +24,7 @@ if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 
 
 <div class="at-a-glance">
-	<h3><?php echo esc_html( 'Features Highlight' ); ?></h3>
+	<h3><?php esc_html_e( 'Features Highlight', 'carlistings' ); ?></h3>
 	<ul>
 	<?php if ( auto_listings_odometer() ) { ?>
 		<li class="odomoter"><i class="icofont icofont-speed-meter"></i> <?php echo esc_html( auto_listings_odometer() ); ?></li>
