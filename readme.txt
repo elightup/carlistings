@@ -44,6 +44,11 @@ Slick Slider, Copyright Ken Wheeler
 License: MIT
 Source : http://kenwheeler.github.io/slick/
 
+#Jquery.sumoselect License
+Jquery.sumoselect, Copyright Hemant Negi
+License: MIT
+Source : https://github.com/HemantNegi/jquery.sumoselect
+
 Screenshot Image, Copyright Pixabay
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://pixabay.com/en/buildings-car-city-porsche-rainy-1851246/

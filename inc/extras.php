@@ -151,15 +151,7 @@ add_action( 'auto_listings_before_listings_loop_item_summary', 'auto_listings_te
 /**
  * Add description
  */
-add_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 20 );
-
-/**
- * Remove description
- */
-function remove_active_hooks_description() {
-	remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
-}
-add_action( 'auto_listings_listings_loop_item', 'remove_active_hooks_description', 49 );
+remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 
 /**
  *
