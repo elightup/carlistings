@@ -44,12 +44,14 @@ if ( $logo ) {
 			</div><!-- .site-info -->
 			<nav id="footer-site-navigation" class="footer-navigation">
 				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-2',
-						'menu_id'        => 'footer-menu',
-					)
-				);
+				if ( has_nav_menu( 'menu-2' ) ) {
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-2',
+							'menu_id'        => 'footer-menu',
+						)
+					);
+				}
 				?>
 			</nav><!-- #site-navigation -->
 		</div>

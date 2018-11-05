@@ -10,7 +10,7 @@ $description = get_theme_mod( 'cta_description', __( 'We have a big list of mode
 $button_url  = get_theme_mod( 'cta_button_url', 'http://example.com/' );
 $button_text = get_theme_mod( 'cta_button_text', __( 'go to car listings', 'carlistings' ) );
 
-$image_background = get_theme_mod( 'cta_background', get_template_directory_uri() . '/images/footer.png' );
+$image_background = get_theme_mod( 'cta_background', get_template_directory_uri() . '/images/cta.png' );
 if ( $image_background ) {
 	$image_background = ' style="background-image: url(' . esc_url( $image_background ) . ')"';
 }
