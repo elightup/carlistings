@@ -26,7 +26,7 @@ if ( ! function_exists( 'carlistings_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		echo '<span class="posted-on"><i class="icofont icofont-clock-time"></i>' . $time_string . '</span>';
+		echo '<span class="posted-on"><a href="' . get_the_permalink() . '"><i class="icofont icofont-clock-time"></i>' . $time_string . '</a></span>';
 
 	}
 	endif;

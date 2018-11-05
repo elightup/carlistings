@@ -42,7 +42,7 @@
 					'position': 'relative'
 				} );
 			}
-			$( '.page-header .page-title, .breadcrumbs a, .breadcrumbs i, .page-header .breadcrumbs li' ).css({
+			$( '.page-header .page-title' ).css({
 				color: to
 			});
 		} );

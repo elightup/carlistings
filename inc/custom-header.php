@@ -53,10 +53,7 @@ if ( ! function_exists( 'carlistings_header_style' ) ) :
 					position: absolute;
 				}
 			<?php else : ?>
-				.page-header .page-title,
-				.breadcrumbs a,
-				.breadcrumbs i,
-				.page-header .breadcrumbs li {
+				.page-header .page-title {
 					color: #<?php echo esc_attr( get_header_textcolor() ); ?>;
 				}
 			<?php endif; ?>
