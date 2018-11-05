@@ -27,7 +27,7 @@
 
 		<div class="entry-content">
 			<?php
-			$main_content = apply_filters( 'the_content', get_the_content( '' ) );
+			$main_content = apply_filters( 'the_content', get_the_content() );
 			if ( in_array( get_post_format(), array( 'audio', 'video' ), true ) ) {
 				$media = get_media_embedded_in_content( $main_content, array(
 					'audio',

@@ -20,6 +20,7 @@ function carlistings_read_more_link() {
 	return $more;
 }
 add_filter( 'the_content_more_link', 'carlistings_read_more_link' );
+add_filter( 'excerpt_more', 'carlistings_read_more_link' );
 
 /**
  * Length excerpt
@@ -28,22 +29,6 @@ function carlistings_custom_excerpt_length() {
 	return 50;
 }
 add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
-
-/**
- * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Read More' link.
- *
- * @param string $link The string shown within the more link.
- *
- * @return string 'Read More' link prepended with an ellipsis.
- */
-function carlistings_excerpt_more_link() {
-	// Translators: %s - post title.
-	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
-	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
-
-	return $more;
-}
-add_filter( 'excerpt_more', 'carlistings_excerpt_more_link' );
 
 /**
  * Add tag to the content
