@@ -5,7 +5,7 @@
  * @package CarListings
  */
 
-add_action( 'tgmpa_register', 'carlistings_register_required_plugins' );
+add_action( 'tgmpa_register', 'carlistings_register_required_plugins', 11 );
 
 /**
  * Register required plugins
@@ -18,6 +18,8 @@ function carlistings_register_required_plugins() {
 	$config = array(
 		'id'          => 'carlistings',
 		'has_notices' => false,
+		'parent_slug' => 'themes.php',
+		'capability'  => 'install_themes',
 	);
 
 	tgmpa( $plugins, $config );
