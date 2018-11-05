@@ -186,7 +186,7 @@ add_action( 'pre_get_posts', 'carlistings_filter_make_in_archive' );
  * @param int      $depth   Depth of menu item. Used for padding.
  */
 function carlistings_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
-	if ( 'menu-1' !== $args->theme_location ) {
+	if ( 'menu-1' !== $args->theme_location || ! defined( 'AUTO_LISTINGS_VERSION' ) ) {
 		return $classes;
 	}
 	$archive_page_id = auto_listings_option( 'archives_page' );
