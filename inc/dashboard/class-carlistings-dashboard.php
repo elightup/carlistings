@@ -135,9 +135,9 @@ class Carlistings_Dashboard {
 		$action         = array();
 
 		if ( $plugins_number > 1 ) {
-			$action['title'] = esc_html__( 'Install The Required Plugins', 'carlistings' );
+			$action['title'] = esc_html__( 'Install The Recommended Plugins', 'carlistings' );
 			/* translators: theme name. */
-			$action['body']  = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our required plugins.', 'carlistings' ), $this->theme->name );
+			$action['body']  = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our recommended plugins.', 'carlistings' ), $this->theme->name );
 			$action['button_text'] = esc_html__( 'Install Plugins', 'carlistings' );
 		} else {
 			$plugin_name = $plugins[0]['name'];
