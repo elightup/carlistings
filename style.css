@@ -611,6 +611,10 @@ a, span {
 	word-wrap: break-word;
 }
 
+.post-password-form input[type="password"] {
+	padding: 9px 18px;
+}
+
 figure {
 	margin: 1em 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
@@ -755,15 +759,24 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 7.5px;
-	font-size: 0.46875rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #e11e30;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	border-color: #e11e30;
+	padding: 10px 18px;
+	border-radius: 5px;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	color: #e11e30;
+	background-color: #fff;
+	border-color: #e11e30;
 }
 
 button:hover,

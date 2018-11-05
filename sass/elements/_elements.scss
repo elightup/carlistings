@@ -35,6 +35,9 @@ img {
 a, span {
 	word-wrap: break-word;
 }
+.post-password-form input[type="password"] {
+	padding: 9px 18px;
+}
 
 figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
