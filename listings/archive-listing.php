@@ -65,9 +65,9 @@ get_header( 'listings' );
 
 					if ( 1 === $count % $cols ) {
 						echo '<ul class="auto-listings-items">';
-
-						auto_listings_get_part( 'content-listing.php' );
 					}
+						auto_listings_get_part( 'content-listing.php' );
+
 					if ( 0 === $count % $cols ) {
 						echo '</ul>';
 					}
