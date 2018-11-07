@@ -27,6 +27,4 @@
 
 <p class="about-buttons">
 	<a target="_blank" class="button" href="<?php echo esc_url( 'https://wpautolistings.com/support/' . $this->utm ); ?>"><?php esc_html_e( 'Support', 'carlistings' ); ?></a>
-	<a target="_blank" class="button" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//wpautolistings.com/"><span class="dashicons dashicons-facebook-alt"></span><?php esc_html_e( ' Share', 'carlistings' ); ?></a>
-	<a target="_blank" class="button" href="https://twitter.com/home?status=Car%20listings%20plugins%20and%20themes%20via%20%40wpautolistings"><span class="dashicons dashicons-twitter"></span><?php esc_html_e( ' Tweet', 'carlistings' ); ?></a>
 </p>

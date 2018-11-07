@@ -151,7 +151,7 @@ class Carlistings_Dashboard {
 
 		if ( $installer->is_tgmpa_complete() ) {
 			if ( $plugins_number > 1 ) {
-				$action['body'] = '<strong>' . esc_html__( 'You have installed and active all required plugins', 'carlistings' ) . '</strong>';
+				$action['body'] = '<strong>' . esc_html__( 'You have installed and active all recommended plugins', 'carlistings' ) . '</strong>';
 			} else {
 				/* translators: plugin name. */
 				$action['body'] = sprintf( __( '<strong>%s has been installed and activated</strong>', 'carlistings' ), $plugin_name );
