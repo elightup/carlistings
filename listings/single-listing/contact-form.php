@@ -16,13 +16,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
 ?>
 <div class="contact-form">
-	<h3><?php echo __( 'Quick Contact', 'carlistings' ); ?></h3>
+	<h3><?php esc_html_e( 'Quick Contact', 'carlistings' ); ?></h3>
 	<div id="auto-listings-contact">
 		<?php echo do_shortcode( '[auto_listings_contact_form]' ); ?>
 	</div>

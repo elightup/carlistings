@@ -13,17 +13,7 @@
 
 </div><!-- #content -->
 
-<?php
-
-$logo = get_theme_mod( 'footer_logo' );
-if ( $logo ) {
-	$logo = esc_url( $logo );
-}
-?>
-
-<?php
-	get_template_part( 'template-parts/cta' );
-?>
+<?php get_template_part( 'template-parts/cta' ); ?>
 
 <footer id="colophon" class="site-footer">
 

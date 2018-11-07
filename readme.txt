@@ -49,6 +49,10 @@ Jquery.sumoselect, Copyright Hemant Negi
 License: MIT
 Source : https://github.com/HemantNegi/jquery.sumoselect
 
+#Hybrid Core
+License: GNU General Public License v2.0
+Source : https://github.com/justintadlock/hybrid-core/blob/master/license.md
+
 Screenshot Image, Copyright Pixabay
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://pixabay.com/en/buildings-car-city-porsche-rainy-1851246/

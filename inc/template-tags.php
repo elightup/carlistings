@@ -26,7 +26,7 @@ if ( ! function_exists( 'carlistings_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 
-		echo '<span class="posted-on"><a href="' . get_the_permalink() . '"><i class="icofont icofont-clock-time"></i>' . $time_string . '</a></span>';
+		echo '<span class="posted-on"><a href="' . esc_url( get_the_permalink() ) . '"><i class="icofont icofont-clock-time"></i>' . wp_kses_post( $time_string ) . '</a></span>';
 
 	}
 	endif;
@@ -36,14 +36,9 @@ if ( ! function_exists( 'carlistings_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function carlistings_posted_by() {
-		$byline = sprintf(
-			/* translators: the author name */
-			esc_html_x( '%s', 'post author', 'carlistings' ),
-			'<span class="author vcard"><i class="icofont icofont-user-male"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
+		$byline = '<span class="author vcard"><i class="icofont icofont-user-male"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
 
 			echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
 	}
 endif;
 
@@ -125,10 +120,10 @@ function carlistings_get_category() {
 	if ( 'post' === get_post_type() ) {
 
 		/* translators: used between list items, there is a space after the comma */
-		$cate_list = get_the_category_list( esc_html__( ', ', 'carlistings' ) );
-		if ( $cate_list ) {
+		$categories_list = get_the_category_list( esc_html__( ', ', 'carlistings' ) );
+		if ( $categories_list ) {
 			/* translators: 1: list of tags. */
-			printf( '<span class="entry-header__category">' . esc_html__( '%1$s', 'carlistings' ) . '</span>', $cate_list ); // WPCS: XSS OK.
+			echo '<span class="entry-header__category">' . $categories_list . '</span>'; // WPCS: XSS OK.
 		}
 	}
 }
@@ -155,17 +150,7 @@ if ( ! function_exists( 'carlistings_post_thumbnail' ) ) :
 		<?php else : ?>
 
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-				<?php
-				the_post_thumbnail(
-					'post-thumbnail', array(
-						'alt' => the_title_attribute(
-							array(
-								'echo' => false,
-							)
-						),
-					)
-				);
-				?>
+				<?php the_post_thumbnail(); ?>
 			</a>
 
 			<?php
@@ -174,53 +159,11 @@ if ( ! function_exists( 'carlistings_post_thumbnail' ) ) :
 endif;
 
 /**
- * Socials author bio.
- *
- * @param string $id user id.
- */
-function carlistings_user_social_links( $id ) {
-	$socials        = array( 'facebook', 'twitter', 'google-plus', 'dribbble', 'instagram', 'youtube-play', 'pinterest' );
-	$author_website = get_the_author_meta( 'user_url', $id );
-	$output         = '';
-
-	if ( ! empty( $author_website ) ) {
-		$output = sprintf(
-			'<li class="author-website"><a href="%s" class="tag-alike-style ">%s</a>',
-			esc_url( $author_website ),
-			esc_html__( "visit author's website", 'carlistings' )
-		);
-	}
-
-	foreach ( $socials as $social ) {
-		$social_value = get_the_author_meta( $social, $id );
-
-		if ( 'twitter' === $social ) {
-			$social_value = 'https://twitter.com/' . get_the_author_meta( 'twitter', $id );
-		}
-
-		if ( empty( $social_value ) ) {
-			continue;
-		}
-
-		$output .= sprintf(
-			'<li><a class="social-links" href="%s"><i class="icofont icofont-social-%s"></i></a></li>',
-			esc_url( $social_value ),
-			esc_html( $social )
-		);
-	}
-
-	if ( empty( $output ) ) {
-		return '';
-	}
-
-	echo '<ul class="author-social">' . wp_kses_post( $output ) . '</ul>';
-}
-
-/**
  * Author Box.
  */
 function carlistings_author_box() {
-	if ( ! empty( get_the_author_meta( 'description' ) ) ) {
+	$description = get_the_author_meta( 'description' );
+	if ( ! empty( $description ) ) {
 		?>
 		<div class="entry-author">
 			<div class="author-avatar">
@@ -234,21 +177,10 @@ function carlistings_author_box() {
 							echo wp_kses_post( '<span class="author-name">' . get_the_author() . '</span>' );
 							?>
 						</h3>
-						<div class="author-twitter">
-							<?php
-							$twitter = get_the_author_meta( 'twitter' );
-							if ( $twitter ) {
-								/* translators: author twitter name. */
-								printf( wp_kses_post( '<a href="https://twitter.com/%s">@%s</a>', 'carlistings' ), esc_html( $twitter ), esc_html( get_the_author_meta( 'twitter' ) ) );
-							}
-							?>
-						</div>
 					</div>
-					<?php carlistings_user_social_links( get_the_author_meta( 'ID' ) ); ?>
 				</div>
 
 				<div class="author-bio">
-
 					<?php the_author_meta( 'description' ); ?>
 				</div><!-- .author-bio -->
 			</div><!-- .author-info -->
@@ -267,8 +199,8 @@ function carlistings_get_car_ids() {
 		'post_status'    => array( 'publish' ),
 		'fields'         => 'ids',
 	);
-	$items = get_posts( $args );
-	return $items;
+	$items = new WP_Query( $args );
+	return $items->posts;
 }
 
 /**

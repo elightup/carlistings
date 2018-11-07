@@ -3053,7 +3053,7 @@ Genericons
 	font-weight: 700;
 	display: flex;
 	flex-flow: row wrap;
-	margin-top: 60px;
+	margin: 60px 0 40px;
 }
 
 .single .entry-content .tags-links:before,
@@ -3087,7 +3087,6 @@ Genericons
 }
 
 .sharedaddy.sharedaddy {
-	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -3212,7 +3211,6 @@ Genericons
 	font-size: 0.875rem;
 	line-height: 1.7;
 	color: #777777;
-	margin-top: 10px;
 }
 
 .author-avatar {
@@ -3653,10 +3651,6 @@ ol.children {
 		bottom: 26px;
 		right: 20px;
 	}
-}
-
-.comment-form .comment-form-cookies-consent {
-	display: none;
 }
 
 .comment-form .comment-form-comment {

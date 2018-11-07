@@ -16,12 +16,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
 ?>
-
 
 <div class="at-a-glance">
 	<h3><?php esc_html_e( 'Features Highlight', 'carlistings' ); ?></h3>
@@ -33,7 +32,7 @@ if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 		<li class="transmission"><i class="icofont icofont-ui-settings"></i> <?php echo esc_html( auto_listings_transmission() ); ?></li>
 	<?php } ?>
 	<?php if ( auto_listings_body_type() ) { ?>
-		<li class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo auto_listings_body_type(); ?></li>
+		<li class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo auto_listings_body_type(); // WPCS: XSS OK. ?></li>
 	<?php } ?>
 	<?php if ( auto_listings_engine() ) { ?>
 		<li class="vehicle"><?php echo esc_html( auto_listings_engine() ); ?></li>

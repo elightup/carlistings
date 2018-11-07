@@ -7,12 +7,15 @@
  * @package CarListings
  */
 
-remove_filter( 'the_excerpt', 'wpautop' );
-
 /**
  * The content more link
+ *
+ * @param string $more More Link.
  */
-function carlistings_read_more_link() {
+function carlistings_read_more_link( $more ) {
+	if ( ! is_admin() ) {
+		return $more;
+	}
 	// Translators: %s - post title.
 	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
 	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
@@ -37,7 +40,7 @@ add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
  *
  * @return string
  */
-function add_tag_the_content( $content ) {
+function carlistings_add_tag_the_content( $content ) {
 	// Hide category and tag text for pages.
 	if ( is_single() ) {
 
@@ -53,28 +56,7 @@ function add_tag_the_content( $content ) {
 		return $content;
 	}
 }
-add_filter( 'the_content', 'add_tag_the_content' );
-
-/**
- * Add social networks to user profile
- *
- * @param array $methods Currently set contact methods.
- *
- * @return array
- */
-function user_social_networks_add( $methods ) {
-	$methods['googleplus'] = esc_html__( 'Google+', 'carlistings' );
-	$methods['twitter']    = esc_html__( 'Twitter username (without @)', 'carlistings' );
-	$methods['facebook']   = esc_html__( 'Facebook profile URL', 'carlistings' );
-	$methods['linkedin']   = esc_html__( 'Linkedin', 'carlistings' );
-	$methods['instagram']  = esc_html__( 'Instagram', 'carlistings' );
-	$methods['dribbble']   = esc_html__( 'Dribbble', 'carlistings' );
-	$methods['youtube']    = esc_html__( 'Youtube', 'carlistings' );
-	$methods['pinterest']  = esc_html__( 'Pinterest', 'carlistings' );
-
-	return $methods;
-}
-add_filter( 'user_contactmethods', 'user_social_networks_add' );
+add_filter( 'the_content', 'carlistings_add_tag_the_content' );
 
 /**
  * Demo files for importing.
@@ -171,7 +153,7 @@ add_action( 'pre_get_posts', 'carlistings_filter_make_in_archive' );
  * @param int      $depth   Depth of menu item. Used for padding.
  */
 function carlistings_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
-	if ( 'menu-1' !== $args->theme_location || ! defined( 'AUTO_LISTINGS_VERSION' ) ) {
+	if ( 'menu-1' !== $args->theme_location || ! carlistings_is_plugin_active() ) {
 		return $classes;
 	}
 	$archive_page_id = auto_listings_option( 'archives_page' );
@@ -250,3 +232,10 @@ function carlistings_lite_tag_cloud_fz( $args ) {
 }
 
 add_filter( 'widget_tag_cloud_args', 'carlistings_lite_tag_cloud_fz' );
+
+/**
+ * Check Plugins Activation
+ */
+function carlistings_is_plugin_active() {
+	return defined( 'AUTO_LISTINGS_VERSION' );
+}

@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
@@ -27,7 +27,7 @@ if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
 	do_action( 'auto_listings_before_single_listing' );
 
 if ( post_password_required() ) {
-	echo get_the_password_form();
+	echo get_the_password_form(); // WPCS: XSS OK.
 	return;
 }
 ?>
@@ -60,7 +60,7 @@ if ( post_password_required() ) {
 			do_action( 'auto_listings_single_upper_full_width' );
 			?>
 
-			<h4><?php echo auto_listings_price(); ?></h4>
+			<h4><?php echo auto_listings_price(); // WPCS: XSS OK. ?></h4>
 
 		</div>
 

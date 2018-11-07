@@ -36,9 +36,9 @@ class Carlistings_Dashboard {
 	 */
 	public function __construct() {
 
-		$this->theme     = wp_get_theme();
-		$this->slug      = $this->theme->template;
-		$this->utm      = '?utm_source=WordPress&utm_medium=link&utm_campaign=' . $this->slug;
+		$this->theme = wp_get_theme();
+		$this->slug  = $this->theme->template;
+		$this->utm   = '?utm_source=WordPress&utm_medium=link&utm_campaign=' . $this->slug;
 
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
 		add_action( 'admin_notices', array( $this, 'notice' ) );

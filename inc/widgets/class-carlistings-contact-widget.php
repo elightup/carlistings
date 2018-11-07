@@ -15,9 +15,8 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array(
-			'classname' => 'carlistings-contact-info',
+			'classname'   => 'carlistings-contact-info',
 			'description' => __( 'Display your location and contact information.', 'carlistings' ),
-			'customize_selective_refresh' => true,
 		);
 		parent::__construct(
 			'carlistings-contact-info',
@@ -36,7 +35,7 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	public function defaults() {
 		return array(
 			'time'  => __( '10:00 AM To 5:00 PM', 'carlistings' ),
-			'email' => __( 'carlistings@no-reply.com ', 'carlistings' ),
+			'email' => __( 'example.com ', 'carlistings' ),
 		);
 	}
 
@@ -55,7 +54,7 @@ class Carlistings_Contact_Widget extends WP_Widget {
 
 		echo '<ul class="contact">';
 
-		if ( '' != $instance['time'] ) {
+		if ( '' !== $instance['time'] ) {
 
 			echo '<li><i class="icofont icofont-clock-time"></i>' . esc_html( $instance['time'] ) . '</li>';
 		}
@@ -80,9 +79,9 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 * @return array
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance            = array();
-		$instance['time'] = wp_kses( $new_instance['time'], array() );
-		$instance['email']   = wp_kses( $new_instance['email'], array() );
+		$instance          = array();
+		$instance['time']  = wp_kses( $new_instance['time'], array() );
+		$instance['email'] = wp_kses( $new_instance['email'], array() );
 
 		return $instance;
 	}
@@ -111,22 +110,4 @@ class Carlistings_Contact_Widget extends WP_Widget {
 
 		<?php
 	}
-
-	/**
-	 * Encode an URL
-	 *
-	 * @param string $time The URL to encode.
-	 *
-	 * @return string The encoded URL
-	 */
-	public function urlencode_time( $time ) {
-
-		$time = strtolower( $time );
-		$time = preg_replace( '/\s+/', ' ', trim( $time ) ); // Get rid of any unwanted whitespace.
-		$time = str_ireplace( ' ', '+', $time ); // Use + not %20.
-		urlencode( $time );
-
-		return $time;
-	}
-
 }

@@ -61,7 +61,7 @@ if ( post_password_required() ) {
 
 	comment_form(
 		$comments_args = array(
-			'title_reply' => 'Post a Comment',
+			'title_reply'  => 'Post a Comment',
 			'label_submit' => 'submit comment',
 		) );
 	?>

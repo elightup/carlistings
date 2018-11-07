@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 

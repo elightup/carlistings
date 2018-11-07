@@ -30,7 +30,7 @@ $action = $this->recommended_plugins_action();
 
 			<h3><?php esc_html_e( 'Step 3 - Import Demo Data (Optional)', 'carlistings' ); ?></h3>
 			<p><?php esc_html_e( 'Import demo data if you want your website exactly the same as our demo.', 'carlistings' ); ?></p>
-			<a class="button" href="<?php echo esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' ) ); ?>">Import Demo Now</a>
+			<a class="button" href="<?php echo esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' ) ); ?>"><?php esc_html_e( 'Import Demo Now', 'carlistings' ); ?></a>
 		</div>
 	</div>
 </div>

@@ -69,7 +69,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} elseif ( is_post_type_archive() ) {
 
 		// If post is a custom post type.
-		$query = get_queried_object();
+		$query     = get_queried_object();
 		$post_type = $query->name;
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );

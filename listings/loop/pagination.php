@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
@@ -43,6 +43,6 @@ if ( $wp_query->max_num_pages <= 1 ) {
 					'end_size'  => 3,
 				)
 			)
-		);
+		); // WPCS: XSS OK.
 	?>
 </nav>

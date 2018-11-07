@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-if ( ! is_plugin_active( 'auto-listings/auto-listings.php' ) ) {
+if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
@@ -58,23 +58,26 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_before_listings_loop' );
 
-					$cols   = auto_listings_columns();
-					$count  = 1;
+					$cols  = auto_listings_columns();
+					$count = 1;
 				while ( have_posts() ) :
-						the_post();
+					the_post();
 
-						if ( $count % $cols == 1 )
-							echo '<ul class="auto-listings-items">';
+					if ( 1 === $count % $cols ) {
+						echo '<ul class="auto-listings-items">';
 
-							auto_listings_get_part( 'content-listing.php' );
-
-						if ( $count % $cols == 0 )
-							echo '</ul>';
+						auto_listings_get_part( 'content-listing.php' );
+					}
+					if ( 0 === $count % $cols ) {
+						echo '</ul>';
+					}
 
 					$count++;
-					endwhile;
+				endwhile;
 
-					if ( $count % $cols != 1 ) echo '</ul>';
+				if ( 1 !== $count % $cols ) {
+					echo '</ul>';
+				}
 
 				/**
 				 * Comment

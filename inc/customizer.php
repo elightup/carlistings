@@ -13,7 +13,7 @@
 function carlistings_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport  = 'postMessage';
+	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	// Add theme options panel.
 	$wp_customize->add_panel(
@@ -83,9 +83,9 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_title', array(
-			'label'       => esc_html__( 'All car title', 'carlistings' ),
-			'section'     => 'homepage',
-			'type'        => 'text',
+			'label'   => esc_html__( 'All car title', 'carlistings' ),
+			'section' => 'homepage',
+			'type'    => 'text',
 		)
 	);
 
@@ -98,9 +98,9 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_description', array(
-			'label'       => esc_html__( 'All car description', 'carlistings' ),
-			'section'     => 'homepage',
-			'type'        => 'textarea',
+			'label'   => esc_html__( 'All car description', 'carlistings' ),
+			'section' => 'homepage',
+			'type'    => 'textarea',
 		)
 	);
 
@@ -121,7 +121,7 @@ function carlistings_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_button_url', array(
-			'default'           => esc_url( get_post_type_archive_link('auto-listing') ),
+			'default'           => esc_url( get_post_type_archive_link( 'auto-listing' ) ),
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => 'postMessage',
 		)
