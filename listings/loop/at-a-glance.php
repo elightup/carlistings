@@ -28,7 +28,7 @@ if ( ! carlistings_is_plugin_active() ) {
 		<li class="transmission"><i class="icofont icofont-ui-settings"></i> <?php echo esc_html( auto_listings_transmission() ); ?></li>
 	<?php } ?>
 	<?php if ( auto_listings_body_type() ) { ?>
-		<li class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo auto_listings_body_type(); ?></li>
+		<li class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo wp_kses_post( auto_listings_body_type() ); ?></li>
 	<?php } ?>
 	</ul>
 

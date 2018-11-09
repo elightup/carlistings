@@ -87,7 +87,7 @@ get_header( 'listings' );
 				do_action( 'auto_listings_after_listings_loop' );
 
 			else :
-			?>
+				?>
 
 				<p class="alert auto-listings-no-results"><?php esc_html_e( 'Sorry, no listings were found.', 'carlistings' ); ?></p>
 
@@ -119,4 +119,4 @@ get_header( 'listings' );
 
 
 	get_footer( 'listings' );
-?>
+	?>

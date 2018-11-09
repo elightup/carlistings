@@ -29,13 +29,16 @@
 			<?php
 			$main_content = apply_filters( 'the_content', get_the_content() );
 			if ( in_array( get_post_format(), array( 'audio', 'video' ), true ) ) {
-				$media = get_media_embedded_in_content( $main_content, array(
-					'audio',
-					'video',
-					'object',
-					'embed',
-					'iframe',
-				) );
+				$media = get_media_embedded_in_content(
+					$main_content,
+					array(
+						'audio',
+						'video',
+						'object',
+						'embed',
+						'iframe',
+					)
+				);
 				$main_content = str_replace( $media, '', $main_content );
 			}
 

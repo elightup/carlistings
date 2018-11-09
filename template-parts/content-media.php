@@ -9,7 +9,8 @@
 if ( has_post_format( array( 'video', 'audio' ) ) ) {
 	$main_content = apply_filters( 'the_content', get_the_content() );
 	$media        = get_media_embedded_in_content(
-		$main_content, array(
+		$main_content,
+		array(
 			'video',
 			'audio',
 			'object',

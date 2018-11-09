@@ -45,7 +45,7 @@ function carlistings_add_tag_the_content( $content ) {
 	if ( is_single() ) {
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( 'Tags: ', esc_html_x( ' ', 'list item separator', 'carlistings' ) );
+		$tags_list = get_the_tag_list( 'Tags: ', ' ' );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
@@ -86,7 +86,8 @@ function carlistings_after_import_setup() {
 	$social = get_term_by( 'slug', 'social-menu', 'nav_menu' );
 
 	set_theme_mod(
-		'nav_menu_locations', array(
+		'nav_menu_locations',
+		array(
 			'menu-1'              => $header->term_id,
 			'menu-2'              => $footer->term_id,
 			'jetpack-social-menu' => $social->term_id,
@@ -157,8 +158,8 @@ function carlistings_active_autolisting_archive_on_menu( $classes, $item, $args,
 		return $classes;
 	}
 	$archive_page_id = auto_listings_option( 'archives_page' );
-	$archive_page = get_post( $archive_page_id );
-	$archive_page = $archive_page->post_title;
+	$archive_page    = get_post( $archive_page_id );
+	$archive_page    = $archive_page->post_title;
 	if ( is_post_type_archive( 'auto-listing' ) && $item->title === $archive_page ) {
 		$classes[] = 'current-menu-item';
 	}

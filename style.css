@@ -3946,15 +3946,18 @@ ol.children {
 	font-size: 1.5rem;
 }
 
+.auto-listings-single .has-sidebar .image-gallery .lSAction > a {
+	width: auto;
+	height: auto;
+	margin-top: -43px;
+}
+
 .auto-listings-single .has-sidebar .image-gallery .lSAction .lSPrev {
 	left: 0;
-	margin-top: -43px;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSAction .lSNext {
 	right: 0;
-	width: inherit;
-	margin-top: -43px;
 }
 
 .auto-listings-single .has-sidebar .image-gallery .lSGallery.lSGallery li {

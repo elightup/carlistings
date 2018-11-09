@@ -56,7 +56,8 @@ if ( ! function_exists( 'carlistings_setup' ) ) :
 		 * to output valid HTML5.
 		 */
 		add_theme_support(
-			'html5', array(
+			'html5',
+			array(
 				'search-form',
 				'comment-form',
 				'comment-list',
@@ -74,7 +75,8 @@ if ( ! function_exists( 'carlistings_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support(
-			'custom-logo', array(
+			'custom-logo',
+			array(
 				'height'      => 300,
 				'width'       => 67,
 				'flex-width'  => true,
@@ -147,8 +149,8 @@ add_action( 'widgets_init', 'carlistings_widgets_init' );
  */
 function carlistings_plugin_scripts() {
 	if ( is_front_page() ) {
-		wp_enqueue_style( 'car-listings-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array() );
-		wp_enqueue_script( 'sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '', true );
+		wp_enqueue_style( 'car-listings-listing-css', get_template_directory_uri() . '/css/auto-listings.css', array(), '1.0.0' );
+		wp_enqueue_script( 'sumoselect', get_template_directory_uri() . '/js/sumoselect.js', array(), '3.0.3', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
@@ -157,10 +159,10 @@ add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
  * Enqueue scripts and styles.
  */
 function carlistings_scripts() {
-	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array() );
+	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array(), '1.0.0' );
 
-	wp_enqueue_style( 'carlistings-fonts', carlistings_fonts_url() );
-	wp_enqueue_style( 'carlistings-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'carlistings-fonts', carlistings_fonts_url(), array(), '1.0.0' );
+	wp_enqueue_style( 'carlistings-style', get_stylesheet_uri(), array(), '1.0.0' );
 
 	wp_enqueue_script( 'carlistings-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'carlistings-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -191,7 +193,8 @@ function carlistings_fonts_url() {
 		array(
 			'family' => rawurlencode( implode( '|', $fonts ) ),
 			'subset' => rawurlencode( $subsets ),
-		), 'https://fonts.googleapis.com/css'
+		),
+		'https://fonts.googleapis.com/css'
 	);
 
 	return $fonts_url;

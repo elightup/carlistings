@@ -13,15 +13,21 @@
  * @uses carlistings_header_style()
  */
 function carlistings_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'carlistings_custom_header_args', array(
-		'default-text-color' => 'fff',
-		'width'              => 1920,
-		'height'             => 260,
-		'flex-width'         => true,
-		'flex-height'        => true,
-		'default-image'      => get_template_directory_uri() . '/images/page-header.png',
-		'wp-head-callback'   => 'carlistings_header_style',
-	) ) );
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'carlistings_custom_header_args',
+			array(
+				'default-text-color' => 'fff',
+				'width'              => 1920,
+				'height'             => 260,
+				'flex-width'         => true,
+				'flex-height'        => true,
+				'default-image'      => get_template_directory_uri() . '/images/page-header.png',
+				'wp-head-callback'   => 'carlistings_header_style',
+			)
+		)
+	);
 	register_default_headers(
 		array(
 			'work-space' => array(

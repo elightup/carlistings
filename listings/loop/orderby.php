@@ -28,7 +28,8 @@ if ( 1 === $wp_query->found_posts ) {
 
 $orderby         = isset( $_GET['orderby'] ) ? esc_html( $_GET['orderby'] ) : 'date';
 $orderby_options = apply_filters(
-	'auto_listings_listings_orderby', array(
+	'auto_listings_listings_orderby',
+	array(
 		'date'       => __( '- New Listings -', 'carlistings' ),
 		'date-old'   => __( '- Oldest Listings -', 'carlistings' ),
 		'price'      => __( '- Price (Low to High) -', 'carlistings' ),
@@ -54,8 +55,8 @@ $orderby_options = apply_filters(
 			continue;
 		}
 		if ( is_array( $val ) ) {
-			foreach ( $val as $innerVal ) {
-				echo '<input type="hidden" name="' . esc_attr( $key ) . '[]" value="' . esc_attr( $innerVal ) . '" />';
+			foreach ( $val as $inner_val ) {
+				echo '<input type="hidden" name="' . esc_attr( $key ) . '[]" value="' . esc_attr( $inner_val ) . '" />';
 			}
 		} else {
 			echo '<input type="hidden" name="' . esc_attr( $key ) . '" value="' . esc_attr( $val ) . '" />';

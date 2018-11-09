@@ -59,11 +59,11 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form(
-		$comments_args = array(
-			'title_reply'  => 'Post a Comment',
-			'label_submit' => 'submit comment',
-		) );
+	$comments_args = array(
+		'title_reply'  => 'Post a Comment',
+		'label_submit' => 'submit comment',
+	);
+	comment_form( $comments_args );
 	?>
 
 </div><!-- #comments -->

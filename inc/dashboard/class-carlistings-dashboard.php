@@ -85,8 +85,8 @@ class Carlistings_Dashboard {
 	 * Enqueue scripts for dashboard page.
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_style( "{$this->slug}-dashboard-style", get_template_directory_uri() . '/inc/dashboard/css/dashboard-style.css' );
-		wp_enqueue_script( "{$this->slug}-dashboard-script", get_template_directory_uri() . '/inc/dashboard/js/script.js', array( 'jquery' ), '', true );
+		wp_enqueue_style( "{$this->slug}-dashboard-style", get_template_directory_uri() . '/inc/dashboard/css/dashboard-style.css', array(), '1.0.0' );
+		wp_enqueue_script( "{$this->slug}-dashboard-script", get_template_directory_uri() . '/inc/dashboard/js/script.js', array( 'jquery' ), '1.0.0', true );
 	}
 
 	/**
@@ -104,24 +104,24 @@ class Carlistings_Dashboard {
 	public function notice() {
 		global $pagenow;
 		if ( is_admin() && isset( $_GET['activated'] ) && 'themes.php' === $pagenow ) {
-		?>
-		<div class="updated notice notice-success is-dismissible">
-			<p>
-				<?php
-				// Translators: theme name and welcome page.
-				echo wp_kses_post( sprintf( __( 'Welcome! Thank you for choosing %1$s. To get started, visit our <a href="%2$s">welcome page</a>.', 'carlistings' ), $this->theme->name, esc_url( admin_url( 'themes.php?page=' . $this->slug ) ) ) );
-				?>
-			</p>
-			<p>
-				<a class="button" href="<?php echo esc_url( admin_url( 'themes.php?page=' . $this->slug ) ); ?>">
+			?>
+			<div class="updated notice notice-success is-dismissible">
+				<p>
 					<?php
-					// Translators: theme name.
-					echo esc_html( sprintf( __( 'Get started with %s', 'carlistings' ), $this->theme->name ) );
+					// Translators: theme name and welcome page.
+					echo wp_kses_post( sprintf( __( 'Welcome! Thank you for choosing %1$s. To get started, visit our <a href="%2$s">welcome page</a>.', 'carlistings' ), $this->theme->name, esc_url( admin_url( 'themes.php?page=' . $this->slug ) ) ) );
 					?>
-				</a>
-			</p>
-		</div>
-		<?php
+				</p>
+				<p>
+					<a class="button" href="<?php echo esc_url( admin_url( 'themes.php?page=' . $this->slug ) ); ?>">
+						<?php
+						// Translators: theme name.
+						echo esc_html( sprintf( __( 'Get started with %s', 'carlistings' ), $this->theme->name ) );
+						?>
+					</a>
+				</p>
+			</div>
+			<?php
 		}
 	}
 

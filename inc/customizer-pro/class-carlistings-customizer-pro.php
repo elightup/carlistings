@@ -71,7 +71,7 @@ final class Carlistings_Customizer_Pro {
 	 * Loads theme customizer CSS.
 	 */
 	public function enqueue_control_scripts() {
-		wp_enqueue_script( 'carlistings-customize-pro-script', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.js', array( 'customize-controls' ) );
-		wp_enqueue_style( 'carlistings-customize-pro-style', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.css' );
+		wp_enqueue_script( 'carlistings-customize-pro-script', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.js', array( 'customize-controls' ), '1.0.0' );
+		wp_enqueue_style( 'carlistings-customize-pro-style', get_template_directory_uri() . '/inc/customizer-pro/customize-controls.css', array(), '1.0.0' );
 	}
 }

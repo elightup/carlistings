@@ -17,7 +17,8 @@
 function carlistings_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
-		'infinite-scroll', array(
+		'infinite-scroll',
+		array(
 			'container' => 'main',
 			'render'    => 'carlistings_infinite_scroll_render',
 			'footer'    => 'page',
@@ -32,7 +33,8 @@ function carlistings_jetpack_setup() {
 
 	// Featured content.
 	add_theme_support(
-		'featured-content', array(
+		'featured-content',
+		array(
 			'filter'     => 'carlistings_get_featured_posts',
 			'max_posts'  => 3,
 			'post_types' => array( 'post', 'page' ),
@@ -41,7 +43,8 @@ function carlistings_jetpack_setup() {
 
 	// Add theme support for Content Options.
 	add_theme_support(
-		'jetpack-content-options', array(
+		'jetpack-content-options',
+		array(
 			'blog-display'    => 'content',
 			// the default setting of the theme: 'content', 'excerpt' or array( 'content', 'excerpt' ) for themes mixing both display.
 			'post-details'    => array(

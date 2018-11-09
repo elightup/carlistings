@@ -16,7 +16,8 @@ function carlistings_breadcrumbs( $args = '' ) {
 	}
 
 	$args = wp_parse_args(
-		$args, array(
+		$args,
+		array(
 			'separator'         => '<i class="icofont icofont-rounded-right"></i>',
 			'home_label'        => esc_html__( 'Home', 'carlistings' ),
 			'home_class'        => 'home',

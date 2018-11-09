@@ -220,7 +220,7 @@ function carlistings_get_car_lists() {
 
 	echo '<ul>';
 	foreach ( $makes as $make => $value ) {
-	?>
+		?>
 		<li>
 			<a href="<?php echo esc_url( $archive_link . '?make=' . $make ); ?>">
 				<?php
@@ -229,7 +229,7 @@ function carlistings_get_car_lists() {
 				?>
 			</a>
 		</li>
-	<?php
+		<?php
 	}
 	echo '</ul>';
 }

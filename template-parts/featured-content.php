@@ -20,7 +20,7 @@ $speed = get_theme_mod( 'slider_speed', 3000 );
 		<?php
 		foreach ( $featured_posts as $index => $post ) :
 			setup_postdata( $post );
-		?>
+			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php
 				$url_image    = get_the_post_thumbnail_url( $post, 'full' );
