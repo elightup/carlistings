@@ -13,12 +13,12 @@
  * @param string $more More Link.
  */
 function carlistings_read_more_link( $more ) {
-	if ( ! is_admin() ) {
+	if ( is_admin() ) {
 		return $more;
 	}
 	// Translators: %s - post title.
 	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
-	$more = sprintf( ' [&hellip;] <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
+	$more = sprintf( ' &hellip; <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
 
 	return $more;
 }

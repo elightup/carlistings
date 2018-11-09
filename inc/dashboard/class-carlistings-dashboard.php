@@ -95,7 +95,7 @@ class Carlistings_Dashboard {
 	 */
 	public function footer_text() {
 		// Translators: theme name and theme slug.
-		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from WP Auto Listings!', 'carlistings' ), $this->theme->name, $this->slug ) );
+		echo wp_kses_post( sprintf( __( 'Please rate <strong>%1$s</strong> <a href="https://wordpress.org/support/theme/%2$s/reviews/" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%2$s/reviews/" target="_blank">WordPress.org</a> to help us spread the word. Thank you from WP Auto Listings!', 'carlistings' ), $this->theme->name, $this->slug ) );
 	}
 
 	/**

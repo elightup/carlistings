@@ -16,7 +16,7 @@
 <p class="about-rating">
 	<?php
 	// Translators: theme slug.
-	echo wp_kses_post( sprintf( __( 'Please rate us <a href="https://wordpress.org/support/theme/%1$s/reviews/?filter=5" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%1$s/reviews/?filter=5" target="_blank">WordPress.org</a> to help us spread the word. Thank you from WP Auto Listings!', 'carlistings' ), $this->slug ) );
+	echo wp_kses_post( sprintf( __( 'Please rate us <a href="https://wordpress.org/support/theme/%1$s/reviews/" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="https://wordpress.org/support/theme/%1$s/reviews/" target="_blank">WordPress.org</a> to help us spread the word. Thank you from WP Auto Listings!', 'carlistings' ), $this->slug ) );
 	?>
 </p>
 
