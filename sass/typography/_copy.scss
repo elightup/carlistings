@@ -28,17 +28,14 @@ blockquote {
 		}
 	}
 	p {
-		margin: 0;
-		margin-top: 70px;
 		line-height: inherit;
+		margin: 28px 0 0;
 	}
 	&::before {
 		content: '';
 		background-image: url(images/quote3.png);
 		background-repeat: no-repeat;
-		position: absolute;
-		bottom: 0;
-		top: 15px;
+		display: block;
 		width: 81px;
 		height: 57px;
 	}

@@ -43,7 +43,7 @@ if ( ! function_exists( 'carlistings_header_style' ) ) :
 		<style id="carlistings-header-css">
 			<?php if ( has_header_image() ) : ?>
 				.page-header {
-					background: url(<?php echo esc_url( get_header_image() ); ?>) top center no-repeat;
+					background-image: url(<?php echo esc_url( get_header_image() ); ?>);
 				}
 			<?php endif; ?>
 			<?php if ( ! display_header_text() ) : ?>
