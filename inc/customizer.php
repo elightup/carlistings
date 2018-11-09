@@ -37,7 +37,7 @@ function carlistings_customize_register( $wp_customize ) {
 		'default'           => 3000,
 	) );
 	$wp_customize->add_control( 'slider_speed', array(
-		'label'           => esc_html__( 'Top slider speed', 'carlistings' ),
+		'label'           => esc_html__( 'Featured slider speed', 'carlistings' ),
 		'section'         => 'homepage',
 		'type'            => 'number',
 		'active_callback' => 'is_front_page',
@@ -55,10 +55,10 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'search_section', array(
-			'label'       => esc_html__( 'Search', 'carlistings' ),
+			'label'       => esc_html__( 'Search Page', 'carlistings' ),
 			'section'     => 'homepage',
 			'type'        => 'dropdown-pages',
-			'description' => wp_kses_post( __( 'The content of this page will be displayed below the search on your static front page.', 'carlistings' ) ),
+			'description' => wp_kses_post( __( 'The content of this page will be displayed below the featured slider on your static front page.', 'carlistings' ) ),
 		)
 	);
 	$wp_customize->selective_refresh->add_partial(
@@ -83,7 +83,7 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_title', array(
-			'label'   => esc_html__( 'All car title', 'carlistings' ),
+			'label'   => esc_html__( 'All Cars Section Title', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'text',
 		)
@@ -98,7 +98,7 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_description', array(
-			'label'   => esc_html__( 'All car description', 'carlistings' ),
+			'label'   => esc_html__( 'All Cars Section Description', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'textarea',
 		)
@@ -106,14 +106,14 @@ function carlistings_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'allcar_button_text', array(
-			'default'           => esc_html__( 'see all cars', 'carlistings' ),
+			'default'           => esc_html__( 'See All Cars', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
 		'allcar_button_text', array(
-			'label'   => esc_html__( 'All Car Button Text', 'carlistings' ),
+			'label'   => esc_html__( 'All Cars Section Button Text', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'text',
 		)
@@ -128,7 +128,7 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 	$wp_customize->add_control(
 		'allcar_button_url', array(
-			'label'   => esc_html__( 'All Car Button URL', 'carlistings' ),
+			'label'   => esc_html__( 'All Cars Section Button URL', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'text',
 		)
@@ -144,7 +144,7 @@ function carlistings_customize_register( $wp_customize ) {
 			$wp_customize,
 			'homepage',
 			array(
-				'label'    => esc_html__( 'All Car Image Right', 'carlistings' ),
+				'label'    => esc_html__( 'All Cars Section Image', 'carlistings' ),
 				'section'  => 'homepage',
 				'settings' => 'allcar_image',
 			)
@@ -237,7 +237,7 @@ function carlistings_customize_register( $wp_customize ) {
 			$wp_customize,
 			'cta_background',
 			array(
-				'label'    => esc_html__( 'Call To Action Image', 'carlistings' ),
+				'label'    => esc_html__( 'Background', 'carlistings' ),
 				'section'  => 'cta_section',
 				'settings' => 'cta_background',
 			)

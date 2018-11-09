@@ -1,7 +1,7 @@
 === CarListings ===
 Contributors: WP Auto Listings
 Requires at least: WordPress 4.5
-Tested up to: WordPress 4.9
+Tested up to: WordPress 4.9.8
 Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns
 
 == Description ==
