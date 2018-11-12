@@ -2946,6 +2946,28 @@ Genericons
 	display: block;
 }
 
+.sticky .entry-media {
+	margin-bottom: 0;
+}
+
+.sticky .article__content {
+	background: #f8f8f8;
+	padding: 30px 30px 0;
+	margin-bottom: 45px;
+	position: relative;
+}
+
+.sticky .article__content:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(135deg, #dddddd 50%, #fff 0);
+	bottom: 0;
+	right: 0;
+}
+
 .entry-media {
 	margin-bottom: 20px;
 }
