@@ -1,5 +1,5 @@
 a {
-	color: $color__twitter-bg-hover;
+	color: $color__main;
 	transition: all .3s ease;
 	text-decoration: none;
 
@@ -13,6 +13,7 @@ a {
 	}
 	&:hover,
 	&:active {
+		text-decoration: underline;
 		outline: none;
 	}
 }

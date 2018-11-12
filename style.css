@@ -876,7 +876,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #55acee;
+	color: #e11e30;
 	transition: all .3s ease;
 	text-decoration: none;
 }
@@ -890,6 +890,7 @@ a:focus {
 }
 
 a:hover, a:active {
+	text-decoration: underline;
 	outline: none;
 }
 
@@ -2403,6 +2404,69 @@ Genericons
 	}
 }
 
+.site-content .auto-listings-search .refine > i:before,
+.site-content .auto-listings-search .SumoSelect label > i:before {
+	content: '\eb25';
+	font-family: "IcoFont";
+	display: inline-block;
+	line-height: 1;
+	color: #000;
+}
+
+.site-content .auto-listings-search .area {
+	border-radius: 4px 0 0 4px;
+	border-color: #e4e4e4;
+	height: 45px;
+}
+
+.site-content .auto-listings-search .area::-webkit-input-placeholder {
+	color: #000;
+}
+
+.site-content .auto-listings-search .area::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+}
+
+.site-content .auto-listings-search .area:-ms-input-placeholder {
+	color: #000;
+}
+
+.site-content .auto-listings-search .area:focus, .site-content .auto-listings-search .area:active {
+	border: 1px solid #e4e4e4;
+}
+
+.site-content .auto-listings-search .al-button {
+	cursor: pointer;
+	background-color: #e11e30;
+	border: 2px solid #e11e30;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	transition: all .3s ease;
+	padding: 11px 26px;
+	position: relative;
+	top: -1px;
+}
+
+.site-content .auto-listings-search .al-button:hover {
+	border-color: currentColor;
+	background-color: #fff;
+	color: #e11e30;
+}
+
+.site-content .auto-listings-search .refine {
+	color: #000;
+}
+
+.site-content .auto-listings-search .SelectBox span {
+	color: #000;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
 .section--search {
 	border: 10px solid #f8f8f8;
 	background-color: #fff;
@@ -2456,26 +2520,12 @@ Genericons
 	margin: 0;
 }
 
-.section--search .auto-listings-search .SumoSelect label > i:before {
-	content: '\eb25';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-	color: #000;
-}
-
 .section--search .auto-listings-search .SelectBox {
 	border-radius: 5px;
 	padding: 9px 20px;
 	text-align: left;
 	height: 45px;
 	max-height: 45px;
-}
-
-.section--search .auto-listings-search .SelectBox span {
-	color: #000;
-	font-weight: 400;
-	text-transform: capitalize;
 }
 
 .section--search .auto-listings-search .search-form__title {
@@ -2531,43 +2581,11 @@ Genericons
 
 .section--search .auto-listings-search .area {
 	border-radius: 4px;
-	border-color: #e4e4e4;
-	height: 45px;
-}
-
-.section--search .auto-listings-search .area::-webkit-input-placeholder {
-	color: #000;
-}
-
-.section--search .auto-listings-search .area::-moz-placeholder {
-	color: #000;
-	opacity: 1;
-}
-
-.section--search .auto-listings-search .area:-ms-input-placeholder {
-	color: #000;
-}
-
-.section--search .auto-listings-search .area:focus {
-	border: 1px solid #e4e4e4;
 }
 
 .section--search .auto-listings-search .al-button {
 	width: calc( 25% - 40px);
-	background-color: #e11e30;
-	border: 2px solid #e11e30;
-	border-radius: 4px;
-	font-size: 13px;
-	font-size: 0.8125rem;
-	font-weight: 700;
-	transition: all .3s ease;
-	padding: 11px 26px;
-}
-
-.section--search .auto-listings-search .al-button:hover {
-	border-color: currentColor;
-	background-color: #fff;
-	color: #e11e30;
+	position: static;
 }
 
 @media (min-width: 1200px) {
@@ -4427,12 +4445,6 @@ ol.children {
 	margin-right: 17px;
 }
 
-.SumoSelect .SelectBox.SelectBox span {
-	color: #000;
-	font-size: 13px;
-	font-size: 0.8125rem;
-}
-
 .SumoSelect:hover > .CaptionCont,
 .SumoSelect:focus > .CaptionCont {
 	box-shadow: none;
@@ -5334,5 +5346,3 @@ object {
 .gallery-caption {
 	display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
