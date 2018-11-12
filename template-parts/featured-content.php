@@ -18,7 +18,7 @@ $speed = get_theme_mod( 'slider_speed', 3000 );
 <div class="featured-posts is-hidden">
 	<div class="featured-post__content" data-speed="<?php echo esc_attr( $speed ); ?>">
 		<?php
-		foreach ( $featured_posts as $index => $post ) :
+		foreach ( $featured_posts as $post ) :
 			setup_postdata( $post );
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

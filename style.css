@@ -1670,6 +1670,7 @@ a:hover, a:active {
 	font-size: 1.375rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 
 .site-header .site-branding .site-title a,
@@ -1935,6 +1936,7 @@ a:hover, a:active {
 
 .scroll-to-top:hover {
 	background: #bf1a29;
+	text-decoration: none;
 }
 
 .scroll-to-top.hidden {
@@ -2960,16 +2962,19 @@ Genericons
 }
 
 .entry-header .entry-header__category {
-	color: #e11e30;
 	margin-bottom: 15px;
 }
 
 .entry-header .entry-header__category a {
 	font-size: 13px;
 	font-size: 0.8125rem;
-	color: #e11e30;
 	font-weight: 600;
+	color: inherit;
 	text-decoration: none;
+}
+
+.entry-header .entry-header__category a:hover {
+	color: #e11e30;
 }
 
 .entry-header .entry-header__category:before {
@@ -2977,7 +2982,6 @@ Genericons
 	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
-	color: #e11e30;
 	margin-right: 7px;
 }
 

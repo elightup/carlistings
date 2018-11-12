@@ -13,9 +13,7 @@ $button_text           = get_theme_mod( 'allcar_button_text', __( 'See all cars'
 
 $image    = get_theme_mod( 'allcar_image' );
 $image_id = attachment_url_to_postid( $image );
-if ( ! empty( $image_id ) ) {
-	$alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-}
+$alt = ( ! empty( $image_id ) ) ? get_post_meta( $image_id, '_wp_attachment_image_alt', true ) : '';
 
 $cars  = carlistings_get_car_ids();
 $cars  = count( $cars );
