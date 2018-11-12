@@ -7,16 +7,11 @@
  * @package CarListings
  */
 
-/**
- * Detect plugin. For use on Front End only.
- */
-require_once ABSPATH . 'wp-admin/includes/plugin.php';
-
 if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
-$args      = array(
+$args = array(
 	'post_type' => 'auto-listing',
 	'order'     => 'DESC',
 );

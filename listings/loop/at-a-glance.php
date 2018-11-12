@@ -10,16 +10,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-/**
- * Detect plugin. For use on Front End only.
- */
-require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 ?>
-
 
 <div class="at-a-glance">
 	<ul>
