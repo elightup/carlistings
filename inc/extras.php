@@ -45,7 +45,7 @@ function carlistings_add_tag_the_content( $content ) {
 	if ( is_single() ) {
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( 'Tags: ', ' ' );
+		$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'carlistings' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.

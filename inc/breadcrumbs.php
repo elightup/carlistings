@@ -85,22 +85,17 @@ function carlistings_breadcrumbs( $args = '' ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );
 			$items[]                = sprintf( $item_tpl_link, $post_type_archive_link, $post_type_object->labels->menu_name );
-		}
-		// Terms.
-		$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
-		if ( $terms && ! is_wp_error( $terms ) ) {
-			$term    = current( $terms );
-			$terms   = carlistings_get_term_parents( $term->term_id, $args['taxonomy'] );
-			$terms[] = $term->term_id;
-			foreach ( $terms as $term_id ) {
-				$term    = get_term( $term_id, $args['taxonomy'] );
-				$items[] = sprintf( $item_tpl_link, get_term_link( $term, $args['taxonomy'] ), $term->name );
+		} else {
+			$blog_page = get_option( 'page_for_posts' );
+			if ( ! empty( $blog_page ) ) {
+				$blog_url   = get_permalink( $blog_page );
+				$blog_title = get_the_title( $blog_page );
+				$items[]    = sprintf( $item_tpl_link, $blog_url, $blog_title, '' );
 			}
 		}
 
 		if ( $args['display_last_item'] ) {
 			$title = get_the_title();
-
 		}
 	} elseif ( is_page() ) {
 		$pages = carlistings_get_post_parents( get_queried_object_id() );
@@ -140,7 +135,9 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} else {
 		$title = esc_html__( 'Archives', 'carlistings' );
 	} // End if().
-	$items[] = sprintf( $item_text_tpl, $title );
+	if ( ! is_single() ) {
+		$items[] = sprintf( $item_text_tpl, $title );
+	}
 
 	$title = '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 

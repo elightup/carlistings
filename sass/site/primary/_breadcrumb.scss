@@ -13,7 +13,7 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	.page-title {
-		@include font-size(4.8);
+		@include font-size(3);
 		color: $color__white;
 		font-weight: 800;
 		margin-top: 10px;
@@ -33,6 +33,9 @@
 		&:last-child {
 			color: $color__main;
 			font-weight: 600;
+			a {
+				color: $color__main;
+			}
 		}
 	}
 	i {

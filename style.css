@@ -890,7 +890,6 @@ a:focus {
 }
 
 a:hover, a:active {
-	text-decoration: underline;
 	outline: none;
 }
 
@@ -3068,6 +3067,10 @@ Genericons
 	margin-top: 20px;
 }
 
+.entry-content a:hover {
+	text-decoration: none;
+}
+
 .single .entry-content .tags-links,
 .page:not(.home) .entry-content .tags-links {
 	font-size: 20px;
@@ -3077,16 +3080,6 @@ Genericons
 	display: flex;
 	flex-flow: row wrap;
 	margin: 60px 0 40px;
-}
-
-.single .entry-content .tags-links:before,
-.page:not(.home) .entry-content .tags-links:before {
-	content: '\f0ec';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-	margin-right: 5px;
-	margin-top: 7px;
 }
 
 .single .entry-content .tags-links a,
@@ -3100,7 +3093,7 @@ Genericons
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 100px;
-	margin: -4px 0px 10px 9px;
+	margin: -4px 9px 10px 0;
 }
 
 .single .entry-content .tags-links a:hover,
@@ -3114,26 +3107,11 @@ Genericons
 }
 
 .sharedaddy.sharedaddy .sd-title {
-	font-size: 20px;
-	font-size: 1.25rem;
-	color: #000;
-	font-family: "Open Sans", sans-serif;
-	margin-right: 5px;
-}
-
-.sharedaddy.sharedaddy .sd-title:before {
-	content: '\f0ca';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-	display: inline-block;
-	border-top: none;
-	width: 0;
+	display: none;
 }
 
 .sharedaddy.sharedaddy .sd-content {
 	display: inline-block;
-	margin-left: 7px;
 	position: relative;
 	top: -8px;
 }
@@ -3700,8 +3678,8 @@ ol.children {
 }
 
 .page-header .page-title {
-	font-size: 48px;
-	font-size: 3rem;
+	font-size: 30px;
+	font-size: 1.875rem;
 	color: #fff;
 	font-weight: 800;
 	margin-top: 10px;
@@ -3726,6 +3704,10 @@ ol.children {
 .breadcrumbs li:last-child {
 	color: #e11e30;
 	font-weight: 600;
+}
+
+.breadcrumbs li:last-child a {
+	color: #e11e30;
 }
 
 .breadcrumbs i {
