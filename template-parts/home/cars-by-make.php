@@ -11,7 +11,12 @@ $description           = get_theme_mod( 'allcar_description', __( 'cars availabl
 $button_url            = get_theme_mod( 'allcar_button_url', esc_url( $listings_archive_link ) );
 $button_text           = get_theme_mod( 'allcar_button_text', __( 'See all cars', 'carlistings' ) );
 
-$image = get_theme_mod( 'allcar_image' );
+$image    = get_theme_mod( 'allcar_image' );
+$image_id = attachment_url_to_postid( $image );
+if ( ! empty( $image_id ) ) {
+	$alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+}
+
 $cars  = carlistings_get_car_ids();
 $cars  = count( $cars );
 
@@ -28,11 +33,16 @@ if ( ! $cars ) {
 
 			<?php carlistings_get_car_lists(); ?>
 
-			<a href="<?php echo esc_url( $button_url ); ?>" class="all-car__button"><?php echo esc_html( $button_text ); ?></a>
+			<?php if ( ! empty( $button_url ) && ! empty( $button_text ) ) : ?>
+				<a href="<?php echo esc_url( $button_url ); ?>" class="all-car__button"><?php echo esc_html( $button_text ); ?></a>
+			<?php endif; ?>
 		</div>
-		<div class="all-car-right">
-			<img src="<?php echo esc_url( $image ); ?>">
-		</div>
+
+		<?php if ( ! empty( $image ) ) : ?>
+			<div class="all-car-right">
+				<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $alt ); ?>">
+			</div>
+		<?php endif; ?>
 	</div>
 </section>
 

@@ -22,13 +22,7 @@ $speed = get_theme_mod( 'slider_speed', 3000 );
 			setup_postdata( $post );
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php
-				$url_image    = get_the_post_thumbnail_url( $post, 'full' );
-				$thumbnail_id = get_post_thumbnail_id( $post->ID );
-				$alt          = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-
-				echo '<img src="' . esc_url( $url_image ) . '" data-lazy="' . esc_url( $url_image ) . '" alt="' . esc_attr( $alt ) . '"/>';
-				?>
+				<?php the_post_thumbnail( 'full' ); ?>
 				<div class="featured-content">
 					<div class="container">
 						<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>

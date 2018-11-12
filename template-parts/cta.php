@@ -22,8 +22,11 @@ if ( $image_background ) {
 			<h2 class="cta-title"><?php echo esc_html( $title ); ?></h2>
 			<p class="cta-description"><?php echo esc_html( $description ); ?></p>
 		</div>
-		<div class="section-cta__right">
-			<a href="<?php echo esc_url( $button_url ); ?>"><?php echo esc_html( $button_text ); ?></a>
-		</div>
-	</div>
+
+		<?php if ( ! empty( $button_url ) && ! empty( $button_text ) ) : ?>
+			<div class="section-cta__right">
+				<a href="<?php echo esc_url( $button_url ); ?>"><?php echo esc_html( $button_text ); ?></a>
+			</div>
+		<?php endif; ?>
+</div>
 </section>
