@@ -4228,18 +4228,17 @@ ol.children {
 	border-bottom: 0;
 }
 
-.auto-listings-single .sidebar h3.listings {
+.auto-listings-single .sidebar h3 {
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 700;
 	color: #000;
-	margin-top: 0;
 	position: relative;
 	font-family: "Open Sans", sans-serif;
 	color: #000;
 }
 
-.auto-listings-single .sidebar h3.listings:before {
+.auto-listings-single .sidebar h3:before {
 	content: '';
 	border-left: 10px solid #e11e30;
 	width: 10px;
@@ -4315,6 +4314,7 @@ ol.children {
 
 .auto-listings-single .sidebar .map {
 	height: auto;
+	padding-top: 18px;
 }
 
 .auto-listings-single .sidebar .contact-form {

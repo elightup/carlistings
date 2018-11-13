@@ -247,11 +247,10 @@
 			}
 		}
 
-		h3.listings {
+		h3 {
 			@include font-size(1.6);
 			font-weight: 700;
 			color: $color__black;
-			margin-top: 0;
 			position: relative;
 			font-family: $font__main;
 			color: $color__black;
@@ -318,6 +317,7 @@
 		}
 		.map {
 			height: auto;
+			padding-top: 18px;
 		}
 		.contact-form {
 			background: none;
