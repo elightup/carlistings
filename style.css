@@ -2948,6 +2948,7 @@ Genericons
 
 .entry-header .entry-header__category {
 	margin-bottom: 15px;
+	color: #555555;
 }
 
 .entry-header .entry-header__category a {
@@ -4238,6 +4239,7 @@ ol.children {
 }
 
 .auto-listings-single .sidebar .at-a-glance span i {
+	color: #999;
 	font-size: 16px;
 	font-size: 1rem;
 	margin-right: 5px;
@@ -4270,9 +4272,7 @@ ol.children {
 	margin-right: 3px;
 }
 
-.auto-listings-single .sidebar .address p {
-	margin: 0;
-	display: inline-block;
+.auto-listings-single .sidebar .address span {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	color: #555555;
