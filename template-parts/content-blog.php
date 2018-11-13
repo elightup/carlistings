@@ -15,11 +15,7 @@
 		<header class="entry-header">
 			<?php carlistings_get_category(); ?>
 			<div class="entry-meta">
-				<?php
-				carlistings_posted_by();
-				carlistings_print_comment_link();
-				carlistings_posted_on();
-				?>
+				<?php carlistings_posted_on(); ?>
 			</div>
 		</header><!-- .entry-header -->
 

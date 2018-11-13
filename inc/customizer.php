@@ -53,13 +53,12 @@ function carlistings_customize_register( $wp_customize ) {
 	);
 
 	/**
-	 * Seach form.
+	 * Search page.
 	 */
 	$wp_customize->add_setting(
 		'search_section',
 		array(
 			'sanitize_callback' => 'absint',
-			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(

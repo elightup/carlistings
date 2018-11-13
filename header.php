@@ -28,23 +28,21 @@
 			<div class="header-top">
 				<div class="container">
 					<?php if ( is_active_sidebar( 'topbar-contact' ) ) : ?>
-					<div class="topbar-contact">
-						<?php dynamic_sidebar( 'topbar-contact' ); ?>
-					</div>
+						<div class="topbar-contact">
+							<?php dynamic_sidebar( 'topbar-contact' ); ?>
+						</div>
 					<?php endif; ?>
 					<div class="topbar-right">
-						<div class="social-media">
-						<?php
-						if ( function_exists( 'jetpack_social_menu' ) ) {
-							jetpack_social_menu();
-						}
-						?>
-						</div>
+						<?php if ( function_exists( 'jetpack_social_menu' ) ) : ?>
+							<div class="social-media">
+								<?php jetpack_social_menu(); ?>
+							</div>
+						<?php endif; ?>
 						<?php if ( is_active_sidebar( 'topbar-languages' ) ) : ?>
-						<div class="topbar-languages">
-							<?php dynamic_sidebar( 'topbar-languages' ); ?>
-						</div>
-					<?php endif; ?>
+							<div class="topbar-languages">
+								<?php dynamic_sidebar( 'topbar-languages' ); ?>
+							</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
@@ -94,7 +92,7 @@
 			</div>
 		<?php endif; ?>
 
-		<?php if ( ! is_home() && is_front_page() ) : ?>
+		<?php if ( is_front_page() && ! is_home() ) : ?>
 			<div id="content" class="site-content">
 		<?php else : ?>
 			<div id="content" class="site-content container">

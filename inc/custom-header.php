@@ -33,7 +33,7 @@ function carlistings_custom_header_setup() {
 			'work-space' => array(
 				'url'           => '%s/images/page-header.png',
 				'thumbnail_url' => '%s/images/page-header.png',
-				'description'   => esc_html__( 'Work Space', 'carlistings' ),
+				'description'   => esc_html__( 'Interior', 'carlistings' ),
 			),
 		)
 	);
@@ -60,7 +60,7 @@ if ( ! function_exists( 'carlistings_header_style' ) ) :
 				}
 			<?php else : ?>
 				.page-header .page-title {
-					color: #<?php echo esc_attr( get_header_textcolor() ); ?>;
+					color: #<?php echo esc_html( get_header_textcolor() ); ?>;
 				}
 			<?php endif; ?>
 		</style>

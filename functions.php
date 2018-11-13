@@ -122,7 +122,7 @@ function carlistings_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Topbar Contact', 'carlistings' ),
 			'id'            => 'topbar-contact',
-			'description'   => esc_html__( 'Add your time and email widget here.', 'carlistings' ),
+			'description'   => esc_html__( 'Add your contact widget here.', 'carlistings' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -133,7 +133,7 @@ function carlistings_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Topbar Languages', 'carlistings' ),
 			'id'            => 'topbar-languages',
-			'description'   => esc_html__( 'Add your languages widget here.', 'carlistings' ),
+			'description'   => esc_html__( 'Add your language widget here.', 'carlistings' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -159,7 +159,7 @@ add_action( 'wp_enqueue_scripts', 'carlistings_plugin_scripts', 0 );
  * Enqueue scripts and styles.
  */
 function carlistings_scripts() {
-	wp_enqueue_style( 'ico-font', get_template_directory_uri() . '/css/icofont.css', array(), '1.0.0' );
+	wp_enqueue_style( 'icofont', get_template_directory_uri() . '/css/icofont.css', array(), '1.0.0' );
 
 	wp_enqueue_style( 'carlistings-fonts', carlistings_fonts_url(), array(), '1.0.0' );
 	wp_enqueue_style( 'carlistings-style', get_stylesheet_uri(), array(), '1.0.0' );
@@ -187,6 +187,22 @@ function carlistings_fonts_url() {
 
 	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'carlistings' ) ) {
 		$fonts[] = 'Open Sans:300,400,600,700,800';
+	}
+
+	/*
+	 * Translators: To add an additional character subset specific to your language,
+	 * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
+	 */
+	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'carlistings' );
+
+	if ( 'cyrillic' === $subset ) {
+		$subsets .= ',cyrillic,cyrillic-ext';
+	} elseif ( 'greek' === $subset ) {
+		$subsets .= ',greek,greek-ext';
+	} elseif ( 'devanagari' === $subset ) {
+		$subsets .= ',devanagari';
+	} elseif ( 'vietnamese' === $subset ) {
+		$subsets .= ',vietnamese';
 	}
 
 	$fonts_url = add_query_arg(
@@ -260,13 +276,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( is_admin() ) {
 	require_once get_template_directory() . '/inc/admin/class-tgm-plugin-activation.php';
 	require_once get_template_directory() . '/inc/admin/plugins.php';
-}
 
-/**
- * Dashboard.
- */
-require get_template_directory() . '/inc/dashboard/class-carlistings-dashboard.php';
-new Carlistings_Dashboard();
+	/**
+	 * Dashboard.
+	 */
+	require get_template_directory() . '/inc/dashboard/class-carlistings-dashboard.php';
+	new Carlistings_Dashboard();
+}
 
 /**
  * Customizer Pro.

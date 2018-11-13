@@ -39,6 +39,11 @@
 			);
 			?>
 		</div><!-- .entry-content -->
+
+		<footer class="entry-footer">
+			<?php _s_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+
 		<?php carlistings_author_box(); ?>
 	</div>
 

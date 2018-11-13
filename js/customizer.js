@@ -28,6 +28,20 @@
 		} );
 	} );
 
+	// All cars section button URL.
+	wp.customize( 'allcar_button_url', function ( value ) {
+		value.bind( function ( to ) {
+			$( '.all-car__button' ).attr( 'href', to );
+		} );
+	} );
+
+	// CTA button URL.
+	wp.customize( 'cta_button_url', function ( value ) {
+		value.bind( function ( to ) {
+			$( '.section-cta__right a' ).attr( 'href', to );
+		} );
+	} );
+
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {

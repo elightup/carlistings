@@ -19,7 +19,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$args,
 		array(
 			'separator'         => '<i class="icofont icofont-rounded-right"></i>',
-			'home_label'        => esc_html__( 'Home', 'carlistings' ),
+			'home_label'        => __( 'Home', 'carlistings' ),
 			'home_class'        => 'home',
 			'before'            => '<ul class="breadcrumbs">',
 			'after'             => '</ul>',
@@ -50,7 +50,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 
 	// Home.
 	if ( ! $args['home_class'] ) {
-		$items[] = sprintf( $item_tpl_link, esc_url( home_url( '/' ) ), $args['home_label'] );
+		$items[] = sprintf( $item_tpl_link, esc_url( home_url( '/' ) ), esc_html( $args['home_label'] ) );
 	} else {
 		$items[] = $args['before_item'] . sprintf(
 			'<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -58,7 +58,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 			</span>' . $args['after_item'],
 			esc_attr( $args['home_class'] ),
 			esc_url( home_url() ),
-			$args['home_label']
+			esc_html( $args['home_label'] )
 		);
 	}
 
@@ -84,13 +84,13 @@ function carlistings_breadcrumbs( $args = '' ) {
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );
-			$items[]                = sprintf( $item_tpl_link, $post_type_archive_link, $post_type_object->labels->menu_name );
+			$items[]                = sprintf( $item_tpl_link, esc_url( $post_type_archive_link ), esc_html( $post_type_object->labels->menu_name ) );
 		} else {
 			$blog_page = get_option( 'page_for_posts' );
 			if ( ! empty( $blog_page ) ) {
 				$blog_url   = get_permalink( $blog_page );
 				$blog_title = get_the_title( $blog_page );
-				$items[]    = sprintf( $item_tpl_link, $blog_url, $blog_title, '' );
+				$items[]    = sprintf( $item_tpl_link, esc_url( $blog_url ), esc_html( $blog_title ) );
 			}
 		}
 
@@ -100,7 +100,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} elseif ( is_page() ) {
 		$pages = carlistings_get_post_parents( get_queried_object_id() );
 		foreach ( $pages as $page ) {
-			$items[] = sprintf( $item_tpl_link, get_permalink( $page ), get_the_title( $page ) );
+			$items[] = sprintf( $item_tpl_link, esc_url( get_permalink( $page ) ), get_the_title( $page ) );
 		}
 		if ( $args['display_last_item'] ) {
 			$title = get_the_title();
@@ -111,7 +111,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$terms        = carlistings_get_term_parents( get_queried_object_id(), $current_term->taxonomy );
 		foreach ( $terms as $term_id ) {
 			$term    = get_term( $term_id, $current_term->taxonomy );
-			$items[] = sprintf( $item_tpl_link, get_category_link( $term_id ), $term->name );
+			$items[] = sprintf( $item_tpl_link, esc_url( get_category_link( $term_id ) ), esc_html( $term->name ) );
 		}
 		if ( $args['display_last_item'] ) {
 			$title = $current_term->name;
@@ -119,25 +119,25 @@ function carlistings_breadcrumbs( $args = '' ) {
 		}
 	} elseif ( is_search() ) {
 		/* translators: search query */
-		$title = sprintf( esc_html__( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
+		$title = sprintf( __( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
 	} elseif ( is_404() ) {
-		$title = esc_html__( 'Not found', 'carlistings' );
+		$title = __( 'Not found', 'carlistings' );
 	} elseif ( is_author() ) {
 		$author_obj = get_queried_object();
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
-		$title = '<span class="vcard">' . $author_obj->display_name . '</span>';
+		$title = '<span class="vcard">' . esc_html( $author_obj->display_name ) . '</span>';
 	} elseif ( is_day() ) {
-		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date() );
+		$title = get_the_date();
 	} elseif ( is_month() ) {
-		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date( 'F Y' ) );
+		$title = get_the_date( 'F Y' );
 	} elseif ( is_year() ) {
-		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date( 'Y' ) );
+		$title = get_the_date( 'Y' );
 	} else {
-		$title = esc_html__( 'Archives', 'carlistings' );
+		$title = __( 'Archives', 'carlistings' );
 	}
 
 	if ( ! is_single() ) {
-		$items[] = sprintf( $item_text_tpl, $title );
+		$items[] = sprintf( $item_text_tpl, esc_html( $title ) );
 	}
 
 	$title = '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';

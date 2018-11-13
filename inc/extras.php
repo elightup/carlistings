@@ -17,8 +17,8 @@ function carlistings_read_more_link( $more ) {
 		return $more;
 	}
 	// Translators: %s - post title.
-	$text = wp_kses_post( sprintf( __( 'Read More %s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
-	$more = sprintf( ' &hellip; <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
+	$text = wp_kses_post( sprintf( __( 'Read More%s', 'carlistings' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' ) );
+	$more = sprintf( '&hellip; <p class="link-more"><a href="%s" class="more-link">%s</a></p>', esc_url( get_permalink() ), $text );
 
 	return $more;
 }
@@ -32,31 +32,6 @@ function carlistings_custom_excerpt_length() {
 	return 50;
 }
 add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
-
-/**
- * Add tag to the content
- *
- * @param string $content Alter the output of the list categories and archives widgets.
- *
- * @return string
- */
-function carlistings_add_tag_the_content( $content ) {
-	// Hide category and tag text for pages.
-	if ( is_single() ) {
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', '' );
-		if ( $tags_list ) {
-			/* translators: 1: list of tags. */
-			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
-		} else {
-			return $content;
-		}
-	} else {
-		return $content;
-	}
-}
-add_filter( 'the_content', 'carlistings_add_tag_the_content' );
 
 /**
  * Demo files for importing.
@@ -122,18 +97,17 @@ add_action( 'auto_listings_before_listings_loop_item_summary', 'auto_listings_te
 remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 
 /**
- *
- * Filter the make in listing archive
+ * Filter by make in listing archive
  *
  * @param object $query query object.
  */
 function carlistings_filter_make_in_archive( $query ) {
-	if ( ! $query->is_main_query() || ! is_post_type_archive( 'auto-listing' ) || is_admin() ) {
-		return $query;
+	if ( ! $query->is_main_query() || ! $query->is_post_type_archive( 'auto-listing' ) || is_admin() ) {
+		return;
 	}
 	$make = get_query_var( 'make' );
 	if ( empty( $make ) ) {
-		return $query;
+		return;
 	}
 	$meta_query = array(
 		array(
@@ -144,28 +118,6 @@ function carlistings_filter_make_in_archive( $query ) {
 	$query->set( 'meta_query', $meta_query );
 }
 add_action( 'pre_get_posts', 'carlistings_filter_make_in_archive' );
-
-/**
- * Filters the CSS class(es) applied to a menu item's list item element.
- *
- * @param array    $classes The CSS classes that are applied to the menu item's `<li>` element.
- * @param WP_Post  $item    The current menu item.
- * @param stdClass $args    An object of wp_nav_menu() arguments.
- * @param int      $depth   Depth of menu item. Used for padding.
- */
-function carlistings_active_autolisting_archive_on_menu( $classes, $item, $args, $depth ) {
-	if ( 'menu-1' !== $args->theme_location || ! carlistings_is_plugin_active() ) {
-		return $classes;
-	}
-	$archive_page_id = auto_listings_option( 'archives_page' );
-	$archive_page    = get_post( $archive_page_id );
-	$archive_page    = $archive_page->post_title;
-	if ( is_post_type_archive( 'auto-listing' ) && $item->title === $archive_page ) {
-		$classes[] = 'current-menu-item';
-	}
-	return $classes;
-}
-add_filter( 'nav_menu_css_class', 'carlistings_active_autolisting_archive_on_menu', 10, 4 );
 
 add_filter( 'comment_form_default_fields', 'carlistings_modify_comment_form_default' );
 /**
@@ -190,6 +142,7 @@ function carlistings_modify_comment_form_default( $fields ) {
 }
 
 add_filter( 'comment_form_defaults', 'carlistings_modify_comment_form_args' );
+
 /**
  * Modify default comment form args.
  *
@@ -214,6 +167,7 @@ function carlistings_modify_comment_form_args( $defaults ) {
 	$defaults['comment_field']        = '<div class="comment-form-comment"><textarea id="comment" placeholder="' . esc_attr__( 'Write Your Comments Here...', 'carlistings' ) . '" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>' . $submit_field . '</div>';
 	$defaults['title_reply']          = '';
 	$defaults['comment_notes_before'] = '';
+
 	return $defaults;
 }
 
@@ -224,7 +178,7 @@ function carlistings_modify_comment_form_args( $defaults ) {
  *
  * @return array.
  */
-function carlistings_lite_tag_cloud_fz( $args ) {
+function carlistings_tag_cloud_font_size( $args ) {
 	$args['largest']  = 0.8125;
 	$args['smallest'] = 0.8125;
 	$args['unit']     = 'rem';
@@ -232,7 +186,7 @@ function carlistings_lite_tag_cloud_fz( $args ) {
 	return $args;
 }
 
-add_filter( 'widget_tag_cloud_args', 'carlistings_lite_tag_cloud_fz' );
+add_filter( 'widget_tag_cloud_args', 'carlistings_tag_cloud_font_size' );
 
 /**
  * Check Plugins Activation

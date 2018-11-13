@@ -11,25 +11,20 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<main id="main" class="site-main">
 
-			<section class="error-404 not-found">
-				<h2><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'carlistings' ); ?></h2>
+		<section class="error-404 not-found">
+			<h2><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'carlistings' ); ?></h2>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'carlistings' ); ?></p>
+			<div class="page-content">
+				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'carlistings' ); ?></p>
 
-					<?php
-						get_search_form();
-					?>
+				<?php get_search_form(); ?>
+			</div><!-- .page-content -->
+		</section><!-- .error-404 -->
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
-
 get_footer();
