@@ -25,5 +25,5 @@ if ( empty( $address ) ) {
 <div class="address">
 	<h3><?php esc_html_e( 'Listing Location:', 'carlistings' ); ?></h3>
 	<i class="icofont-location-pin"></i>
-	<p><?php echo esc_html( $address ); ?></p>
+	<span><?php echo esc_html( $address ); ?></span>
 </div>

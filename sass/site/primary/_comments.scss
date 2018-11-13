@@ -13,7 +13,7 @@
 .bypostauthor {
 	display: block;
 	.reply:before {
-		content: '\efd4';
+		content: '\ed03';
 		@include ico-font();
 		background: $color__main;
 		color: $color__white;
@@ -87,7 +87,7 @@
 			border: 1px solid $color__border-abbr;
 			text-decoration: none;
 			&:after {
-				content: '\f0b9';
+				content: '\efd4';
 				@include ico-font();
 				@include font-size(1.2);
 				margin-left: 3px;

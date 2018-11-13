@@ -42,11 +42,6 @@ function carlistings_print_comment_link() {
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function carlistings_entry_footer() {
-	// Hide category and tag text for pages.
-	if ( 'post' === get_post_type() ) {
-		the_tags( '<span class="tags-links">', '', '</span>' );
-	}
-
 	edit_post_link(
 		sprintf(
 			wp_kses(
@@ -60,9 +55,14 @@ function carlistings_entry_footer() {
 			),
 			get_the_title()
 		),
-		'<div class="edit-link">',
-		'</div>'
+		'<span class="edit-link">',
+		'</span>'
 	);
+
+	// Post tags.
+	if ( 'post' === get_post_type() ) {
+		the_tags( '<span class="tags-links">', '', '</span>' );
+	}
 }
 
 /**
@@ -72,7 +72,7 @@ function carlistings_get_category() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		echo '<span class="entry-header__category">';
-		/* translators: used between list items, there is a space after the comma */
+		// translators: used between list items, there is a space after the comma.
 		the_category( esc_html__( ' ', 'carlistings' ) );
 		echo '</span>';
 	}

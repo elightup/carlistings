@@ -103,3 +103,12 @@ add_action( 'wp_enqueue_scripts', 'carlistings_deregister_jetpack_style', 999 );
  * Remove Jetpack css
  */
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
+/**
+ * Move Jetpack share.
+ */
+function carlistings_remove_share() {
+	remove_filter( 'the_content', 'sharing_display', 19 );
+	remove_filter( 'the_excerpt', 'sharing_display', 19 );
+}
+add_action( 'loop_start', 'carlistings_remove_share' );
