@@ -14,11 +14,14 @@
 	.search-submit {
 		position: absolute;
 		right: 10px;
-		bottom: 5px;
+		bottom: 2px;
 		background: none;
 		border: none;
 		@include font-size(1.4);
 		color: $color__black;
+		i {
+			font-weight: 700;
+		}
 		&:focus {
 			outline: none;
 		}

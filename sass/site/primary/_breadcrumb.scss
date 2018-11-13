@@ -40,7 +40,7 @@
 	}
 	i {
 		margin: 0 8px;
-		color: $color__text-main;
+		color: #666;
 		@include font-size(1.4);
 	}
 	a {
@@ -48,10 +48,9 @@
 		color: $color__twitter-name;
 		font-weight: 600;
 	}
-	li
 	.home {
 		&:before {
-			content: '\f01f';
+			content: '\ef47';
 			@include ico-font();
 			@include font-size(1.4);
 			margin-right: 7px;

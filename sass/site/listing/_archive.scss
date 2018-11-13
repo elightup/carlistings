@@ -15,6 +15,10 @@
 		i {
 			margin-right: 17px;
 		}
+		span {
+		    color: $color__black;
+		    @include font-size(1.3);
+		}
 	}
 }
 .SumoSelect {
@@ -115,7 +119,7 @@
 			display: none;
 		}
 		&:before {
-			content: '\f0e6';
+			content: '\f000';
 			@include ico-font();
 			@include font-size(1.4);
 		}
@@ -134,7 +138,7 @@
 			display: none;
 		}
 		&:before {
-			content: '\f0d9';
+			content: '\eff3';
 			@include ico-font();
 		}
 	}

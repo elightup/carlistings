@@ -1,285 +1,1031 @@
-@font-face {
-		font-family: 'icofont';
-		src: url('../fonts/icofont.eot?v=1.0.0-beta');
-		src: url('../fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
-		url('../fonts/icofont.ttf?v=1.0.0-beta') format('truetype'),
-		url('../fonts/icofont.woff?v=1.0.0-beta') format('woff'),
-		url('../fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
-		font-weight: normal;
-		font-style: normal;
+/*!
+* @package IcoFont
+* @version 1.0.1
+* @author IcoFont https://icofont.com
+* @copyright Copyright (c) 2015 - 2018 IcoFont
+* @license - https://icofont.com/license/
+*/
+
+@font-face
+{
+
+font-family: "IcoFont";
+font-weight: normal;
+font-style: "Regular";
+src: url("../fonts/icofont.woff2") format("woff2"),
+url("../fonts/icofont.woff") format("woff");
 }
 
-.icofont {
-		font-family: 'IcoFont' !important;
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-
-		/* Better Font Rendering =========== */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+[class^="icofont-"], [class*=" icofont-"]
+{
+  font-family: 'IcoFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
 }
 
-/*Animation*/
-.icofont-rotate {
-		display: inline-block;
-		-webkit-animation: icofont-rotate 2s infinite linear;
-		animation: icofont-rotate 2s infinite linear
+.icofont-arrow-down:before
+{
+  content: "\ea5b";
 }
 
-@-webkit-keyframes icofont-rotate {
-		0% {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg)
-		}
-		100% {
-				-webkit-transform: rotate(359deg);
-				transform: rotate(359deg)
-		}
+.icofont-arrow-left:before
+{
+  content: "\ea5c";
 }
 
-@keyframes icofont-rotate {
-		0% {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg)
-		}
-		100% {
-				-webkit-transform: rotate(359deg);
-				transform: rotate(359deg)
-		}
+.icofont-arrow-right:before
+{
+  content: "\ea5d";
 }
 
-.icofont-brand-linkedin:before {
-	content: "\ea04";
-}
-.icofont-headphone-alt:before {
-	content: "\eafd";
-}
-.icofont-caret-down:before {
-	content: "\eb25";
-}
-.icofont-caret-left:before {
-	content: "\eb26";
-}
-.icofont-caret-right:before {
-	content: "\eb27";
-}
-.icofont-caret-up:before {
-	content: "\eb28";
-}
-.icofont-curved-right:before {
-	content: "\eb33";
-}
-.icofont-double-right:before {
-	content: "\eb3a";
-}
-.icofont-rounded-double-right:before {
-	content: "\eb59";
-}
-.icofont-rounded-down:before {
-	content: "\eb5a";
-}
-.icofont-rounded-left:before {
-	content: "\eb5e";
-}
-.icofont-rounded-right:before {
-	content: "\eb61";
-}
-.icofont-rounded-up:before {
-	content: "\eb62";
-}
-.icofont-simple-down:before {
-	content: "\eb73";
-}
-.icofont-simple-left:before {
-	content: "\eb76";
-}
-.icofont-simple-right:before {
-	content: "\eb79";
-}
-.icofont-simple-up:before {
-	content: "\eb7a";
-}
-.icofont-heart-alt:before {
-	content: "\ecfd";
-}
-.icofont-ui-call:before {
-	content: "\ed22";
-}
-.icofont-ui-check:before {
-	content: "\ed27";
-}
-.icofont-ui-love:before {
-	content: "\ed43";
-}
-.icofont-ui-message:before {
-	content: "\ed45";
-}
-.icofont-ui-messaging:before {
-	content: "\ed46";
-}
-.icofont-ui-rate-blank:before {
-	content: "\ed58";
-}
-.icofont-ui-rating:before {
-	content: "\ed5a";
-}
-.icofont-ui-search:before {
-	content: "\ed60";
-}
-.icofont-ui-settings:before {
-	content: "\ed61";
-}
-.icofont-youtube-play:before {
-	content: "\ed97";
-}
-.icofont-user-alt-3:before {
-	content: "\edd4";
-}
-.icofont-user-alt-7:before {
-	content: "\edd8";
-}
-.icofont-user-male:before {
-	content: "\edda";
-}
-.icofont-search-alt-2:before {
-	content: "\edee";
-}
-.icofont-search:before {
-	content: "\edef";
-}
-.icofont-social-dribble:before {
-	content: "\ee00";
-}
-.icofont-social-facebook:before {
-	content: "\ee08";
-}
-.icofont-social-google-map:before {
-	content: "\ee10";
-}
-.icofont-social-google-plus:before {
-	content: "\ee11";
-}
-.icofont-social-instagram:before {
-	content: "\ee14";
-}
-.icofont-social-pinterest:before {
-	content: "\ee23";
-}
-.icofont-social-reddit:before {
-	content: "\ee27";
-}
-.icofont-social-rss:before {
-	content: "\ee28";
-}
-.icofont-social-skype:before {
-	content: "\ee2b";
-}
-.icofont-social-tumblr:before {
-	content: "\ee33";
-}
-.icofont-social-twitter:before {
-	content: "\ee34";
-}
-.icofont-social-vimeo:before {
-	content: "\ee39";
-}
-.icofont-justify-all:before {
-	content: "\eeb1";
-}
-.icofont-listine-dots:before {
-	content: "\eeb7";
-}
-.icofont-listing-box:before {
-	content: "\eeb8";
-}
-.icofont-car-alt-4:before {
-	content: "\eee0";
-}
-.icofont-check-alt:before {
-	content: "\efab";
-}
-.icofont-check:before {
-	content: "\efad";
-}
-.icofont-checked:before {
-	content: "\efae";
-}
-.icofont-clock-time:before {
-	content: "\efb0";
-}
-.icofont-dashboard:before {
-	content: "\efd0";
-}
-.icofont-envelope:before {
-	content: "\efe6";
-}
-.icofont-folder:before {
-	content: "\f007";
-}
-.icofont-gears:before {
-	content: "\f00f";
-}
-.icofont-globe:before {
-	content: "\f012";
-}
-.icofont-home:before {
-	content: "\f01f";
-}
-.icofont-label:before {
-	content: "\f036";
-}
-.icofont-location-arrow:before {
-	content: "\f050";
-}
-.icofont-location-pin:before {
-	content: "\f051";
-}
-.icofont-reply:before {
-	content: "\f0b9";
-}
-.icofont-rss-feed:before {
-	content: "\f0c1";
-}
-.icofont-share:before {
-	content: "\f0ca";
-}
-.icofont-speech-comments:before {
-	content: "\f0d8";
-}
-.icofont-speed-meter:before {
-	content: "\f0d9";
-}
-.icofont-star:before {
-	content: "\f0e6";
-}
-.icofont-tag:before {
-	content: "\f0eb";
-}
-.icofont-tags:before {
-	content: "\f0ec";
-}
-.icofont-tick-mark:before {
-	content: "\f0f4";
-}
-.icofont-verification-check:before {
-	content: "\f104";
-}
-.icofont-social-dribbble:before {
-	content: "\f11b";
-}
-.icofont-social-linkedin:before {
-	content: "\f123";
-}
-.icofont-social-youtube-play:before {
-	content: "\f137";
-}
-.icofont-share2:before {
-	content: "\f0cb";
-}
-.icofont-speed-meter2:before {
-	content: "\f0da";
+.icofont-arrow-up:before
+{
+  content: "\ea5e";
+}
+
+.icofont-caret-down:before
+{
+  content: "\ea67";
+}
+
+.icofont-caret-left:before
+{
+  content: "\ea68";
+}
+
+.icofont-caret-right:before
+{
+  content: "\ea69";
+}
+
+.icofont-caret-up:before
+{
+  content: "\ea6a";
+}
+
+.icofont-double-left:before
+{
+  content: "\ea7b";
+}
+
+.icofont-double-right:before
+{
+  content: "\ea7c";
+}
+
+.icofont-circled-down:before
+{
+  content: "\ea6b";
+}
+
+.icofont-circled-left:before
+{
+  content: "\ea6c";
+}
+
+.icofont-circled-right:before
+{
+  content: "\ea6d";
+}
+
+.icofont-circled-up:before
+{
+  content: "\ea6e";
+}
+
+.icofont-long-arrow-down:before
+{
+  content: "\ea92";
+}
+
+.icofont-long-arrow-left:before
+{
+  content: "\ea93";
+}
+
+.icofont-long-arrow-right:before
+{
+  content: "\ea94";
+}
+
+.icofont-long-arrow-up:before
+{
+  content: "\ea95";
+}
+
+.icofont-thin-down:before
+{
+  content: "\eac8";
+}
+
+.icofont-thin-left:before
+{
+  content: "\eac9";
+}
+
+.icofont-thin-right:before
+{
+  content: "\eaca";
+}
+
+.icofont-thin-up:before
+{
+  content: "\eacb";
+}
+
+.icofont-simple-down:before
+{
+  content: "\eab2";
+}
+
+.icofont-simple-up:before
+{
+  content: "\eab9";
+}
+
+.icofont-simple-right:before
+{
+  content: "\eab8";
+}
+
+.icofont-simple-left:before
+{
+  content: "\eab5";
+}
+
+.icofont-heart-alt:before
+{
+  content: "\ef44";
+}
+
+.icofont-heart-beat-alt:before
+{
+  content: "\ec1e";
+}
+
+.icofont-ui-play:before
+{
+  content: "\ec74";
+}
+
+.icofont-ui-video-play:before
+{
+  content: "\ec92";
+}
+
+.icofont-reddit:before
+{
+  content: "\ed62";
+}
+
+.icofont-stumbleupon:before
+{
+  content: "\ed72";
+}
+
+.icofont-soundcloud:before
+{
+  content: "\ed6d";
+}
+
+.icofont-snapchat:before
+{
+  content: "\ed6c";
+}
+
+.icofont-rss:before
+{
+  content: "\ed64";
+}
+
+.icofont-pinterest:before
+{
+  content: "\ed5d";
+}
+
+.icofont-tumblr:before
+{
+  content: "\ed78";
+}
+
+.icofont-vimeo:before
+{
+  content: "\ed7f";
+}
+
+.icofont-vk:before
+{
+  content: "\ed83";
+}
+
+.icofont-youtube:before
+{
+  content: "\ed8b";
+}
+
+.icofont-whatsapp:before
+{
+  content: "\ed86";
+}
+
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
+.icofont-dribble:before
+{
+  content: "\ed2f";
+}
+
+.icofont-dribbble:before
+{
+  content: "\ed2e";
+}
+
+.icofont-dropbox:before
+{
+  content: "\ed30";
+}
+
+.icofont-flikr:before
+{
+  content: "\ed39";
+}
+
+.icofont-google-plus:before
+{
+  content: "\ed43";
+}
+
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
+.icofont-linkedin:before
+{
+  content: "\ed4d";
+}
+
+.icofont-youtube-play:before
+{
+  content: "\ecbb";
+}
+
+.icofont-brand-amazon:before
+{
+  content: "\e8a1";
+}
+
+.icofont-brand-apple:before
+{
+  content: "\e8a7";
+}
+
+.icofont-brand-youtube:before
+{
+  content: "\e95f";
+}
+
+.icofont-yahoo:before
+{
+  content: "\ed88";
+}
+
+.icofont-yelp:before
+{
+  content: "\ed89";
+}
+
+.icofont-behance:before
+{
+  content: "\ed22";
+}
+
+.icofont-ui-calendar:before
+{
+  content: "\ec45";
+}
+
+.icofont-calendar:before
+{
+  content: "\eecd";
+}
+
+.icofont-ui-call:before
+{
+  content: "\ec46";
+}
+
+.icofont-ui-chat:before
+{
+  content: "\ec4a";
+}
+
+.icofont-chat:before
+{
+  content: "\eed5";
+}
+
+.icofont-ui-clip:before
+{
+  content: "\ec4d";
+}
+
+.icofont-close-line:before
+{
+  content: "\eee1";
+}
+
+.icofont-headphone:before
+{
+  content: "\ea37";
+}
+
+.icofont-ui-head-phone:before
+{
+  content: "\ea53";
+}
+
+.icofont-ui-laoding:before
+{
+  content: "\ec60";
+}
+
+.icofont-reply:before
+{
+  content: "\efd4";
+}
+
+.icofont-reply-all:before
+{
+  content: "\efd3";
+}
+
+.icofont-ui-rotation:before
+{
+  content: "\ec80";
+}
+
+.icofont-search:before
+{
+  content: "\ed1b";
+}
+
+.icofont-user-alt-3:before
+{
+  content: "\ecfd";
+}
+
+.icofont-search-2:before
+{
+  content: "\ed12";
+}
+
+.icofont-ui-search:before
+{
+  content: "\ec82";
+}
+
+.icofont-digg:before
+{
+  content: "\ed2c";
+}
+
+.icofont-mixx:before
+{
+  content: "\ed54";
+}
+
+.icofont-github:before
+{
+  content: "\ed3e";
+}
+
+.icofont-skype:before
+{
+  content: "\ed67";
+}
+
+.icofont-viddler:before
+{
+  content: "\ed7e";
+}
+
+.icofont-vine:before
+{
+  content: "\ed80";
+}
+
+.icofont-trash:before
+{
+  content: "\ee09";
+}
+
+.icofont-cloud:before
+{
+  content: "\eee8";
+}
+
+.icofont-alarm:before
+{
+  content: "\eea3";
+}
+
+.icofont-ui-alarm:before
+{
+  content: "\ec3f";
+}
+
+.icofont-bluetooth:before
+{
+  content: "\eebe";
+}
+
+.icofont-clock-time:before
+{
+  content: "\eedc";
+}
+
+.icofont-close-circled:before
+{
+  content: "\eedd";
+}
+
+.icofont-envelope:before
+{
+  content: "\ef14";
+}
+
+.icofont-error:before
+{
+  content: "\ef16";
+}
+
+.icofont-info-circle:before
+{
+  content: "\ef4e";
+}
+
+.icofont-info-square:before
+{
+  content: "\ef4f";
+}
+
+.icofont-info:before
+{
+  content: "\ef50";
+}
+
+.icofont-location-pin:before
+{
+  content: "\ef79";
+}
+
+.icofont-shopping-cart:before
+{
+  content: "\efe7";
+}
+
+.icofont-spinner-alt-3:before
+{
+  content: "\eff6";
+}
+
+.icofont-plus-circle:before
+{
+  content: "\efc0";
+}
+
+.icofont-plus:before
+{
+  content: "\efc2";
+}
+
+.icofont-power:before
+{
+  content: "\efc4";
+}
+
+.icofont-print:before
+{
+  content: "\efc6";
+}
+
+.icofont-quote-left:before
+{
+  content: "\efcd";
+}
+
+.icofont-quote-right:before
+{
+  content: "\efce";
+}
+
+.icofont-random:before
+{
+  content: "\efcf";
+}
+
+.icofont-refresh:before
+{
+  content: "\efd1";
+}
+
+.icofont-settings:before
+{
+  content: "\efe2";
+}
+
+.icofont-settings-alt:before
+{
+  content: "\efe1";
+}
+
+.icofont-share-boxed:before
+{
+  content: "\efe4";
+}
+
+.icofont-share:before
+{
+  content: "\efe5";
+}
+
+.icofont-signal:before
+{
+  content: "\efea";
+}
+
+.icofont-speech-comments:before
+{
+  content: "\eff2";
+}
+
+.icofont-tack-pin:before
+{
+  content: "\f003";
+}
+
+.icofont-tags:before
+{
+  content: "\f005";
+}
+
+.icofont-tag:before
+{
+  content: "\f004";
+}
+
+.icofont-tasks:before
+{
+  content: "\f007";
+}
+
+.icofont-tasks-alt:before
+{
+  content: "\f006";
+}
+
+.icofont-verification-check:before
+{
+  content: "\f021";
+}
+
+.icofont-check-circled:before
+{
+  content: "\eed7";
+}
+
+.icofont-download:before
+{
+  content: "\ef08";
+}
+
+.icofont-volume-down:before
+{
+  content: "\ecb7";
+}
+
+.icofont-wall-clock:before
+{
+  content: "\f022";
+}
+
+.icofont-facebook-messenger:before
+{
+  content: "\ed36";
+}
+
+.icofont-google-hangouts:before
+{
+  content: "\ed41";
+}
+
+.icofont-spotify:before
+{
+  content: "\ed6e";
+}
+
+.icofont-twitter:before
+{
+  content: "\ed7a";
+}
+
+.icofont-twitch:before
+{
+  content: "\ed79";
+}
+
+.icofont-brand-whatsapp:before
+{
+  content: "\e957";
+}
+
+.icofont-navigation-menu:before
+{
+  content: "\efa2";
+}
+
+.icofont-telegram:before
+{
+  content: "\ed75";
+}
+
+.icofont-link-alt:before
+{
+  content: "\ef70";
+}
+
+.icofont-phone:before
+{
+  content: "\efbb";
+}
+
+.icofont-home:before
+{
+  content: "\ef47";
+}
+
+.icofont-globe:before
+{
+  content: "\ef3e";
+}
+
+.icofont-speed-meter:before
+{
+  content: "\eff3";
+}
+
+.icofont-car-alt-4:before
+{
+  content: "\ee1e";
+}
+
+.icofont-car-alt-1:before
+{
+  content: "\ee1b";
+}
+
+.icofont-car:before
+{
+  content: "\ee1f";
+}
+
+.icofont-ui-settings:before
+{
+  content: "\ec83";
+}
+
+.icofont-rounded-down:before
+{
+  content: "\ea99";
+}
+
+.icofont-rounded-up:before
+{
+  content: "\eaa1";
+}
+
+.icofont-rounded-right:before
+{
+  content: "\eaa0";
+}
+
+.icofont-rounded-left:before
+{
+  content: "\ea9d";
+}
+
+.icofont-checked:before
+{
+  content: "\eed9";
+}
+
+.icofont-star:before
+{
+  content: "\f000";
+}
+
+.icofont-check-alt:before
+{
+  content: "\eed6";
+}
+
+.icofont-check:before
+{
+  content: "\eed8";
+}
+
+.icofont-user-alt-4:before
+{
+  content: "\ecfe";
+}
+
+.icofont-user-male:before
+{
+  content: "\ed03";
+}
+
+.icofont-folder:before
+{
+  content: "\ef36";
+}
+
+.icofont-folder-open:before
+{
+  content: "\ef35";
+}
+
+.icofont-headphone-alt:before
+{
+  content: "\ea36";
+}
+
+.icofont-justify-all:before
+{
+  content: "\edf4";
+}
+
+.icofont-listing-box:before
+{
+  content: "\ef75";
+}
+
+.icofont-xs
+{
+  font-size: .5em;
+}
+
+.icofont-sm
+{
+  font-size: .75em;
+}
+
+.icofont-md
+{
+  font-size: 1.25em;
+}
+
+.icofont-lg
+{
+  font-size: 1.5em;
+}
+
+.icofont-1x
+{
+  font-size: 1em;
+}
+
+.icofont-2x
+{
+  font-size: 2em;
+}
+
+.icofont-3x
+{
+  font-size: 3em;
+}
+
+.icofont-4x
+{
+  font-size: 4em;
+}
+
+.icofont-5x
+{
+  font-size: 5em;
+}
+
+.icofont-6x
+{
+  font-size: 6em;
+}
+
+.icofont-7x
+{
+  font-size: 7em;
+}
+
+.icofont-8x
+{
+  font-size: 8em;
+}
+
+.icofont-9x
+{
+  font-size: 9em;
+}
+
+.icofont-10x
+{
+  font-size: 10em;
+}
+
+.icofont-fw
+{
+  text-align: center;
+  width: 1.25em;
+}
+
+.icofont-ul
+{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.icofont-ul > li
+{
+  position: relative;
+  line-height: 2em;
+}
+
+.icofont-ul > li .icofont
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icofont-border
+{
+  border: solid 0.08em #f1f1f1;
+  border-radius: .1em;
+  padding: .2em .25em .15em;
+}
+
+.icofont-pull-left
+{
+  float: left;
+}
+
+.icofont-pull-right
+{
+  float: right;
+}
+
+.icofont.icofont-pull-left
+{
+  margin-right: .3em;
+}
+
+.icofont.icofont-pull-right
+{
+  margin-left: .3em;
+}
+
+.icofont-spin
+{
+  -webkit-animation: icofont-spin 2s infinite linear;
+  animation: icofont-spin 2s infinite linear;
+  display: inline-block;
+}
+
+.icofont-pulse
+{
+  -webkit-animation: icofont-spin 1s infinite steps(8);
+  animation: icofont-spin 1s infinite steps(8);
+  display: inline-block;
+}
+
+@-webkit-keyframes icofont-spin
+{
+  0%
+  {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icofont-spin
+{
+  0%
+  {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100%
+  {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.icofont-rotate-90
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.icofont-rotate-180
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.icofont-rotate-270
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.icofont-flip-horizontal
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.icofont-flip-vertical
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.icofont-flip-horizontal.icofont-flip-vertical
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+:root .icofont-rotate-90,
+  :root .icofont-rotate-180,
+  :root .icofont-rotate-270,
+  :root .icofont-flip-horizontal,
+  :root .icofont-flip-vertical
+{
+  -webkit-filter: none;
+  filter: none;
+  display: inline-block;
+}
+
+.icofont-inverse
+{
+  color: #fff;
+}
+
+.sr-only
+{
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active,
+  .sr-only-focusable:focus
+{
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }

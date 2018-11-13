@@ -33,7 +33,7 @@
 			@include font-size(1.4);
 			margin: 0 34px 15px 0;
 			&:before {
-				content: '\efae';
+				content: '\eed9';
 				@include ico-font();
 				color: $color__main;
 				@include font-size(2);

@@ -20,7 +20,7 @@ blockquote {
 		font-style: normal;
 		color: #bbbbbb;
 		@include font-size(1.6);
-		margin-top: 7px;
+		margin-top: 12px;
 		display: block;
 		&:before {
 			content: '\2013';

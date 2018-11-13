@@ -13,7 +13,7 @@
 .bypostauthor {
 	display: block;
 	.reply:before {
-		content: '\edda';
+		content: '\efd4';
 		@include ico-font();
 		background: $color__main;
 		color: $color__white;
