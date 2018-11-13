@@ -63,14 +63,30 @@ if ( ! function_exists( 'carlistings_entry_footer' ) ) :
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
 	function carlistings_entry_footer() {
+		edit_post_link(
+			sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'carlistings' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			),
+			'<span class="edit-link">',
+			'</span>'
+		);
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'carlistings' ) );
+			$tags_list = get_the_tag_list( '', '' );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'carlistings' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				echo '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
 			}
 		}
 
@@ -92,23 +108,6 @@ if ( ! function_exists( 'carlistings_entry_footer' ) ) :
 			);
 			echo '</span>';
 		}
-
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'carlistings' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
 	}
 endif;
 

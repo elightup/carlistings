@@ -34,31 +34,6 @@ function carlistings_custom_excerpt_length() {
 add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
 
 /**
- * Add tag to the content
- *
- * @param string $content Alter the output of the list categories and archives widgets.
- *
- * @return string
- */
-function carlistings_add_tag_the_content( $content ) {
-	// Hide category and tag text for pages.
-	if ( is_single() ) {
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', '' );
-		if ( $tags_list ) {
-			/* translators: 1: list of tags. */
-			return $content . '<span class="tags-links">' . $tags_list . '</span>'; // WPCS: XSS OK.
-		} else {
-			return $content;
-		}
-	} else {
-		return $content;
-	}
-}
-add_filter( 'the_content', 'carlistings_add_tag_the_content' );
-
-/**
  * Demo files for importing.
  *
  * @return array List of demos configuration.

@@ -3242,7 +3242,7 @@ Genericons
 }
 
 .bypostauthor .reply:before {
-	content: '\efd4';
+	content: '\ed03';
 	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
@@ -3332,7 +3332,7 @@ Genericons
 }
 
 .comment-list .reply a:after {
-	content: '\f0b9';
+	content: '\efd4';
 	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;

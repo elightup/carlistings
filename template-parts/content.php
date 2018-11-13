@@ -37,8 +37,14 @@
 					'after'  => '</div>',
 				)
 			);
+
+			carlistings_entry_footer();
+			if ( function_exists( 'sharing_display' ) ) {
+			    sharing_display( '', true );
+			}
 			?>
 		</div><!-- .entry-content -->
+
 		<?php carlistings_author_box(); ?>
 	</div>
 
