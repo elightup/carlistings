@@ -4,7 +4,7 @@
     "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
     "watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 -w sass -r -o .",
     "zip": "git archive -o carlistings.zip --prefix=carlistings/ HEAD",
-    "sync": "browser-sync start --proxy \"autolisting.test\" --files \"style.css\"",
+    "sync": "browser-sync start --proxy \"test.test\" --files \"style.css\"",
     "check": "phpcs --standard=WordPress --extensions=php . > check.txt",
     "fix": "phpcbf --standard=WordPress --extensions=php ."
   }
