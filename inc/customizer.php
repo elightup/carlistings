@@ -103,7 +103,7 @@ function carlistings_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'allcar_description',
 		array(
-			'default'           => esc_html__( 'cars available in different categories', 'carlistings' ),
+			'default'           => esc_html__( 'Available in different categories', 'carlistings' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => 'postMessage',
 		)

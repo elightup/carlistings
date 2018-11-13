@@ -96,29 +96,6 @@ add_action( 'auto_listings_before_listings_loop_item_summary', 'auto_listings_te
  */
 remove_action( 'auto_listings_listings_loop_item', 'auto_listings_template_loop_description', 50 );
 
-/**
- * Filter by make in listing archive
- *
- * @param object $query query object.
- */
-function carlistings_filter_make_in_archive( $query ) {
-	if ( ! $query->is_main_query() || ! $query->is_post_type_archive( 'auto-listing' ) || is_admin() ) {
-		return;
-	}
-	$make = get_query_var( 'make' );
-	if ( empty( $make ) ) {
-		return;
-	}
-	$meta_query = array(
-		array(
-			'key'   => '_al_listing_make_display',
-			'value' => $make,
-		),
-	);
-	$query->set( 'meta_query', $meta_query );
-}
-add_action( 'pre_get_posts', 'carlistings_filter_make_in_archive' );
-
 add_filter( 'comment_form_default_fields', 'carlistings_modify_comment_form_default' );
 /**
  * Modify default comment form.

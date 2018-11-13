@@ -139,12 +139,19 @@ function carlistings_get_car_lists() {
 
 	echo '<ul>';
 	foreach ( $makes as $make => $value ) {
+		$make_link = add_query_arg(
+			array(
+				's' => '',
+				'make[]' => $make,
+			),
+			$archive_link
+		);
 		?>
 		<li>
-			<a href="<?php echo esc_url( add_query_arg( 'make', $make, $archive_link ) ); ?>">
+			<a href="<?php echo esc_url( $make_link ); ?>">
 				<?php
 				// translators: %1$s - make, %2$s number of cars.
-				echo esc_html( sprintf( __( '%1$s <span>(%2$s)</span>', 'carlistings' ), $make, $value ) );
+				echo wp_kses_post( sprintf( __( '%1$s <span>(%2$s)</span>', 'carlistings' ), $make, $value ) );
 				?>
 			</a>
 		</li>
