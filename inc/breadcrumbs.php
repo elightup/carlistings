@@ -134,7 +134,8 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$title = sprintf( esc_html( '%s', 'carlistings' ), get_the_date( 'Y' ) );
 	} else {
 		$title = esc_html__( 'Archives', 'carlistings' );
-	} // End if().
+	}
+
 	if ( ! is_single() ) {
 		$items[] = sprintf( $item_text_tpl, $title );
 	}

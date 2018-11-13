@@ -137,12 +137,12 @@ class Carlistings_Dashboard {
 		if ( $plugins_number > 1 ) {
 			$action['title'] = esc_html__( 'Install The Recommended Plugins', 'carlistings' );
 			/* translators: theme name. */
-			$action['body']  = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our recommended plugins.', 'carlistings' ), $this->theme->name );
+			$action['body']        = sprintf( esc_html__( '%s needs some plugins to working properly. Please install and activate our recommended plugins.', 'carlistings' ), $this->theme->name );
 			$action['button_text'] = esc_html__( 'Install Plugins', 'carlistings' );
 		} else {
 			$plugin_name = $plugins[0]['name'];
 			/* translators: theme name. */
-			$action['body']        = sprintf( __( '%1$s needs %2$s to working properly. Please install and activate it.', 'carlistings' ), $this->theme->name, $plugin_name );
+			$action['body'] = sprintf( __( '%1$s needs %2$s to working properly. Please install and activate it.', 'carlistings' ), $this->theme->name, $plugin_name );
 			/* translators: plugin name. */
 			$action['button_text'] = sprintf( esc_html__( 'Install %s', 'carlistings' ), $plugin_name );
 			$action['title']       = $action['button_text'];

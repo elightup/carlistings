@@ -5,14 +5,13 @@
  * @package CarListings
  */
 
-$search = get_theme_mod( 'search_section' );
-if ( ! $search ) {
+$search_page = get_theme_mod( 'search_section' );
+if ( ! $search_page ) {
 	return;
 }
 
-$post = get_post( $search );
-setup_postdata( $search );
-
+$post = get_post( $search_page );
+setup_postdata( $search_page );
 ?>
 
 <section class="section--search container">

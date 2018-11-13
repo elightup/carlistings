@@ -27,7 +27,7 @@ if ( $wp_query->max_num_pages <= 1 ) {
 		apply_filters(
 			'auto_listings_pagination_args',
 			array(
-				'base'      => @add_query_arg( 'paged', '%#%' ),
+				'base'      => add_query_arg( 'paged', '%#%' ),
 				'format'    => '?paged=%#%',
 				'mid-size'  => 1,
 				'add_args'  => false,

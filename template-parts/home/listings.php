@@ -11,7 +11,7 @@ if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
-$args = array(
+$args      = array(
 	'post_type' => 'auto-listing',
 	'order'     => 'DESC',
 );

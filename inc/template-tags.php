@@ -193,7 +193,7 @@ function carlistings_author_box() {
  * Get car ids.
  */
 function carlistings_get_car_ids() {
-	$args = array(
+	$args  = array(
 		'post_type'      => 'auto-listing',
 		'posts_per_page' => -1,
 		'post_status'    => array( 'publish' ),

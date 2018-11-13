@@ -21,11 +21,12 @@ if ( 1 === $wp_query->found_posts ) {
 	return;
 }
 
-$orderby         = isset( $_GET['orderby'] ) ? esc_html( $_GET['orderby'] ) : 'date';
-$orderby_options = apply_filters(
+$by      = filter_input( INPUT_GET, 'orderby', FILTER_SANITIZE_STRING );
+$by      = $by ? $by : 'date';
+$options = apply_filters(
 	'auto_listings_listings_orderby',
 	array(
-		'date'       => __( '- New Listings -', 'carlistings' ),
+		'date'       => __( '- Newest Listings -', 'carlistings' ),
 		'date-old'   => __( '- Oldest Listings -', 'carlistings' ),
 		'price'      => __( '- Price (Low to High) -', 'carlistings' ),
 		'price-high' => __( '- Price (High to Low) -', 'carlistings' ),
@@ -37,15 +38,13 @@ $orderby_options = apply_filters(
 
 	<div class="select-wrap">
 		<select name="orderby" class="orderby">
-			<?php foreach ( $orderby_options as $id => $name ) : ?>
-				<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
+			<?php foreach ( $options as $value => $label ) : ?>
+				<option value="<?php echo esc_attr( $value ); ?>" <?php selected( $by, $value ); ?>><?php echo esc_html( $label ); ?></option>
 			<?php endforeach; ?>
 		</select>
 	</div>
 	<?php
-
 	foreach ( $_GET as $key => $val ) {
-
 		if ( 'orderby' === $key || 'submit' === $key ) {
 			continue;
 		}
