@@ -939,7 +939,10 @@ a:hover, a:active {
 .main-navigation ul ul .page_item_has_children > a:after,
 .topbar-contact .widget_nav_menu ul ul .menu-item-has-children > a:after,
 .topbar-contact .widget_nav_menu ul ul .page_item_has_children > a:after {
-	content: '\ea67';
+	content: '\ea69';
+	font-family: "IcoFont";
+	display: inline-block;
+	line-height: 1;
 	margin-left: 0;
 	position: absolute;
 	top: 50%;
@@ -967,7 +970,7 @@ a:hover, a:active {
 .main-navigation .page_item_has_children > a:after,
 .topbar-contact .widget_nav_menu .menu-item-has-children > a:after,
 .topbar-contact .widget_nav_menu .page_item_has_children > a:after {
-	content: '\eb25';
+	content: '\ea67';
 	font-family: "IcoFont";
 	display: inline-block;
 	line-height: 1;
