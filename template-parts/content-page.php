@@ -10,17 +10,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<div class="entry-media">
 		<?php the_post_thumbnail(); ?>
 	</div>
 
 	<div class="article__content">
 
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-
 		<div class="entry-content">
 			<?php
-
 			the_content();
 
 			wp_link_pages(

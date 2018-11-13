@@ -18,8 +18,6 @@ function carlistings_register_required_plugins() {
 	$config = array(
 		'id'          => 'carlistings',
 		'has_notices' => false,
-		'parent_slug' => 'themes.php',
-		'capability'  => 'install_themes',
 	);
 
 	tgmpa( $plugins, $config );
@@ -39,7 +37,7 @@ function carlistings_required_plugins() {
 			'slug' => 'auto-listings',
 		),
 		array(
-			'name' => 'Meta Box',
+			'name' => esc_html__( 'Meta Box', 'carlistings' ),
 			'slug' => 'meta-box',
 		),
 		array(

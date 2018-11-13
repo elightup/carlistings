@@ -16,6 +16,7 @@
 	</div>
 
 	<div class="article__content">
+
 		<header class="entry-header">
 			<?php carlistings_get_category(); ?>
 			<div class="entry-meta">
@@ -28,7 +29,6 @@
 
 		<div class="entry-content">
 			<?php
-
 			the_content();
 
 			wp_link_pages(
@@ -39,6 +39,7 @@
 			);
 
 			carlistings_entry_footer();
+
 			if ( function_exists( 'sharing_display' ) ) {
 			    sharing_display( '', true );
 			}

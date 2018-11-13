@@ -16,7 +16,7 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname'   => 'carlistings-contact-info',
-			'description' => __( 'Display your location and contact information.', 'carlistings' ),
+			'description' => __( 'Display your contact information.', 'carlistings' ),
 		);
 		parent::__construct(
 			'carlistings-contact-info',
@@ -34,8 +34,8 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 */
 	public function defaults() {
 		return array(
-			'time'  => __( '10:00 AM To 5:00 PM', 'carlistings' ),
-			'email' => __( 'example.com ', 'carlistings' ),
+			'time'  => __( '10:00 AM to 5:00 PM', 'carlistings' ),
+			'email' => __( 'name@example.com ', 'carlistings' ),
 		);
 	}
 
@@ -80,8 +80,8 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance          = array();
-		$instance['time']  = wp_kses( $new_instance['time'], array() );
-		$instance['email'] = wp_kses( $new_instance['email'], array() );
+		$instance['time']  = strip_tags( $new_instance['time'] );
+		$instance['email'] = strip_tags( $new_instance['email'] );
 
 		return $instance;
 	}
@@ -95,19 +95,15 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$instance = wp_parse_args( $instance, $this->defaults() );
-
 		?>
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>"><?php esc_html_e( 'Working Time:', 'carlistings' ); ?></label>
-			<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'time' ) ); ?>"><?php echo esc_textarea( $instance['time'] ); ?></textarea>
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'time' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'time' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['time'] ); ?>">
 		</p>
-
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>"><?php esc_html_e( 'Email:', 'carlistings' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'email' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['email'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'email' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'email' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['email'] ); ?>">
 		</p>
-
 		<?php
 	}
 }
