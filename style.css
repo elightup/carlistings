@@ -2686,6 +2686,7 @@ Genericons
 .all--car {
 	margin-bottom: 50px;
 	overflow: hidden;
+	clear: both;
 }
 
 .all--car .container {
