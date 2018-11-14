@@ -4714,12 +4714,7 @@ ol.children {
 	justify-content: space-between;
 }
 
-.auto-listings-items:not(.grid-view) > li .image {
-	width: 39%;
-}
-
 .auto-listings-items:not(.grid-view) .at-a-glance {
-	width: 39%;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -4737,12 +4732,23 @@ ol.children {
 }
 
 .auto-listings-items:not(.grid-view) .summary {
-	width: 58%;
 	padding-bottom: 0;
 }
 
 .auto-listings-items:not(.grid-view) .summary .title {
 	margin-top: 20px;
+}
+
+@media (min-width: 650px) {
+	.auto-listings-items:not(.grid-view) > li .image {
+		width: 39%;
+	}
+	.auto-listings-items:not(.grid-view) .at-a-glance {
+		width: 39%;
+	}
+	.auto-listings-items:not(.grid-view) .summary {
+		width: 58%;
+	}
 }
 
 /* auto listings items grid-view */

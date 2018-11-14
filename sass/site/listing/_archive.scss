@@ -245,12 +245,8 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		.image {
-			width: 39%;
-		}
 	}
 	.at-a-glance {
-		width: 39%;
 		margin: 0;
 		padding: 0;
 		border: none;
@@ -266,12 +262,22 @@
 	}
 
 	.summary {
-		width: 58%;
 		padding-bottom: 0;
 		.title {
 			margin-top: 20px;
 		}
+	}
 
+	@media (min-width: 650px) {
+		> li .image {
+			width: 39%;
+		}
+		.at-a-glance {
+			width: 39%;
+		}
+		.summary {
+			width: 58%;
+		}
 	}
 }
 
