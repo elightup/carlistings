@@ -36,7 +36,7 @@
 		</div>
 
 		<div class="col">
-			<img src="<?php echo esc_url( get_template_directory_uri() . '/screenshot.png' ); ?>" alt="<?php esc_attr_e( 'screenshot', 'carlistings' ); ?>">
+			<img src="<?php echo esc_url( get_template_directory_uri() . '/screenshot.jpg' ); ?>" alt="<?php esc_attr_e( 'screenshot', 'carlistings' ); ?>">
 		</div>
 	</div>
 </div>

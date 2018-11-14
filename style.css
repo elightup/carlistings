@@ -1017,6 +1017,14 @@ a:hover, a:active {
 	border-color: #e11e30;
 }
 
+.primary-menu > .current_page_item > a,
+.primary-menu > .current-menu-item > a,
+.primary-menu > .current_page_ancestor > a,
+.primary-menu > .current-menu-ancestor > a {
+	color: #e11e30;
+	border-bottom: 3px solid #e11e30;
+}
+
 .main-navigation ul {
 	display: none;
 }
@@ -1025,14 +1033,6 @@ a:hover, a:active {
 	font-size: 14px;
 	font-size: 0.875rem;
 	padding: 15px 10px 10px;
-}
-
-.main-navigation ul .current_page_item > a,
-.main-navigation ul .current-menu-item > a,
-.main-navigation ul .current_page_ancestor > a,
-.main-navigation ul .current-menu-ancestor > a {
-	color: #e11e30;
-	border-bottom: 3px solid #e11e30;
 }
 
 /* Small menu. */
