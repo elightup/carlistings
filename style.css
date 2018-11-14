@@ -3055,8 +3055,9 @@ Genericons
 	margin-top: 20px;
 }
 
+.comment-content a:hover,
 .entry-content a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .single .entry-content .tags-links,

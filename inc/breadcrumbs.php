@@ -94,6 +94,17 @@ function carlistings_breadcrumbs( $args = '' ) {
 			}
 		}
 
+		$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
+		if ( $terms && ! is_wp_error( $terms ) ) {
+			$term    = current( $terms );
+			$terms   = carlistings_get_term_parents( $term->term_id, $args['taxonomy'] );
+			$terms[] = $term->term_id;
+			foreach ( $terms as $term_id ) {
+				$term    = get_term( $term_id, $args['taxonomy'] );
+				$items[] = sprintf( $item_tpl_link, get_term_link( $term, $args['taxonomy'] ), $term->name );
+			}
+		}
+
 		if ( $args['display_last_item'] ) {
 			$title = get_the_title();
 		}
