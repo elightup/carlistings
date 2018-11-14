@@ -15,7 +15,12 @@ if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
-$cols = auto_listings_columns();
+$front_page_listings_column = get_theme_mod( 'front_page_listings_column', 2 );
+if ( is_front_page() ) {
+	$cols = $front_page_listings_column;
+} else {
+	$cols = auto_listings_columns();
+}
 ?>
 
 <li <?php post_class( 'col-' . $cols ); ?>>

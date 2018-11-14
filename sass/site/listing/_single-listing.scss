@@ -1,5 +1,11 @@
 .auto-listings .container > .content {
 	padding-top: 0;
+	&:before, &:after {
+		@include clearfix();
+	}
+	&:after {
+		@include clearfix-after();
+	}
 }
 .auto-listings-single {
 	.has-sidebar {
