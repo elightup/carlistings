@@ -28,7 +28,7 @@ $address = auto_listings_dealer_meta( 'displayed_address', $dealer_id );
 
 <div class="dealer">
 
-	<h3><?php esc_html_e( 'Dealer Details', 'auto-listings' ); ?></h3>
+	<h3><?php esc_html_e( 'Dealer Details', 'carlistings' ); ?></h3>
 
 	<div class="logo">
 		<a href="<?php echo esc_url( get_the_permalink( $dealer_id ) ); ?>">

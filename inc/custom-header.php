@@ -13,8 +13,7 @@
  * @uses carlistings_header_style()
  */
 function carlistings_custom_header_setup() {
-	add_theme_support(
-		'custom-header',
+	add_theme_support( 'custom-header',
 		apply_filters(
 			'carlistings_custom_header_args',
 			array(
