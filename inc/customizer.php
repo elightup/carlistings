@@ -179,13 +179,13 @@ function carlistings_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'front_page_listings_column',
 		array(
-			'label'   => esc_html__( 'Number of Columns of Listings to display on front page.', 'carlistings' ),
+			'label'   => esc_html__( 'Listing Columns.', 'carlistings' ),
 			'section' => 'homepage',
 			'type'    => 'select',
 			'choices' => array(
-				'2' => esc_html__( '2 column', 'carlistings' ),
-				'3' => esc_html__( '3 column', 'carlistings' ),
-				'4' => esc_html__( '4 column', 'carlistings' ),
+				'2' => esc_html__( '2 columns', 'carlistings' ),
+				'3' => esc_html__( '3 columns', 'carlistings' ),
+				'4' => esc_html__( '4 columns', 'carlistings' ),
 			),
 		)
 	);

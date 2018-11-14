@@ -53,21 +53,15 @@ if ( ! $query->have_posts() ) {
 				echo '</ul>';
 			}
 			wp_reset_postdata();
+			?>
 
-			if ( is_active_sidebar( 'auto-listings' ) ) :
-				?>
-
-				</div><!-- has-sidebar -->
-
-				<div class="sidebar">
-					<?php dynamic_sidebar( 'auto-listings' ); ?>
-				</div>
-
-			<?php else : ?>
-
-				</div>
-
-			<?php endif; ?>
-		</div>
+		<?php if ( is_active_sidebar( 'auto-listings' ) ) : ?>
+			</div><!-- has-sidebar -->
+			<div class="sidebar">
+				<?php dynamic_sidebar( 'auto-listings' ); ?>
+			</div>
+		<?php else : ?>
+			</div>
+		<?php endif; ?>
 	</div>
 </div>
