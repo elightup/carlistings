@@ -92,16 +92,16 @@ function carlistings_breadcrumbs( $args = '' ) {
 				$blog_title = get_the_title( $blog_page );
 				$items[]    = sprintf( $item_tpl_link, esc_url( $blog_url ), esc_html( $blog_title ) );
 			}
-		}
 
-		$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
-		if ( $terms && ! is_wp_error( $terms ) ) {
-			$term    = current( $terms );
-			$terms   = carlistings_get_term_parents( $term->term_id, $args['taxonomy'] );
-			$terms[] = $term->term_id;
-			foreach ( $terms as $term_id ) {
-				$term    = get_term( $term_id, $args['taxonomy'] );
-				$items[] = sprintf( $item_tpl_link, get_term_link( $term, $args['taxonomy'] ), $term->name );
+			$terms = get_the_terms( get_the_ID(), $args['taxonomy'] );
+			if ( $terms && ! is_wp_error( $terms ) ) {
+				$term    = current( $terms );
+				$terms   = carlistings_get_term_parents( $term->term_id, $args['taxonomy'] );
+				$terms[] = $term->term_id;
+				foreach ( $terms as $term_id ) {
+					$term    = get_term( $term_id, $args['taxonomy'] );
+					$items[] = sprintf( $item_tpl_link, esc_url( get_term_link( $term, $args['taxonomy'] ) ), esc_html( $term->name ) );
+				}
 			}
 		}
 
