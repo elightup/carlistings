@@ -88,7 +88,9 @@
 
 		<?php if ( ! is_front_page() ) : ?>
 			<div class="page-header">
-				<?php carlistings_breadcrumbs(); ?>
+				<div class="container">
+					<?php carlistings_breadcrumbs(); ?>
+				</div>
 			</div>
 		<?php endif; ?>
 

@@ -73,6 +73,12 @@
 		> p {
 			display: none;
 		}
+		&:before, &:after {
+			@include clearfix();
+		}
+		&:after {
+			@include clearfix-after();
+		}
 	}
 	.auto-listings-search {
 		display: flex;

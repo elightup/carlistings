@@ -1,17 +1,18 @@
 .page-header {
-	min-height: 260px;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 20px 220px 60px;
-	position: relative;
-	word-break: break-word;
+	padding: 5% 0;
 	margin-bottom: 80px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
+	position: relative;
+	.container {
+		min-height: inherit;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	.page-title {
 		@include font-size(3);
 		color: $color__white;
@@ -68,9 +69,6 @@
 	color: $color__white;
 }
 @media (max-width: 991px) {
-	.page-header {
-		padding: 50px 50px 60px;
-	}
 	.page-header {
 		.page-title {
 			@include font-size(3.4);
