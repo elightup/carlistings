@@ -3,7 +3,7 @@
 	text-align: center;
 	display: flex;
 	align-items: center;
-	flex-flow: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding: 20px 220px 60px;
 	position: relative;
@@ -18,6 +18,8 @@
 		font-weight: 800;
 		margin-top: 10px;
 		line-height: 1.3;
+		word-break: break-word;
+		min-width: 0;
 	}
 }
 .breadcrumbs {
