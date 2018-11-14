@@ -26,8 +26,8 @@ get_header();
 
 			the_posts_pagination(
 				array(
-					'prev_text' => '<i class="icofont icofont-rounded-left"></i>',
-					'next_text' => '<i class="icofont icofont-rounded-right"></i>',
+					'prev_text' => '<i class="icofont icofont-rounded-left"></i><span class="screen-reader-text">' . esc_html_e( 'Previous', 'carlistings' ) . '</span>',
+					'next_text' => '<span class="screen-reader-text">' . esc_html_e( 'Next', 'carlistings' ) . '</span><i class="icofont icofont-rounded-right"></i>',
 				)
 			);
 

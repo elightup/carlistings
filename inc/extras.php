@@ -8,7 +8,7 @@
  */
 
 /**
- * The content more link
+ * The content more link.
  *
  * @param string $more More Link.
  */
@@ -26,10 +26,13 @@ add_filter( 'the_content_more_link', 'carlistings_read_more_link' );
 add_filter( 'excerpt_more', 'carlistings_read_more_link' );
 
 /**
- * Length excerpt
+ * Change excerpt length.
+ *
+ * @param int $length Excerpt length.
+ * @return int
  */
-function carlistings_custom_excerpt_length() {
-	return 50;
+function carlistings_custom_excerpt_length( $length ) {
+	return is_admin() ? $length : 50;
 }
 add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
 

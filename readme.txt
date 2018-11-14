@@ -2,16 +2,15 @@
 Contributors: WP Auto Listings
 Requires at least: WordPress 4.5
 Tested up to: WordPress 4.9.8
-Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns
+Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns, grid-layout, microformats, sticky-post, theme-options, blog, e-commerce
 
 == Description ==
 
-CarListings is a beautiful and easy to use WordPress auto listing theme for car sellers and dealers. Working perfectly with plugin Auto Listing, this theme will help you build a beautiful car listing Wordpress site with ease.
-Built on the latest technology of WordPress, CarListings is fully responsvive, fast and optimized for all mobile phones.
+CarListings is a beautiful and easy to use WordPress auto listings theme for car sellers and dealers. Working perfectly with Auto Listings plugin, this theme helps you build a beautiful car listings WordPress site with ease. Built on the latest technology of WordPress, CarListings is fully responsvive, fast and optimized for all mobile phones.
 
 == Installation ==
 
-Please go to http://wpautolistings.com/docs/carlistings/
+Please see https://wpautolistings.com/docs/carlistings/
 
 == License ==
 
@@ -21,7 +20,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 CarListings WordPress Theme, Copyright 2018 WP Auto Listings
 CarListings is distributed under the terms of the GNU General Public License v3
 
-Unless otherwise specified, all Images are self shot by WP Auto Listings
+Unless otherwise specified, all images are self shot by WP Auto Listings
 Copyright: WP Auto Listings, https://wpautolistings.com/
 
 This program is free software: you can redistribute it and/or modify
@@ -34,22 +33,19 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-#Font Icons License
 IcoFont icons, Copyright IcoFont
 License: SIL Open Font License
 Source: http://icofont.com/
 
-#Slick Slider License
 Slick Slider, Copyright Ken Wheeler
 License: MIT
 Source : http://kenwheeler.github.io/slick/
 
-#Jquery.sumoselect License
 Jquery.sumoselect, Copyright Hemant Negi
 License: MIT
 Source : https://github.com/HemantNegi/jquery.sumoselect
 
-#Hybrid Core
+Hybrid Core, Copyright Justin Tadlock
 License: GNU General Public License v2.0
 Source : https://github.com/justintadlock/hybrid-core/blob/master/license.md
 
