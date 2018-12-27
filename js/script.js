@@ -149,7 +149,9 @@ jQuery( function ( $ ) {
 	 * View switcher
 	 */
 	function auto_listings_view_switcher() {
+		var default_view = auto_listings.list_grid_view;
 
+        switch_view( default_view );
         $( '.auto-listings-view-switcher div' ).click( function() {
             var view = $( this ).attr( 'id' );
             switch_view( view );
