@@ -94,7 +94,7 @@ jQuery( function ( $ ) {
 	 */
 	 function initFeaturedContentSlider() {
 	 	$( '.featured-posts' ).removeClass( 'is-hidden' );
-		var $slider = $( '.featured-post__content' );
+		var $slider = $( '.featured-post__content.slider' );
 		var $sliderSpeed = $slider.data( 'speed' );
 		$slider.slick( {
 

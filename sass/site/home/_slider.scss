@@ -1,12 +1,9 @@
 .featured-posts {
-	margin-bottom: -82px;
-	.slick-track {
-		img {
-			height: 600px;
-			width: 100%;
-			object-fit: cover;
-			object-position: center center;
-		}
+	img {
+		height: 600px;
+		width: 100%;
+		object-fit: cover;
+		object-position: center center;
 	}
 	.featured-content {
 		position: absolute;
@@ -41,14 +38,10 @@
 			}
 		}
 	}
-}
-@media (max-width: 991px) {
-	.featured-posts {
-		.slick-track {
-			img {
-				height: auto;
-				min-height: 350px;
-			}
+	@media (max-width: 991px) {
+		img {
+			height: auto;
+			min-height: 350px;
 		}
 		.featured-content {
 			top: 0;
@@ -59,13 +52,15 @@
 			}
 		}
 	}
-}
-@media (max-width: 574px) {
-	.featured-posts {
+	@media (max-width: 574px) {
 		.featured-content {
 			.entry-title {
 				@include font-size(2);
 			}
 		}
 	}
+}
+
+.featured-post__content {
+	position: relative;
 }

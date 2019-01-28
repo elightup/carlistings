@@ -49,6 +49,7 @@
 }
 
 .section--search {
+	margin-top: -82px;
 	.featured-posts.is-hidden + .site-content & {
 		display: none;
 	}

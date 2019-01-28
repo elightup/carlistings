@@ -8,15 +8,17 @@
 if ( ! defined( 'JETPACK__VERSION' ) ) {
 	return;
 }
+
 $featured_posts = carlistings_get_featured_posts();
 if ( empty( $featured_posts ) ) {
+	get_template_part( 'template-parts/home/hero' );
 	return;
 }
 $speed = get_theme_mod( 'slider_speed', 3000 );
 ?>
 
 <div class="featured-posts is-hidden">
-	<div class="featured-post__content" data-speed="<?php echo esc_attr( $speed ); ?>">
+	<div class="featured-post__content slider" data-speed="<?php echo esc_attr( $speed ); ?>">
 		<?php
 		foreach ( $featured_posts as $post ) :
 			setup_postdata( $post );
