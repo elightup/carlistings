@@ -19,7 +19,7 @@ $front_page_listings_column = get_theme_mod( 'front_page_listings_column', 2 );
 if ( is_front_page() ) {
 	$cols = $front_page_listings_column;
 } else {
-	$cols = auto_listings_columns();
+	$cols = function_exists( 'auto_listings_columns' ) ? auto_listings_columns() : 1;
 }
 ?>
 

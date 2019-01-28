@@ -15,15 +15,21 @@ if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
-$dealer_id = auto_listings_get_dealer_ID();
+$dealer_id = function_exists( 'auto_listings_get_dealer_ID' ) ? auto_listings_get_dealer_ID() : '';
 
 if ( empty( $dealer_id ) ) {
 	return;
 }
 
-$website = auto_listings_dealer_meta( 'website', $dealer_id );
-$phone   = auto_listings_dealer_meta( 'phone', $dealer_id );
-$address = auto_listings_dealer_meta( 'displayed_address', $dealer_id );
+if ( function_exists( 'auto_listings_dealer_meta' ) ) {
+	$website = auto_listings_dealer_meta( 'website', $dealer_id );
+	$phone   = auto_listings_dealer_meta( 'phone', $dealer_id );
+	$address = auto_listings_dealer_meta( 'displayed_address', $dealer_id );
+} else {
+	$website = '';
+	$phone   = '';
+	$address = '';
+}
 ?>
 
 <div class="dealer">

@@ -15,7 +15,7 @@ if ( ! carlistings_is_plugin_active() ) {
 	return;
 }
 
-$address = auto_listings_meta( 'displayed_address' );
+$address = function_exists( 'auto_listings_meta' ) ? auto_listings_meta( 'displayed_address' ) : '';
 if ( empty( $address ) ) {
 	return;
 }

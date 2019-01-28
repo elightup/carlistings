@@ -53,8 +53,9 @@ if ( post_password_required() ) {
 			 */
 			do_action( 'auto_listings_single_upper_full_width' );
 			?>
-
-			<h4><?php echo wp_kses_post( auto_listings_price() ); ?></h4>
+			<?php if ( function_exists( 'auto_listings_price' ) ) : ?>
+				<h4><?php echo wp_kses_post( auto_listings_price() ); ?></h4>
+			<?php endif; ?>
 
 		</div>
 

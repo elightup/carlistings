@@ -53,7 +53,7 @@ get_header( 'listings' );
 				 */
 				do_action( 'auto_listings_before_listings_loop' );
 
-					$cols  = auto_listings_columns();
+					$cols  = function_exists( 'auto_listings_columns' ) ? auto_listings_columns() : 1;
 					$count = 1;
 				while ( have_posts() ) :
 					the_post();
@@ -61,7 +61,10 @@ get_header( 'listings' );
 					if ( 1 === $count % $cols ) {
 						echo '<ul class="auto-listings-items">';
 					}
+
+					if ( function_exists( 'auto_listings_get_part' ) ) {
 						auto_listings_get_part( 'content-listing.php' );
+					}
 
 					if ( 0 === $count % $cols ) {
 						echo '</ul>';

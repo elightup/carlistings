@@ -31,7 +31,9 @@ if ( ! $query->have_posts() ) {
 		<?php endif; ?>
 
 			<?php
-			auto_listings_view_switcher();
+			if ( function_exists( 'auto_listings_view_switcher' ) ) {
+				auto_listings_view_switcher();
+			}
 			$cols  = get_theme_mod( 'front_page_listings_column', 2 );
 			$count = 1;
 
@@ -41,7 +43,10 @@ if ( ! $query->have_posts() ) {
 				if ( 1 === $count % $cols ) {
 					echo '<ul class="auto-listings-items">';
 				}
+
+				if ( function_exists( 'auto_listings_get_part' ) ) {
 					auto_listings_get_part( 'content-listing.php' );
+				}
 
 				if ( 0 === $count % $cols ) {
 					echo '</ul>';

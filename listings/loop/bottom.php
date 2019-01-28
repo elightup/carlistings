@@ -17,6 +17,6 @@ if ( ! carlistings_is_plugin_active() ) {
 ?>
 
 <div class="bottom-wrap">
-	<a class="al-button" href="<?php the_permalink(); ?>" title="<?php esc_attr_e( 'View', 'carlistings' ); ?> <?php esc_attr( the_title() ); ?>"><?php esc_html_e( 'More Details', 'carlistings' ); ?>
+	<a class="al-button" href="<?php the_permalink(); ?>" title="<?php esc_attr_e( 'View', 'carlistings' ); ?> <?php the_title_attribute(); ?>"><?php esc_html_e( 'More Details', 'carlistings' ); ?>
 	</a>
 </div>
