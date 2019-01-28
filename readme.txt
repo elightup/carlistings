@@ -18,7 +18,7 @@ Unless otherwise specified, all the theme files, scripts and images are licensed
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 CarListings WordPress Theme, Copyright 2018 WP Auto Listings
-CarListings is distributed under the terms of the GNU General Public License v3
+CarListings is distributed under the terms of the GNU GPL
 
 Unless otherwise specified, all images are self shot by WP Auto Listings
 Copyright: WP Auto Listings, https://wpautolistings.com/
