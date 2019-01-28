@@ -10,6 +10,10 @@ if ( ! have_posts() ) {
 }
 
 the_post();
+
+if ( ! has_post_thumbnail() ) {
+	return;
+}
 ?>
 
 <div class="featured-posts">
