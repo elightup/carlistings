@@ -29,7 +29,7 @@
 				<span class="sep"> | </span>
 				<?php
 				/* translators: placeholder replaced with string */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'carlistings' ), 'Carlistings', '<a href="https://wpautolistings.com/" rel="designer">WP Auto Listings</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'carlistings' ), 'Carlistings', '<a href="' . esc_url( __( 'https://wpautolistings.com/', 'carlistings' ) ) . '" rel="designer">WP Auto Listings</a>' );
 				?>
 			</div><!-- .site-info -->
 			<nav id="footer-site-navigation" class="footer-navigation">
