@@ -82,7 +82,6 @@ function carlistings_customize_register( $wp_customize ) {
 	/**
 	 * All car section.
 	 */
-
 	$wp_customize->add_setting(
 		'allcar_title',
 		array(
@@ -113,7 +112,7 @@ function carlistings_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'All Cars Section Description', 'carlistings' ),
 			'section' => 'homepage',
-			'type'    => 'textarea',
+			'type'    => 'text',
 		)
 	);
 
@@ -218,7 +217,7 @@ function carlistings_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Title', 'carlistings' ),
 			'section' => 'cta_section',
-			'type'    => 'textarea',
+			'type'    => 'text',
 		)
 	);
 
@@ -235,7 +234,7 @@ function carlistings_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Description', 'carlistings' ),
 			'section' => 'cta_section',
-			'type'    => 'textarea',
+			'type'    => 'text',
 		)
 	);
 
