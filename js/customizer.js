@@ -4,6 +4,8 @@
  * Theme Customizer enhancements for a better user experience.
  *
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
+ *
+ * @package CarListings
  */
 
 ( function( $ ) {
@@ -39,26 +41,6 @@
 	wp.customize( 'cta_button_url', function ( value ) {
 		value.bind( function ( to ) {
 			$( '.section-cta__right a' ).attr( 'href', to );
-		} );
-	} );
-
-	// Header text color.
-	wp.customize( 'header_textcolor', function( value ) {
-		value.bind( function( to ) {
-			if ( 'blank' === to ) {
-				$( '.site-title, .site-description' ).css( {
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
-				} );
-			} else {
-				$( '.site-title, .site-description' ).css( {
-					'clip': 'auto',
-					'position': 'relative'
-				} );
-			}
-			$( '.page-header .page-title' ).css({
-				color: to
-			});
 		} );
 	} );
 } )( jQuery );

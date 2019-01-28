@@ -5,10 +5,6 @@
  * @package CarListings
  */
 
-if ( ! defined( 'JETPACK__VERSION' ) ) {
-	return;
-}
-
 $featured_posts = carlistings_get_featured_posts();
 if ( empty( $featured_posts ) ) {
 	get_template_part( 'template-parts/home/hero' );

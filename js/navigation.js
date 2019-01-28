@@ -3,7 +3,10 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+ *
+ * @package CarListings
  */
+
 ( function() {
 	var container, button, menu, links, i, len;
 
@@ -86,7 +89,7 @@
 
 				if ( ! menuItem.classList.contains( 'focus' ) ) {
 					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+					for ( var i = 0, l = menuItem.parentNode.children.length; i < l; ++i ) {
 						if ( menuItem === menuItem.parentNode.children[i] ) {
 							continue;
 						}
@@ -98,7 +101,7 @@
 				}
 			};
 
-			for ( i = 0; i < parentLink.length; ++i ) {
+			for ( var i = 0, l = parentLink.length; i < l; ++i ) {
 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
 		}

@@ -80,8 +80,8 @@ class Carlistings_Contact_Widget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance          = array();
-		$instance['time']  = strip_tags( $new_instance['time'] );
-		$instance['email'] = strip_tags( $new_instance['email'] );
+		$instance['time']  = wp_strip_all_tags( $new_instance['time'] );
+		$instance['email'] = wp_strip_all_tags( $new_instance['email'] );
 
 		return $instance;
 	}

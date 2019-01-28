@@ -73,7 +73,7 @@ function carlistings_get_category() {
 	if ( 'post' === get_post_type() ) {
 		echo '<span class="entry-header__category">';
 		// translators: used between list items, there is a space after the comma.
-		the_category( esc_html__( ' ', 'carlistings' ) );
+		the_category( esc_html__( ', ', 'carlistings' ) );
 		echo '</span>';
 	}
 }
@@ -114,7 +114,7 @@ function carlistings_author_box() {
 function carlistings_get_car_ids() {
 	$args  = array(
 		'post_type'      => 'auto-listing',
-		'posts_per_page' => -1,
+		'posts_per_page' => 999,
 		'post_status'    => array( 'publish' ),
 		'fields'         => 'ids',
 	);
@@ -141,7 +141,7 @@ function carlistings_get_car_lists() {
 	foreach ( $makes as $make => $value ) {
 		$make_link = add_query_arg(
 			array(
-				's' => '',
+				's'      => '',
 				'make[]' => $make,
 			),
 			$archive_link

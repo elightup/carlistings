@@ -5,30 +5,23 @@
  * @package CarListings
  */
 
-$post_thumbnail = get_the_post_thumbnail( get_the_ID(), 'full' );
-if ( empty( $post_thumbnail ) ) {
+if ( ! have_posts() ) {
 	return;
 }
 
-if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
-		?>
+the_post();
+?>
 
-		<div class="featured-posts">
-			<section class="featured-post__content">
-				<?php echo wp_kses_post( $post_thumbnail ); ?>
-				<div class="featured-content">
-					<div class="container">
-						<?php
-						the_title( '<h3 class="entry-title">', '</h3>' );
-						the_content();
-						?>
-					</div>
-				</div>
-			</section>
+<div class="featured-posts">
+	<section class="featured-post__content">
+		<?php the_post_thumbnail( 'full' ); ?>
+		<div class="featured-content">
+			<div class="container">
+				<?php
+				the_title( '<h3 class="entry-title">', '</h3>' );
+				the_content();
+				?>
+			</div>
 		</div>
-
-		<?php
-	endwhile;
-endif;
+	</section>
+</div>

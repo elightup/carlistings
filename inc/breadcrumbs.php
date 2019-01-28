@@ -18,73 +18,57 @@ function carlistings_breadcrumbs( $args = '' ) {
 	$args = wp_parse_args(
 		$args,
 		array(
-			'separator'         => '<i class="icofont icofont-rounded-right"></i>',
-			'home_label'        => __( 'Home', 'carlistings' ),
-			'home_class'        => 'home',
-			'before'            => '<ul class="breadcrumbs">',
-			'after'             => '</ul>',
-			'before_item'       => '<li class="breadcrumbs-item">',
-			'after_item'        => '</li>',
-			'taxonomy'          => 'category',
-			'display_last_item' => true,
+			'separator' => '<i class="icofont icofont-rounded-right"></i>',
+			'taxonomy'  => 'category',
 		)
 	);
-
-	$args = apply_filters( 'carlistings_breadcrumbs_args', $args );
 
 	$items = array();
 
 	$title = '';
 
 	// HTML template for each item.
-	$item_tpl_link = $args['before_item'] . '
+	$item_tpl_link = '<li class="breadcrumbs-item">
 		<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 			<a href="%s" itemprop="url"><span itemprop="title">%s</span></a>
 		</span>
-	' . $args['after_item'];
-	$item_text_tpl = $args['before_item'] . '
+	</li>';
+	$item_text_tpl = '<li class="breadcrumbs-item">
 		<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 			<span itemprop="title">%s</span>
 		</span>
-	' . $args['after_item'];
+	</li>';
 
 	// Home.
-	if ( ! $args['home_class'] ) {
-		$items[] = sprintf( $item_tpl_link, esc_url( home_url( '/' ) ), esc_html( $args['home_label'] ) );
-	} else {
-		$items[] = $args['before_item'] . sprintf(
-			'<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-				<a class="%s" href="%s" itemprop="url"><span itemprop="title">%s</span></a>
-			</span>' . $args['after_item'],
-			esc_attr( $args['home_class'] ),
-			esc_url( home_url() ),
-			esc_html( $args['home_label'] )
-		);
-	}
+	$items[] = sprintf(
+		'<li class="breadcrumbs-item">
+			<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<a class="home" href="%s" itemprop="url"><span itemprop="title">%s</span></a>
+			</span>
+		</li>',
+		esc_url( home_url( '/' ) ),
+		esc_html__( 'Home', 'carlistings' )
+	);
 
 	if ( is_home() && ! is_front_page() ) {
 		$page = get_option( 'page_for_posts' );
-		if ( $args['display_last_item'] ) {
-			$title = get_the_title( $page );
-		}
+		$title = get_the_title( $page );
 	} elseif ( is_post_type_archive() ) {
-
 		// If post is a custom post type.
 		$query     = get_queried_object();
 		$post_type = $query->name;
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );
-			$title                  = $post_type_object->labels->menu_name;
+			$title                  = $post_type_object->labels->name;
 		}
 	} elseif ( is_single() ) {
-
 		// If post is a custom post type.
 		$post_type = get_post_type();
 		if ( 'post' !== $post_type ) {
 			$post_type_object       = get_post_type_object( $post_type );
 			$post_type_archive_link = get_post_type_archive_link( $post_type );
-			$items[]                = sprintf( $item_tpl_link, esc_url( $post_type_archive_link ), esc_html( $post_type_object->labels->menu_name ) );
+			$items[]                = sprintf( $item_tpl_link, esc_url( $post_type_archive_link ), esc_html( $post_type_object->labels->name ) );
 		} else {
 			$blog_page = get_option( 'page_for_posts' );
 			if ( ! empty( $blog_page ) ) {
@@ -105,18 +89,13 @@ function carlistings_breadcrumbs( $args = '' ) {
 			}
 		}
 
-		if ( $args['display_last_item'] ) {
-			$title = get_the_title();
-		}
+		$title = get_the_title();
 	} elseif ( is_page() ) {
 		$pages = carlistings_get_post_parents( get_queried_object_id() );
 		foreach ( $pages as $page ) {
-			$items[] = sprintf( $item_tpl_link, esc_url( get_permalink( $page ) ), get_the_title( $page ) );
+			$items[] = sprintf( $item_tpl_link, esc_url( get_permalink( $page ) ), esc_html( wp_strip_all_tags( get_the_title( $page ) ) ) );
 		}
-		if ( $args['display_last_item'] ) {
-			$title = get_the_title();
-
-		}
+		$title = get_the_title();
 	} elseif ( is_tax() || is_category() || is_tag() ) {
 		$current_term = get_queried_object();
 		$terms        = carlistings_get_term_parents( get_queried_object_id(), $current_term->taxonomy );
@@ -124,10 +103,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 			$term    = get_term( $term_id, $current_term->taxonomy );
 			$items[] = sprintf( $item_tpl_link, esc_url( get_category_link( $term_id ) ), esc_html( $term->name ) );
 		}
-		if ( $args['display_last_item'] ) {
-			$title = $current_term->name;
-
-		}
+		$title = $current_term->name;
 	} elseif ( is_search() ) {
 		/* translators: search query */
 		$title = sprintf( __( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
@@ -136,7 +112,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} elseif ( is_author() ) {
 		$author_obj = get_queried_object();
 		// Queue the first post, that way we know what author we're dealing with (if that is the case).
-		$title = '<span class="vcard">' . esc_html( $author_obj->display_name ) . '</span>';
+		$title = esc_html( $author_obj->display_name );
 	} elseif ( is_day() ) {
 		$title = get_the_date();
 	} elseif ( is_month() ) {
@@ -145,15 +121,16 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$title = get_the_date( 'Y' );
 	} else {
 		$title = __( 'Archives', 'carlistings' );
-	}
+	} // End if().
 
 	if ( ! is_single() ) {
 		$items[] = sprintf( $item_text_tpl, esc_html( $title ) );
 	}
 
-	$title = '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
+	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
-	echo $title . $args['before'] . implode( $args['separator'], $items ) . $args['after']; // WPCS: XSS OK.
+	// Already escaped above.
+	echo '<ul class="breadcrumbs">' . implode( $args['separator'], $items ) . '</ul>'; // WPCS: XSS OK.
 }
 
 /**

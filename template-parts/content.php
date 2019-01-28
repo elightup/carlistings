@@ -41,7 +41,7 @@
 			carlistings_entry_footer();
 
 			if ( function_exists( 'sharing_display' ) ) {
-			    sharing_display( '', true );
+				sharing_display( '', true );
 			}
 			?>
 		</div><!-- .entry-content -->

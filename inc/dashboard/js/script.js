@@ -1,3 +1,9 @@
+/**
+ * Script for theme dashboard.
+ *
+ * @package CarListings.
+ */
+
 ( function ( $ ) {
 	'use strict';
 

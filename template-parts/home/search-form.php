@@ -11,7 +11,7 @@ if ( ! $search_page ) {
 }
 
 $post = get_post( $search_page );
-setup_postdata( $search_page );
+setup_postdata( $post );
 ?>
 
 <section class="section--search container">

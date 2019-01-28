@@ -16,15 +16,7 @@ if ( ! carlistings_is_plugin_active() ) {
 }
 ?>
 
-<?php
-
-	do_action( 'auto_listings_before_single_listing' );
-
-if ( post_password_required() ) {
-	echo get_the_password_form(); // WPCS: XSS OK.
-	return;
-}
-?>
+<?php do_action( 'auto_listings_before_single_listing' ); ?>
 
 <div id="listing-<?php the_ID(); ?>" class="auto-listings-single listing">
 

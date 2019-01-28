@@ -43,20 +43,8 @@ function carlistings_required_plugins() {
 			'slug' => 'meta-box',
 		),
 		array(
-			'name' => esc_html__( 'One click demo import', 'carlistings' ),
+			'name' => esc_html__( 'One Click Demo Import', 'carlistings' ),
 			'slug' => 'one-click-demo-import',
-		),
-		array(
-			'name' => esc_html__( 'Ultimate Fonts', 'carlistings' ),
-			'slug' => 'ultimate-fonts',
-		),
-		array(
-			'name' => esc_html__( 'Ultimate Colors', 'carlistings' ),
-			'slug' => 'ultimate-colors',
-		),
-		array(
-			'name' => esc_html__( 'Instagram Slider Widget', 'carlistings' ),
-			'slug' => 'instagram-slider-widget',
 		),
 	);
 }

@@ -1,3 +1,9 @@
+/**
+ * Script for custom section.
+ *
+ * @package CarListings
+ */
+
 ( function( api ) {
 
 	// Extends our custom "gt-go-pro" section.

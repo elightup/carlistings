@@ -1,7 +1,7 @@
 {
   "scripts": {
     "css": "node-sass --output-style expanded --indent-type tab --indent-width 1 sass/style.scss -o .",
-    "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+    "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 10\"",
     "watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 -w sass -r -o .",
     "zip": "git archive -o carlistings.zip --prefix=carlistings/ HEAD",
     "sync": "browser-sync start --proxy \"test.test\" --files \"style.css\"",

@@ -251,11 +251,6 @@ require get_template_directory() . '/inc/widgets/class-carlistings-contact-widge
 require get_template_directory() . '/inc/breadcrumbs.php';
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
  * Implement the extras.
  */
 require get_template_directory() . '/inc/extras.php';
@@ -278,9 +273,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+require get_template_directory() . '/inc/jetpack.php';
 
 if ( is_admin() ) {
 	require_once get_template_directory() . '/inc/admin/class-tgm-plugin-activation.php';

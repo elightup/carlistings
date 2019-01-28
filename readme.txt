@@ -49,7 +49,7 @@ Hybrid Core, Copyright Justin Tadlock
 License: GNU General Public License v2.0
 Source : https://github.com/justintadlock/hybrid-core/blob/master/license.md
 
-Screenshot Image, Copyright Pixabay
+Screenshot Image, Copyright PxHere
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://pxhere.com/en/photo/67951
 

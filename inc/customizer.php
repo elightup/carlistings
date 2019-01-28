@@ -11,9 +11,8 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function carlistings_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	// Add theme options panel.
 	$wp_customize->add_panel(
@@ -29,8 +28,9 @@ function carlistings_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'homepage',
 		array(
-			'title' => esc_html__( 'Homepage', 'carlistings' ),
-			'panel' => 'carlistings',
+			'title'           => esc_html__( 'Homepage', 'carlistings' ),
+			'panel'           => 'carlistings',
+			'active_callback' => 'carlistings_is_plugin_active',
 		)
 	);
 
