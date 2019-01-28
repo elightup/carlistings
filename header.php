@@ -63,7 +63,7 @@
 					$carlistings_description = get_bloginfo( 'description', 'display' );
 					if ( $carlistings_description || is_customize_preview() ) :
 						?>
-						<p class="site-description"><?php echo $carlistings_description; /* WPCS: xss ok. */ ?></p>
+						<p class="site-description"><?php echo wp_kses_post( $carlistings_description ); ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 

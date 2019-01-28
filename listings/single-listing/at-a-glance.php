@@ -36,7 +36,7 @@ if ( ! carlistings_is_plugin_active() ) {
 			<tr>
 				<td>
 					<?php if ( auto_listings_body_type() ) { ?>
-						<span class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo auto_listings_body_type(); // WPCS: XSS OK. ?></span>
+						<span class="body"><i class="icofont icofont-car-alt-4"></i> <?php echo wp_kses_post( auto_listings_body_type() ); ?></span>
 					<?php } ?>
 				</td>
 				<td>

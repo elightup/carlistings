@@ -38,7 +38,7 @@
 				$main_content = str_replace( $media, '', $main_content );
 			}
 
-			echo $main_content; /* WPCS: xss ok. */
+			echo wp_kses_post( $main_content );
 
 			wp_link_pages(
 				array(
