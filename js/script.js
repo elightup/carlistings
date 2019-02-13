@@ -150,6 +150,9 @@ jQuery( function ( $ ) {
 	 * View switcher
 	 */
 	function auto_listings_view_switcher() {
+		if ( typeof auto_listings !== 'object' ) {
+			return;
+		}
 		var default_view = auto_listings.list_grid_view;
 
 		switch_view( default_view );
