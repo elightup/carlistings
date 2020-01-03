@@ -239,6 +239,10 @@ function carlistings_add_editor_styles() {
 }
 add_action( 'init', 'carlistings_add_editor_styles' );
 
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Include widget file
