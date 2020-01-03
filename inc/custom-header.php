@@ -37,7 +37,7 @@ if ( ! function_exists( 'carlistings_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see justread_custom_header_setup().
+	 * @see carlistings_custom_header_setup().
 	 */
 	function carlistings_header_style() {
 		$header_text_color = get_header_textcolor();
