@@ -16,3 +16,19 @@
 	margin-left:  0;
 	margin-right: 8px;
 }
+
+#customize-theme-controls .control-panel-themes>.accordion-section-title, 
+#customize-theme-controls .control-panel-themes>.accordion-section-title:hover {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+#customize-theme-controls .link-doc h3.accordion-section-title,
+#customize-theme-controls .link-doc h3.accordion-section-title:hover {
+	border: none;
+	background-color: #eee;
+}
+
+#customize-theme-controls .link-doc a:hover {
+	color: #0073aa;
+}

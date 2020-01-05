@@ -57,10 +57,9 @@ class Carlistings_Customizer_Section_Pro extends WP_Customize_Section {
 	 */
 	protected function render_template() {
 		?>
-		<li id="accordion-section-{{ data.id }}-doc" class="accordion-section control-section cannot-expand">
+		<li id="accordion-section-{{ data.id }}-doc" class="accordion-section control-section cannot-expand link-doc">
 			<h3 class="accordion-section-title">
-				{{ data.doc_title }}
-				<a href="{{ data.doc_url }}" class="button button-secondary alignright" target="_blank">{{ data.doc_text }}</a>
+				<a href="{{ data.doc_url }}" target="_blank">{{ data.doc_text }}</a>
 			</h3>
 		</li>
 		<?php

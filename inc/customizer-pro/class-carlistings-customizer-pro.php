@@ -59,9 +59,9 @@ final class Carlistings_Customizer_Pro {
 				'carlistings',
 				array(
 					'doc_title' => esc_html__( 'Need Some Help?', 'carlistings' ),
-					'doc_text'  => esc_html__( 'Documentation', 'carlistings' ),
+					'doc_text'  => esc_html__( 'Need help setting up your site?', 'carlistings' ),
 					'doc_url'   => esc_url( "https://wpautolistings.com/docs/{$this->slug}/{$this->utm}" ),
-					'priority'  => 99999999,
+					'priority'  => 0,
 				)
 			)
 		);
