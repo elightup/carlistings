@@ -42,10 +42,6 @@ function carlistings_required_plugins() {
 			'slug' => 'meta-box',
 		),
 		array(
-			'name' => esc_html__( 'One Click Demo Import', 'carlistings' ),
-			'slug' => 'one-click-demo-import',
-		),
-		array(
 			'name' => esc_html__( 'Slim SEO', 'carlistings' ),
 			'slug' => 'slim-seo',
 		),
