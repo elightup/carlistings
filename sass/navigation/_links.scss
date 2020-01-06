@@ -8,11 +8,4 @@ a {
 	&:active {
 		color: $color__link-hover;
 	}
-	&:focus {
-		outline: none;
-	}
-	&:hover,
-	&:active {
-		outline: none;
-	}
 }

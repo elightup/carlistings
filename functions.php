@@ -296,3 +296,13 @@ if ( is_admin() ) {
 require get_template_directory() . '/inc/customizer-pro/class-carlistings-customizer-pro.php';
 $customizer_pro = new Carlistings_Customizer_Pro();
 $customizer_pro->init();
+
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+	/**
+	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
+	 */
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}

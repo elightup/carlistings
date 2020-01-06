@@ -23,7 +23,7 @@
 
 			li {
 				&:hover > ul,
-				&:focus > ul {
+				&.focus > ul {
 					left: 100%;
 				}
 			}
@@ -45,7 +45,7 @@
 		}
 
 		li:hover > ul,
-		li:focus > ul {
+		li.focus > ul {
 			visibility: visible;
 			opacity: 1;
 			transform: translateY(0);
@@ -88,14 +88,15 @@
 		margin-right: -10px;
 	}
 	> li {
+		&:hover,
+		&.focus > a {
+			border-color: $color__main;
+		}
 		& + li {
 			margin-left: 7px;
 		}
 		> a {
 			border-bottom: 3px solid transparent;
-			&:hover {
-				border-color: $color__main;
-			}
 		}
 	}
 }
@@ -111,7 +112,6 @@
 }
 
 .main-navigation ul {
-	display: none;
 	a {
 		@include font-size(1.4);
 		padding: 15px 10px 10px;
@@ -185,9 +185,6 @@
 @media screen and (min-width: 992px) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
 	}
 }
 
