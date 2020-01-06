@@ -88,7 +88,7 @@
 		margin-right: -10px;
 	}
 	> li {
-		&:hover,
+		&:hover > a,
 		&.focus > a {
 			border-color: $color__main;
 		}

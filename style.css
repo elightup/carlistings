@@ -994,9 +994,9 @@ a:hover, a:focus, a:active {
 	margin-right: -10px;
 }
 
-.topbar-contact .menu > li:hover,
+.topbar-contact .menu > li:hover > a,
 .topbar-contact .menu > li.focus > a,
-.primary-menu > li:hover,
+.primary-menu > li:hover > a,
 .primary-menu > li.focus > a {
 	border-color: #e11e30;
 }
