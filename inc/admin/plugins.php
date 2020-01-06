@@ -21,7 +21,6 @@ function carlistings_register_required_plugins() {
 		'parent_slug' => 'themes.php',
 		'capability'  => 'install_themes',
 	);
-
 	tgmpa( $plugins, $config );
 }
 
