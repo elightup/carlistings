@@ -37,6 +37,59 @@ function carlistings_custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'carlistings_custom_excerpt_length' );
 
 /**
+ * Demo files for importing.
+ *
+ * @return array List of demos configuration.
+ */
+function carlistings_import_files() {
+	return array(
+		array(
+			'import_file_name'             => esc_html__( 'Demo', 'carlistings' ),
+			'local_import_file'            => get_template_directory() . '/demos/content.xml',
+			'local_import_widget_file'     => get_template_directory() . '/demos/widgets.wie',
+			'local_import_customizer_file' => get_template_directory() . '/demos/theme-options.dat',
+		),
+	);
+}
+
+add_filter( 'pt-ocdi/import_files', 'carlistings_import_files' );
+
+/**
+ * Setup the theme after importing demo.
+ */
+function carlistings_after_import_setup() {
+	// Assign menus to their locations.
+	$header = get_term_by( 'slug', 'Header', 'nav_menu' );
+	$footer = get_term_by( 'slug', 'Footer', 'nav_menu' );
+	$social = get_term_by( 'slug', 'social-menu', 'nav_menu' );
+
+	set_theme_mod(
+		'nav_menu_locations',
+		array(
+			'menu-1'              => $header->term_id,
+			'menu-2'              => $footer->term_id,
+			'jetpack-social-menu' => $social->term_id,
+		)
+	);
+
+	// Setup static front page.
+	$front_page = get_page_by_title( 'Home' );
+	$blog       = get_page_by_title( 'Blog' );
+
+	$search_page = get_page_by_title( 'i am looking for' );
+
+	update_option( 'show_on_front', 'page' );
+	update_option( 'page_on_front', $front_page->ID );
+	update_option( 'page_for_posts', $blog->ID );
+
+	set_theme_mod( 'search_section', $search_page->ID );
+
+	update_option( 'permalink_structure', '/%postname%/' );
+}
+
+add_action( 'pt-ocdi/after_import', 'carlistings_after_import_setup' );
+
+/**
  * Add at a glance to left section
  */
 add_action( 'auto_listings_before_listings_loop_item_summary', 'auto_listings_template_loop_at_a_glance', 20 );
