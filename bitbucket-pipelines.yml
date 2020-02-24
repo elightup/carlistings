@@ -6,8 +6,9 @@
 image: php:7.1.29
 
 pipelines:
-  default:
-    - step:
-        script:
-          - apt-get update -y && apt-get install -y ssh
-          - ssh $USER@$SERVER 'cd demo.wpautolistings.com/wp-content/themes/carlistings && git pull'
+  tags:
+    '*':
+      - step:
+          script:
+            - apt-get update -y && apt-get install -y ssh
+            - ssh $USER@$SERVER 'cd demo.wpautolistings.com/wp-content/themes/carlistings && git pull'
