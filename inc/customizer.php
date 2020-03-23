@@ -32,8 +32,6 @@ function carlistings_customize_register( $wp_customize ) {
 		);
 	}
 
-	$wp_customize->remove_control( 'header_image' );
-
 	// Add theme options panel.
 	$wp_customize->add_panel(
 		'carlistings',

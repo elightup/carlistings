@@ -36,7 +36,7 @@ jQuery( function ( $ ) {
 			transitionEnd = 'transitionend webkitTransitionEnd otransitionend MSTransitionEnd';
 
 		// Click to show mobile menu.
-		$( '.menu-toggle' ).on( clickEvent, function( event ) {
+		$( '.menu-toggle' ).on( 'click', function( event ) {
 			event.preventDefault();
 			event.stopPropagation(); // Do not trigger click event on '.wrapper' below.
 			if ( $body.hasClass( mobileClass ) ) {

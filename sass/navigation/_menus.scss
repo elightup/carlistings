@@ -109,6 +109,9 @@
 		color: $color__main;
 		border-bottom: 3px solid $color__main;
 	}
+	@media (max-width: 991px) {
+		display: none;
+	}
 }
 
 .main-navigation ul {
