@@ -121,7 +121,8 @@ abbr[title] {
 	/* 1 */
 	text-decoration: underline;
 	/* 2 */
-	text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
 	/* 2 */
 }
 
@@ -653,11 +654,9 @@ th, td {
 	box-sizing: border-box;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	-ms-touch-action: pan-y;
 	touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -681,10 +680,6 @@ th, td {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-o-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
 
@@ -1257,7 +1252,8 @@ a:hover, a:focus, a:active {
 .screen-reader-text {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
+	-webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
@@ -1273,7 +1269,8 @@ a:hover, a:focus, a:active {
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	clip-path: none;
+	-webkit-clip-path: none;
+	        clip-path: none;
 	color: #21759b;
 	display: block;
 	font-size: 8.75px;
@@ -2277,8 +2274,10 @@ Genericons
 .featured-posts img {
 	height: 600px;
 	width: 100%;
-	object-fit: cover;
-	object-position: center center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center center;
+	   object-position: center center;
 }
 
 .featured-posts .featured-content {
@@ -2711,7 +2710,8 @@ Genericons
 }
 
 .all--car .all-car-left ul {
-	column-count: 3;
+	-moz-column-count: 3;
+	     column-count: 3;
 	list-style: none;
 	margin: 35px 0px 55px 10px;
 }
@@ -2788,7 +2788,8 @@ Genericons
 
 @media (max-width: 574px) {
 	.all--car .all-car-left ul {
-		column-count: 2;
+		-moz-column-count: 2;
+		     column-count: 2;
 	}
 	.all--car .all-car-left .all-car__title {
 		font-size: 21px;
@@ -2802,7 +2803,8 @@ Genericons
 
 @media (max-width: 320px) {
 	.all--car .all-car-left ul {
-		column-count: 1;
+		-moz-column-count: 1;
+		     column-count: 1;
 	}
 }
 
@@ -3994,7 +3996,8 @@ ol.children {
 .auto-listings-single .has-sidebar .image-gallery img {
 	width: 100%;
 	max-height: 450px;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .auto-listings-single .has-sidebar .upper {
@@ -4077,7 +4080,8 @@ ol.children {
 }
 
 .auto-listings-single .has-sidebar .content .description ul {
-	column-count: 3;
+	-moz-column-count: 3;
+	     column-count: 3;
 	margin-top: 35px;
 	margin-bottom: 50px;
 }
@@ -4393,7 +4397,8 @@ ol.children {
 
 @media (max-width: 767px) {
 	.auto-listings-single .has-sidebar .content .description ul {
-		column-count: 2;
+		-moz-column-count: 2;
+		     column-count: 2;
 	}
 }
 
@@ -4411,7 +4416,8 @@ ol.children {
 		font-size: 1.375rem;
 	}
 	.auto-listings-single .has-sidebar .content .description ul {
-		column-count: 1;
+		-moz-column-count: 1;
+		     column-count: 1;
 	}
 	.auto-listings-single .has-sidebar .content .auto-listings-tabs .auto-listings-Tabs-panel {
 		padding: 0;
@@ -5129,6 +5135,7 @@ ol.children {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	order: 3;
 }
 
 .sidebar .auto-listings-items li.compact .at-a-glance ul {
