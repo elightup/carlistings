@@ -71,18 +71,12 @@ if ( ! carlistings_is_plugin_active() ) {
 	<div class="sidebar">
 
 		<?php
-		if ( is_active_sidebar( 'auto-listings-single' ) ) {
-			dynamic_sidebar( 'auto-listings-single' );
-		} else {
-			/**
-			 * @hooked auto_listings_template_single_price
-			 * @hooked auto_listings_template_single_at_a_glance
-			 * @hooked auto_listings_template_single_address
-			 * @hooked auto_listings_template_single_map
-			 * @hooked auto_listings_template_single_contact_form
-			 */
-			do_action( 'auto_listings_single_sidebar' );
-		}
+		/**
+		 * @hooked auto_listings_template_single_at_a_glance
+		 * @hooked auto_listings_template_single_map
+		 * @hooked auto_listings_template_single_contact_form
+		 */
+		do_action( 'auto_listings_single_sidebar' );
 		?>
 
 	</div>
