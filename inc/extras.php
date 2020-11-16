@@ -121,3 +121,7 @@ add_filter( 'widget_tag_cloud_args', 'carlistings_tag_cloud_font_size' );
 function carlistings_is_plugin_active() {
 	return defined( 'AUTO_LISTINGS_VERSION' );
 }
+
+add_filter( 'is_auto_listings', function( $condition ) {
+	return $condition || is_front_page();
+} );
