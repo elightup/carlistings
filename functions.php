@@ -173,15 +173,6 @@ function carlistings_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	if ( function_exists( 'auto_listings_option' ) ) {
-		$list_grid_view = array(
-			'list_grid_view' => auto_listings_option( 'list_grid_view' ),
-		);
-		if ( is_front_page() ) {
-			wp_localize_script( 'carlistings-script', 'auto_listings', $list_grid_view );
-		}
-	}
 }
 add_action( 'wp_enqueue_scripts', 'carlistings_scripts', 99 );
 
