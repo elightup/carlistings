@@ -125,3 +125,5 @@ function carlistings_is_plugin_active() {
 add_filter( 'is_auto_listings', function( $condition ) {
 	return $condition || is_front_page();
 } );
+
+add_action( 'auto_listings_single_upper_full_width', 'auto_listings_template_loop_price', 20 );

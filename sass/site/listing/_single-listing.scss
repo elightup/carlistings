@@ -100,8 +100,10 @@
 				line-height: 1.4;
 				margin-top: 0;
 			}
-			h4 {
-				margin-top: 0;
+			.price {
+				color: $color__black;
+				font-size: 22px;
+				font-weight: bold;
 			}
 			.price-amount {
 				@include font-size(2.6);
