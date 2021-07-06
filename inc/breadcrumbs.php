@@ -28,21 +28,21 @@ function carlistings_breadcrumbs( $args = '' ) {
 	$title = '';
 
 	// HTML template for each item.
-	$item_tpl_link = '<li class="breadcrumbs-item">
-		<span itemscope itemtype="https://schema.org/BreadcrumbList">
+	$item_tpl_link = '<li class="breadcrumbs-item" itemtype="http://schema.org/BreadcrumbList">
+		<span itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
 			<a href="%s" itemprop="url"><span itemprop="title">%s</span></a>
 		</span>
 	</li>';
-	$item_text_tpl = '<li class="breadcrumbs-item">
-		<span itemscope itemtype="https://schema.org/BreadcrumbList">
+	$item_text_tpl = '<li class="breadcrumbs-item" itemtype="http://schema.org/BreadcrumbList">
+		<span itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
 			<span itemprop="title">%s</span>
 		</span>
 	</li>';
 
 	// Home.
 	$items[] = sprintf(
-		'<li class="breadcrumbs-item">
-			<span itemscope itemtype="https://schema.org/BreadcrumbList">
+		'<li class="breadcrumbs-item" itemtype="http://schema.org/BreadcrumbList">
+			<span itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
 				<a class="home" href="%s" itemprop="url"><span itemprop="title">%s</span></a>
 			</span>
 		</li>',
