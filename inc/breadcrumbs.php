@@ -130,7 +130,11 @@ function carlistings_breadcrumbs( $args = '' ) {
 	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
 	// Already escaped above.
-	echo '<ul class="breadcrumbs">' . implode( $args['separator'], $items ) . '</ul>'; // WPCS: XSS OK.
+	//echo '<ul class="breadcrumbs">' . implode( $args['separator'], $items ) . '</ul>'; // WPCS: XSS OK.
+	$link = 'slim-seo/slim-seo.php';
+	if( is_plugin_active( $link ) ) :
+		echo do_shortcode('[slim_seo_breadcrumbs separator="&gt;"]');
+	endif;
 }
 
 /**
