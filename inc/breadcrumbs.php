@@ -17,17 +17,53 @@ function carlistings_breadcrumbs( $args = '' ) {
 
 	$title = '';
 
+	if ( is_home() && ! is_front_page() ) {
+		$page = get_option( 'page_for_posts' );
+		$title = get_the_title( $page );
+	} elseif ( is_post_type_archive() ) {
+		// If post is a custom post type.
+		$query     = get_queried_object();
+		$post_type = $query->name;
+		if ( 'post' !== $post_type ) {
+			$post_type_object       = get_post_type_object( $post_type );
+			$title                  = $post_type_object->labels->name;
+		}
+	} elseif ( is_single() ) {
+		$title = get_the_title();
+	} elseif ( is_page() ) {
+		$title = get_the_title();
+	} elseif ( is_tax() || is_category() || is_tag() ) {
+		$current_term = get_queried_object();
+		$title = $current_term->name;
+	} elseif ( is_search() ) {
+		/* translators: search query */
+		$title = sprintf( __( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
+	} elseif ( is_404() ) {
+		$title = __( 'Not found', 'carlistings' );
+	} elseif ( is_author() ) {
+		$author_obj = get_queried_object();
+		// Queue the first post, that way we know what author we're dealing with (if that is the case).
+		$title = esc_html( $author_obj->display_name );
+	} elseif ( is_day() ) {
+		$title = get_the_date();
+	} elseif ( is_month() ) {
+		$title = get_the_date( 'F Y' );
+	} elseif ( is_year() ) {
+		$title = get_the_date( 'Y' );
+	} else {
+		$title = __( 'Archives', 'carlistings' );
+	} // End if().
+
 	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
-	// Already escaped above.
-	$link = 'slim-seo/slim-seo.php';
-	if( is_plugin_active( $link ) ) :
-		if( is_single() ) {
-			echo do_shortcode( '[slim_seo_breadcrumbs display_current="false"]' );
-		}else {
-			echo do_shortcode('[slim_seo_breadcrumbs]');
-		}
-	endif;
+	if ( ! is_plugin_active( 'slim-seo/slim-seo.php' ) ) {
+		return;
+	}
+	if ( is_single() ) {
+		echo do_shortcode( '[slim_seo_breadcrumbs display_current="false"]' );
+	} else {
+		echo do_shortcode( '[slim_seo_breadcrumbs]' );
+	}
 }
 
 /**
