@@ -56,7 +56,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 
 	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
-	if ( ! shortcode_exists('slim_seo_breadcrumbs') ) {
+	if ( !function_exists( 'is_plugin_active' ) && !is_plugin_active( 'slim-seo/slim-seo.php' ) ) {
 		return;
 	}
 	if ( is_single() ) {
