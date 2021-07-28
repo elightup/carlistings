@@ -1,11 +1,17 @@
 {
   "scripts": {
     "css": "node-sass --output-style expanded --indent-type tab --indent-width 1 sass/style.scss -o .",
-    "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 10\"",
+    "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 1 version, >1%\"",
     "watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 -w sass -r -o .",
     "zip": "git archive -o carlistings.zip --prefix=carlistings/ HEAD",
     "sync": "browser-sync start --proxy \"test.test\" --files \"style.css\"",
     "check": "phpcs --standard=WordPress --extensions=php . > check.txt",
     "fix": "phpcbf --standard=WordPress --extensions=php ."
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
   }
 }
