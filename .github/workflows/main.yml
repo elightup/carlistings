@@ -2,7 +2,7 @@ name: Deploy to production site.
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,4 +15,4 @@ jobs:
     - uses: actions/checkout@master
     - name: Upload
       run: rsync -razhe "ssh -o StrictHostKeyChecking=no" --exclude={'.git','.github','.gitignore','composer.json'} . ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:${{ secrets.DOWNLOADS_DIR }}
-      
+
