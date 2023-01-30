@@ -2,17 +2,18 @@
 	text-align: center;
 	padding: 5.2% 0;
 	margin-bottom: 80px;
-	background-image: url(images/page-header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	position: relative;
+
 	.container {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
 	.page-title {
 		@include font-size(3);
 		color: $color__white;
@@ -22,6 +23,7 @@
 		width: 100%;
 	}
 }
+
 .breadcrumbs {
 	padding: 15px 90px;
 	margin: 0;
@@ -30,26 +32,32 @@
 	position: absolute;
 	bottom: 0;
 	background: $color__white;
+
 	li {
 		color: $color__twitter-name;
+
 		&:last-child {
 			color: $color__main;
 			font-weight: 600;
+
 			a {
 				color: $color__main;
 			}
 		}
 	}
+
 	i {
 		margin: 0 8px;
 		color: #666;
 		@include font-size(1.4);
 	}
+
 	a {
 		text-decoration: none;
 		color: $color__twitter-name;
 		font-weight: 600;
 	}
+
 	.home {
 		&:before {
 			content: '\ef47';
@@ -67,21 +75,25 @@
 .breadcrumb * {
 	color: $color__white;
 }
+
 @media (max-width: 991px) {
 	.page-header {
 		.page-title {
 			@include font-size(3.4);
 		}
+
 		.breadcrumbs {
 			position: unset;
 			background: none;
 			padding: 15px 0;
 		}
+
 		.breadcrumbs * {
 			color: $color__white;
 		}
 	}
 }
+
 @media (max-width: 574px) {
 	.page-header {
 		.page-title {
