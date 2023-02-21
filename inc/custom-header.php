@@ -57,7 +57,7 @@ if ( ! function_exists( 'carlistings_header_style' ) ) :
 		if ( has_header_image() ) :
 			?>
 			.page-header {
-				background-image: url( <?= esc_url( $header_image ); ?> );
+				background-image: url( <?php echo esc_url( $header_image ); ?> );
 			}
 			<?php
 		endif;
