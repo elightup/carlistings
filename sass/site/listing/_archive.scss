@@ -133,15 +133,7 @@
 		box-shadow: none;
 		border: 1px solid $color__border-abbr;
 	}
-	.status {
-		i {
-			display: none;
-		}
-		&:before {
-			content: '\eff3';
-			@include ico-font();
-		}
-	}
+
 	.at-a-glance {
 		ul li {
 			text-align: center;
