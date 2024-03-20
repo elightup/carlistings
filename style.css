@@ -4569,17 +4569,6 @@ ol.children {
 	border: 1px solid #e4e4e4;
 }
 
-.auto-listings-items .status i {
-	display: none;
-}
-
-.auto-listings-items .status:before {
-	content: '\eff3';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-}
-
 .auto-listings-items .at-a-glance ul li {
 	text-align: center;
 	font-size: 12px;
