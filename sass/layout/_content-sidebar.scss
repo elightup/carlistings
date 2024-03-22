@@ -1,13 +1,13 @@
 .site-content {
 	.widget-area {
-		width: (370/1170) * 100%;
+		width: calc(370/1170) * 100%;
 		float: right;
 		margin-bottom: 75px;
 	}
 
 	.content-area {
 		float: left;
-		width: (770/1170) * 100%;
+		width: calc(770/1170) * 100%;
 		word-wrap: break-word;
 	}
 
@@ -40,9 +40,9 @@
 }
 .auto-listings .has-sidebar,
 .home .has-sidebar {
-	width: (770/1170) * 100%;
+	width: calc(770/1170) * 100%;
 }
 .auto-listings .sidebar,
 .home .sidebar {
-	width: (370/1170) * 100%;
+	width: calc(370/1170) * 100%;
 }
