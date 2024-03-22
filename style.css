@@ -2652,13 +2652,6 @@ Genericons
 	padding: 5px 10px;
 }
 
-.home .has-sidebar .auto-listings-items .image .status:before {
-	content: '\eff3';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-}
-
 .home .has-sidebar .auto-listings-items.grid-view .bottom-wrap {
 	bottom: -28px;
 }
