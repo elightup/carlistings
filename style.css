@@ -2652,13 +2652,6 @@ Genericons
 	padding: 5px 10px;
 }
 
-.home .has-sidebar .auto-listings-items .image .status:before {
-	content: '\eff3';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
-}
-
 .home .has-sidebar .auto-listings-items.grid-view .bottom-wrap {
 	bottom: -28px;
 }
@@ -4567,17 +4560,6 @@ ol.children {
 	position: relative;
 	box-shadow: none;
 	border: 1px solid #e4e4e4;
-}
-
-.auto-listings-items .status i {
-	display: none;
-}
-
-.auto-listings-items .status:before {
-	content: '\eff3';
-	font-family: "IcoFont";
-	display: inline-block;
-	line-height: 1;
 }
 
 .auto-listings-items .at-a-glance ul li {

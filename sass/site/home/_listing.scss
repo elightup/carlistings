@@ -28,10 +28,6 @@
 					line-height: 12px;
 					padding: 5px 10px;
 				}
-				.status:before {
-					content: '\eff3';
-					@include ico-font();
-				}
 			}
 		}
 		.auto-listings-items.grid-view {
