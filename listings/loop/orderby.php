@@ -21,8 +21,9 @@ if ( 1 === $wp_query->found_posts ) {
 	return;
 }
 
-$by      = filter_input( INPUT_GET, 'orderby', FILTER_SANITIZE_STRING );
-$by      = $by ? $by : 'date';
+$by = $_GET['orderby'] ?? 'date';
+$by = htmlspecialchars( trim( $by ), ENT_QUOTES, 'UTF-8' );
+
 $options = apply_filters(
 	'auto_listings_listings_orderby',
 	array(
@@ -34,12 +35,14 @@ $options = apply_filters(
 );
 
 ?>
-<form class="auto-listings-ordering" method="get" >
+<form class="auto-listings-ordering" method="get">
 
 	<div class="select-wrap">
 		<select name="orderby" class="orderby">
 			<?php foreach ( $options as $value => $label ) : ?>
-				<option value="<?php echo esc_attr( $value ); ?>" <?php selected( $by, $value ); ?>><?php echo esc_html( $label ); ?></option>
+				<option value="<?php echo esc_attr( $value ); ?>" <?php selected( $by, $value ); ?>>
+					<?php echo esc_html( $label ); ?>
+				</option>
 			<?php endforeach; ?>
 		</select>
 	</div>
