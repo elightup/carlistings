@@ -18,15 +18,15 @@ function carlistings_breadcrumbs( $args = '' ) {
 	$title = '';
 
 	if ( is_home() && ! is_front_page() ) {
-		$page = get_option( 'page_for_posts' );
+		$page  = get_option( 'page_for_posts' );
 		$title = get_the_title( $page );
 	} elseif ( is_post_type_archive() ) {
 		// If post is a custom post type.
 		$query     = get_queried_object();
 		$post_type = $query->name;
 		if ( 'post' !== $post_type ) {
-			$post_type_object       = get_post_type_object( $post_type );
-			$title                  = $post_type_object->labels->name;
+			$post_type_object = get_post_type_object( $post_type );
+			$title            = $post_type_object->labels->name;
 		}
 	} elseif ( is_single() ) {
 		$title = get_the_title();
@@ -34,7 +34,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$title = get_the_title();
 	} elseif ( is_tax() || is_category() || is_tag() ) {
 		$current_term = get_queried_object();
-		$title = $current_term->name;
+		$title        = $current_term->name;
 	} elseif ( is_search() ) {
 		/* translators: search query */
 		$title = sprintf( __( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
@@ -56,11 +56,11 @@ function carlistings_breadcrumbs( $args = '' ) {
 
 	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
 
-	if ( !shortcode_exists( 'slim_seo_breadcrumbs' ) ) {
+	if ( ! shortcode_exists( 'slim_seo_breadcrumbs' ) ) {
 		return;
 	}
 	if ( is_single() ) {
-		echo do_shortcode( '[slim_seo_breadcrumbs display_current="false"]' );
+		echo do_shortcode( '[slim_seo_breadcrumbs]' );
 	} else {
 		echo do_shortcode( '[slim_seo_breadcrumbs]' );
 	}
