@@ -34,7 +34,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 		$title = get_the_title();
 	} elseif ( is_tax() || is_category() || is_tag() ) {
 		$current_term = get_queried_object();
-		$title        = $current_term->name;
+		$title = $current_term->name;
 	} elseif ( is_search() ) {
 		/* translators: search query */
 		$title = sprintf( __( 'Search results for &quot;%s&quot;', 'carlistings' ), get_search_query() );
@@ -53,8 +53,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} else {
 		$title = __( 'Archives', 'carlistings' );
 	} // End if().
-
-	echo '<h1 class="page-title">' . wp_kses_post( $title ) . '</h1>';
+	echo '<p class="page-title">' . wp_kses_post( $title ) . '</p>';
 
 	if ( ! shortcode_exists( 'slim_seo_breadcrumbs' ) ) {
 		return;
