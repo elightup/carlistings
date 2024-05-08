@@ -1,8 +1,8 @@
 === CarListings ===
-Contributors: WP Auto Listings
-Requires at least: WordPress 4.5
-Tested up to: WordPress 5.8
-Tags: custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns, grid-layout, microformats, sticky-post, theme-options, blog, e-commerce
+Contributors:      WP Auto Listings
+Requires at least: WordPress 6.2
+Tested up to:      WordPress 6.5.3
+Tags:              custom-menu, custom-logo, editor-style, featured-images, one-column, right-sidebar, rtl-language-support, threaded-comments, translation-ready, two-columns, grid-layout, microformats, sticky-post, theme-options, blog, e-commerce
 
 == Description ==
 
