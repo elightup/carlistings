@@ -58,11 +58,7 @@ function carlistings_breadcrumbs( $args = '' ) {
 	if ( ! shortcode_exists( 'slim_seo_breadcrumbs' ) ) {
 		return;
 	}
-	if ( is_single() ) {
-		echo do_shortcode( '[slim_seo_breadcrumbs]' );
-	} else {
-		echo do_shortcode( '[slim_seo_breadcrumbs]' );
-	}
+	echo do_shortcode( '[slim_seo_breadcrumbs]' );
 }
 
 /**
