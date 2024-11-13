@@ -53,6 +53,8 @@ function carlistings_breadcrumbs( $args = '' ) {
 	} else {
 		$title = __( 'Archives', 'carlistings' );
 	} // End if().
+
+    $title = apply_filters('carlistings_header_page_title', $title);
 	echo '<p class="page-title">' . wp_kses_post( $title ) . '</p>';
 
 	if ( ! shortcode_exists( 'slim_seo_breadcrumbs' ) ) {
