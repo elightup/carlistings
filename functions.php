@@ -233,42 +233,42 @@ add_action( 'init', 'carlistings_add_editor_styles' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+require get_stylesheet_directory() . '/inc/custom-header.php';
 
 /**
  * Include widget file
  */
-require get_template_directory() . '/inc/widgets/class-carlistings-contact-widget.php';
+require get_stylesheet_directory() . '/inc/widgets/class-carlistings-contact-widget.php';
 
 /**
  * Implement the Breadcrumbs.
  */
-require get_template_directory() . '/inc/breadcrumbs.php';
+require get_stylesheet_directory() . '/inc/breadcrumbs.php';
 
 /**
  * Implement the extras.
  */
-require get_template_directory() . '/inc/extras.php';
+require get_stylesheet_directory() . '/inc/extras.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require get_stylesheet_directory() . '/inc/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require get_stylesheet_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require get_stylesheet_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_stylesheet_directory() . '/inc/jetpack.php';
 
 if ( is_admin() ) {
 	require_once get_template_directory() . '/inc/admin/class-tgm-plugin-activation.php';
